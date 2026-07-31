@@ -18,6 +18,24 @@ const THUMB_QUALITY = 78;
  */
 const productGroups = [
 	{
+		sourceFolder: 'Accessories',
+		items: {
+			'Подставка  под чашку из белого бисера': 'white-beaded-cup-coaster'
+		}
+	},
+	{
+		sourceFolder: 'Сумочки',
+		items: {
+			'Мини сумочка монетница из красного бисера': 'red-beaded-mini-coin-purse',
+			'Мини сумочка монетница из серебристого бисера': 'silver-beaded-mini-coin-purse',
+			'Сумочка в комплекте с браслетом разноцветный бисер': 'colorful-beaded-bag-and-bracelet-set',
+			'Белая сумочка монетница из бисера': 'white-beaded-coin-purse',
+			'Черная сумочка монетница из бисера': 'black-beaded-coin-purse',
+			'Сумочка из бисера для торжества': 'beaded-evening-bag',
+			'Яркая мини-сумочка для девочки': 'bright-mini-bag-for-girl'
+		}
+	},
+	{
 		sourceFolder: 'Браслеты',
 		items: {
 			'Браслет Сверкающий ромб': 'sparkling-rhombus-bracelet',
@@ -25,16 +43,18 @@ const productGroups = [
 			'Браслет из бисера Нежность': 'tenderness-beaded-bracelet',
 			'Браслет из белого и золотистого бисера Цветочек': 'white-gold-flower-beaded-bracelet',
 			'Браслет из белого и серебристого бисера для принцессы':
-				'white-silver-princess-beaded-bracelet'
+				'white-silver-princess-beaded-bracelet',
+			'Браслет из крупного и мелкого бисера': 'large-small-bead-pearl-bracelet',
+			'Браслет шамбала из красных и прозрачных бусин': 'red-clear-shambhala-bracelet',
+			'Фрагмент браслета с кольцом из белого бисера и синего биконуса':
+				'white-bead-blue-bicone-ring-bracelet',
+			'Белый браслет из риса и бисера': 'white-rice-pearl-bead-bracelet',
+			'Два браслета синий и белый, разного узора': 'blue-white-patterned-bracelet-duo'
 		}
 	},
 	{
 		sourceFolder: 'Изделия из бисера',
 		items: {
-			'Белая сумочка монетница из бисера': 'white-beaded-coin-purse',
-			'Черная сумочка монетница из бисера': 'black-beaded-coin-purse',
-			'Сумочка из бисера для торжества': 'beaded-evening-bag',
-			'Яркая мини-сумочка для девочки': 'bright-mini-bag-for-girl',
 			'Объемное сердце брелок из золотистого бисера': 'golden-beaded-heart-keychain',
 			'Объемное сердце брелок из красного бисера': 'red-beaded-heart-keychain',
 			'Объемное сердце брелок из серебристого бисера': 'silver-beaded-heart-keychain',
@@ -43,7 +63,18 @@ const productGroups = [
 				'black-red-drop-beaded-heart-keychain',
 			'Шарик брелок из красного и белого бисера': 'red-white-beaded-ball-keychain',
 			'Плоское сердце из белого бисера 8 мм': 'white-beaded-flat-heart-keychain',
-			'Разноцветные шарики': 'colorful-beaded-balls'
+			'Разноцветные шарики': 'colorful-beaded-balls',
+			'Шарики игрушки из бисера': 'beaded-toy-balls'
+		}
+	},
+	{
+		sourceFolder: 'Вязаные изделия',
+		items: {
+			Панама: 'crochet-panama-hat',
+			'Вязаная белая сумочка, крючок': 'white-crochet-bag',
+			'Сиреневый кофточка, связанная крючком сверху вниз': 'lilac-top-down-crochet-top',
+			'Белая кофточка, связанная из португальский ниток, хлопок. Вязание из отдельных мотивов':
+				'white-cotton-motif-crochet-top'
 		}
 	}
 ];
@@ -59,6 +90,12 @@ const specialAssets = [
 	{
 		sourcePath: ['Market portrait', 'Вяжу с любовью!'],
 		outPath: join(root, 'static', 'images', 'about', 'portrait.webp'),
+		width: 1000,
+		quality: 85
+	},
+	{
+		sourcePath: ['Главная О мастере'],
+		outPath: join(root, 'static', 'images', 'about', 'home-portrait.webp'),
 		width: 1000,
 		quality: 85
 	}

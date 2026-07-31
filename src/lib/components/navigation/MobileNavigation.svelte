@@ -50,7 +50,7 @@
 		tabindex="-1"
 		aria-label={m.nav_menu({}, { locale: page.data.locale })}
 		onkeydown={handleKeydown}
-		class="fixed inset-y-0 right-0 z-50 flex w-full max-w-xs flex-col gap-6 bg-surface p-6 shadow-xl"
+		class="fixed inset-y-0 right-0 z-50 flex w-full max-w-xs flex-col gap-6 overflow-y-auto bg-surface p-6 shadow-xl"
 	>
 		<div class="flex items-center justify-between">
 			<span class="font-display text-lg">{m.nav_menu({}, { locale: page.data.locale })}</span>
@@ -97,6 +97,6 @@
 			{m.nav_order({}, { locale: page.data.locale })}
 		</a>
 
-		<LanguageSwitcher class="mt-auto" />
+		<LanguageSwitcher />
 	</div>
 {/if}

@@ -8,10 +8,10 @@
 
 <section class="grid items-center gap-8 md:grid-cols-2">
 	<img
-		src="/images/about/portrait.svg"
+		src="/images/about/home-portrait.webp"
 		alt=""
-		width="900"
-		height="1100"
+		width="570"
+		height="1280"
 		loading="lazy"
 		class="aspect-[4/5] w-full rounded-card object-cover"
 	/>
