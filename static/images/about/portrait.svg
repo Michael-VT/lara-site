@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Maker portrait">
+	<rect width="900" height="1100" fill="#efe7d8"/>
+	<circle cx="450" cy="440" r="144" fill="#7a6a3f" opacity="0.35"/>
+	<text x="50%" y="792" text-anchor="middle" font-family="Georgia, serif" font-size="56" fill="#7a6a3f">Maker portrait</text>
+	<text x="50%" y="880" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#7a6a3f" opacity="0.7">Placeholder photo</text>
+</svg>

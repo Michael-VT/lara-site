@@ -1,0 +1,37 @@
+/** @type {import('$lib/schemas/product.js').Product} */
+export const product = {
+	sku: 'BAG-002',
+	slug: 'black-beaded-coin-purse',
+	category: 'bags',
+	status: 'available',
+
+	title: {
+		en: 'Black beaded coin purse',
+		pt: 'Bolsa moedeiro preta em contas',
+		uk: 'Чорна сумочка-гаманець з бісеру',
+		ru: 'Черная сумочка монетница из бисера'
+	},
+	description: {
+		en: 'A small coin purse hand-woven entirely from black seed beads.',
+		ru: 'Небольшая сумочка-монетница, полностью сплетённая вручную из чёрного бисера.'
+	},
+
+	price: { mode: 'on_request' },
+
+	images: [
+		{
+			src: '/images/products/black-beaded-coin-purse/1.webp',
+			thumb: '/images/products/black-beaded-coin-purse/1-thumb.webp',
+			width: 1280,
+			height: 960,
+			alt: {
+				en: 'Black coin purse hand-woven from seed beads',
+				ru: 'Чёрная сумочка-монетница, сплетённая из бисера'
+			}
+		}
+	],
+
+	materials: { en: 'Seed beads', ru: 'Бисер' },
+
+	relatedSkus: ['BAG-001', 'BEAD-004']
+};
