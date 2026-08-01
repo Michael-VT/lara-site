@@ -23,7 +23,7 @@ export const product = {
 			src: '/images/products/adjustable-cord-beaded-bracelet/1.webp',
 			thumb: '/images/products/adjustable-cord-beaded-bracelet/1-thumb.webp',
 			width: 1280,
-			height: 1033,
+			height: 405,
 			alt: {
 				en: 'Adjustable cord beaded bracelets in several colour accents',
 				ru: 'Браслеты-шнурочки с бисером в разных цветах'

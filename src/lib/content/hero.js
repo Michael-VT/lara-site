@@ -17,13 +17,13 @@ export const heroSlides = [
 	{
 		titleKey: 'home_heroSlide2Title',
 		bodyKey: 'home_heroSlide2Body',
-		image: '/images/hero/slide-2.svg',
+		image: '/images/hero/slide-2.webp',
 		altKey: 'home_heroSlide2Title'
 	},
 	{
 		titleKey: 'home_heroSlide3Title',
 		bodyKey: 'home_heroSlide3Body',
-		image: '/images/hero/slide-3.svg',
+		image: '/images/hero/slide-3.webp',
 		altKey: 'home_heroSlide3Title'
 	}
 ];

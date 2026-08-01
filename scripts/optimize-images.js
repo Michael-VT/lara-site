@@ -88,6 +88,18 @@ const specialAssets = [
 		quality: 82
 	},
 	{
+		sourcePath: ['Готовые изделия, доступные сейчас'],
+		outPath: join(root, 'static', 'images', 'hero', 'slide-2.webp'),
+		width: 1600,
+		quality: 82
+	},
+	{
+		sourcePath: ['Браслеты', 'Мои браслеты'],
+		outPath: join(root, 'static', 'images', 'hero', 'slide-3.webp'),
+		width: 1600,
+		quality: 82
+	},
+	{
 		sourcePath: ['Market portrait', 'Вяжу с любовью!'],
 		outPath: join(root, 'static', 'images', 'about', 'portrait.webp'),
 		width: 1000,
