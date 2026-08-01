@@ -41,5 +41,5 @@ export const product = {
 		ru: 'Можно заказать в другом цвете'
 	},
 
-	relatedSkus: ['KNIT-003']
+	relatedSkus: ['KNIT-003', 'KNIT-005']
 };

@@ -12,8 +12,8 @@ export const product = {
 		ru: 'Браслет-шнурок с бисером на регулируемом узле'
 	},
 	description: {
-		en: 'A slim hand-woven bracelet on an adjustable sliding-knot cord, with a small beaded accent. Available in various colours — any quantity can be ordered.',
-		ru: 'Тонкий браслет-шнурок, сплетённый вручную, с регулируемым скользящим узлом и небольшим акцентом из бисера. Доступны разные цвета — заказать можно любое количество.'
+		en: 'A slim hand-woven bracelet on an adjustable sliding-knot cord, with a pearl and gold-tone bead accent. Available in various colours — any quantity can be ordered.',
+		ru: 'Тонкий браслет-шнурок, сплетённый вручную, с регулируемым скользящим узлом и акцентом из жемчужных и золотистых бусин. Доступны разные цвета — заказать можно любое количество.'
 	},
 
 	price: { mode: 'on_request' },
@@ -22,11 +22,11 @@ export const product = {
 		{
 			src: '/images/products/adjustable-cord-beaded-bracelet/1.webp',
 			thumb: '/images/products/adjustable-cord-beaded-bracelet/1-thumb.webp',
-			width: 1280,
-			height: 405,
+			width: 960,
+			height: 1280,
 			alt: {
-				en: 'Adjustable cord beaded bracelets in several colour accents',
-				ru: 'Браслеты-шнурочки с бисером в разных цветах'
+				en: 'Adjustable cord beaded bracelet with a pearl and gold bead accent',
+				ru: 'Браслет-шнурок с акцентом из жемчужных и золотистых бусин'
 			}
 		}
 	],

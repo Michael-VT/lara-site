@@ -49,7 +49,8 @@ const productGroups = [
 			'Браслет с кольцом из белого бисера и синего биконуса':
 				'white-bead-blue-bicone-ring-bracelet',
 			'Белый браслет из риса и бисера': 'white-rice-pearl-bead-bracelet',
-			'Два браслета синий и белый, разного узора': 'blue-white-patterned-bracelet-duo'
+			'Два браслета синий и белый, разного узора': 'blue-white-patterned-bracelet-duo',
+			'Браслет-шнурок с бисером на регулируемом узле': 'adjustable-cord-beaded-bracelet'
 		}
 	},
 	{
@@ -74,7 +75,9 @@ const productGroups = [
 			'Вязаная белая сумочка, крючок': 'white-crochet-bag',
 			'Сиреневый кофточка, связанная крючком сверху вниз': 'lilac-top-down-crochet-top',
 			'Белая кофточка, связанная из португальский ниток, хлопок. Вязание из отдельных мотивов':
-				'white-cotton-motif-crochet-top'
+				'white-cotton-motif-crochet-top',
+			'Кофта, юбка и сумочка, связанные крючком из португальских  ниток из хлопка':
+				'crochet-cotton-skirt-and-bag-set'
 		}
 	}
 ];
