@@ -1,40 +1,40 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
 	sku: 'BR-011',
-	slug: 'adjustable-cord-beaded-bracelet',
+	slug: 'shambhala-beaded-bracelet',
 	category: 'bracelets',
 	status: 'available',
 
 	title: {
-		en: 'Adjustable cord beaded bracelet',
-		pt: 'Pulseira ajustável em cordão com contas',
-		uk: 'Регульований браслет-шнурок з бісером',
-		ru: 'Браслет-шнурок с бисером на регулируемом узле'
+		en: 'Shambhala bracelet with beads',
+		pt: 'Pulseira Shambhala com contas',
+		uk: 'Браслет «Шамбала» з бісером',
+		ru: 'Браслет «Шамбала» с бисером'
 	},
 	description: {
-		en: 'A slim hand-woven bracelet on an adjustable sliding-knot cord, with a pearl and gold-tone bead accent. Available in various colours — any quantity can be ordered.',
-		ru: 'Тонкий браслет-шнурок, сплетённый вручную, с регулируемым скользящим узлом и акцентом из жемчужных и золотистых бусин. Доступны разные цвета — заказать можно любое количество.'
+		en: 'A Shambhala-style bracelet on an adjustable sliding-knot cord, with a pearl and gold-tone bead accent.',
+		ru: 'Браслет в стиле «Шамбала» на регулируемом скользящем узле, с акцентом из жемчужных и золотистых бусин.'
 	},
 
 	price: { mode: 'on_request' },
 
 	images: [
 		{
-			src: '/images/products/adjustable-cord-beaded-bracelet/1.webp',
-			thumb: '/images/products/adjustable-cord-beaded-bracelet/1-thumb.webp',
+			src: '/images/products/shambhala-beaded-bracelet/1.webp',
+			thumb: '/images/products/shambhala-beaded-bracelet/1-thumb.webp',
 			width: 960,
 			height: 1280,
 			alt: {
-				en: 'Adjustable cord beaded bracelet with a pearl and gold bead accent',
-				ru: 'Браслет-шнурок с акцентом из жемчужных и золотистых бусин'
+				en: 'Shambhala-style beaded bracelet with a pearl and gold bead accent',
+				ru: 'Браслет «Шамбала» с акцентом из жемчужных и золотистых бусин'
 			}
 		}
 	],
 
 	materials: { en: 'Cord, seed beads', ru: 'Шнур, бисер' },
 	colours: {
-		en: 'Several colour accents shown; other colours available to order',
-		ru: 'Показаны разные варианты цвета; другие цвета доступны на заказ'
+		en: 'Cream with pearl and gold-tone accent shown; other colours available to order',
+		ru: 'Показан кремовый цвет с жемчужным и золотистым акцентом; другие цвета доступны на заказ'
 	},
 	customisation: {
 		en: 'Can be made to order in a different colour',

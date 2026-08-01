@@ -49,7 +49,7 @@ const productGroups = [
 				'white-bead-blue-bicone-ring-bracelet',
 			'Белый браслет из риса и бисера': 'white-rice-pearl-bead-bracelet',
 			'Два браслета синий и белый, разного узора': 'blue-white-patterned-bracelet-duo',
-			'Браслет-шнурок с бисером на регулируемом узле': 'adjustable-cord-beaded-bracelet'
+			'Браслет-шнурок с бисером на регулируемом узле': 'shambhala-beaded-bracelet'
 		}
 	},
 	{
