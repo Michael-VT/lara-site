@@ -39,7 +39,6 @@ const productGroups = [
 		sourceFolder: 'Браслеты',
 		items: {
 			'Браслет Сверкающий ромб': 'sparkling-rhombus-bracelet',
-			'Браслет Шамбала с бисером': 'shambhala-beaded-bracelet',
 			'Браслет из бисера Нежность': 'tenderness-beaded-bracelet',
 			'Браслет из белого и золотистого бисера Цветочек': 'white-gold-flower-beaded-bracelet',
 			'Браслет из белого и серебристого бисера для принцессы':

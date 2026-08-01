@@ -33,5 +33,5 @@ export const product = {
 
 	materials: { en: 'Seed beads', ru: 'Бисер' },
 
-	relatedSkus: ['BR-002', 'BR-003']
+	relatedSkus: ['BR-003']
 };

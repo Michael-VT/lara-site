@@ -7,7 +7,6 @@ import { product as bag006 } from './bag-006.js';
 import { product as bag007 } from './bag-007.js';
 import { product as acc001 } from './acc-001.js';
 import { product as br001 } from './br-001.js';
-import { product as br002 } from './br-002.js';
 import { product as br003 } from './br-003.js';
 import { product as br004 } from './br-004.js';
 import { product as br005 } from './br-005.js';
@@ -43,7 +42,6 @@ export const rawProducts = [
 	bag007,
 	acc001,
 	br001,
-	br002,
 	br003,
 	br004,
 	br005,
