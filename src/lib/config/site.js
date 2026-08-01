@@ -28,8 +28,7 @@ export const siteName = 'IX Lara Handmade';
 
 /**
  * Public base URL used for canonical/OG/sitemap generation.
- * Placeholder until the owner confirms the production domain.
  */
-export const siteUrl = 'https://ixlara.example';
+export const siteUrl = 'https://larise.art';
 
-export const isDemoContent = true;
+export const isDemoContent = false;
