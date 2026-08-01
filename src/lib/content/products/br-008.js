@@ -12,8 +12,8 @@ export const product = {
 		ru: 'Браслет с кольцом из белого бисера и синего биконуса'
 	},
 	description: {
-		en: 'A hand-woven white beaded bracelet with an attached ring and a blue bicone bead accent.',
-		ru: 'Браслет из белого бисера с кольцом и акцентом из синего биконуса, сплетённый вручную.'
+		en: 'A hand-woven white beaded bracelet with a matching ring, accented with blue bicone beads.',
+		ru: 'Браслет из белого бисера с подходящим кольцом в комплекте и акцентом из синего биконуса, сплетённый вручную.'
 	},
 
 	price: { mode: 'on_request' },
@@ -22,21 +22,21 @@ export const product = {
 		{
 			src: '/images/products/white-bead-blue-bicone-ring-bracelet/1.webp',
 			thumb: '/images/products/white-bead-blue-bicone-ring-bracelet/1-thumb.webp',
-			width: 780,
+			width: 470,
 			height: 1280,
 			alt: {
-				en: 'White beaded bracelet with ring and blue bicone accent',
-				ru: 'Браслет с кольцом из белого бисера и синего биконуса'
+				en: 'White beaded bracelet with blue bicone accent',
+				ru: 'Браслет из белого бисера и синего биконуса'
 			}
 		},
 		{
 			src: '/images/products/white-bead-blue-bicone-ring-bracelet/2.webp',
 			thumb: '/images/products/white-bead-blue-bicone-ring-bracelet/2-thumb.webp',
-			width: 649,
+			width: 705,
 			height: 1280,
 			alt: {
-				en: 'White beaded bracelet with ring and blue bicone accent, second view',
-				ru: 'Браслет с кольцом из белого бисера и синего биконуса, другой ракурс'
+				en: 'Matching ring with white beads and blue bicone accent',
+				ru: 'Кольцо из белого бисера и синего биконуса в комплекте'
 			}
 		}
 	],

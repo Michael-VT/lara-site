@@ -12,8 +12,8 @@ export const product = {
 		ru: 'Шарик брелок из красного и белого бисера'
 	},
 	description: {
-		en: 'A round ball keychain hand-woven from red and white seed beads.',
-		ru: 'Круглый брелок-шарик, сплетённый вручную из красного и белого бисера.'
+		en: 'A round ball keychain hand-woven from red and white seed beads. Balls can be made from beads of different colours and sizes. Any quantity can be ordered.',
+		ru: 'Круглый брелок-шарик, сплетённый вручную из красного и белого бисера. Шарики могут быть сделаны из разного бисера по цвету и разного размера. Заказать можно любое количество.'
 	},
 
 	price: { mode: 'on_request' },

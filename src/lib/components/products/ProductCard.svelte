@@ -21,7 +21,7 @@
 <article
 	class="group relative flex flex-col overflow-hidden rounded-card border border-border bg-surface"
 >
-	<a href={detailsHref} class="block">
+	<a href={detailsHref} class="block touch-manipulation">
 		<img
 			src={product.images[0].thumb ?? product.images[0].src}
 			alt={localizeText(product.images[0].alt, locale)}

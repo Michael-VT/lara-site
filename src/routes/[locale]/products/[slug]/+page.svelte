@@ -12,12 +12,26 @@
 	import PriceDisplay from '$lib/components/products/PriceDisplay.svelte';
 	import OrderButton from '$lib/components/products/OrderButton.svelte';
 	import ProductGrid from '$lib/components/products/ProductGrid.svelte';
+	import RelatedProductsStrip from '$lib/components/products/RelatedProductsStrip.svelte';
 
 	let { data } = $props();
 	let locale = $derived(page.data.locale);
 	let product = $derived(data.product);
 	let title = $derived(localizeText(product.title, locale));
 	let category = $derived(getCategory(product.category));
+
+	/** @type {HTMLElement | undefined} */
+	let relatedSectionEl = $state();
+	let showStickyOrderBar = $state(true);
+
+	$effect(() => {
+		if (!relatedSectionEl) return;
+		const observer = new IntersectionObserver(([entry]) => {
+			showStickyOrderBar = !entry.isIntersecting;
+		});
+		observer.observe(relatedSectionEl);
+		return () => observer.disconnect();
+	});
 	let sold = $derived(product.status === 'sold');
 
 	/** @type {{ key: string, value: import('$lib/schemas/product.js').LocalizedText | undefined }[]} */
@@ -66,6 +80,12 @@
 
 <div class="mx-auto max-w-content px-4 py-8 sm:px-6">
 	<Breadcrumbs current={title} />
+
+	{#if data.related.length > 0}
+		<div class="mt-4">
+			<RelatedProductsStrip products={data.related} />
+		</div>
+	{/if}
 
 	<div class="mt-6 grid gap-10 lg:grid-cols-2">
 		<ProductGallery images={product.images} />
@@ -119,7 +139,7 @@
 	</div>
 
 	{#if data.related.length > 0}
-		<section class="mt-16" aria-labelledby="related-heading">
+		<section bind:this={relatedSectionEl} class="mt-16" aria-labelledby="related-heading">
 			<h2 id="related-heading" class="font-display text-2xl text-foreground">
 				{m.product_related({}, { locale })}
 			</h2>
@@ -130,7 +150,12 @@
 	{/if}
 </div>
 
-<div class="sticky bottom-0 z-30 border-t border-border bg-surface/95 p-3 backdrop-blur lg:hidden">
+<div
+	class="sticky bottom-0 z-30 border-t border-border bg-surface/95 p-3 backdrop-blur transition-opacity duration-150 lg:hidden {showStickyOrderBar
+		? 'opacity-100'
+		: 'pointer-events-none opacity-0'}"
+	inert={!showStickyOrderBar}
+>
 	<OrderButton
 		sku={product.sku}
 		{sold}

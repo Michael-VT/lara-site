@@ -28,26 +28,6 @@ export const product = {
 				en: 'Silver beaded mini coin purse',
 				ru: 'Мини сумочка монетница из серебристого бисера'
 			}
-		},
-		{
-			src: '/images/products/silver-beaded-mini-coin-purse/2.webp',
-			thumb: '/images/products/silver-beaded-mini-coin-purse/2-thumb.webp',
-			width: 1280,
-			height: 1180,
-			alt: {
-				en: 'Silver beaded mini coin purse, second view',
-				ru: 'Мини сумочка монетница из серебристого бисера, другой ракурс'
-			}
-		},
-		{
-			src: '/images/products/silver-beaded-mini-coin-purse/3.webp',
-			thumb: '/images/products/silver-beaded-mini-coin-purse/3-thumb.webp',
-			width: 1280,
-			height: 1089,
-			alt: {
-				en: 'Silver beaded mini coin purse, third view',
-				ru: 'Мини сумочка монетница из серебристого бисера, ещё один ракурс'
-			}
 		}
 	],
 

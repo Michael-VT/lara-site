@@ -29,8 +29,8 @@ const productGroups = [
 			'Мини сумочка монетница из красного бисера': 'red-beaded-mini-coin-purse',
 			'Мини сумочка монетница из серебристого бисера': 'silver-beaded-mini-coin-purse',
 			'Сумочка в комплекте с браслетом разноцветный бисер': 'colorful-beaded-bag-and-bracelet-set',
-			'Белая сумочка монетница из бисера': 'white-beaded-coin-purse',
-			'Черная сумочка монетница из бисера': 'black-beaded-coin-purse',
+			'Белая сумочка монетница из белого бисера': 'white-beaded-coin-purse',
+			'Черная сумочка монетница из черного бисера': 'black-beaded-coin-purse',
 			'Сумочка из бисера для торжества': 'beaded-evening-bag',
 			'Яркая мини-сумочка для девочки': 'bright-mini-bag-for-girl'
 		}
@@ -46,7 +46,7 @@ const productGroups = [
 				'white-silver-princess-beaded-bracelet',
 			'Браслет из крупного и мелкого бисера': 'large-small-bead-pearl-bracelet',
 			'Браслет шамбала из красных и прозрачных бусин': 'red-clear-shambhala-bracelet',
-			'Фрагмент браслета с кольцом из белого бисера и синего биконуса':
+			'Браслет с кольцом из белого бисера и синего биконуса':
 				'white-bead-blue-bicone-ring-bracelet',
 			'Белый браслет из риса и бисера': 'white-rice-pearl-bead-bracelet',
 			'Два браслета синий и белый, разного узора': 'blue-white-patterned-bracelet-duo'

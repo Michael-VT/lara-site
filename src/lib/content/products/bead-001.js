@@ -28,6 +28,36 @@ export const product = {
 				en: 'Golden beaded heart-shaped keychain',
 				ru: 'Брелок в виде сердца из золотистого бисера'
 			}
+		},
+		{
+			src: '/images/products/golden-beaded-heart-keychain/2.webp',
+			thumb: '/images/products/golden-beaded-heart-keychain/2-thumb.webp',
+			width: 833,
+			height: 1280,
+			alt: {
+				en: 'Golden beaded heart keychain, held in hand',
+				ru: 'Брелок в виде сердца из золотистого бисера, в руке'
+			}
+		},
+		{
+			src: '/images/products/golden-beaded-heart-keychain/3.webp',
+			thumb: '/images/products/golden-beaded-heart-keychain/3-thumb.webp',
+			width: 779,
+			height: 1280,
+			alt: {
+				en: 'Golden beaded heart keychain, another angle',
+				ru: 'Брелок в виде сердца из золотистого бисера, другой ракурс'
+			}
+		},
+		{
+			src: '/images/products/golden-beaded-heart-keychain/4.webp',
+			thumb: '/images/products/golden-beaded-heart-keychain/4-thumb.webp',
+			width: 827,
+			height: 1264,
+			alt: {
+				en: 'Golden beaded heart keychain, close-up',
+				ru: 'Брелок в виде сердца из золотистого бисера, крупный план'
+			}
 		}
 	],
 

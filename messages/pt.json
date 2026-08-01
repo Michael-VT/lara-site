@@ -90,6 +90,11 @@
 	"product_contactReassurance": "Disponibilidade, preço exato, entrega e pagamento são confirmados pessoalmente após o contacto — nada é cobrado automaticamente.",
 	"product_soldNotice": "Esta peça exata já foi vendida. Permanece aqui como exemplo do trabalho realizado.",
 	"product_galleryThumbnail": "Ver imagem {index} de {count}",
+	"product_galleryOpenFullscreen": "Ver imagem {index} de {count} em ecrã inteiro",
+	"product_lightboxClose": "Fechar visualização em ecrã inteiro",
+	"product_lightboxPrev": "Imagem anterior",
+	"product_lightboxNext": "Imagem seguinte",
+	"product_lightboxCounter": "{index} / {count}",
 	"product_breadcrumbHome": "Início",
 	"product_breadcrumbProducts": "Produtos",
 

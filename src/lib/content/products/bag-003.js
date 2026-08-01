@@ -12,8 +12,8 @@ export const product = {
 		ru: 'Сумочка из бисера для торжества'
 	},
 	description: {
-		en: 'A hand-woven beaded bag for special occasions.',
-		ru: 'Нарядная сумочка, сплетённая вручную из бисера — для торжественных случаев.'
+		en: 'A hand-woven beaded bag for special occasions, shown with a matching beaded coin purse charm.',
+		ru: 'Нарядная сумочка, сплетённая вручную из бисера — для торжественных случаев, показана с подходящим брелоком-монетницей.'
 	},
 
 	price: { mode: 'on_request' },
@@ -27,6 +27,36 @@ export const product = {
 			alt: {
 				en: 'Beaded evening bag for special occasions',
 				ru: 'Нарядная сумочка из бисера для торжества'
+			}
+		},
+		{
+			src: '/images/products/beaded-evening-bag/2.webp',
+			thumb: '/images/products/beaded-evening-bag/2-thumb.webp',
+			width: 1225,
+			height: 1280,
+			alt: {
+				en: 'Beaded evening bag with matching coin purse charm, another angle',
+				ru: 'Нарядная сумочка из бисера с подходящим брелоком-монетницей, другой ракурс'
+			}
+		},
+		{
+			src: '/images/products/beaded-evening-bag/3.webp',
+			thumb: '/images/products/beaded-evening-bag/3-thumb.webp',
+			width: 1091,
+			height: 1280,
+			alt: {
+				en: 'Beaded evening bag with matching coin purse charm, another angle',
+				ru: 'Нарядная сумочка из бисера с подходящим брелоком-монетницей, другой ракурс'
+			}
+		},
+		{
+			src: '/images/products/beaded-evening-bag/4.webp',
+			thumb: '/images/products/beaded-evening-bag/4-thumb.webp',
+			width: 1182,
+			height: 1280,
+			alt: {
+				en: 'Beaded evening bag with matching coin purse and ring charms',
+				ru: 'Нарядная сумочка из бисера с брелоком-монетницей и кольцом'
 			}
 		}
 	],

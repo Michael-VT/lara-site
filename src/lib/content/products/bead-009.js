@@ -12,8 +12,8 @@ export const product = {
 		ru: 'Шарики игрушки из бисера'
 	},
 	description: {
-		en: 'Small hand-woven toy balls made from seed beads.',
-		ru: 'Небольшие игрушки-шарики, сплетённые вручную из бисера.'
+		en: 'Small hand-woven toy balls made from seed beads. Balls can be made from beads of different colours and sizes. Any quantity can be ordered.',
+		ru: 'Небольшие игрушки-шарики, сплетённые вручную из бисера. Шарики могут быть сделаны из разного бисера по цвету и разного размера. Заказать можно любое количество.'
 	},
 
 	price: { mode: 'on_request' },

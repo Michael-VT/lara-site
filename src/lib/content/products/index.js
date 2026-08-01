@@ -16,6 +16,7 @@ import { product as br007 } from './br-007.js';
 import { product as br008 } from './br-008.js';
 import { product as br009 } from './br-009.js';
 import { product as br010 } from './br-010.js';
+import { product as br011 } from './br-011.js';
 import { product as bead001 } from './bead-001.js';
 import { product as bead002 } from './bead-002.js';
 import { product as bead003 } from './bead-003.js';
@@ -50,6 +51,7 @@ export const rawProducts = [
 	br008,
 	br009,
 	br010,
+	br011,
 	bead001,
 	bead002,
 	bead003,

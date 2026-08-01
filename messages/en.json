@@ -90,6 +90,11 @@
 	"product_contactReassurance": "Availability, exact price, delivery and payment are confirmed personally once you get in touch — nothing is charged automatically.",
 	"product_soldNotice": "This exact item has been sold. It remains here as an example of past work.",
 	"product_galleryThumbnail": "View image {index} of {count}",
+	"product_galleryOpenFullscreen": "View image {index} of {count} fullscreen",
+	"product_lightboxClose": "Close fullscreen view",
+	"product_lightboxPrev": "Previous image",
+	"product_lightboxNext": "Next image",
+	"product_lightboxCounter": "{index} / {count}",
 	"product_breadcrumbHome": "Home",
 	"product_breadcrumbProducts": "Products",
 

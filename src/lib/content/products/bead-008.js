@@ -12,8 +12,8 @@ export const product = {
 		ru: 'Разноцветные шарики'
 	},
 	description: {
-		en: 'A set of round ball keychains hand-woven from multi-coloured seed beads.',
-		ru: 'Набор круглых брелоков-шариков, сплетённых вручную из разноцветного бисера.'
+		en: 'A set of round ball keychains hand-woven from multi-coloured seed beads. Balls can be made from beads of different colours and sizes. Any quantity can be ordered.',
+		ru: 'Набор круглых брелоков-шариков, сплетённых вручную из разноцветного бисера. Шарики могут быть сделаны из разного бисера по цвету и разного размера. Заказать можно любое количество.'
 	},
 
 	price: { mode: 'on_request' },
@@ -27,6 +27,76 @@ export const product = {
 			alt: {
 				en: 'Multi-coloured beaded ball keychains',
 				ru: 'Разноцветные брелоки-шарики из бисера'
+			}
+		},
+		{
+			src: '/images/products/colorful-beaded-balls/2.webp',
+			thumb: '/images/products/colorful-beaded-balls/2-thumb.webp',
+			width: 1280,
+			height: 1244,
+			alt: {
+				en: 'Beaded balls in red, black, white and silver',
+				ru: 'Шарики из бисера красного, чёрного, белого и серебристого цветов'
+			}
+		},
+		{
+			src: '/images/products/colorful-beaded-balls/3.webp',
+			thumb: '/images/products/colorful-beaded-balls/3-thumb.webp',
+			width: 1260,
+			height: 1280,
+			alt: {
+				en: 'Colourful beaded balls, another angle',
+				ru: 'Разноцветные шарики из бисера, другой ракурс'
+			}
+		},
+		{
+			src: '/images/products/colorful-beaded-balls/4.webp',
+			thumb: '/images/products/colorful-beaded-balls/4-thumb.webp',
+			width: 870,
+			height: 1280,
+			alt: {
+				en: 'Single colourful beaded ball, close-up',
+				ru: 'Один шарик из бисера, крупный план'
+			}
+		},
+		{
+			src: '/images/products/colorful-beaded-balls/5.webp',
+			thumb: '/images/products/colorful-beaded-balls/5-thumb.webp',
+			width: 1078,
+			height: 1280,
+			alt: {
+				en: 'Colourful beaded ball, close-up',
+				ru: 'Шарик из бисера, крупный план'
+			}
+		},
+		{
+			src: '/images/products/colorful-beaded-balls/6.webp',
+			thumb: '/images/products/colorful-beaded-balls/6-thumb.webp',
+			width: 677,
+			height: 1280,
+			alt: {
+				en: 'Colourful beaded ball, close-up',
+				ru: 'Шарик из бисера, крупный план'
+			}
+		},
+		{
+			src: '/images/products/colorful-beaded-balls/7.webp',
+			thumb: '/images/products/colorful-beaded-balls/7-thumb.webp',
+			width: 887,
+			height: 1280,
+			alt: {
+				en: 'Colourful beaded ball, close-up',
+				ru: 'Шарик из бисера, крупный план'
+			}
+		},
+		{
+			src: '/images/products/colorful-beaded-balls/8.webp',
+			thumb: '/images/products/colorful-beaded-balls/8-thumb.webp',
+			width: 1113,
+			height: 1280,
+			alt: {
+				en: 'White and silver beaded ball, close-up',
+				ru: 'Бело-серебристый шарик из бисера, крупный план'
 			}
 		}
 	],

@@ -28,6 +28,16 @@ export const product = {
 				en: 'Black coin purse hand-woven from seed beads',
 				ru: 'Чёрная сумочка-монетница, сплетённая из бисера'
 			}
+		},
+		{
+			src: '/images/products/black-beaded-coin-purse/2.webp',
+			thumb: '/images/products/black-beaded-coin-purse/2-thumb.webp',
+			width: 1268,
+			height: 1280,
+			alt: {
+				en: 'Black coin purse with beaded chain strap',
+				ru: 'Чёрная сумочка-монетница с бисерной цепочкой'
+			}
 		}
 	],
 

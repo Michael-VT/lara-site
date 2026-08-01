@@ -1,8 +1,15 @@
 {
-	"enableAllProjectMcpServers": true,
-	"enabledMcpjsonServers": ["svelte"],
-	"skillOverrides": {
-		"gsd-add-tests": "off",
-		"gsd-audit-fix": "off"
-	}
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "svelte"
+  ],
+  "skillOverrides": {
+    "gsd-add-tests": "off",
+    "gsd-audit-fix": "off"
+  },
+  "permissions": {
+    "allow": [
+      "mcp__svelte__svelte-autofixer"
+    ]
+  }
 }

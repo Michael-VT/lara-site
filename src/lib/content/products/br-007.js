@@ -28,6 +28,16 @@ export const product = {
 				en: 'Shambhala bracelet made from red and clear beads',
 				ru: 'Браслет шамбала из красных и прозрачных бусин'
 			}
+		},
+		{
+			src: '/images/products/red-clear-shambhala-bracelet/2.webp',
+			thumb: '/images/products/red-clear-shambhala-bracelet/2-thumb.webp',
+			width: 1280,
+			height: 1199,
+			alt: {
+				en: 'Shambhala bracelet made from red and clear beads, another angle',
+				ru: 'Браслет шамбала из красных и прозрачных бусин, другой ракурс'
+			}
 		}
 	],
 
@@ -41,5 +51,5 @@ export const product = {
 		ru: 'Можно заказать в другом цвете'
 	},
 
-	relatedSkus: ['BR-002']
+	relatedSkus: ['BR-002', 'BR-011']
 };
