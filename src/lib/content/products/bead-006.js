@@ -35,5 +35,5 @@ export const product = {
 
 	featured: true,
 	featuredOrder: 3,
-	relatedSkus: ['BEAD-007', 'BEAD-002']
+	relatedSkus: ['BEAD-007', 'BEAD-002', 'BEAD-010', 'BEAD-011', 'BEAD-012']
 };

@@ -20,7 +20,11 @@ const productGroups = [
 	{
 		sourceFolder: 'Accessories',
 		items: {
-			'Подставка  под чашку из белого бисера': 'white-beaded-cup-coaster'
+			'Подставка  под чашку из белого бисера': 'white-beaded-cup-coaster',
+			'Брелок подвеска с золотистым бисером': 'gold-accented-beaded-ball-keychain',
+			'Брелок подвеска с серебристым бисером': 'silver-accented-beaded-ball-keychain',
+			'Брелок подвеска с серебристым и сталистым бисером':
+				'silver-gunmetal-beaded-ball-keychain'
 		}
 	},
 	{
