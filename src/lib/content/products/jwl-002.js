@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'ACC-003',
+	sku: 'JWL-002',
 	slug: 'silver-accented-beaded-ball-keychain',
-	category: 'accessories',
+	category: 'jewellery',
 	status: 'available',
 
 	title: {
@@ -41,5 +41,5 @@ export const product = {
 		ru: 'Можно заказать в другом сочетании цветов'
 	},
 
-	relatedSkus: ['ACC-002', 'ACC-004', 'ACC-001']
+	relatedSkus: ['JWL-001', 'JWL-003']
 };
