@@ -41,5 +41,5 @@ export const product = {
 		ru: 'Можно заказать в другом сочетании цветов'
 	},
 
-	relatedSkus: ['JWL-001', 'JWL-003']
+	relatedSkus: ['JWL-001', 'JWL-003', 'JWL-004']
 };

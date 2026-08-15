@@ -72,6 +72,12 @@ const productGroups = [
 		}
 	},
 	{
+		sourceFolder: 'Украшения',
+		items: {
+			'Колье из белых жемчужных бусин  и бисера': 'white-pearl-bead-necklace'
+		}
+	},
+	{
 		sourceFolder: 'Вязаные изделия',
 		items: {
 			Панама: 'crochet-panama-hat',

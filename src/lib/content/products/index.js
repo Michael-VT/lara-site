@@ -28,6 +28,7 @@ import { product as bead009 } from './bead-009.js';
 import { product as jwl001 } from './jwl-001.js';
 import { product as jwl002 } from './jwl-002.js';
 import { product as jwl003 } from './jwl-003.js';
+import { product as jwl004 } from './jwl-004.js';
 import { product as knit001 } from './knit-001.js';
 import { product as knit002 } from './knit-002.js';
 import { product as knit003 } from './knit-003.js';
@@ -66,6 +67,7 @@ export const rawProducts = [
 	jwl001,
 	jwl002,
 	jwl003,
+	jwl004,
 	knit001,
 	knit002,
 	knit003,
