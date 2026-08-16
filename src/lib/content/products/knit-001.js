@@ -22,8 +22,8 @@ export const product = {
 		{
 			src: '/images/products/crochet-panama-hat/1.webp',
 			thumb: '/images/products/crochet-panama-hat/1-thumb.webp',
-			width: 919,
-			height: 1280,
+			width: 1280,
+			height: 960,
 			alt: {
 				en: 'Crochet panama hat',
 				ru: 'Панама'
