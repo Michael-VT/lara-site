@@ -1,4 +1,4 @@
-# [IX Lara Handmade](larise.art)
+# [IX Lara Handmade](https://larise.art/ru/)
 
 A multilingual (English / Português / Українська / Русский) static showcase and catalog for handmade products, built with SvelteKit + Svelte 5, Tailwind CSS, and Paraglide JS. It is **not** an online shop — there is no cart, checkout, or payment. Every enquiry is routed to WhatsApp, Telegram, or email, with the product's SKU carried along automatically.
 
