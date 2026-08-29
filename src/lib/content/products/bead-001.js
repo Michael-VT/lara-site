@@ -13,6 +13,8 @@ export const product = {
 	},
 	description: {
 		en: 'A three-dimensional heart keychain hand-woven from golden seed beads.',
+		pt: 'Um porta-chaves coração tridimensional, tecido à mão com contas douradas.',
+		uk: "Об'ємний брелок-серце, сплетений вручну із золотистого бісеру.",
 		ru: 'Объёмный брелок-сердце, сплетённый вручную из золотистого бисера.'
 	},
 
@@ -26,6 +28,8 @@ export const product = {
 			height: 1280,
 			alt: {
 				en: 'Golden beaded heart-shaped keychain',
+				pt: 'Porta-chaves em forma de coração em contas douradas',
+				uk: 'Брелок у вигляді серця із золотистого бісеру',
 				ru: 'Брелок в виде сердца из золотистого бисера'
 			}
 		},
@@ -36,6 +40,8 @@ export const product = {
 			height: 1280,
 			alt: {
 				en: 'Golden beaded heart keychain, held in hand',
+				pt: 'Porta-chaves em forma de coração em contas douradas, seguro na mão',
+				uk: 'Брелок у вигляді серця із золотистого бісеру, у руці',
 				ru: 'Брелок в виде сердца из золотистого бисера, в руке'
 			}
 		},
@@ -46,6 +52,8 @@ export const product = {
 			height: 1280,
 			alt: {
 				en: 'Golden beaded heart keychain, another angle',
+				pt: 'Porta-chaves em forma de coração em contas douradas, outro ângulo',
+				uk: 'Брелок у вигляді серця із золотистого бісеру, інший ракурс',
 				ru: 'Брелок в виде сердца из золотистого бисера, другой ракурс'
 			}
 		},
@@ -56,12 +64,14 @@ export const product = {
 			height: 1264,
 			alt: {
 				en: 'Golden beaded heart keychain, close-up',
+				pt: 'Porta-chaves em forma de coração em contas douradas, primeiro plano',
+				uk: 'Брелок у вигляді серця із золотистого бісеру, крупний план',
 				ru: 'Брелок в виде сердца из золотистого бисера, крупный план'
 			}
 		}
 	],
 
-	materials: { en: 'Seed beads', ru: 'Бисер' },
+	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
 
 	featured: true,
 	featuredOrder: 2,

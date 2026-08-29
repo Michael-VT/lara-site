@@ -2,34 +2,70 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
+/*
+	Ateliê IX Lara — design system
+	Concept: a Portuguese craft atelier. Jeweller's-tray evergreen velvet for
+	display zones, warm linen for content, antique-gold accents (gold seed
+	beads), Prata for display type, Golos Text for UI. The signature motif is
+	the seed-bead stitch: offset rows of beads (peyote) used as rules and
+	field texture; the arch (Portuguese doorway) frames imagery.
+*/
 @theme {
-	--color-background: #faf6ef;
-	--color-surface: #ffffff;
-	--color-foreground: #2c2620;
-	--color-muted-foreground: #6b6154;
-	--color-border: #e6ddcd;
+	/* Surfaces */
+	--color-background: #f4f2ec; /* linen */
+	--color-surface: #ffffff; /* card */
+	--color-ink: #16211a; /* evergreen velvet — dark zones */
+	--color-ink-soft: #1f2c23; /* raised dark surface */
+	--color-ink-line: #2e3c31; /* hairline on dark */
 
-	--color-accent: #a9764c;
-	--color-accent-contrast: #ffffff;
+	/* Text */
+	--color-foreground: #262b23; /* green-black ink */
+	--color-muted-foreground: #555a50; /* ≥6:1 on linen */
 
-	--color-status-available: #3f6b52;
-	--color-status-available-bg: #e6efe8;
-	--color-status-made-to-order: #8a6a1f;
-	--color-status-made-to-order-bg: #f5ecd9;
-	--color-status-sold: #6b6154;
-	--color-status-sold-bg: #ece7dd;
+	/* Lines */
+	--color-border: #e3dfd2; /* hairline on linen */
+	--color-border-strong: #d5cfbc;
 
-	--color-focus-ring: #a9764c;
+	/* Gold — the single accent family */
+	--color-accent: #7e5e19; /* text-safe gold on light (5.3:1) */
+	--color-accent-bright: #cfaf6f; /* gold on dark (8:1) */
+	--color-accent-fill: #c9a96a; /* filled controls, ink text on top (6.6:1) */
+	--color-accent-wash: #f0e9d8; /* faint gold tint */
 
-	--radius-card: 0.75rem;
-	--radius-control: 0.5rem;
+	/* On-dark text */
+	--color-ivory: #f4f2ec; /* text on ink (14:1) */
+	--color-sage: #a9b2a4; /* muted text on ink (7.5:1) */
+
+	/* Status */
+	--color-status-available: #3d6b4e;
+	--color-status-available-bg: #e7efe7;
+	--color-status-made-to-order: #7d5d18;
+	--color-status-made-to-order-bg: #f4ecd6;
+	--color-status-sold: #555a50;
+	--color-status-sold-bg: #eae8e0;
+
+	--color-focus-ring: #7e5e19;
+	--color-focus-ring-dark: #cfaf6f;
+
+	/* Radii — cards rectangular-soft, controls pill */
+	--radius-card: 0.875rem;
+	--radius-control: 999px;
 
 	--container-content: 80rem;
 
+	/* Type */
 	--font-sans:
-		'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-		sans-serif;
-	--font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+		'Golos Text', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+		Arial, sans-serif;
+
+	--font-display: 'Prata', Georgia, 'Times New Roman', serif;
+
+	/* Elevation — warm, never grey */
+	--shadow-card: 0 1px 2px rgb(38 43 35 / 0.05), 0 10px 28px rgb(38 43 35 / 0.07);
+	--shadow-lift: 0 2px 4px rgb(38 43 35 / 0.06), 0 18px 44px rgb(38 43 35 / 0.12);
+
+	/* Motion */
+	--ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @layer base {
@@ -41,6 +77,26 @@
 		background-color: var(--color-background);
 		color: var(--color-foreground);
 		font-family: var(--font-sans);
+		font-size: 1rem;
+		line-height: 1.6;
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility;
+	}
+
+	/* Prata display defaults: tall ascenders need air, tight tracking */
+	h1,
+	h2,
+	h3,
+	.font-display {
+		font-family: var(--font-display);
+		font-weight: 400;
+		letter-spacing: 0.002em;
+		line-height: 1.18;
+	}
+
+	::selection {
+		background-color: var(--color-accent-fill);
+		color: var(--color-ink);
 	}
 
 	@media (prefers-reduced-motion: reduce) {
@@ -67,17 +123,139 @@
 	.skip-link {
 		position: absolute;
 		left: 1rem;
-		top: -3rem;
+		top: -3.5rem;
 		z-index: 100;
-		background: var(--color-surface);
-		color: var(--color-foreground);
-		padding: 0.5rem 1rem;
+		background: var(--color-ink);
+		color: var(--color-ivory);
+		padding: 0.625rem 1.25rem;
 		border-radius: var(--radius-control);
-		border: 1px solid var(--color-border);
+		border: 1px solid var(--color-accent-bright);
 		transition: top 0.15s ease;
 	}
 
 	.skip-link:focus {
 		top: 1rem;
 	}
+
+	/* ——— Signature: seed-bead stitch ——— */
+
+	/*
+		.bead-rule — a short strip of offset bead rows (peyote stitch).
+		Color follows currentColor; width via utility classes (e.g. w-20).
+	*/
+	.bead-rule {
+		display: block;
+		height: 7px;
+		background-image:
+			radial-gradient(circle at 50% 50%, currentColor 1.55px, transparent 1.65px),
+			radial-gradient(circle at 50% 50%, currentColor 1.55px, transparent 1.65px);
+		background-position:
+			0 0,
+			4.5px 3.5px;
+		background-size: 9px 7px;
+		background-repeat: repeat-x;
+	}
+
+	/*
+		.bead-field — a full field of faint gold beads for dark zones.
+		Layer two offset lattices like woven fabric.
+	*/
+	.bead-field {
+		background-image:
+			radial-gradient(circle at 50% 50%, rgb(207 175 111 / 0.11) 1.3px, transparent 1.4px),
+			radial-gradient(circle at 50% 50%, rgb(207 175 111 / 0.07) 1.3px, transparent 1.4px);
+		background-position:
+			0 0,
+			11px 11px;
+		background-size: 22px 22px;
+	}
+
+	/* .frame-arch — Portuguese doorway silhouette for imagery */
+	.frame-arch {
+		border-radius: 999px 999px var(--radius-card) var(--radius-card);
+	}
+
+	/* Eyebrow label — uppercase Golos, tracked wide */
+	.eyebrow {
+		font-family: var(--font-sans);
+		font-size: 0.72rem;
+		font-weight: 500;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		line-height: 1;
+	}
+
+	/* Page-load orchestration */
+	@keyframes rise-in {
+		from {
+			opacity: 0;
+			transform: translateY(14px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.rise-in {
+		animation: rise-in 0.7s var(--ease-out-soft) both;
+	}
+
+	.rise-delay-1 {
+		animation-delay: 0.08s;
+	}
+
+	.rise-delay-2 {
+		animation-delay: 0.16s;
+	}
+
+	.rise-delay-3 {
+		animation-delay: 0.26s;
+	}
+
+	.rise-delay-4 {
+		animation-delay: 0.38s;
+	}
+
+	/* Gold focus ring on dark surfaces */
+	.focus-dark:focus-visible {
+		outline-color: var(--color-focus-ring-dark);
+	}
+}
+
+/* Unlayered on purpose: the @tailwindcss/forms plugin emits unlayered focus
+   styles (currentColor outline) that beat layered rules — rendering the ring
+   invisible (ivory on linen) around dark controls. These must always win. */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+	outline: 2px solid var(--color-focus-ring);
+	outline-offset: 2px;
+}
+
+.focus-dark:focus-visible,
+.skip-link:focus-visible {
+	outline-color: var(--color-focus-ring-dark);
+}
+
+/* Keep outline-color constant so transition-colors/transition-all utilities
+   (which include outline-color in Tailwind v4) can never animate the focus
+   ring — it must appear at full gold on the first frame. */
+a,
+button,
+[tabindex],
+input,
+select,
+textarea,
+summary {
+	outline-color: var(--color-focus-ring);
+}
+
+.focus-dark,
+.skip-link {
+	outline-color: var(--color-focus-ring-dark);
 }

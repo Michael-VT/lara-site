@@ -36,32 +36,37 @@
 	description={m.order_genericIntro({}, { locale })}
 />
 
-<div class="mx-auto max-w-content px-4 py-8 sm:px-6">
-	<h1 class="font-display text-3xl text-foreground">{m.order_heading({}, { locale })}</h1>
-	<p class="mt-3 max-w-2xl text-muted-foreground">{m.order_genericIntro({}, { locale })}</p>
+<div class="mx-auto max-w-content px-4 py-12 sm:px-6 sm:py-16">
+	<header class="rise-in max-w-2xl">
+		<p class="flex items-center gap-3 text-accent">
+			<span class="bead-rule w-10" aria-hidden="true"></span>
+			<span class="eyebrow">{m.siteTagline({}, { locale })}</span>
+		</p>
+		<h1 class="mt-5 font-display text-3xl text-foreground sm:text-4xl">
+			{m.order_heading({}, { locale })}
+		</h1>
+		<p class="mt-5 leading-relaxed text-muted-foreground">{m.order_genericIntro({}, { locale })}</p>
+	</header>
 
 	{#if notFound}
 		<p
-			class="mt-4 rounded-control bg-status-made-to-order-bg px-4 py-3 text-sm text-status-made-to-order"
+			class="mt-8 rounded-card border border-border bg-status-made-to-order-bg px-4 py-3 text-sm text-status-made-to-order"
 		>
 			{m.order_notFoundNotice({}, { locale })}
 		</p>
 	{/if}
 
 	{#if product}
-		<div class="mt-6">
+		<div class="rise-in rise-delay-1 mt-8">
 			<SelectedProductSummary {product} />
 		</div>
 	{/if}
 
-	<div class="mt-8">
-		<h2 class="font-medium text-foreground">{m.order_copyMessage({}, { locale })}</h2>
-		<div class="mt-2">
-			<PreparedMessage {message} />
-		</div>
+	<div class="rise-in rise-delay-1 mt-10 sm:mt-12">
+		<PreparedMessage {message} />
 	</div>
 
-	<section class="mt-10" aria-labelledby="channels-heading">
+	<section class="mt-12 sm:mt-16" aria-labelledby="channels-heading">
 		<h2 id="channels-heading" class="font-display text-2xl text-foreground">
 			{m.order_channelsHeading({}, { locale })}
 		</h2>
@@ -91,7 +96,7 @@
 		</div>
 	</section>
 
-	<section class="mt-12" aria-labelledby="steps-heading">
+	<section class="mt-12 sm:mt-16" aria-labelledby="steps-heading">
 		<h2 id="steps-heading" class="font-display text-2xl text-foreground">
 			{m.home_howItWorksHeading({}, { locale })}
 		</h2>

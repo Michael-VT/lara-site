@@ -9,50 +9,59 @@
 	import PriceDisplay from './PriceDisplay.svelte';
 	import OrderButton from './OrderButton.svelte';
 
-	/** @type {{ product: import('$lib/schemas/product.js').Product }} */
-	let { product } = $props();
+	/** @type {{ product: import('$lib/schemas/product.js').Product, eager?: boolean }} */
+	let { product, eager = false } = $props();
 
 	let locale = $derived(page.data.locale);
 	let title = $derived(localizeText(product.title, locale));
 	let category = $derived(getCategory(product.category));
 	let detailsHref = $derived(toHref(`/${locale}/products/${product.slug}/`));
+	let meta = $derived(
+		`${category ? `${t(category.messageKey, {}, { locale })} · ` : ''}${m.common_sku({}, { locale })}: ${product.sku}`
+	);
 </script>
 
 <article
-	class="group relative flex flex-col overflow-hidden rounded-card border border-border bg-surface"
+	class="group relative flex flex-col overflow-hidden rounded-card border border-border bg-surface shadow-card transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-lift"
 >
-	<a href={detailsHref} class="block touch-manipulation">
+	<a href={detailsHref} class="block touch-manipulation overflow-hidden">
 		<img
 			src={product.images[0].thumb ?? product.images[0].src}
 			alt={localizeText(product.images[0].alt, locale)}
 			width={product.images[0].width}
 			height={product.images[0].height}
-			loading="lazy"
-			class="aspect-square w-full object-cover"
+			loading={eager ? 'eager' : 'lazy'}
+			class="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
 		/>
 	</a>
 
-	<div class="flex flex-1 flex-col gap-2 p-4">
-		<div class="flex items-start justify-between gap-2">
-			<a
-				href={detailsHref}
-				class="font-display text-base font-medium text-foreground hover:underline"
-			>
-				{title}
-			</a>
+	<div class="flex flex-1 flex-col gap-2 p-3.5 sm:p-4">
+		<a
+			href={detailsHref}
+			class="flex min-h-11 touch-manipulation items-center py-1 font-display text-lg leading-snug text-foreground"
+		>
+			{title}
+		</a>
+
+		<p class="text-xs text-muted-foreground">{meta}</p>
+
+		<div class="flex flex-wrap items-center justify-between gap-x-2 gap-y-1.5">
 			<ProductStatusBadge status={product.status} />
+			<PriceDisplay price={product.price} class="text-sm font-semibold text-foreground" />
 		</div>
 
-		<p class="text-xs text-muted-foreground">
-			{#if category}{t(category.messageKey, {}, { locale })} &middot;
-			{/if}{m.common_sku({}, { locale })}: {product.sku}
-		</p>
-
-		<PriceDisplay price={product.price} class="text-sm font-medium text-foreground" />
-
-		<div class="mt-auto flex items-center justify-between gap-3 pt-2">
-			<a href={detailsHref} class="text-sm font-medium text-accent hover:underline">
-				{m.common_viewDetails({}, { locale })}
+		<div
+			class="mt-auto flex flex-wrap items-end justify-between gap-x-3 gap-y-2 border-t border-border pt-3"
+		>
+			<a
+				href={detailsHref}
+				class="group/link inline-flex min-h-11 touch-manipulation flex-col items-start justify-center gap-1.5 text-sm font-medium text-accent"
+			>
+				<span>{m.common_viewDetails({}, { locale })}</span>
+				<span
+					class="bead-rule w-0 text-accent transition-[width] duration-300 group-hover/link:w-6 group-focus-visible/link:w-6"
+					aria-hidden="true"
+				></span>
 			</a>
 			<OrderButton sku={product.sku} sold={product.status === 'sold'} />
 		</div>

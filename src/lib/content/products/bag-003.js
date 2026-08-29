@@ -13,6 +13,8 @@ export const product = {
 	},
 	description: {
 		en: 'A hand-woven beaded bag for special occasions, shown with a matching beaded coin purse charm.',
+		pt: 'Uma bolsa de noite em contas, tecida à mão para ocasiões especiais, apresentada com um pingente-moedeiro a combinar.',
+		uk: 'Нарядна сумочка, сплетена вручну з бісеру — для урочистих подій, показана з відповідним брелоком-гаманцем.',
 		ru: 'Нарядная сумочка, сплетённая вручную из бисера — для торжественных случаев, показана с подходящим брелоком-монетницей.'
 	},
 
@@ -26,6 +28,8 @@ export const product = {
 			height: 1280,
 			alt: {
 				en: 'Beaded evening bag for special occasions',
+				pt: 'Bolsa de noite em contas para ocasiões especiais',
+				uk: 'Нарядна сумочка з бісеру для урочистих подій',
 				ru: 'Нарядная сумочка из бисера для торжества'
 			}
 		},
@@ -36,6 +40,8 @@ export const product = {
 			height: 1280,
 			alt: {
 				en: 'Beaded evening bag with matching coin purse charm, another angle',
+				pt: 'Bolsa de noite em contas com pingente-moedeiro a combinar, outro ângulo',
+				uk: 'Нарядна сумочка з бісеру із брелоком-гаманцем, інший ракурс',
 				ru: 'Нарядная сумочка из бисера с подходящим брелоком-монетницей, другой ракурс'
 			}
 		},
@@ -46,6 +52,8 @@ export const product = {
 			height: 1280,
 			alt: {
 				en: 'Beaded evening bag with matching coin purse charm, another angle',
+				pt: 'Bolsa de noite em contas com pingente-moedeiro a combinar, outro ângulo',
+				uk: 'Нарядна сумочка з бісеру із брелоком-гаманцем, інший ракурс',
 				ru: 'Нарядная сумочка из бисера с подходящим брелоком-монетницей, другой ракурс'
 			}
 		},
@@ -56,12 +64,14 @@ export const product = {
 			height: 1280,
 			alt: {
 				en: 'Beaded evening bag with matching coin purse and ring charms',
+				pt: 'Bolsa de noite em contas com pingente-moedeiro e anel a combinar',
+				uk: 'Нарядна сумочка з бісеру із брелоком-гаманцем та кільцем',
 				ru: 'Нарядная сумочка из бисера с брелоком-монетницей и кольцом'
 			}
 		}
 	],
 
-	materials: { en: 'Seed beads', ru: 'Бисер' },
+	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
 
 	relatedSkus: ['BAG-004', 'BAG-001']
 };

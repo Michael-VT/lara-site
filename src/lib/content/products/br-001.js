@@ -13,6 +13,8 @@ export const product = {
 	},
 	description: {
 		en: 'A beaded bracelet hand-woven with a sparkling rhombus pattern.',
+		pt: 'Pulseira de contas tecida à mão com um padrão de losangos brilhantes.',
+		uk: 'Браслет, сплетений вручну з бісеру із сяючим ромбовидним візерунком.',
 		ru: 'Браслет, сплетённый вручную из бисера с блестящим ромбовидным узором.'
 	},
 
@@ -26,12 +28,14 @@ export const product = {
 			height: 960,
 			alt: {
 				en: 'Beaded bracelet with a sparkling rhombus pattern',
+				pt: 'Pulseira de contas com um padrão de losangos brilhantes',
+				uk: 'Браслет із бісеру з візерунком «сяючий ромб»',
 				ru: 'Браслет из бисера с узором «сверкающий ромб»'
 			}
 		}
 	],
 
-	materials: { en: 'Seed beads', ru: 'Бисер' },
+	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
 
 	relatedSkus: ['BR-003']
 };

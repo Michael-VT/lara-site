@@ -13,6 +13,8 @@ export const product = {
 	},
 	description: {
 		en: 'A small coin purse hand-woven entirely from white seed beads.',
+		pt: 'Uma pequena bolsa moedeiro, tecida à mão inteiramente em contas brancas.',
+		uk: 'Невелика сумочка-гаманець, повністю сплетена вручну з білого бісеру.',
 		ru: 'Небольшая сумочка-монетница, полностью сплетённая вручную из белого бисера.'
 	},
 
@@ -26,6 +28,8 @@ export const product = {
 			height: 960,
 			alt: {
 				en: 'White coin purse hand-woven from seed beads',
+				pt: 'Bolsa moedeiro branca, tecida à mão em contas',
+				uk: 'Біла сумочка-гаманець, сплетена вручну з бісеру',
 				ru: 'Белая сумочка-монетница, сплетённая из бисера'
 			}
 		},
@@ -36,6 +40,8 @@ export const product = {
 			height: 787,
 			alt: {
 				en: 'White coin purse, close-up view',
+				pt: 'Bolsa moedeiro branca, primeiro plano',
+				uk: 'Біла сумочка-гаманець, крупний план',
 				ru: 'Белая сумочка-монетница, крупный план'
 			}
 		},
@@ -46,6 +52,8 @@ export const product = {
 			height: 582,
 			alt: {
 				en: 'White coin purse, side view',
+				pt: 'Bolsa moedeiro branca, vista lateral',
+				uk: 'Біла сумочка-гаманець, вид збоку',
 				ru: 'Белая сумочка-монетница, вид сбоку'
 			}
 		},
@@ -56,6 +64,8 @@ export const product = {
 			height: 951,
 			alt: {
 				en: 'White coin purse on keyring',
+				pt: 'Bolsa moedeiro branca numa argola de chaves',
+				uk: 'Біла сумочка-гаманець на кільці для ключів',
 				ru: 'Белая сумочка-монетница на кольце для ключей'
 			}
 		},
@@ -66,6 +76,8 @@ export const product = {
 			height: 1098,
 			alt: {
 				en: 'White coin purse with beaded chain strap',
+				pt: 'Bolsa moedeiro branca com corrente de contas',
+				uk: 'Біла сумочка-гаманець з бісерним ланцюжком',
 				ru: 'Белая сумочка-монетница с бисерной цепочкой'
 			}
 		},
@@ -76,6 +88,8 @@ export const product = {
 			height: 1280,
 			alt: {
 				en: 'White coin purse with long beaded strap',
+				pt: 'Bolsa moedeiro branca com corrente de contas comprida',
+				uk: 'Біла сумочка-гаманець з довгим бісерним ланцюжком',
 				ru: 'Белая сумочка-монетница с длинной бисерной цепочкой'
 			}
 		},
@@ -86,12 +100,14 @@ export const product = {
 			height: 1280,
 			alt: {
 				en: 'White coin purse shown with a matching bracelet',
+				pt: 'Bolsa moedeiro branca apresentada com uma bracelete a combinar',
+				uk: 'Біла сумочка-гаманець у комплекті з браслетом',
 				ru: 'Белая сумочка-монетница в комплекте с браслетом'
 			}
 		}
 	],
 
-	materials: { en: 'Seed beads', ru: 'Бисер' },
+	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
 
 	featured: true,
 	featuredOrder: 1,

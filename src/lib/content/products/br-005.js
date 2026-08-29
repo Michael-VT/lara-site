@@ -13,6 +13,8 @@ export const product = {
 	},
 	description: {
 		en: 'A hand-woven beaded bracelet in white and silver tones.',
+		pt: 'Pulseira em contas brancas e prateadas, tecida à mão.',
+		uk: 'Браслет, сплетений вручну з білого та срібного бісеру.',
 		ru: 'Браслет, сплетённый вручную из белого и серебристого бисера.'
 	},
 
@@ -26,12 +28,14 @@ export const product = {
 			height: 960,
 			alt: {
 				en: 'White and silver beaded bracelet',
+				pt: 'Pulseira em contas brancas e prateadas',
+				uk: 'Браслет з білого та срібного бісеру',
 				ru: 'Браслет из белого и серебристого бисера'
 			}
 		}
 	],
 
-	materials: { en: 'Seed beads', ru: 'Бисер' },
+	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
 
 	relatedSkus: ['BR-004', 'BR-003']
 };

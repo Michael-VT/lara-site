@@ -13,6 +13,8 @@ export const product = {
 	},
 	description: {
 		en: 'A delicate hand-woven beaded bracelet.',
+		pt: 'Uma pulseira delicada em contas, tecida à mão.',
+		uk: 'Ніжний браслет, сплетений вручну з бісеру.',
 		ru: 'Нежный браслет, сплетённый вручную из бисера.'
 	},
 
@@ -26,12 +28,14 @@ export const product = {
 			height: 960,
 			alt: {
 				en: 'Delicate hand-woven beaded bracelet',
+				pt: 'Pulseira delicada em contas, tecida à mão',
+				uk: 'Ніжний браслет із бісеру ручної роботи',
 				ru: 'Нежный браслет из бисера ручной работы'
 			}
 		}
 	],
 
-	materials: { en: 'Seed beads', ru: 'Бисер' },
+	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
 
 	relatedSkus: ['BR-001', 'BR-005']
 };

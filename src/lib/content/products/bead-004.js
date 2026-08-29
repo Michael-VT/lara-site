@@ -13,6 +13,8 @@ export const product = {
 	},
 	description: {
 		en: 'A three-dimensional heart keychain hand-woven from black seed beads.',
+		pt: 'Um porta-chaves em forma de coração tridimensional, tecido à mão com contas pretas.',
+		uk: "Об'ємний брелок-серце, сплетений вручну із чорного бісеру.",
 		ru: 'Объёмный брелок-сердце, сплетённый вручную из чёрного бисера.'
 	},
 
@@ -26,12 +28,14 @@ export const product = {
 			height: 1280,
 			alt: {
 				en: 'Black beaded heart-shaped keychain',
+				pt: 'Porta-chaves em forma de coração em contas pretas',
+				uk: 'Брелок у вигляді серця із чорного бісеру',
 				ru: 'Брелок в виде сердца из чёрного бисера'
 			}
 		}
 	],
 
-	materials: { en: 'Seed beads', ru: 'Бисер' },
+	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
 
 	relatedSkus: ['BEAD-005', 'BEAD-003']
 };

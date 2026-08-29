@@ -2,7 +2,6 @@
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"siteName": "IX Lara Handmade",
 	"siteTagline": "Feito à mão em Portugal",
-
 	"nav_home": "Início",
 	"nav_products": "Produtos",
 	"nav_howToOrder": "Como encomendar",
@@ -12,14 +11,12 @@
 	"nav_openMenu": "Abrir menu",
 	"nav_closeMenu": "Fechar menu",
 	"nav_menu": "Menu",
-
 	"lang_label": "Idioma",
 	"lang_switchTo": "Mudar para {language}",
 	"lang_en": "English",
 	"lang_pt": "Português",
 	"lang_uk": "Українська",
 	"lang_ru": "Русский",
-
 	"common_skipToContent": "Saltar para o conteúdo",
 	"common_sku": "Referência",
 	"common_viewDetails": "Ver detalhes",
@@ -29,11 +26,9 @@
 	"common_previous": "Anterior",
 	"common_next": "Seguinte",
 	"common_openInNewTab": "Abre numa nova aba",
-
 	"status_available": "Disponível",
 	"status_madeToOrder": "Feito por encomenda",
 	"status_sold": "Vendido",
-
 	"category_bags": "Malas",
 	"category_bracelets": "Pulseiras",
 	"category_jewellery": "Joalharia",
@@ -41,7 +36,6 @@
 	"category_knitted": "Malha",
 	"category_accessories": "Acessórios",
 	"category_other": "Outros",
-
 	"home_heroSlide1Title": "Peças únicas feitas à mão",
 	"home_heroSlide1Body": "Cada peça é feita com amor!",
 	"home_heroSlide2Title": "Peças prontas, disponíveis agora",
@@ -49,7 +43,6 @@
 	"home_heroSlide3Title": "Trabalho por encomenda",
 	"home_heroSlide3Body": "Diga-nos o que tem em mente e fazemo-lo juntos.",
 	"home_heroCta": "Ver produtos",
-
 	"home_categoriesHeading": "Comprar por categoria",
 	"home_featuredHeading": "Peças em destaque",
 	"home_availableHeading": "Disponíveis agora",
@@ -63,14 +56,12 @@
 	"home_contactCtaBody": "Contacte diretamente via WhatsApp, Telegram ou email — cada encomenda é combinada pessoalmente.",
 	"home_contactCtaButton": "Entrar em contacto",
 	"home_viewAll": "Ver todos os produtos",
-
 	"steps_step1Title": "Escolha uma peça",
 	"steps_step1Body": "Explore o catálogo ou uma peça de exemplo de que goste.",
 	"steps_step2Title": "Contacte a artesã",
 	"steps_step2Body": "Envie uma mensagem via WhatsApp, Telegram ou email com a referência da peça.",
 	"steps_step3Title": "Combine os detalhes",
 	"steps_step3Body": "Disponibilidade, personalização, entrega e pagamento são combinados pessoalmente.",
-
 	"product_order": "Encomendar",
 	"product_orderSimilar": "Encomendar peça semelhante",
 	"product_sku": "Referência",
@@ -97,7 +88,6 @@
 	"product_lightboxCounter": "{index} / {count}",
 	"product_breadcrumbHome": "Início",
 	"product_breadcrumbProducts": "Produtos",
-
 	"catalog_heading": "Todos os produtos",
 	"catalog_intro": "Malas, joalharia, acessórios e mais — cada peça feita em Portugal.",
 	"catalog_filterCategory": "Categoria",
@@ -105,7 +95,6 @@
 	"catalog_count": "{count} produtos",
 	"catalog_empty": "Nenhum produto corresponde aos filtros selecionados.",
 	"catalog_clearAll": "Limpar todos os filtros",
-
 	"order_heading": "Como encomendar",
 	"order_genericIntro": "Este não é um site de vendas online — não existe carrinho nem checkout automático. Cada encomenda começa com uma conversa direta para combinarmos disponibilidade, detalhes, entrega e pagamento.",
 	"order_askingAbout": "Está a perguntar sobre:",
@@ -124,11 +113,10 @@
 	"order_scanHint": "Digitalize com a câmara do telemóvel",
 	"order_subjectGeneric": "Pedido de informação sobre produto artesanal",
 	"order_subjectWithSku": "Pedido de encomenda: {sku}",
-	"order_messageBody": "Olá! Tenho interesse em \"{title}\", referência {sku}. Pode dizer-me se está disponível e como posso encomendar?",
+	"order_messageBody": "Olá! Tenho interesse em «{title}», referência {sku}. Pode dizer-me se está disponível e como posso encomendar?",
 	"order_messageBodySold": "Olá! Tenho interesse numa peça semelhante a \"{title}\", referência {sku}. Pode dizer-me se é possível fazer uma peça semelhante?",
 	"order_messageBodyGeneric": "Olá! Gostaria de saber mais sobre os vossos produtos artesanais.",
 	"order_priceQuestion": "Pode também indicar-me o preço?",
-
 	"about_heading": "Sobre a artesã",
 	"about_intro": "A natureza de Portugal inspira as minhas ideias criativas para peças artesanais.",
 	"about_story": "Adoro trabalhar com contas, criando pulseiras bonitas e interessantes, bolsinhas fofas e porta-chaves em forma de bola e coração.",
@@ -140,13 +128,11 @@
 	"about_ctaOrder": "Como encomendar",
 	"about_workshopHeading": "Ateliê",
 	"common_breadcrumb": "Estrutura de navegação",
-
 	"contacts_heading": "Contactos",
 	"contacts_intro": "A forma mais rápida de contactar a artesã é via WhatsApp, Telegram ou email.",
 	"contacts_locationLabel": "Localização",
 	"contacts_location": "Portugal",
 	"contacts_howToOrderCta": "Ler como funciona a encomenda",
-
 	"privacy_heading": "Privacidade",
 	"privacy_reviewNotice": "Esta página é um resumo simplificado para o MVP e deve ser revista pela proprietária do site ou por um consultor jurídico antes de ser considerada definitiva.",
 	"privacy_p1": "Este website não submete, processa nem armazena encomendas. Não existe carrinho, checkout ou sistema de pagamento.",
@@ -154,13 +140,16 @@
 	"privacy_p3": "O website não recolhe nem armazena intencionalmente os seus dados de contacto pessoais. Quando contacta a artesã via WhatsApp, Telegram ou email, essa conversa decorre no respetivo serviço externo, que tem a sua própria política de privacidade.",
 	"privacy_p4": "Não são utilizados, por predefinição, cookies de análise, publicidade ou rastreio.",
 	"privacy_p5": "O seu navegador pode guardar o idioma selecionado localmente no seu dispositivo (localStorage) para recordar a sua preferência na próxima visita.",
-
 	"notFound_heading": "Página não encontrada",
 	"notFound_body": "A página que procura não existe ou pode ter sido movida.",
 	"notFound_cta": "Ir para a página inicial",
-
 	"footer_rights": "Todos os direitos reservados.",
 	"footer_madeIn": "Feito à mão em Portugal.",
 	"footer_navHeading": "Navegação",
-	"footer_contactHeading": "Contacto"
+	"footer_contactHeading": "Contacto",
+	"nav_primary": "Menu principal",
+	"about_portraitAlt": "Retrato da Lara, a artesã",
+	"product_galleryLabel": "Imagens do produto",
+	"catalog_countOne": "{count} produto",
+	"catalog_countFew": "{count} produtos"
 }

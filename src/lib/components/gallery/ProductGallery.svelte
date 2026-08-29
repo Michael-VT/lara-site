@@ -14,6 +14,8 @@
 	let lightboxEl = $state();
 	/** @type {HTMLElement | undefined} */
 	let triggerEl = $state();
+	/** @type {HTMLButtonElement[]} */
+	let tabEls = $state([]);
 
 	function select(/** @type {number} */ i) {
 		active = i;
@@ -30,10 +32,22 @@
 	function handleKeydown(/** @type {KeyboardEvent} */ e) {
 		if (e.key === 'ArrowRight') {
 			e.preventDefault();
-			next();
+			const nextIndex = (active + 1) % images.length;
+			select(nextIndex);
+			tabEls[nextIndex]?.focus();
 		} else if (e.key === 'ArrowLeft') {
 			e.preventDefault();
-			prev();
+			const prevIndex = (active - 1 + images.length) % images.length;
+			select(prevIndex);
+			tabEls[prevIndex]?.focus();
+		} else if (e.key === 'Home') {
+			e.preventDefault();
+			select(0);
+			tabEls[0]?.focus();
+		} else if (e.key === 'End') {
+			e.preventDefault();
+			select(images.length - 1);
+			tabEls[images.length - 1]?.focus();
 		}
 	}
 
@@ -75,59 +89,71 @@
 	$effect(() => {
 		if (lightboxOpen && lightboxEl) {
 			lightboxEl.focus();
+			// Hold the page still beneath the lightbox.
+			const previousOverflow = document.body.style.overflow;
+			return () => {
+				document.body.style.overflow = previousOverflow;
+			};
 		}
 	});
 </script>
 
-<div class="flex flex-col gap-3">
-	<button
-		type="button"
-		onclick={openLightbox}
-		aria-label={m.product_galleryOpenFullscreen(
-			{ index: active + 1, count: images.length },
-			{ locale }
-		)}
-		class="block touch-manipulation overflow-hidden rounded-card border border-border bg-surface"
-	>
-		<img
-			src={images[active].src}
-			alt={localizeText(images[active].alt, locale)}
-			width={images[active].width}
-			height={images[active].height}
-			loading="eager"
-			fetchpriority="high"
-			class="aspect-square w-full object-cover"
-		/>
-	</button>
+<div class="rise-in flex flex-col gap-4">
+	<div id="product-gallery-panel" role="tabpanel" aria-labelledby="product-gallery-tab-{active}">
+		<button
+			type="button"
+			onclick={openLightbox}
+			aria-label={m.product_galleryOpenFullscreen(
+				{ index: active + 1, count: images.length },
+				{ locale }
+			)}
+			class="group block w-full touch-manipulation overflow-hidden rounded-card bg-surface shadow-card ring-1 ring-accent/30 transition-shadow duration-300 hover:shadow-lift"
+		>
+			<img
+				src={images[active].src}
+				alt={localizeText(images[active].alt, locale)}
+				width={images[active].width}
+				height={images[active].height}
+				loading="eager"
+				fetchpriority="high"
+				class="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-[1.015]"
+			/>
+		</button>
+	</div>
 
 	{#if images.length > 1}
+		<!-- svelte-ignore a11y_interactive_supports_focus -- roving tabindex lives on the tabs -->
 		<div
 			role="tablist"
-			tabindex="0"
-			aria-label={m.product_related({}, { locale })}
+			aria-label={m.product_galleryLabel({}, { locale })}
+			aria-orientation="horizontal"
 			onkeydown={handleKeydown}
-			class="flex gap-2"
+			class="flex flex-wrap gap-3"
 		>
 			{#each images as image, i (image.src)}
 				<button
 					type="button"
 					role="tab"
+					id="product-gallery-tab-{i}"
 					aria-selected={i === active}
+					aria-controls="product-gallery-panel"
+					tabindex={i === active ? 0 : -1}
+					bind:this={tabEls[i]}
 					aria-label={m.product_galleryThumbnail(
 						{ index: i + 1, count: images.length },
 						{ locale }
 					)}
 					onclick={() => select(i)}
-					class="h-16 w-16 shrink-0 touch-manipulation overflow-hidden rounded-control border-2 {i ===
+					class="size-[4.5rem] shrink-0 touch-manipulation overflow-hidden rounded-control ring-2 transition-opacity duration-200 {i ===
 					active
-						? 'border-accent'
-						: 'border-transparent'}"
+						? 'ring-accent'
+						: 'opacity-70 ring-transparent hover:opacity-100'}"
 				>
 					<img
 						src={image.thumb ?? image.src}
 						alt=""
-						width={image.width}
-						height={image.height}
+						width={72}
+						height={Math.round((72 * image.height) / image.width)}
 						loading="lazy"
 						class="h-full w-full object-cover"
 					/>
@@ -138,7 +164,7 @@
 </div>
 
 {#if lightboxOpen}
-	<div class="fixed inset-0 z-50 bg-foreground/90" onclick={closeLightbox} aria-hidden="true"></div>
+	<div class="fixed inset-0 z-50 bg-foreground/90" aria-hidden="true"></div>
 	<div
 		bind:this={lightboxEl}
 		role="dialog"
@@ -146,13 +172,17 @@
 		tabindex="-1"
 		aria-label={localizeText(images[active].alt, locale)}
 		onkeydown={handleLightboxKeydown}
+		onclick={(e) => {
+			// Any click outside the dialog's buttons closes the lightbox.
+			if (!(/** @type {HTMLElement} */ (e.target).closest('button'))) closeLightbox();
+		}}
 		class="fixed inset-0 z-50 flex flex-col"
 	>
 		<div class="flex justify-end p-3">
 			<button
 				type="button"
 				onclick={closeLightbox}
-				class="flex min-h-11 min-w-11 touch-manipulation items-center justify-center rounded-control text-background hover:bg-background/10"
+				class="focus-dark flex min-h-11 min-w-11 touch-manipulation items-center justify-center rounded-control text-background hover:bg-background/10"
 			>
 				<span class="sr-only">{m.product_lightboxClose({}, { locale })}</span>
 				<svg
@@ -168,7 +198,7 @@
 			</button>
 		</div>
 
-		<div class="flex flex-1 items-center justify-center overflow-hidden px-4">
+		<div class="flex min-h-0 flex-1 items-center justify-center overflow-hidden px-4">
 			<img
 				src={images[active].src}
 				alt={localizeText(images[active].alt, locale)}
@@ -183,17 +213,10 @@
 				<button
 					type="button"
 					onclick={prev}
-					class="flex min-h-11 min-w-11 touch-manipulation items-center justify-center rounded-control text-background hover:bg-background/10"
+					class="focus-dark flex min-h-11 min-w-11 touch-manipulation items-center justify-center rounded-control text-background hover:bg-background/10"
 				>
 					<span class="sr-only">{m.product_lightboxPrev({}, { locale })}</span>
-					<svg
-						viewBox="0 0 24 24"
-						width="24"
-						height="24"
-						fill="none"
-						stroke="currentColor"
-						aria-hidden="true"
-					>
+					<svg width="24" height="24" fill="none" stroke="currentColor" aria-hidden="true">
 						<path
 							d="M15 6l-6 6 6 6"
 							stroke-width="2"
@@ -210,7 +233,7 @@
 				<button
 					type="button"
 					onclick={next}
-					class="flex min-h-11 min-w-11 touch-manipulation items-center justify-center rounded-control text-background hover:bg-background/10"
+					class="focus-dark flex min-h-11 min-w-11 touch-manipulation items-center justify-center rounded-control text-background hover:bg-background/10"
 				>
 					<span class="sr-only">{m.product_lightboxNext({}, { locale })}</span>
 					<svg

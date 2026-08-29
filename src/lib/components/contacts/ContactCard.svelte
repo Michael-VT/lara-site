@@ -19,47 +19,54 @@
 
 	const icons = {
 		whatsapp:
-			'M20.5 3.5A11 11 0 0 0 3.7 17L2 22l5.1-1.7A11 11 0 1 0 20.5 3.5ZM12 20.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 1 1-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.4-.7-2.3-1.3-3.2-2.9-.2-.4.2-.4.6-1.2.1-.2 0-.4 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z',
+			'M12 3a9 9 0 0 0-7.9 13.3L2.5 21.5l5.3-1.5A9 9 0 1 0 12 3Zm-3.2 5.6c-.5.5-.7 1.3-.3 2.1a7.2 7.2 0 0 0 4.8 4.8c.8.4 1.6.2 2.1-.3l.6-.6-2-1.2-.8.8a6 6 0 0 1-2.4-2.4l.8-.8-1.2-2-.6.6Z',
 		telegram:
 			'M21.9 4.3 2.7 11.6c-1 .4-1 1 .1 1.3l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.3 4.7 3.5c.9.5 1.4.2 1.6-.8L22 5.3c.3-1.2-.2-1.7-1.1-1Zm-3.7 3.4-8.4 7.6-.3 3.1-1.5-4.9 10-6.4c.5-.3.9-.1.5.3Z',
-		email: 'M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm0 2 8 6 8-6'
+		email:
+			'M4 4.5h16A1.5 1.5 0 0 1 21.5 6v12a1.5 1.5 0 0 1-1.5 1.5H4A1.5 1.5 0 0 1 2.5 18V6A1.5 1.5 0 0 1 4 4.5Zm.4 2 7.6 6.2 7.6-6.2'
 	};
 </script>
 
-<div
-	class="flex flex-col gap-4 rounded-card border border-border bg-surface p-6 sm:flex-row sm:items-center sm:justify-between"
+<article
+	class="group flex flex-col gap-5 rounded-card border border-border bg-surface p-5 shadow-card transition-[transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:shadow-lift sm:flex-row sm:items-center sm:justify-between sm:p-6"
 >
-	<div class="flex items-start gap-3">
-		<svg
-			viewBox="0 0 24 24"
-			width="28"
-			height="28"
-			fill="none"
-			stroke="currentColor"
-			class="mt-0.5 shrink-0 text-accent"
+	<div class="flex items-start gap-4">
+		<span
+			class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border bg-accent-wash text-accent"
 			aria-hidden="true"
 		>
-			<path d={icons[channel]} stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-		</svg>
-		<div>
-			<h3 class="font-medium text-foreground">{label}</h3>
-			<p class="text-sm text-muted-foreground">{description}</p>
+			<svg
+				viewBox="0 0 24 24"
+				width="20"
+				height="20"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="1.6"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			>
+				<path d={icons[channel]} />
+			</svg>
+		</span>
+		<div class="min-w-0">
+			<h3 class="font-display text-lg text-foreground">{label}</h3>
+			<p class="mt-1 text-sm leading-relaxed text-muted-foreground">{description}</p>
 			<a
 				{href}
 				rel={external ? 'noopener noreferrer' : undefined}
 				target={external ? '_blank' : undefined}
-				class="mt-2 inline-flex min-h-11 items-center justify-center rounded-control bg-accent px-4 text-sm font-medium text-accent-contrast"
+				class="mt-3 inline-flex min-h-11 items-center justify-center rounded-control border border-border-strong bg-surface px-5 text-sm font-medium text-foreground transition-colors duration-300 hover:border-accent hover:bg-accent-wash hover:text-accent"
 			>
 				{displayValue}
+				{#if external}
+					<span class="sr-only"> — {m.common_openInNewTab({}, { locale })}</span>
+				{/if}
 			</a>
-			{#if external}
-				<span class="sr-only">{m.common_openInNewTab({}, { locale })}</span>
-			{/if}
 		</div>
 	</div>
 
-	<div class="flex flex-col items-center gap-1 self-center">
+	<div class="flex flex-col items-center gap-2 self-center">
 		<QrCode id={channel} label={m.order_qrLabel({ channel: label }, { locale })} />
 		<span class="text-xs text-muted-foreground">{m.order_scanHint({}, { locale })}</span>
 	</div>
-</div>
+</article>

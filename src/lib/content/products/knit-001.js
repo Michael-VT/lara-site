@@ -13,6 +13,8 @@ export const product = {
 	},
 	description: {
 		en: 'A hand-crocheted panama-style hat.',
+		pt: 'Um chapéu panamá em crochê, trabalhado à mão.',
+		uk: "Панама, пов'язана вручну гачком.",
 		ru: 'Панама, связанная вручную крючком.'
 	},
 
@@ -26,18 +28,29 @@ export const product = {
 			height: 960,
 			alt: {
 				en: 'Crochet panama hat',
+				pt: 'Chapéu panamá em crochê',
+				uk: "В'язана панама гачком",
 				ru: 'Панама'
 			}
 		}
 	],
 
-	materials: { en: 'Cotton yarn', ru: 'Хлопковая пряжа' },
+	materials: {
+		en: 'Cotton yarn',
+		pt: 'Fio de algodão',
+		uk: 'Бавовняна пряжа',
+		ru: 'Хлопковая пряжа'
+	},
 	colours: {
 		en: 'Other colours available to order',
+		pt: 'Outras cores disponíveis por encomenda',
+		uk: 'Інші кольори доступні на замовлення',
 		ru: 'Другие цвета доступны на заказ'
 	},
 	customisation: {
 		en: 'Can be made to order in a different colour',
+		pt: 'Pode ser encomendado noutra cor',
+		uk: 'Можна замовити в іншому кольорі',
 		ru: 'Можно заказать в другом цвете'
 	},
 

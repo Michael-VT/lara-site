@@ -8,5 +8,5 @@
 	alt={label}
 	width="140"
 	height="140"
-	class="rounded-control border border-border bg-white p-2"
+	class="rounded-control border border-border bg-white p-2 shadow-card"
 />

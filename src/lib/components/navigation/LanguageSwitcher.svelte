@@ -56,10 +56,11 @@
 		bind:this={buttonEl}
 		type="button"
 		onclick={toggle}
+		onkeydown={handleKeydown}
 		aria-haspopup="true"
 		aria-expanded={open}
 		aria-label={m.lang_label({}, { locale: page.data.locale })}
-		class="inline-flex min-h-11 items-center gap-1.5 rounded-control px-2.5 text-sm font-medium text-muted-foreground uppercase transition-colors hover:text-foreground"
+		class="inline-flex min-h-11 items-center gap-1.5 rounded-control px-3 text-sm font-medium tracking-wider text-muted-foreground uppercase transition-colors hover:bg-accent-wash hover:text-foreground"
 	>
 		<svg
 			viewBox="0 0 24 24"
@@ -83,7 +84,7 @@
 			fill="none"
 			stroke="currentColor"
 			aria-hidden="true"
-			class="transition-transform {open ? 'rotate-180' : ''}"
+			class="transition-transform duration-200 {open ? 'rotate-180' : ''}"
 		>
 			<path d="m6 9 6 6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 		</svg>
@@ -95,7 +96,7 @@
 			bind:this={menuEl}
 			onkeydown={handleKeydown}
 			aria-label={m.lang_label({}, { locale: page.data.locale })}
-			class="absolute top-full right-0 z-50 mt-2 min-w-40 overflow-hidden rounded-control border border-border bg-surface py-1 shadow-lg"
+			class="lang-menu absolute top-full right-0 z-50 mt-2 min-w-44 overflow-hidden rounded-card border border-border bg-surface py-1.5 shadow-lift"
 		>
 			<ul>
 				{#each locales as targetLocale (targetLocale)}
@@ -106,8 +107,8 @@
 							aria-current={active ? 'page' : undefined}
 							onclick={() => onSelect(targetLocale)}
 							class="flex min-h-11 items-center gap-2 px-4 text-sm transition-colors {active
-								? 'font-semibold text-accent'
-								: 'text-foreground hover:bg-background'}"
+								? 'font-medium text-accent'
+								: 'text-foreground hover:bg-accent-wash'}"
 						>
 							{localeNames[targetLocale]}
 						</a>
@@ -117,3 +118,22 @@
 		</nav>
 	{/if}
 </div>
+
+<style>
+	/* The menu unrolls softly from beneath the control, like a tray sliding out. */
+	.lang-menu {
+		transform-origin: top right;
+		animation: menu-unroll 0.22s var(--ease-out-soft) both;
+	}
+
+	@keyframes menu-unroll {
+		from {
+			opacity: 0;
+			transform: translateY(-4px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+</style>

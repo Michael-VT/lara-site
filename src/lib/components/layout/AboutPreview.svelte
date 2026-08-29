@@ -6,25 +6,30 @@
 	let locale = $derived(page.data.locale);
 </script>
 
-<section class="grid items-center gap-8 md:grid-cols-2">
-	<img
-		src="/images/about/home-portrait.webp"
-		alt=""
-		width="570"
-		height="1280"
-		loading="lazy"
-		class="aspect-[4/5] w-full rounded-card object-cover"
-	/>
-	<div>
-		<h2 class="font-display text-2xl text-foreground">
+<section class="grid items-center gap-10 py-20 sm:py-24 md:grid-cols-2 md:gap-16">
+	<div
+		class="frame-arch w-full max-w-md justify-self-center bg-accent-wash p-2 shadow-card ring-1 ring-accent/50"
+	>
+		<img
+			src="/images/about/home-portrait.webp"
+			alt={m.about_portraitAlt({}, { locale })}
+			width="570"
+			height="1280"
+			loading="lazy"
+			class="frame-arch aspect-[3/4] w-full object-cover object-top"
+		/>
+	</div>
+	<div class="max-w-xl">
+		<h2 class="font-display text-3xl text-foreground sm:text-4xl">
 			{m.home_aboutPreviewHeading({}, { locale })}
 		</h2>
-		<p class="mt-3 text-muted-foreground">{m.about_intro({}, { locale })}</p>
+		<p class="mt-4 leading-relaxed text-muted-foreground">{m.about_intro({}, { locale })}</p>
 		<a
 			href={toHref(`/${locale}/about/`)}
-			class="mt-4 inline-flex text-sm font-medium text-accent hover:underline"
+			class="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-accent underline-offset-4 hover:underline"
 		>
-			{m.home_aboutPreviewCta({}, { locale })} →
+			{m.home_aboutPreviewCta({}, { locale })}
+			<span aria-hidden="true">→</span>
 		</a>
 	</div>
 </section>

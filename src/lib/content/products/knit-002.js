@@ -13,6 +13,8 @@ export const product = {
 	},
 	description: {
 		en: 'A hand-crocheted white bag.',
+		pt: 'Uma bolsa branca em crochê, trabalhada à mão.',
+		uk: "Біла сумочка, пов'язана вручну гачком.",
 		ru: 'Белая сумочка, связанная вручную крючком.'
 	},
 
@@ -26,6 +28,8 @@ export const product = {
 			height: 1070,
 			alt: {
 				en: 'White crochet bag',
+				pt: 'Bolsa branca em crochê',
+				uk: "Біла в'язана сумочка гачком",
 				ru: 'Вязаная белая сумочка'
 			}
 		},
@@ -36,18 +40,29 @@ export const product = {
 			height: 697,
 			alt: {
 				en: 'White crochet bag, second view',
+				pt: 'Bolsa branca em crochê, outra vista',
+				uk: "Біла в'язана сумочка, інший ракурс",
 				ru: 'Вязаная белая сумочка, другой ракурс'
 			}
 		}
 	],
 
-	materials: { en: 'Cotton yarn', ru: 'Хлопковая пряжа' },
+	materials: {
+		en: 'Cotton yarn',
+		pt: 'Fio de algodão',
+		uk: 'Бавовняна пряжа',
+		ru: 'Хлопковая пряжа'
+	},
 	colours: {
 		en: 'White shown; other colours available to order',
+		pt: 'Mostrado em branco; outras cores disponíveis por encomenda',
+		uk: 'Показаний білий колір; інші кольори доступні на замовлення',
 		ru: 'Показан белый цвет; другие цвета доступны на заказ'
 	},
 	customisation: {
 		en: 'Can be made to order in a different colour',
+		pt: 'Pode ser encomendada noutra cor',
+		uk: 'Можна замовити в іншому кольорі',
 		ru: 'Можно заказать в другом цвете'
 	},
 

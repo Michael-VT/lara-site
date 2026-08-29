@@ -13,6 +13,8 @@ export const product = {
 	},
 	description: {
 		en: 'A round ball keychain hand-woven from red and white seed beads. Balls can be made from beads of different colours and sizes. Any quantity can be ordered.',
+		pt: 'Um porta-chaves redondo em forma de bola, tecido à mão com contas vermelhas e brancas. As bolas podem ser feitas com contas de várias cores e tamanhos. Pode encomendar-se qualquer quantidade.',
+		uk: 'Круглий брелок-кулька, сплетений вручну з червоного та білого бісеру. Кульки можна сплести з бісеру різних кольорів і розмірів. Замовити можна будь-яку кількість.',
 		ru: 'Круглый брелок-шарик, сплетённый вручную из красного и белого бисера. Шарики могут быть сделаны из разного бисера по цвету и разного размера. Заказать можно любое количество.'
 	},
 
@@ -26,12 +28,14 @@ export const product = {
 			height: 960,
 			alt: {
 				en: 'Round keychain woven from red and white seed beads',
+				pt: 'Porta-chaves redondo tecido com contas vermelhas e brancas',
+				uk: 'Брелок-кулька з червоного та білого бісеру',
 				ru: 'Брелок-шарик из красного и белого бисера'
 			}
 		}
 	],
 
-	materials: { en: 'Seed beads', ru: 'Бисер' },
+	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
 
 	featured: true,
 	featuredOrder: 3,

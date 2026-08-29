@@ -13,6 +13,8 @@ export const product = {
 	},
 	description: {
 		en: 'A hand-woven beaded bracelet with a flower motif in white and gold.',
+		pt: 'Pulseira em contas brancas e douradas, tecida à mão, com motivo floral.',
+		uk: 'Браслет із квітковим візерунком, сплетений вручну з білого та золотистого бісеру.',
 		ru: 'Браслет с цветочным узором, сплетённый вручную из белого и золотистого бисера.'
 	},
 
@@ -26,6 +28,8 @@ export const product = {
 			height: 960,
 			alt: {
 				en: 'White and gold beaded bracelet with a flower motif',
+				pt: 'Pulseira em contas brancas e douradas com motivo floral',
+				uk: 'Браслет із квітковим візерунком з білого та золотистого бісеру',
 				ru: 'Браслет с цветочным узором из белого и золотистого бисера'
 			}
 		},
@@ -36,12 +40,14 @@ export const product = {
 			height: 960,
 			alt: {
 				en: 'Close-up of the flower-motif beaded bracelet',
+				pt: 'Primeiro plano da pulseira em contas com motivo floral',
+				uk: 'Крупний план браслета з квітковим візерунком',
 				ru: 'Крупный план браслета с цветочным узором'
 			}
 		}
 	],
 
-	materials: { en: 'Seed beads', ru: 'Бисер' },
+	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
 
 	featured: true,
 	featuredOrder: 4,
