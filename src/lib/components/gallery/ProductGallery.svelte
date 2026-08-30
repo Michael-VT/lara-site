@@ -116,7 +116,7 @@
 				height={images[active].height}
 				loading="eager"
 				fetchpriority="high"
-				class="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-[1.015]"
+				class="aspect-square w-full bg-background object-contain transition-transform duration-500 group-hover:scale-[1.015]"
 			/>
 		</button>
 	</div>
@@ -144,7 +144,7 @@
 						{ locale }
 					)}
 					onclick={() => select(i)}
-					class="size-[4.5rem] shrink-0 touch-manipulation overflow-hidden rounded-control ring-2 transition-opacity duration-200 {i ===
+					class="size-[4.5rem] shrink-0 touch-manipulation overflow-hidden rounded-control bg-background ring-2 transition-opacity duration-200 {i ===
 					active
 						? 'ring-accent'
 						: 'opacity-70 ring-transparent hover:opacity-100'}"
@@ -155,7 +155,7 @@
 						width={72}
 						height={Math.round((72 * image.height) / image.width)}
 						loading="lazy"
-						class="h-full w-full object-cover"
+						class="h-full w-full object-contain"
 					/>
 				</button>
 			{/each}

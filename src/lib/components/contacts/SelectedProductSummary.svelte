@@ -19,7 +19,7 @@
 		alt={localizeText(product.images[0].alt, locale)}
 		width="80"
 		height="80"
-		class="h-20 w-20 shrink-0 rounded-control border border-border object-cover"
+		class="h-20 w-20 shrink-0 rounded-control border border-border bg-background object-contain"
 	/>
 	<div class="min-w-0">
 		<p class="eyebrow text-accent">{m.order_askingAbout({}, { locale })}</p>

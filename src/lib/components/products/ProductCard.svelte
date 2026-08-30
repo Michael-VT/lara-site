@@ -31,7 +31,7 @@
 			width={product.images[0].width}
 			height={product.images[0].height}
 			loading={eager ? 'eager' : 'lazy'}
-			class="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+			class="aspect-square w-full bg-background object-contain transition-transform duration-500 group-hover:scale-[1.03]"
 		/>
 	</a>
 
