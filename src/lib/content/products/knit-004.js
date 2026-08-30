@@ -3,7 +3,7 @@ export const product = {
 	sku: 'KNIT-004',
 	slug: 'white-cotton-motif-crochet-top',
 	category: 'knitted',
-	status: 'available',
+	status: 'made_to_order',
 
 	title: {
 		en: 'White cotton crochet top, motif-joined',

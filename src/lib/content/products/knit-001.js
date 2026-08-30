@@ -3,7 +3,7 @@ export const product = {
 	sku: 'KNIT-001',
 	slug: 'crochet-panama-hat',
 	category: 'knitted',
-	status: 'available',
+	status: 'made_to_order',
 
 	title: {
 		en: 'Crochet panama hat',

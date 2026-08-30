@@ -3,7 +3,7 @@ export const product = {
 	sku: 'KNIT-002',
 	slug: 'white-crochet-bag',
 	category: 'knitted',
-	status: 'available',
+	status: 'made_to_order',
 
 	title: {
 		en: 'White crochet bag',

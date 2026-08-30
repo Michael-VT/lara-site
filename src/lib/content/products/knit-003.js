@@ -3,7 +3,7 @@ export const product = {
 	sku: 'KNIT-003',
 	slug: 'lilac-top-down-crochet-top',
 	category: 'knitted',
-	status: 'available',
+	status: 'made_to_order',
 
 	title: {
 		en: 'Lilac top-down crochet top',

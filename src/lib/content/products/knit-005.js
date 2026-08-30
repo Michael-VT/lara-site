@@ -3,7 +3,7 @@ export const product = {
 	sku: 'KNIT-005',
 	slug: 'crochet-cotton-skirt-and-bag-set',
 	category: 'knitted',
-	status: 'available',
+	status: 'made_to_order',
 
 	title: {
 		en: 'Crochet cotton skirt and bag set',
