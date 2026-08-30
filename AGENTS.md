@@ -81,16 +81,35 @@ Follow `docs/ADD-PRODUCT.md` (glossary + checklist).
 (`status: 'hidden'` until finished). Photos: `images/<folder>/` → map in
 `scripts/optimize-images.js` → `bun run optimize:images`.
 
-## State after the 2026-08 redesign (last session)
+## State after the 2026-08-30 session (latest)
 
-- Full atelier redesign shipped + triple critic-loop verified (contrast,
-  overflow at 5 viewports × 4 locales, focus, ARIA, reduced motion).
-- All 36 products translated to pt+uk (descriptions, 65 alts, materials,
-  colours, customisation) with a consistent glossary.
-- Accepted deviations (deliberate, don't "fix" silently): catalog pages use
-  `py-20/24` vs product-detail `py-10/14` sub-page rhythm; hero slides mix
-  natural orientations in one 4:5 arch frame (fixed photo set);
-  `jwl-004` keeps the owner's `miçangas` pt vocabulary from its original title.
-- Pre-existing (not introduced, out of scope): 4 prettier failures in
-  non-app files; ru source of `knit-003` has a gender typo («Сиреневый
-  кофточка») — fix content-side if touching that file anyway.
+- 44 products live: bags 8 (incl. `BAG-008` Irish-motif bag, moved to
+  `knitted`/made_to_order — SKU prefix `BAG` kept deliberately: SKUs never
+  change after publication), bracelets 14 (3 sold: `BR-013..015` — first
+  sold items, badge + «order similar» flow verified), jewellery 4, beadwork 9,
+  knitted 6 (all made_to_order), accessories 1, other 3 (blanks MTO + 2 balls
+  available). Sitemap 200 URLs.
+- Homepage sections are **status-driven, no duplicates** (owner's decision):
+  available ≈ 34 / made_to_order 7, auto-counted by the `+page.js` loader.
+  Owner confirmed 2026-08-30: nothing else moves to made_to_order.
+- `KNIT-005` retitled «Кофта, юбка и сумочка…» in all locales; slug unchanged.
+  Previews use `object-contain` + linen mat (cards, gallery, order summary).
+  Slogan: «Ручная работа от всего Сердца, с Любовью!» in all 4 locales.
+- Optimizer conventions: photo folders mapped **as-is** (owner's typos are
+  load-bearing keys: `Разое`, nested `золоых`, `португальских  ниток` double
+  space); optimizer is non-recursive — nested product subfolders are mapped
+  via `parent/child` path keys. macOS NFD traps: verify disk name is
+  NFC-identical before adding a mapping key.
+- Deferred by owner (leave as-is): 5 unmapped photo folders — Сумочки/«Мини
+  сумочки монетницы в разных цветах» (1), Сумочки/«Мини сумочки монетницы из
+  серебристого и белого бисера» (2), Браслеты/«Браслет из белого бисера␠»
+  (trailing space, 2), Браслеты/«Мои браслеты» (2), Украшения/«Брелок
+  подвеска на сумочку и другие изделия» (2). Also Сумочки/«Сумка связанная по
+  ирландским мотивам» (superseded by the «крючком» copy in Вязаные изделия).
+- Deploy: push to `origin/main` → Cloudflare Pages auto-build → live on
+  larise.art in ~2 min (siteUrl). Verify with curl on product pages.
+- Redesign-era notes still valid: catalog `py-20/24` vs product `py-10/14`
+  rhythm; hero 4:5 arch frame with mixed orientations; `jwl-004` keeps the
+  owner's `miçangas` pt vocabulary. Pre-existing: 4 prettier failures in
+  non-app files; ru source of `knit-003` gender typo («Сиреневый кофточка») —
+  fix content-side if touching that file anyway.
