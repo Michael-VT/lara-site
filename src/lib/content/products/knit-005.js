@@ -6,16 +6,16 @@ export const product = {
 	status: 'made_to_order',
 
 	title: {
-		en: 'Crochet cotton skirt and bag set',
-		pt: 'Conjunto de saia e bolsa em crochê de algodão',
-		uk: "В'язана бавовняна спідниця та сумочка гачком, набір",
-		ru: 'Юбка и сумочка, связанные крючком из португальских ниток, хлопок'
+		en: 'Crochet cotton top, skirt and bag set',
+		pt: 'Conjunto de blusa, saia e bolsa em crochê de algodão',
+		uk: "В'язані бавовняні кофточка, спідниця та сумочка гачком, набір",
+		ru: 'Кофта, юбка и сумочка, связанные крючком из португальских ниток, хлопок'
 	},
 	description: {
-		en: 'A hand-crocheted white cotton skirt with a matching bag, worked in Portuguese cotton yarn — shown worn with the matching motif-joined top.',
-		pt: 'Um conjunto de saia e bolsa em crochê de algodão branco, trabalhado à mão em fio de algodão português — mostrado em uso com a blusa a condizer, unida por motivos.',
-		uk: "Біла спідниця та сумочка в одному наборі, пов'язані вручну гачком з португальської бавовняної пряжі — показані разом з відповідною кофточкою з окремих мотивів.",
-		ru: 'Белая юбка и сумочка в комплекте, связанные вручную крючком из португальской хлопковой пряжи — показаны вместе с подходящей кофточкой из отдельных мотивов.'
+		en: 'A hand-crocheted white cotton set — motif-joined top, skirt and matching bag — worked in Portuguese cotton yarn.',
+		pt: 'Um conjunto em crochê de algodão branco feito à mão — blusa unida por motivos, saia e bolsa a condizer — trabalhado em fio de algodão português.',
+		uk: "Білий бавовняний набір, пов'язаний вручну гачком, — кофточка з окремих мотивів, спідниця та сумочка — з португальської бавовняної пряжі.",
+		ru: 'Белые кофта, юбка и сумочка в комплекте, связанные вручную крючком из португальской хлопковой пряжи.'
 	},
 
 	price: { mode: 'on_request' },
@@ -27,10 +27,10 @@ export const product = {
 			width: 960,
 			height: 1280,
 			alt: {
-				en: 'Crochet cotton skirt and matching bag, worn with a crochet top',
-				pt: 'Saia em crochê de algodão com bolsa a condizer, usadas com uma blusa em crochê',
-				uk: "В'язана спідниця та сумочка з бавовни, надіті з в'язаною кофточкою",
-				ru: 'Вязаная юбка и сумочка из хлопка, надеты с вязаной кофточкой'
+				en: 'Crochet cotton top, skirt and bag set',
+				pt: 'Conjunto de blusa, saia e bolsa em crochê de algodão',
+				uk: "В'язані кофточка, спідниця та сумочка гачком з бавовни",
+				ru: 'Вязаные крючком кофта, юбка и сумочка из хлопка'
 			}
 		}
 	],
