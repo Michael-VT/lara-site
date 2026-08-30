@@ -23,8 +23,7 @@ const productGroups = [
 			'Подставка  под чашку из белого бисера': 'white-beaded-cup-coaster',
 			'Брелок подвеска с золотистым бисером': 'gold-accented-beaded-ball-keychain',
 			'Брелок подвеска с серебристым бисером': 'silver-accented-beaded-ball-keychain',
-			'Брелок подвеска с серебристым и сталистым бисером':
-				'silver-gunmetal-beaded-ball-keychain'
+			'Брелок подвеска с серебристым и сталистым бисером': 'silver-gunmetal-beaded-ball-keychain'
 		}
 	},
 	{
@@ -48,6 +47,7 @@ const productGroups = [
 			'Браслет из белого и серебристого бисера для принцессы':
 				'white-silver-princess-beaded-bracelet',
 			'Браслет из крупного и мелкого бисера': 'large-small-bead-pearl-bracelet',
+			'Браслет из серебристых и белых крупных бусин': 'silver-white-large-bead-bracelet',
 			'Браслет шамбала из красных и прозрачных бусин': 'red-clear-shambhala-bracelet',
 			'Браслет с кольцом из белого бисера и синего биконуса':
 				'white-bead-blue-bicone-ring-bracelet',
@@ -87,6 +87,16 @@ const productGroups = [
 				'white-cotton-motif-crochet-top',
 			'Кофта, юбка и сумочка, связанные крючком из португальских  ниток из хлопка':
 				'crochet-cotton-skirt-and-bag-set'
+		}
+	},
+	{
+		sourceFolder: 'Разое',
+		items: {
+			'Заготовки, которые могут быть использованы при изготовлении сережек, брелоков, как пуговицы или для другого декора':
+				'craft-blanks-for-jewellery-and-decor',
+			'Круглый шарик для сережек из синих и золотистых бусин': 'blue-gold-earring-ball',
+			'Круглый шарик для сережек из синих и золотистых бусин/Круглый шарик для сережек из золоых и золотистых бусин':
+				'red-gold-earring-ball'
 		}
 	}
 ];
