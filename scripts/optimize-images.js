@@ -36,7 +36,7 @@ const productGroups = [
 			'Черная сумочка монетница из черного бисера': 'black-beaded-coin-purse',
 			'Сумочка из бисера для торжества': 'beaded-evening-bag',
 			'Яркая мини-сумочка для девочки': 'bright-mini-bag-for-girl',
-			'Сумка связанная по ирландским мотивам': 'irish-motif-knitted-bag'
+			'Сумка связанная крючком по ирландским мотивам': 'irish-motif-knitted-bag'
 		}
 	},
 	{
