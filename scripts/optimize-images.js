@@ -35,8 +35,7 @@ const productGroups = [
 			'Белая сумочка монетница из белого бисера': 'white-beaded-coin-purse',
 			'Черная сумочка монетница из черного бисера': 'black-beaded-coin-purse',
 			'Сумочка из бисера для торжества': 'beaded-evening-bag',
-			'Яркая мини-сумочка для девочки': 'bright-mini-bag-for-girl',
-			'Сумка связанная крючком по ирландским мотивам': 'irish-motif-knitted-bag'
+			'Яркая мини-сумочка для девочки': 'bright-mini-bag-for-girl'
 		}
 	},
 	{
@@ -90,7 +89,8 @@ const productGroups = [
 			'Белая кофточка, связанная из португальский ниток, хлопок. Вязание из отдельных мотивов':
 				'white-cotton-motif-crochet-top',
 			'Кофта, юбка и сумочка, связанные крючком из португальских  ниток из хлопка':
-				'crochet-cotton-skirt-and-bag-set'
+				'crochet-cotton-skirt-and-bag-set',
+			'Сумка связанная крючком по ирландским мотивам': 'irish-motif-knitted-bag'
 		}
 	},
 	{
