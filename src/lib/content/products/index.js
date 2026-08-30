@@ -5,11 +5,15 @@ import { product as bag004 } from './bag-004.js';
 import { product as bag005 } from './bag-005.js';
 import { product as bag006 } from './bag-006.js';
 import { product as bag007 } from './bag-007.js';
+import { product as bag008 } from './bag-008.js';
 import { product as acc001 } from './acc-001.js';
 import { product as oth001 } from './oth-001.js';
 import { product as oth002 } from './oth-002.js';
 import { product as oth003 } from './oth-003.js';
 import { product as br001 } from './br-001.js';
+import { product as br013 } from './br-013.js';
+import { product as br014 } from './br-014.js';
+import { product as br015 } from './br-015.js';
 import { product as br003 } from './br-003.js';
 import { product as br004 } from './br-004.js';
 import { product as br005 } from './br-005.js';
@@ -48,6 +52,7 @@ export const rawProducts = [
 	bag005,
 	bag006,
 	bag007,
+	bag008,
 	acc001,
 	oth001,
 	oth002,
@@ -63,6 +68,9 @@ export const rawProducts = [
 	br010,
 	br011,
 	br012,
+	br013,
+	br014,
+	br015,
 	bead001,
 	bead002,
 	bead003,

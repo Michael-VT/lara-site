@@ -35,7 +35,8 @@ const productGroups = [
 			'Белая сумочка монетница из белого бисера': 'white-beaded-coin-purse',
 			'Черная сумочка монетница из черного бисера': 'black-beaded-coin-purse',
 			'Сумочка из бисера для торжества': 'beaded-evening-bag',
-			'Яркая мини-сумочка для девочки': 'bright-mini-bag-for-girl'
+			'Яркая мини-сумочка для девочки': 'bright-mini-bag-for-girl',
+			'Сумка связанная по ирландским мотивам': 'irish-motif-knitted-bag'
 		}
 	},
 	{
@@ -53,7 +54,10 @@ const productGroups = [
 				'white-bead-blue-bicone-ring-bracelet',
 			'Белый браслет из риса и бисера': 'white-rice-pearl-bead-bracelet',
 			'Два браслета синий и белый, разного узора': 'blue-white-patterned-bracelet-duo',
-			'Браслет-шнурок с бисером на регулируемом узле': 'shambhala-beaded-bracelet'
+			'Браслет-шнурок с бисером на регулируемом узле': 'shambhala-beaded-bracelet',
+			'Браслет из крупного и мелкого белого жемчуга': 'white-pearl-large-small-bracelet',
+			'Браслет квадратики белого-золотого риса': 'white-gold-rice-squares-bracelet',
+			'Браслет белые ромбики': 'white-rhombus-bracelet'
 		}
 	},
 	{
