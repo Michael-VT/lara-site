@@ -138,8 +138,16 @@ Follow `docs/ADD-PRODUCT.md` (glossary + checklist).
   (trailing space, 2), Браслеты/«Мои браслеты» (2), Украшения/«Брелок
   подвеска на сумочку и другие изделия» (2). Also Сумочки/«Сумка связанная по
   ирландским мотивам» (superseded by the «крючком» copy in Вязаные изделия).
-- Deploy: push to `origin/main` → Cloudflare Pages auto-build → live on
+- Deploy: push to `origin/main` → Cloudflare auto-build → live on
   larise.art in ~2 min (siteUrl). Verify with curl on product pages.
+  Gotcha (2026-09-02): rapid successive pushes can silently SKIP a build
+  (the version list in the CF dashboard jumps over a commit) — after
+  pushing, verify a changed asset actually went live (compare byte size
+  via curl vs `stat`), and if stale, nudge with an empty commit:
+  `git commit --allow-empty -m "Trigger redeploy" && git push`.
+- Images: webp encoded at quality 92 full / 85 thumb with 4:4:4 chroma —
+  4:2:0 left coloured fringes on white beads (owner-visible artifacts);
+  don't lower without a visual check.
 - Redesign-era notes still valid: catalog `py-20/24` vs product `py-10/14`
   rhythm; hero 4:5 arch frame with mixed orientations; `jwl-004` keeps the
   owner's `miçangas` pt vocabulary. Pre-existing: 4 prettier failures in
