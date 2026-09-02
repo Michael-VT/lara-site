@@ -36,4 +36,14 @@ describe('formatPrice', () => {
 			expect(result).toContain('10');
 		}
 	});
+
+	it('drops decimals for whole-euro amounts', () => {
+		const result = formatPrice(
+			{ mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
+			'en',
+			labels
+		);
+		expect(result).not.toContain('.00');
+		expect(result).toContain('8');
+	});
 });

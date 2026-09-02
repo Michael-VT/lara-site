@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Панама, связанная вручную крючком.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 10, currency: 'EUR' },
 
 	images: [
 		{

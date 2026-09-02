@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Браслет в стиле «Шамбала» на регулируемом скользящем узле, с акцентом из жемчужных и золотистых бусин.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
 
 	images: [
 		{

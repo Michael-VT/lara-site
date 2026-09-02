@@ -12,6 +12,8 @@
 	import PriceDisplay from '$lib/components/products/PriceDisplay.svelte';
 	import OrderButton from '$lib/components/products/OrderButton.svelte';
 	import RelatedProductsStrip from '$lib/components/products/RelatedProductsStrip.svelte';
+	import { formatAmount } from '$lib/utils/price.js';
+	import { siteName, siteUrl } from '$lib/config/site.js';
 
 	let { data } = $props();
 	let locale = $derived(page.data.locale);
@@ -20,6 +22,19 @@
 	let category = $derived(getCategory(product.category));
 
 	let sold = $derived(product.status === 'sold');
+
+	// Typical-range note, only when the "from" price carries a known upper bound.
+	let typicalRange = $derived(
+		product.price && product.price.mode === 'from' && product.price.typicalMax
+			? m.product_priceTypical(
+					{
+						from: formatAmount(product.price.amount, product.price.currency, locale),
+						to: formatAmount(product.price.typicalMax, product.price.currency, locale)
+					},
+					{ locale }
+				)
+			: null
+	);
 
 	/** @type {{ key: string, value: import('$lib/schemas/product.js').LocalizedText | undefined }[]} */
 	let details = $derived(
@@ -41,6 +56,7 @@
 		category: category ? t(category.messageKey, {}, { locale }) : undefined,
 		description: localizeText(product.description, locale),
 		image: product.images.map((img) => img.src),
+		brand: { '@type': 'Brand', name: siteName },
 		offers:
 			product.price && product.price.mode !== 'on_request'
 				? {
@@ -56,14 +72,40 @@
 					}
 				: undefined
 	});
+
+	let breadcrumbLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{
+				'@type': 'ListItem',
+				position: 1,
+				name: m.product_breadcrumbHome({}, { locale }),
+				item: `${siteUrl}/${locale}/`
+			},
+			{
+				'@type': 'ListItem',
+				position: 2,
+				name: m.product_breadcrumbProducts({}, { locale }),
+				item: `${siteUrl}/${locale}/products/`
+			},
+			{
+				'@type': 'ListItem',
+				position: 3,
+				name: title,
+				item: `${siteUrl}/${locale}/products/${product.slug}/`
+			}
+		]
+	});
+
+	let metaDescription = $derived(
+		`${localizeText(product.shortDescription ?? product.description, locale)} ${m.product_metaDescriptionSuffix({}, { locale })}`
+	);
 </script>
 
-<SeoHead
-	{title}
-	description={localizeText(product.shortDescription ?? product.description, locale)}
-	image={product.images[0].src}
-/>
+<SeoHead {title} description={metaDescription} image={product.images[0].src} />
 <JsonLd data={jsonLd} />
+<JsonLd data={breadcrumbLd} />
 
 <div class="mx-auto max-w-content px-4 py-10 sm:px-6 sm:py-14">
 	<Breadcrumbs current={title} />
@@ -87,6 +129,16 @@
 				<ProductStatusBadge status={product.status} />
 				<PriceDisplay price={product.price} class="text-xl font-semibold text-foreground" />
 			</div>
+
+			{#if typicalRange}
+				<p class="-mt-3 text-sm text-muted-foreground">{typicalRange}</p>
+			{/if}
+
+			{#if product.status === 'made_to_order'}
+				<p class="-mt-3 text-sm text-muted-foreground">
+					{m.product_madeToOrderNote({}, { locale })}
+				</p>
+			{/if}
 
 			<p class="text-sm text-muted-foreground">
 				{m.common_sku({}, { locale })}:
@@ -123,6 +175,7 @@
 					class="inline-flex min-h-12 w-full items-center justify-center rounded-control bg-accent-fill px-7 text-base font-semibold text-ink shadow-card transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-lift sm:w-auto"
 				/>
 				<p class="text-xs text-muted-foreground">{m.product_contactReassurance({}, { locale })}</p>
+				<p class="text-xs text-muted-foreground">{m.product_shippingNote({}, { locale })}</p>
 			</div>
 		</div>
 	</div>

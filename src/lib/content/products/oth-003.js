@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Круглый шарик, сплетённый вручную из красных и золотистых бусин, — готовая основа для серёжек; подойдёт и для брелока или подвески.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 5, currency: 'EUR' },
 
 	images: [
 		{

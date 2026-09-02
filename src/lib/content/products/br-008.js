@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Браслет из белого бисера с подходящим кольцом в комплекте и акцентом из синего биконуса, сплетённый вручную.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
 
 	images: [
 		{

@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Сиреневая кофточка, связанная вручную крючком сверху вниз.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 50, typicalMax: 90, currency: 'EUR' },
 
 	images: [
 		{

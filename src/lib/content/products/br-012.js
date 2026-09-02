@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Браслет из крупных серебристых и белых бусин, дополненный мелкими бордовыми бусинами-прокладками.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
 
 	images: [
 		{

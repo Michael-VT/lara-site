@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Нежный браслет, сплетённый вручную из бисера.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
 
 	images: [
 		{

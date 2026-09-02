@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Браслет, сплетённый вручную из белого рисового жемчуга и бисера.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
 
 	images: [
 		{

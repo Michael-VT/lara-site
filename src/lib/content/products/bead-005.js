@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Объёмный брелок-сердце из чёрного бисера с акцентной капелькой красного цвета.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 5, currency: 'EUR' },
 
 	images: [
 		{

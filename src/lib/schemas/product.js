@@ -10,7 +10,7 @@ import { isValidSku } from '../utils/sku.js';
  * @typedef {'available' | 'made_to_order' | 'sold' | 'hidden'} ProductStatus
  * @typedef {
  *   | { mode: 'fixed', amount: number, currency: 'EUR' }
- *   | { mode: 'from', amount: number, currency: 'EUR' }
+ *   | { mode: 'from', amount: number, typicalMax?: number, currency: 'EUR' }
  *   | { mode: 'on_request' }
  * } Price
  * @typedef {{ src: string, thumb?: string, width: number, height: number, alt: LocalizedText }} ProductImage
@@ -50,7 +50,12 @@ export const productStatusSchema = z.enum(['available', 'made_to_order', 'sold',
 
 export const priceSchema = z.discriminatedUnion('mode', [
 	z.object({ mode: z.literal('fixed'), amount: z.number().positive(), currency: z.literal('EUR') }),
-	z.object({ mode: z.literal('from'), amount: z.number().positive(), currency: z.literal('EUR') }),
+	z.object({
+		mode: z.literal('from'),
+		amount: z.number().positive(),
+		typicalMax: z.number().positive().optional(),
+		currency: z.literal('EUR')
+	}),
 	z.object({ mode: z.literal('on_request') })
 ]);
 

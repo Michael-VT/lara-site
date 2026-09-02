@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Подставка под чашку, полностью сплетённая вручную из белого бисера.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 5, currency: 'EUR' },
 
 	images: [
 		{

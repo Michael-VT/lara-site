@@ -18,14 +18,14 @@ export const product = {
 		ru: 'Колье, сплетённое вручную из белых жемчужных бусин и бисера. Можно заказать в другом сочетании цветов.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 20, currency: 'EUR' },
 
 	images: [
 		{
 			src: '/images/products/white-pearl-bead-necklace/1.webp',
 			thumb: '/images/products/white-pearl-bead-necklace/1-thumb.webp',
-			width: 960,
-			height: 1280,
+			width: 1086,
+			height: 1448,
 			alt: {
 				en: 'Necklace of white faux pearls and seed beads',
 				pt: 'Colar de pérolas brancas e miçangas',

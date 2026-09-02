@@ -34,8 +34,14 @@ describe('buildProductEnquiryMessage', () => {
 	});
 
 	it('asks about the price when the price is "on request"', () => {
-		expect(available.price?.mode).toBe('on_request');
-		const message = buildProductEnquiryMessage({ product: available, locale: 'en' });
+		// Synthetic fixture: catalog products now carry starting prices, so the
+		// on-request wording is tested against a constructed object.
+		const onRequest = {
+			...available,
+			sku: 'BAG-998',
+			price: /** @type {const} */ ({ mode: 'on_request' })
+		};
+		const message = buildProductEnquiryMessage({ product: onRequest, locale: 'en' });
 		expect(message).toContain('price');
 	});
 

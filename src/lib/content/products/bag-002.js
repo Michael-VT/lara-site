@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Небольшая сумочка-монетница, полностью сплетённая вручную из чёрного бисера.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 10, currency: 'EUR' },
 
 	images: [
 		{

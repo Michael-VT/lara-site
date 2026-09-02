@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ixlara.example/sitemap.xml
+Sitemap: https://larise.art/sitemap.xml

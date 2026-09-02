@@ -18,14 +18,14 @@ export const product = {
 		ru: 'Небольшая сумочка-монетница, полностью сплетённая вручную из белого бисера.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 10, currency: 'EUR' },
 
 	images: [
 		{
 			src: '/images/products/white-beaded-coin-purse/1.webp',
 			thumb: '/images/products/white-beaded-coin-purse/1-thumb.webp',
-			width: 1280,
-			height: 960,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'White coin purse hand-woven from seed beads',
 				pt: 'Bolsa moedeiro branca, tecida à mão em contas',
@@ -37,7 +37,7 @@ export const product = {
 			src: '/images/products/white-beaded-coin-purse/2.webp',
 			thumb: '/images/products/white-beaded-coin-purse/2-thumb.webp',
 			width: 1280,
-			height: 787,
+			height: 960,
 			alt: {
 				en: 'White coin purse, close-up view',
 				pt: 'Bolsa moedeiro branca, primeiro plano',
@@ -49,7 +49,7 @@ export const product = {
 			src: '/images/products/white-beaded-coin-purse/3.webp',
 			thumb: '/images/products/white-beaded-coin-purse/3-thumb.webp',
 			width: 1280,
-			height: 582,
+			height: 787,
 			alt: {
 				en: 'White coin purse, side view',
 				pt: 'Bolsa moedeiro branca, vista lateral',
@@ -61,7 +61,7 @@ export const product = {
 			src: '/images/products/white-beaded-coin-purse/4.webp',
 			thumb: '/images/products/white-beaded-coin-purse/4-thumb.webp',
 			width: 1280,
-			height: 951,
+			height: 582,
 			alt: {
 				en: 'White coin purse on keyring',
 				pt: 'Bolsa moedeiro branca numa argola de chaves',
@@ -73,7 +73,7 @@ export const product = {
 			src: '/images/products/white-beaded-coin-purse/5.webp',
 			thumb: '/images/products/white-beaded-coin-purse/5-thumb.webp',
 			width: 1280,
-			height: 1098,
+			height: 951,
 			alt: {
 				en: 'White coin purse with beaded chain strap',
 				pt: 'Bolsa moedeiro branca com corrente de contas',
@@ -84,8 +84,8 @@ export const product = {
 		{
 			src: '/images/products/white-beaded-coin-purse/6.webp',
 			thumb: '/images/products/white-beaded-coin-purse/6-thumb.webp',
-			width: 1148,
-			height: 1280,
+			width: 1280,
+			height: 1098,
 			alt: {
 				en: 'White coin purse with long beaded strap',
 				pt: 'Bolsa moedeiro branca com corrente de contas comprida',
@@ -96,6 +96,18 @@ export const product = {
 		{
 			src: '/images/products/white-beaded-coin-purse/7.webp',
 			thumb: '/images/products/white-beaded-coin-purse/7-thumb.webp',
+			width: 1148,
+			height: 1280,
+			alt: {
+				en: 'White coin purse with long beaded strap',
+				pt: 'Bolsa moedeiro branca com corrente de contas comprida',
+				uk: 'Біла сумочка-гаманець з довгим бісерним ланцюжком',
+				ru: 'Белая сумочка-монетница с длинной бисерной цепочкой'
+			}
+		},
+		{
+			src: '/images/products/white-beaded-coin-purse/8.webp',
+			thumb: '/images/products/white-beaded-coin-purse/8-thumb.webp',
 			width: 1098,
 			height: 1280,
 			alt: {

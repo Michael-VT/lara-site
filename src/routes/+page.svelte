@@ -1,8 +1,11 @@
 <script>
 	import { onMount } from 'svelte';
-	import { locales, localeNames, siteName } from '$lib/config/site.js';
+	import { locales, localeNames, siteName, siteUrl } from '$lib/config/site.js';
 	import { resolveLocale } from '$lib/utils/locale.js';
 	import { buildNavHref } from '$lib/utils/href.js';
+	import { buildHreflangAlternates } from '$lib/utils/seo.js';
+
+	let alternates = buildHreflangAlternates('/');
 
 	onMount(() => {
 		let stored = null;
@@ -23,6 +26,11 @@
 
 <svelte:head>
 	<title>{siteName}</title>
+	<!-- Thin language-picker shell: consolidate SEO signals on the default-locale home. -->
+	<link rel="canonical" href="{siteUrl}/en/" />
+	{#each alternates as alt (alt.hreflang)}
+		<link rel="alternate" hreflang={alt.hreflang} href={alt.href} />
+	{/each}
 </svelte:head>
 
 <main

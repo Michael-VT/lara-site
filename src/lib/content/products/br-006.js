@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Браслет, сплетённый вручную из жемчужных бусин в сочетании с золотистым и серебристым бисером.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
 
 	images: [
 		{

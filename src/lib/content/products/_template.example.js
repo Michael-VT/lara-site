@@ -39,9 +39,9 @@ export const product = {
 
 	// price is optional; omit entirely, or use one of:
 	// { mode: 'fixed', amount: 20, currency: 'EUR' }
-	// { mode: 'from', amount: 20, currency: 'EUR' }
-	// { mode: 'on_request' }
-	price: { mode: 'on_request' },
+	// { mode: 'from', amount: 20, typicalMax: 35, currency: 'EUR' }  // typicalMax → product-page "typically €X–€Y" note
+	// { mode: 'on_request' }  // exception only — most products should carry a starting price
+	price: { mode: 'from', amount: 20, currency: 'EUR' },
 
 	images: [
 		{

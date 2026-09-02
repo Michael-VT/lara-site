@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Плоский брелок-сердце, сплетённый вручную из белого бисера 8 мм.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 5, currency: 'EUR' },
 
 	images: [
 		{

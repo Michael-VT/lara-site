@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Браслет с чередованием крупных и мелких белых жемчужин — классическое, мягко сияющее украшение.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
 
 	images: [
 		{

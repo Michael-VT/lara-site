@@ -19,7 +19,7 @@ describe('ProductCard', () => {
 
 		expect(screen.getByText('Ocean beaded bag')).toBeInTheDocument();
 		expect(screen.getByText(/BAG-001/)).toBeInTheDocument();
-		expect(screen.getByText('Available')).toBeInTheDocument();
+		expect(screen.getByText('Ready to ship')).toBeInTheDocument();
 		expect(screen.getByRole('link', { name: 'Order' })).toBeInTheDocument();
 	});
 
@@ -31,7 +31,7 @@ describe('ProductCard', () => {
 	it('marks a sold product as sold, not available', () => {
 		render(ProductCard, { props: { product: { ...baseProduct, status: 'sold' } } });
 		expect(screen.getByText('Sold')).toBeInTheDocument();
-		expect(screen.queryByText('Available')).not.toBeInTheDocument();
+		expect(screen.queryByText('Ready to ship')).not.toBeInTheDocument();
 		expect(screen.getByRole('link', { name: 'Order a similar item' })).toBeInTheDocument();
 	});
 });

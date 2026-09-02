@@ -29,3 +29,9 @@ playwright-report
 
 # Local agent tooling
 .omp/
+
+# Local working/plan docs — never publish
+/PLAN.md
+/PRICELIST*.md
+/SEO.md
+/QUESTIONS*.md

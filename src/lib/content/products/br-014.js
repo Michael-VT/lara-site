@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Браслет из квадратных секций, сплетённых из белого и золотистого бисера-«риса», — геометричный и нарядный.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
 
 	images: [
 		{

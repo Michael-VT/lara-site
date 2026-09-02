@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Браслет в стиле шамбала, сплетённый вручную из красных и прозрачных бусин.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
 
 	images: [
 		{

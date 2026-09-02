@@ -94,7 +94,7 @@ const productGroups = [
 		}
 	},
 	{
-		sourceFolder: 'Разое',
+		sourceFolder: 'Разное',
 		items: {
 			'Заготовки, которые могут быть использованы при изготовлении сережек, брелоков, как пуговицы или для другого декора':
 				'craft-blanks-for-jewellery-and-decor',

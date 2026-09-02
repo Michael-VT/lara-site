@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Сумка, связанная вручную крючком по ирландским мотивам, — отдельные мотивы, соединённые в единое полотно, где ажурные узоры сочетаются с плотными фактурами.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 35, typicalMax: 50, currency: 'EUR' },
 
 	images: [
 		{

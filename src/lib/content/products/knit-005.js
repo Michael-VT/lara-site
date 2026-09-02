@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Белые кофта, юбка и сумочка в комплекте, связанные вручную крючком из португальской хлопковой пряжи.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 50, typicalMax: 90, currency: 'EUR' },
 
 	images: [
 		{

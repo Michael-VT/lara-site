@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Нарядная сумочка, сплетённая вручную из бисера — для торжественных случаев, показана с подходящим брелоком-монетницей.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 35, typicalMax: 50, currency: 'EUR' },
 
 	images: [
 		{

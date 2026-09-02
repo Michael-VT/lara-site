@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Пара браслетов, сплетённых вручную: синий и белый, каждый со своим узором.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
 
 	images: [
 		{

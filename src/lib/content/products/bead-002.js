@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Объёмный брелок-сердце, сплетённый вручную из красного бисера.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 5, currency: 'EUR' },
 
 	images: [
 		{

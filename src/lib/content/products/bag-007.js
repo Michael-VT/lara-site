@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Мини сумочка в комплекте с браслетом, сплетённые вручную из разноцветного бисера.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 10, currency: 'EUR' },
 
 	images: [
 		{

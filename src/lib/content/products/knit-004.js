@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Белая кофточка из португальской хлопковой пряжи, связанная вручную из отдельных мотивов.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 50, typicalMax: 90, currency: 'EUR' },
 
 	images: [
 		{

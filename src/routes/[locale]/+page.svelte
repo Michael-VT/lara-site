@@ -24,8 +24,8 @@
 </script>
 
 <SeoHead
-	title={m.siteTagline({}, { locale })}
-	description={m.home_heroSlide1Body({}, { locale })}
+	title={m.home_seoTitle({}, { locale })}
+	description={m.home_seoDescription({}, { locale })}
 />
 <JsonLd data={jsonLd} />
 

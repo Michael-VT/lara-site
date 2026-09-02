@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Небольшая яркая сумочка, сплетённая вручную из бисера, размер — для девочки, показана с подходящим браслетом.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 10, currency: 'EUR' },
 
 	images: [
 		{

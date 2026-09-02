@@ -8,7 +8,11 @@
 
 	let alternates = $derived(buildHreflangAlternates(page.url.pathname));
 	let canonical = $derived(buildCanonical(page.url.pathname));
-	let fullTitle = $derived(`${title} — ${siteName}`);
+	// Brand suffix only while the whole title fits the ~60-char SERP window;
+	// long page titles keep their words instead (SEO.md 1.1).
+	let fullTitle = $derived(
+		`${title} — ${siteName}`.length <= 60 ? `${title} — ${siteName}` : title
+	);
 </script>
 
 <svelte:head>

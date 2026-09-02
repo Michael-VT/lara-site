@@ -77,7 +77,10 @@ Rules of thumb:
 
 - SKU and slug are **permanent** after publishing (QR codes, sitemap, external
   links) — never change them.
-- `price`: omit, or `{ mode: 'fixed' | 'from' | 'on_request', amount?, currency: 'EUR' }`.
+- `price`: omit, or `{ mode: 'fixed' | 'from' | 'on_request', amount?, typicalMax?, currency: 'EUR' }`.
+  `from` + `typicalMax` renders "from €X" on cards plus a "typically €X–€Y"
+  note on the product page. `on_request` is the exception, not the default —
+  see `PRICELIST.md` for category starting prices.
 - `status`: `available` | `made_to_order` | `sold` | `hidden`.
 - `featured: true` + `featuredOrder` → homepage "Featured pieces" strip.
 - `relatedSkus: ['BEAD-001', …]` → "You may also like" on the product page.

@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Белая сумочка, связанная вручную крючком.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'from', amount: 35, typicalMax: 50, currency: 'EUR' },
 
 	images: [
 		{
