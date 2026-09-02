@@ -86,6 +86,13 @@ Follow `docs/ADD-PRODUCT.md` (glossary + checklist).
 
 ## State after the 2026-09-02 session (latest)
 
+- **Next planned update**: the owner collects Lara's answers to
+  `QUESTIONS-FOR-LARA.md` into **`Lara_answered.txt` at the repo root**
+  (gitignored, free-form Russian, possibly voice-transcribed). When it
+  appears, parse it and turn answers into site updates: prices/sizes →
+  product data, shipping → reusable section, timelines → productionTime,
+  process/portrait photos → How-it's-made / Meet Lara, reviews → section
+  only if real, gift collections if confirmed.
 - **Pricing live per `PRICELIST.md`**: schema `price.mode:'from'` gained
   optional `typicalMax` (product page renders "Typically €X–€Y…" note).
   All 44 products priced except `OTH-001` (blanks, deliberately on_request):
