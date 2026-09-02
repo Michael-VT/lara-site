@@ -6,19 +6,19 @@ export const product = {
 	status: 'available',
 
 	title: {
-		en: 'Colourful beaded bag and bracelet set',
-		pt: 'Conjunto de bolsa e pulseira coloridas em contas',
-		uk: 'Комплект різнокольорової сумочки та браслета з бісеру',
-		ru: 'Сумочка в комплекте с браслетом из разноцветного бисера'
+		en: 'Mini bag and shambala bracelet set',
+		pt: 'Conjunto de mini bolsa e bracelete shambala',
+		uk: 'Комплект: міні сумочка та браслет шамбала',
+		ru: 'Комплект: мини сумочка и браслет шамбала'
 	},
 	description: {
-		en: 'A hand-woven mini bag with a matching bracelet, made from colourful seed beads.',
-		pt: 'Um conjunto de mini bolsa e pulseira a combinar, tecido à mão em contas coloridas.',
-		uk: 'Міні сумочка у комплекті з браслетом, сплетені вручну з різнокольорового бісеру.',
-		ru: 'Мини сумочка в комплекте с браслетом, сплетённые вручную из разноцветного бисера.'
+		en: 'A hand-woven mini bag with a matching shambala bracelet, made from colourful seed beads.',
+		pt: 'Um conjunto de mini bolsa e bracelete shambala a combinar, tecido à mão em contas coloridas.',
+		uk: 'Міні сумочка у комплекті з браслетом шамбала, сплетені вручну з різнокольорового бісеру.',
+		ru: 'Мини сумочка в комплекте с браслетом шамбала, сплетённые вручную из разноцветного бисера.'
 	},
 
-	price: { mode: 'fixed', amount: 10, currency: 'EUR' },
+	price: { mode: 'fixed', amount: 15, currency: 'EUR' },
 
 	images: [
 		{
@@ -27,10 +27,10 @@ export const product = {
 			width: 1280,
 			height: 856,
 			alt: {
-				en: 'Colourful beaded bag and bracelet set',
-				pt: 'Conjunto de bolsa e pulseira coloridas em contas',
-				uk: 'Комплект різнокольорової сумочки та браслета з бісеру',
-				ru: 'Сумочка в комплекте с браслетом из разноцветного бисера'
+				en: 'Mini bag and shambala bracelet set',
+				pt: 'Conjunto de mini bolsa e bracelete shambala',
+				uk: 'Комплект: міні сумочка та браслет шамбала',
+				ru: 'Комплект: мини сумочка и браслет шамбала'
 			}
 		}
 	],

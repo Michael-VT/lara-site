@@ -12,13 +12,13 @@ export const product = {
 		ru: 'Заготовки для серёжек, брелоков и декора'
 	},
 	description: {
-		en: 'Blanks in assorted shapes and colours, which can be used for making earrings and keychains, as buttons, or for other decor.',
-		pt: 'Peças-base em várias formas e cores, que podem ser usadas na confecção de brincos e chaveiros, como botões ou para outro tipo de decoração.',
-		uk: 'Заготовки різних форм та кольорів, які можна використовувати для виготовлення сережок і брелоків, як ґудзики або для іншого декору.',
-		ru: 'Заготовки различных форм и расцветок, которые можно использовать при изготовлении серёжек и брелоков, как пуговицы или для другого декора.'
+		en: 'Blanks in assorted shapes and colours, which can be used for making earrings and keychains, as buttons, or for other decor. The price is per ball — €5.',
+		pt: 'Peças-base em várias formas e cores, que podem ser usadas na confecção de brincos e chaveiros, como botões ou para outro tipo de decoração. O preço é por bola — 5 €.',
+		uk: 'Заготовки різних форм та кольорів, які можна використовувати для виготовлення сережок і брелоків, як ґудзики або для іншого декору. Ціна — 5 € за один шарик.',
+		ru: 'Заготовки различных форм и расцветок, которые можно использовать при изготовлении серёжек и брелоков, как пуговицы или для другого декора. Цена — 5 € за один шарик.'
 	},
 
-	price: { mode: 'on_request' },
+	price: { mode: 'fixed', amount: 5, currency: 'EUR' },
 
 	images: [
 		{
