@@ -143,6 +143,12 @@ Follow `docs/ADD-PRODUCT.md` (glossary + checklist).
 - `KNIT-005` retitled «Кофта, юбка и сумочка…» in all locales; slug unchanged.
   Previews use `object-contain` + linen mat (cards, gallery, order summary).
   Slogan: «Ручная работа от всего Сердца, с Любовью!» in all 4 locales.
+- **Never let photos pass through an AI "enhancer"** (2026-09-02 lesson,
+  BAG-008): both owner-exported files were smoothed into a plastic look;
+  the untouched original in `images/Сумочки/…` was the fix. If a photo
+  looks smeared, hunt for the original in older photo folders before
+  reshooting; park processed copies in `images/Разное/`. Verify new photos
+  visually before publishing.
 - Optimizer conventions: photo folders mapped **as-is** (owner's typos are
   load-bearing keys: nested `золоых`, `португальских  ниток` double space;
   the top-level `Разое` typo folder was renamed to `Разное` by the owner on
