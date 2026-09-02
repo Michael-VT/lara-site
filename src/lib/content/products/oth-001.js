@@ -46,5 +46,12 @@ export const product = {
 		pt: 'Encomende as formas, cores e quantidades de que precisa',
 		uk: 'Можна замовити потрібні форми, кольори та кількість',
 		ru: 'Можно заказать нужные формы, цвета и количество'
+	},
+
+	productionTime: {
+		en: 'Usually 1–2 days',
+		pt: 'Normalmente 1–2 dias',
+		uk: 'Зазвичай 1–2 дні',
+		ru: 'Обычно 1–2 дня'
 	}
 };

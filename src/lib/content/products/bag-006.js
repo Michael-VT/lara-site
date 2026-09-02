@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Небольшая мини сумочка-монетница, полностью сплетённая вручную из серебристого бисера.'
 	},
 
-	price: { mode: 'from', amount: 10, currency: 'EUR' },
+	price: { mode: 'fixed', amount: 10, currency: 'EUR' },
 
 	images: [
 		{
@@ -35,7 +35,19 @@ export const product = {
 		}
 	],
 
-	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
+	dimensions: {
+		en: '5 × 6 cm, handle 12 cm',
+		pt: '5 × 6 cm, alça de 12 cm',
+		uk: '5 × 6 см, ручка 12 см',
+		ru: '5 × 6 см, ручка 12 см'
+	},
+
+	materials: {
+		en: 'Czech and Chinese seed beads',
+		pt: 'Contas checas e chinesas',
+		uk: 'Чеський та китайський бісер',
+		ru: 'Чешский и китайский бисер'
+	},
 	colours: {
 		en: 'Silver shown; other colours available to order',
 		pt: 'Mostrado em prateado; outras cores disponíveis por encomenda',

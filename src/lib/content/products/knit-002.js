@@ -47,11 +47,18 @@ export const product = {
 		}
 	],
 
+	productionTime: {
+		en: 'Usually 20–25 days',
+		pt: 'Normalmente 20–25 dias',
+		uk: 'Зазвичай 20–25 днів',
+		ru: 'Обычно 20–25 дней'
+	},
+
 	materials: {
-		en: 'Cotton yarn',
-		pt: 'Fio de algodão',
-		uk: 'Бавовняна пряжа',
-		ru: 'Хлопковая пряжа'
+		en: 'Portuguese cotton yarn',
+		pt: 'Fio de algodão português',
+		uk: 'Португальська бавовняна пряжа',
+		ru: 'Португальская хлопковая пряжа'
 	},
 	colours: {
 		en: 'White shown; other colours available to order',

@@ -71,7 +71,12 @@ export const product = {
 		}
 	],
 
-	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
+	materials: {
+		en: 'Czech and Chinese seed beads',
+		pt: 'Contas checas e chinesas',
+		uk: 'Чеський та китайський бісер',
+		ru: 'Чешский и китайский бисер'
+	},
 
 	featured: true,
 	featuredOrder: 2,

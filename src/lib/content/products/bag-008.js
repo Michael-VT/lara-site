@@ -35,5 +35,19 @@ export const product = {
 		}
 	],
 
+	materials: {
+		en: 'Portuguese cotton yarn',
+		pt: 'Fio de algodão português',
+		uk: 'Португальська бавовняна пряжа',
+		ru: 'Португальская хлопковая пряжа'
+	},
+
+	productionTime: {
+		en: 'Usually 20–25 days',
+		pt: 'Normalmente 20–25 dias',
+		uk: 'Зазвичай 20–25 днів',
+		ru: 'Обычно 20–25 дней'
+	},
+
 	relatedSkus: ['KNIT-002', 'KNIT-005']
 };

@@ -35,6 +35,13 @@ export const product = {
 		}
 	],
 
+	dimensions: {
+		en: 'Length: 16 cm, clasp fastening',
+		pt: 'Comprimento: 16 cm, fecho',
+		uk: 'Довжина: 16 см, застібка-замок',
+		ru: 'Длина: 16 см, застёжка-замок'
+	},
+
 	materials: {
 		en: 'Rice pearl beads, seed beads',
 		pt: 'Pérolas de arroz, contas',

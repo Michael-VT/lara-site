@@ -35,11 +35,25 @@ export const product = {
 		}
 	],
 
+	dimensions: {
+		en: 'Head circumference 52–56 cm, slight stretch',
+		pt: 'Perímetro da cabeça 52–56 cm, ligeiramente elástico',
+		uk: 'Обхват голови 52–56 см, трохи тягнеться',
+		ru: 'Обхват головы 52–56 см, слегка тянется'
+	},
+
+	productionTime: {
+		en: 'Usually 20–25 days',
+		pt: 'Normalmente 20–25 dias',
+		uk: 'Зазвичай 20–25 днів',
+		ru: 'Обычно 20–25 дней'
+	},
+
 	materials: {
-		en: 'Cotton yarn',
-		pt: 'Fio de algodão',
-		uk: 'Бавовняна пряжа',
-		ru: 'Хлопковая пряжа'
+		en: 'Portuguese cotton yarn',
+		pt: 'Fio de algodão português',
+		uk: 'Португальська бавовняна пряжа',
+		ru: 'Португальская хлопковая пряжа'
 	},
 	colours: {
 		en: 'Other colours available to order',

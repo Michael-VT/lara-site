@@ -47,7 +47,19 @@ export const product = {
 		}
 	],
 
-	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
+	dimensions: {
+		en: 'Length: 16 cm, clasp fastening',
+		pt: 'Comprimento: 16 cm, fecho',
+		uk: 'Довжина: 16 см, застібка-замок',
+		ru: 'Длина: 16 см, застёжка-замок'
+	},
+
+	materials: {
+		en: 'Czech and Chinese seed beads',
+		pt: 'Contas checas e chinesas',
+		uk: 'Чеський та китайський бісер',
+		ru: 'Чешский и китайский бисер'
+	},
 
 	featured: true,
 	featuredOrder: 4,

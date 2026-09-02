@@ -47,6 +47,13 @@ export const product = {
 		}
 	],
 
+	dimensions: {
+		en: 'Adjustable slide-knot fastening',
+		pt: 'Fecho ajustável com nó corrido',
+		uk: 'Розмір регулюється на зав’язці',
+		ru: 'Размер регулируется на завязке'
+	},
+
 	materials: { en: 'Beads', pt: 'Contas', uk: 'Намистини', ru: 'Бусины' },
 	colours: {
 		en: 'Red and clear shown; other colours available to order',

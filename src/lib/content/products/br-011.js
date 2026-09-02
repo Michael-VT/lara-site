@@ -35,6 +35,13 @@ export const product = {
 		}
 	],
 
+	dimensions: {
+		en: 'Adjustable slide-knot fastening',
+		pt: 'Fecho ajustável com nó corrido',
+		uk: 'Розмір регулюється на зав’язці',
+		ru: 'Размер регулируется на завязке'
+	},
+
 	materials: { en: 'Cord, seed beads', pt: 'Cordão, contas', uk: 'Шнур, бісер', ru: 'Шнур, бисер' },
 	colours: {
 		en: 'Cream with pearl and gold-tone accent shown; other colours available to order',

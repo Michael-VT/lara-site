@@ -41,6 +41,14 @@ export const product = {
 		uk: 'Показано білий',
 		ru: 'Показан белый'
 	},
+
+	dimensions: {
+		en: 'Length: 16 cm, clasp fastening',
+		pt: 'Comprimento: 16 cm, fecho',
+		uk: 'Довжина: 16 см, застібка-замок',
+		ru: 'Длина: 16 см, застёжка-замок'
+	},
+
 	customisation: {
 		en: 'A similar one can be made to order',
 		pt: 'Um semelhante pode ser encomendado',

@@ -35,11 +35,18 @@ export const product = {
 		}
 	],
 
+	productionTime: {
+		en: 'Usually 20–25 days',
+		pt: 'Normalmente 20–25 dias',
+		uk: 'Зазвичай 20–25 днів',
+		ru: 'Обычно 20–25 дней'
+	},
+
 	materials: {
-		en: 'Cotton yarn',
-		pt: 'Fio de algodão',
-		uk: 'Бавовняна пряжа',
-		ru: 'Хлопковая пряжа'
+		en: 'Portuguese cotton yarn',
+		pt: 'Fio de algodão português',
+		uk: 'Португальська бавовняна пряжа',
+		ru: 'Португальская хлопковая пряжа'
 	},
 	colours: {
 		en: 'White shown; other colours available to order',
@@ -48,10 +55,10 @@ export const product = {
 		ru: 'Показан белый цвет; другие цвета доступны на заказ'
 	},
 	customisation: {
-		en: 'Can be made to order in a different colour',
-		pt: 'Pode ser encomendada noutra cor',
-		uk: 'Можна замовити в іншому кольорі',
-		ru: 'Можно заказать в другом цвете'
+		en: 'Can be made to order in a different colour, knitted to your measurements; the listed price covers the work, yarn is paid separately at receipt cost',
+		pt: 'Pode ser encomendada noutra cor, às suas medidas; o preço é pelo trabalho, o fio é pago à parte pelo recibo',
+		uk: 'Можна замовити в іншому кольорі, за вашими мірками; вказана ціна — за роботу, пряжа оплачується окремо за чеком',
+		ru: 'Можно заказать в другом цвете, по вашим меркам; цена — за работу, пряжа оплачивается отдельно по чеку'
 	},
 
 	relatedSkus: ['KNIT-003', 'KNIT-005']

@@ -86,13 +86,19 @@ Follow `docs/ADD-PRODUCT.md` (glossary + checklist).
 
 ## State after the 2026-09-02 session (latest)
 
-- **Next planned update**: the owner collects Lara's answers to
-  `QUESTIONS-FOR-LARA.md` into **`Lara_answered.txt` at the repo root**
-  (gitignored, free-form Russian, possibly voice-transcribed). When it
-  appears, parse it and turn answers into site updates: prices/sizes →
-  product data, shipping → reusable section, timelines → productionTime,
-  process/portrait photos → How-it's-made / Meet Lara, reviews → section
-  only if real, gift collections if confirmed.
+- **Lara's answers applied (2026-09-02, from `Lara_answered.txt`)**: mini
+  purses now fixed €10 and the evening bag fixed €50 (knitted bags keep
+  "from €35"); dimensions added (mini purses 5×6 cm + 12 cm handle, clasp
+  bracelets 16 cm, shambala adjustable, panama 52–56); productionTime added
+  (knits 20–25 days, blanks 1–2 days); materials уточнены (Czech+Chinese
+  beads everywhere, Portuguese cotton for all knit items); knit clothing
+  customisation notes "по меркам; цена за работу, пряжа по чеку"; How-to-order
+  page gained Payment & shipping (bank transfer/MB WAY, prepayment,
+  next-business-day dispatch) and an EU women's size chart.
+  **Still pending from her**: sizes of large bags (2.2), yarn-label photos
+  (panama later), shipping rates by country, discount scope decided but no
+  UI yet (mini bags, keychains, hearts, balls/blanks, shambala bracelets
+  only), rest "she's still thinking".
 - **Pricing live per `PRICELIST.md`**: schema `price.mode:'from'` gained
   optional `typicalMax` (product page renders "Typically €X–€Y…" note).
   All 44 products priced except `OTH-001` (blanks, deliberately on_request):

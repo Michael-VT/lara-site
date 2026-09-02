@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Нарядная сумочка, сплетённая вручную из бисера — для торжественных случаев, показана с подходящим брелоком-монетницей.'
 	},
 
-	price: { mode: 'from', amount: 35, typicalMax: 50, currency: 'EUR' },
+	price: { mode: 'fixed', amount: 50, currency: 'EUR' },
 
 	images: [
 		{
@@ -71,7 +71,12 @@ export const product = {
 		}
 	],
 
-	materials: { en: 'Seed beads', pt: 'Contas', uk: 'Бісер', ru: 'Бисер' },
+	materials: {
+		en: 'Czech and Chinese seed beads',
+		pt: 'Contas checas e chinesas',
+		uk: 'Чеський та китайський бісер',
+		ru: 'Чешский и китайский бисер'
+	},
 
 	relatedSkus: ['BAG-004', 'BAG-001']
 };
