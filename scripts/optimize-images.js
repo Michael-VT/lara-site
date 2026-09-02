@@ -8,8 +8,12 @@ const productsOutDir = join(root, 'static', 'images', 'products');
 
 const FULL_WIDTH = 1600;
 const THUMB_WIDTH = 480;
-const FULL_QUALITY = 82;
-const THUMB_QUALITY = 78;
+// 4:2:0 chroma subsampling left coloured fringes on white beads/pearls
+// (owner-visible artifacts); 4:4:4 + q92 keeps bead detail clean at a
+// still-small file size. Do not lower these without a visual check.
+const FULL_QUALITY = 92;
+const THUMB_QUALITY = 85;
+const CHROMA = '4:4:4';
 
 /**
  * Product photos are organized as `images/{category folder}/{product folder}/*.jpg`.
@@ -171,13 +175,13 @@ async function processProductFolder(categoryFolder, productFolder, slug) {
 		const fullMeta = await sharp(srcFile)
 			.rotate()
 			.resize({ width: FULL_WIDTH, withoutEnlargement: true })
-			.webp({ quality: FULL_QUALITY })
+			.webp({ quality: FULL_QUALITY, chromaSubsampling: CHROMA })
 			.toFile(fullOut);
 
 		await sharp(srcFile)
 			.rotate()
 			.resize({ width: THUMB_WIDTH, withoutEnlargement: true })
-			.webp({ quality: THUMB_QUALITY })
+			.webp({ quality: THUMB_QUALITY, chromaSubsampling: CHROMA })
 			.toFile(thumbOut);
 
 		results.push({
@@ -203,7 +207,7 @@ async function processSpecialAsset(asset) {
 	const meta = await sharp(join(folderPath, file))
 		.rotate()
 		.resize({ width: asset.width, withoutEnlargement: true })
-		.webp({ quality: asset.quality })
+		.webp({ quality: asset.quality, chromaSubsampling: CHROMA })
 		.toFile(asset.outPath);
 
 	return { out: asset.outPath, width: meta.width, height: meta.height };
