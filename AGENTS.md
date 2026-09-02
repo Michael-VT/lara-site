@@ -99,6 +99,14 @@ Follow `docs/ADD-PRODUCT.md` (glossary + checklist).
   (panama later), shipping rates by country, discount scope decided but no
   UI yet (mini bags, keychains, hearts, balls/blanks, shambala bracelets
   only), rest "she's still thinking".
+- **BAG-008 Irish-motif bag** (2026-09-02 evening): owner's update — now
+  `available` (was made_to_order; «единственный экземпляр»), new main photo
+  (0- prefix), old photo kept as 2nd view, yarn-label photo (from
+  `images/Материалы/`) as 3rd gallery image; full owner-supplied description
+  (Irish lace, mercerised cotton Limol №12); dimensions 21×21×8 cm, handles
+  67 cm total / 38 cm drop, magnetic clasp. Knitted category: 5 MTO + this
+  available one. `images/Материалы/` holds shared material photos (label
+  JPEG+PNG).
 - **Pricing live per `PRICELIST.md`**: schema `price.mode:'from'` gained
   optional `typicalMax` (product page renders "Typically €X–€Y…" note).
   All 44 products priced except `OTH-001` (blanks, deliberately on_request):
