@@ -30,8 +30,8 @@ export const product = {
 		{
 			src: '/images/products/irish-motif-knitted-bag/1.webp',
 			thumb: '/images/products/irish-motif-knitted-bag/1-thumb.webp',
-			width: 1175,
-			height: 1339,
+			width: 960,
+			height: 1280,
 			alt: {
 				en: 'Hand-crocheted bag made of Irish motifs',
 				pt: 'Bolsa feita à mão em croché com motivos irlandeses',
@@ -44,18 +44,6 @@ export const product = {
 			thumb: '/images/products/irish-motif-knitted-bag/2-thumb.webp',
 			width: 960,
 			height: 1280,
-			alt: {
-				en: 'Irish-motif bag, additional view',
-				pt: 'Bolsa com motivos irlandeses, vista adicional',
-				uk: 'Сумочка за ірландськими мотивами, додатковий вид',
-				ru: 'Сумочка по ирландским мотивам, дополнительный вид'
-			}
-		},
-		{
-			src: '/images/products/irish-motif-knitted-bag/3.webp',
-			thumb: '/images/products/irish-motif-knitted-bag/3-thumb.webp',
-			width: 1254,
-			height: 1254,
 			alt: {
 				en: 'Limol yarn label: 100% mercerised cotton',
 				pt: 'Etiqueta do fio Limol: 100% algodão mercerizado',
