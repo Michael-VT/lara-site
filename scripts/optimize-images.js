@@ -94,6 +94,12 @@ const productGroups = [
 				'white-cotton-motif-crochet-top',
 			'Кофта, юбка и сумочка, связанные крючком из португальских  ниток из хлопка':
 				'crochet-cotton-skirt-and-bag-set',
+			// ⚠ sharp's webp encoder mangles this specific photo (horizontal
+			// displacement bands; reproducible even from a clean PNG decode).
+			// Its webps were produced with the standalone `cwebp` binary instead:
+			//   cwebp -preset picture -q 92 -sharp_yuv -m 6 full.png   -> 1.webp
+			//   cwebp -preset picture -q 85 -sharp_yuv -m 6 thumb.png  -> 1-thumb.webp
+			// Do not let a blanket `optimize:images` run overwrite them.
 			'Сумка связанная крючком по ирландским мотивам': 'irish-motif-knitted-bag'
 		}
 	},

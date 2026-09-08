@@ -22,10 +22,10 @@ export const product = {
 
 	images: [
 		{
-			src: '/images/products/white-beaded-coin-purse/1.webp',
-			thumb: '/images/products/white-beaded-coin-purse/1-thumb.webp',
-			width: 1448,
-			height: 1086,
+			src: '/images/products/white-beaded-coin-purse/5.webp',
+			thumb: '/images/products/white-beaded-coin-purse/5-thumb.webp',
+			width: 1280,
+			height: 951,
 			alt: {
 				en: 'White coin purse hand-woven from seed beads',
 				pt: 'Bolsa moedeiro branca, tecida à mão em contas',
@@ -70,10 +70,10 @@ export const product = {
 			}
 		},
 		{
-			src: '/images/products/white-beaded-coin-purse/5.webp',
-			thumb: '/images/products/white-beaded-coin-purse/5-thumb.webp',
-			width: 1280,
-			height: 951,
+			src: '/images/products/white-beaded-coin-purse/1.webp',
+			thumb: '/images/products/white-beaded-coin-purse/1-thumb.webp',
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'White coin purse with beaded chain strap',
 				pt: 'Bolsa moedeiro branca com corrente de contas',

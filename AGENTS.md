@@ -174,7 +174,12 @@ Follow `docs/ADD-PRODUCT.md` (glossary + checklist).
   `git commit --allow-empty -m "Trigger redeploy" && git push`.
 - Images: webp encoded at quality 92 full / 85 thumb with 4:4:4 chroma —
   4:2:0 left coloured fringes on white beads (owner-visible artifacts);
-  don't lower without a visual check.
+  don't lower without a visual check. Exception (2026-09-08): sharp's webp
+  encoder deterministically mangles the irish-motif bag photo (displacement
+  bands, reproducible even from a clean PNG decode — libvips/webp bug);
+  that product's webps are encoded with standalone `cwebp -preset picture
+  -q 9x -sharp_yuv -m 6` instead — see the warning in
+  `scripts/optimize-images.js` before any blanket re-run.
 - Redesign-era notes still valid: catalog `py-20/24` vs product `py-10/14`
   rhythm; hero 4:5 arch frame with mixed orientations; `jwl-004` keeps the
   owner's `miçangas` pt vocabulary. Pre-existing: 4 prettier failures in
