@@ -2,7 +2,7 @@
 export const product = {
 	sku: 'JWL-002',
 	slug: 'silver-accented-beaded-ball-keychain',
-	category: 'jewellery',
+	category: 'accessories',
 	status: 'available',
 
 	title: {

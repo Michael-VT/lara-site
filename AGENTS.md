@@ -86,10 +86,11 @@ Follow `docs/ADD-PRODUCT.md` (glossary + checklist).
 
 ## State after the 2026-09-02 session (latest)
 
-- **Category reshuffle (2026-09-10, owner request)**: `BEAD-001..007` moved
-  to `accessories`; earlier same day `ACC-001` was moved to `beadwork`.
-  SKU prefixes stay as-is (SKUs never change). Net state: accessories 7
-  (all BEAD-prefixed), beadwork 3 (`ACC-001`, `BEAD-008`, `BEAD-009`).
+- **Category reshuffle (2026-09-10, owner request)**: `BEAD-001..007` and
+  `JWL-001..003` moved to `accessories`; earlier same day `ACC-001` was
+  moved to `beadwork`. SKU prefixes stay as-is (SKUs never change). Net
+  state: accessories 10 (7 BEAD- + 3 JWL-prefixed), jewellery 1
+  (`JWL-004` necklace), beadwork 3 (`ACC-001`, `BEAD-008`, `BEAD-009`).
 - **Gallery sync (2026-09-10)**: owner replaced some photo sources in
   `images/` and asked for matching site changes — `BEAD-001` now has 2
   gallery images (old 2–4 sources deleted, stale webps removed; new named

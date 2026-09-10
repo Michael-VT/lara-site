@@ -2,7 +2,7 @@
 export const product = {
 	sku: 'JWL-003',
 	slug: 'silver-gunmetal-beaded-ball-keychain',
-	category: 'jewellery',
+	category: 'accessories',
 	status: 'available',
 
 	title: {
