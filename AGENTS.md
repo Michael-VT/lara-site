@@ -86,9 +86,10 @@ Follow `docs/ADD-PRODUCT.md` (glossary + checklist).
 
 ## State after the 2026-09-02 session (latest)
 
-- **ACC-001 moved to `beadwork` (2026-09-10, owner request)**: SKU prefix
-  stays `ACC` (SKUs never change); `accessories` category is now empty —
-  its filter pill still renders in the catalog (shows 0 items).
+- **Category reshuffle (2026-09-10, owner request)**: `BEAD-001..007` moved
+  to `accessories`; earlier same day `ACC-001` was moved to `beadwork`.
+  SKU prefixes stay as-is (SKUs never change). Net state: accessories 7
+  (all BEAD-prefixed), beadwork 3 (`ACC-001`, `BEAD-008`, `BEAD-009`).
 - **Gallery sync (2026-09-10)**: owner replaced some photo sources in
   `images/` and asked for matching site changes — `BEAD-001` now has 2
   gallery images (old 2–4 sources deleted, stale webps removed; new named

@@ -2,7 +2,7 @@
 export const product = {
 	sku: 'BEAD-006',
 	slug: 'red-white-beaded-ball-keychain',
-	category: 'beadwork',
+	category: 'accessories',
 	status: 'available',
 
 	title: {

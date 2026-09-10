@@ -2,7 +2,7 @@
 export const product = {
 	sku: 'BEAD-001',
 	slug: 'golden-beaded-heart-keychain',
-	category: 'beadwork',
+	category: 'accessories',
 	status: 'available',
 
 	title: {

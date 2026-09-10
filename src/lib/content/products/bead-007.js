@@ -2,7 +2,7 @@
 export const product = {
 	sku: 'BEAD-007',
 	slug: 'white-beaded-flat-heart-keychain',
-	category: 'beadwork',
+	category: 'accessories',
 	status: 'available',
 
 	title: {
