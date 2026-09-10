@@ -86,6 +86,16 @@ Follow `docs/ADD-PRODUCT.md` (glossary + checklist).
 
 ## State after the 2026-09-02 session (latest)
 
+- **Gallery sync (2026-09-10)**: owner replaced some photo sources in
+  `images/` and asked for matching site changes — `BEAD-001` now has 2
+  gallery images (old 2–4 sources deleted, stale webps removed; new named
+  jpg as image 2), `BAG-002` image 2 replaced (old source deleted),
+  `BEAD-002` + `BEAD-007` gained a 2nd image each (new named jpgs).
+  Generated via a targeted one-off `node` script (optimizer params), NOT a
+  blanket optimizer re-run. The new jpgs are owner-supplied and visually
+  distinct from all prior photos (hash-verified, no duplicates); several
+  look AI-styled collages — owner's explicit choice.
+
 - **Lara's answers applied (2026-09-02, from `Lara_answered.txt`)**: mini
   purses now fixed €10 and the evening bag fixed €50 (knitted bags keep
   "from €35"); dimensions added (mini purses 5×6 cm + 12 cm handle, clasp

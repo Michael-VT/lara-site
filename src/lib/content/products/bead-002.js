@@ -32,6 +32,18 @@ export const product = {
 				uk: 'Брелок у вигляді серця з червоного бісеру',
 				ru: 'Брелок в виде сердца из красного бисера'
 			}
+		},
+		{
+			src: '/images/products/red-beaded-heart-keychain/2.webp',
+			thumb: '/images/products/red-beaded-heart-keychain/2-thumb.webp',
+			width: 1280,
+			height: 1170,
+			alt: {
+				en: 'Red beaded heart keychain hanging on a black bag',
+				pt: 'Porta-chaves coração em contas vermelhas pendurado numa bolsa preta',
+				uk: 'Брелок-серце з червоного бісеру на чорній сумці',
+				ru: 'Брелок-сердце из красного бисера на чёрной сумке'
+			}
 		}
 	],
 

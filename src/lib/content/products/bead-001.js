@@ -36,37 +36,13 @@ export const product = {
 		{
 			src: '/images/products/golden-beaded-heart-keychain/2.webp',
 			thumb: '/images/products/golden-beaded-heart-keychain/2-thumb.webp',
-			width: 833,
-			height: 1280,
+			width: 1280,
+			height: 853,
 			alt: {
-				en: 'Golden beaded heart keychain, held in hand',
-				pt: 'Porta-chaves em forma de coração em contas douradas, seguro na mão',
-				uk: 'Брелок у вигляді серця із золотистого бісеру, у руці',
-				ru: 'Брелок в виде сердца из золотистого бисера, в руке'
-			}
-		},
-		{
-			src: '/images/products/golden-beaded-heart-keychain/3.webp',
-			thumb: '/images/products/golden-beaded-heart-keychain/3-thumb.webp',
-			width: 779,
-			height: 1280,
-			alt: {
-				en: 'Golden beaded heart keychain, another angle',
-				pt: 'Porta-chaves em forma de coração em contas douradas, outro ângulo',
-				uk: 'Брелок у вигляді серця із золотистого бісеру, інший ракурс',
-				ru: 'Брелок в виде сердца из золотистого бисера, другой ракурс'
-			}
-		},
-		{
-			src: '/images/products/golden-beaded-heart-keychain/4.webp',
-			thumb: '/images/products/golden-beaded-heart-keychain/4-thumb.webp',
-			width: 827,
-			height: 1264,
-			alt: {
-				en: 'Golden beaded heart keychain, close-up',
-				pt: 'Porta-chaves em forma de coração em contas douradas, primeiro plano',
-				uk: 'Брелок у вигляді серця із золотистого бісеру, крупний план',
-				ru: 'Брелок в виде сердца из золотистого бисера, крупный план'
+				en: 'Golden beaded heart keychain clipped to a black bag',
+				pt: 'Porta-chaves em contas douradas preso a uma bolsa preta',
+				uk: 'Брелок із золотистого бісеру, причеплений до чорної сумки',
+				ru: 'Брелок из золотистого бисера, прикреплён к чёрной сумке'
 			}
 		}
 	],

@@ -36,13 +36,13 @@ export const product = {
 		{
 			src: '/images/products/black-beaded-coin-purse/2.webp',
 			thumb: '/images/products/black-beaded-coin-purse/2-thumb.webp',
-			width: 1268,
-			height: 1280,
+			width: 1280,
+			height: 1067,
 			alt: {
-				en: 'Black coin purse with beaded chain strap',
-				pt: 'Bolsa moedeiro preta com corrente de contas',
-				uk: 'Чорна сумочка-гаманець з бісерним ланцюжком',
-				ru: 'Чёрная сумочка-монетница с бисерной цепочкой'
+				en: 'Black beaded heart-shaped coin purse clipped to a black leather bag',
+				pt: 'Bolsa moedeiro preta em forma de coração, presa a uma bolsa preta',
+				uk: 'Чорна сумочка-гаманець у формі серця на чорній шкіряній сумці',
+				ru: 'Чёрная сумочка-монетница в форме сердца на чёрной кожаной сумке'
 			}
 		}
 	],

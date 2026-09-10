@@ -32,6 +32,18 @@ export const product = {
 				uk: 'Плаский брелок у вигляді серця з білого бісеру',
 				ru: 'Плоский брелок в виде сердца из белого бисера'
 			}
+		},
+		{
+			src: '/images/products/white-beaded-flat-heart-keychain/2.webp',
+			thumb: '/images/products/white-beaded-flat-heart-keychain/2-thumb.webp',
+			width: 1280,
+			height: 1170,
+			alt: {
+				en: 'White beaded heart keychain hanging on a black bag',
+				pt: 'Porta-chaves coração em contas brancas pendurado numa bolsa preta',
+				uk: 'Брелок-серце з білого бісеру на чорній сумці',
+				ru: 'Брелок-сердце из белого бисера на чёрной сумке'
+			}
 		}
 	],
 
