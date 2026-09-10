@@ -2,7 +2,7 @@
 export const product = {
 	sku: 'ACC-001',
 	slug: 'white-beaded-cup-coaster',
-	category: 'accessories',
+	category: 'beadwork',
 	status: 'available',
 
 	title: {
