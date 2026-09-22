@@ -6,18 +6,18 @@ import { getProductBySku } from '$lib/services/catalog.js';
 const locales = ['en', 'pt', 'uk', 'ru'];
 
 describe('buildProductEnquiryMessage', () => {
-	const available = getProductBySku('BAG-001');
-	if (!available) throw new Error('Fixture product BAG-001 not found');
+	const available = getProductBySku('AAA000001');
+	if (!available) throw new Error('Fixture product AAA000001 not found');
 
 	// Synthetic fixture: the current catalog has no real sold item, so the
 	// sold-wording behavior is tested against a constructed object rather
 	// than asserting a false "sold" status on a real product.
-	const sold = { ...available, sku: 'BAG-999', status: /** @type {const} */ ('sold') };
+	const sold = { ...available, sku: 'AAA999999', status: /** @type {const} */ ('sold') };
 
 	it('generates a message for every locale for an available product', () => {
 		for (const locale of locales) {
 			const message = buildProductEnquiryMessage({ product: available, locale });
-			expect(message).toContain('BAG-001');
+			expect(message).toContain('AAA000001');
 			expect(message.length).toBeGreaterThan(0);
 		}
 	});
@@ -25,7 +25,7 @@ describe('buildProductEnquiryMessage', () => {
 	it('uses "similar item" wording for a sold product', () => {
 		const message = buildProductEnquiryMessage({ product: sold, locale: 'en' });
 		expect(message).toContain('similar');
-		expect(message).toContain('BAG-999');
+		expect(message).toContain('AAA999999');
 	});
 
 	it('does not use similar-item wording for an available product', () => {
@@ -38,7 +38,7 @@ describe('buildProductEnquiryMessage', () => {
 		// on-request wording is tested against a constructed object.
 		const onRequest = {
 			...available,
-			sku: 'BAG-998',
+			sku: 'AAA999998',
 			price: /** @type {const} */ ({ mode: 'on_request' })
 		};
 		const message = buildProductEnquiryMessage({ product: onRequest, locale: 'en' });
@@ -57,7 +57,7 @@ describe('buildProductEnquiryMessage', () => {
 
 describe('buildEmailSubject', () => {
 	it('includes the SKU when provided', () => {
-		expect(buildEmailSubject({ sku: 'BAG-001', locale: 'en' })).toContain('BAG-001');
+		expect(buildEmailSubject({ sku: 'AAA000001', locale: 'en' })).toContain('AAA000001');
 	});
 
 	it('falls back to a generic subject without a SKU', () => {

@@ -2,4 +2,7 @@
 User-agent: *
 Disallow:
 
+# content signals: no AI training, no AI assistant input, search allowed
+Content-Signal: ai-train=no, ai-input=no, search=yes
+
 Sitemap: https://larise.art/sitemap.xml

@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BEAD-006',
+	sku: 'AAA000037',
 	slug: 'red-white-beaded-ball-keychain',
-	category: 'accessories',
+	categories: ['accessories', 'beadwork'],
 	status: 'available',
 
 	title: {
@@ -44,5 +44,5 @@ export const product = {
 
 	featured: true,
 	featuredOrder: 3,
-	relatedSkus: ['BEAD-007', 'BEAD-002']
+	relatedSkus: ['AAA000038', 'AAA000033']
 };

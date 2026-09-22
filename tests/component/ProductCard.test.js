@@ -4,9 +4,9 @@ import ProductCard from '$lib/components/products/ProductCard.svelte';
 
 /** @type {import('$lib/schemas/product.js').Product} */
 const baseProduct = {
-	sku: 'BAG-001',
+	sku: 'AAA000001',
 	slug: 'ocean-beaded-bag',
-	category: 'bags',
+	categories: ['bags', 'beadwork'],
 	status: 'available',
 	title: { en: 'Ocean beaded bag' },
 	description: { en: 'A bag.' },
@@ -18,9 +18,14 @@ describe('ProductCard', () => {
 		render(ProductCard, { props: { product: baseProduct } });
 
 		expect(screen.getByText('Ocean beaded bag')).toBeInTheDocument();
-		expect(screen.getByText(/BAG-001/)).toBeInTheDocument();
+		expect(screen.getByText(/AAA000001/)).toBeInTheDocument();
 		expect(screen.getByText('Ready to ship')).toBeInTheDocument();
 		expect(screen.getByRole('link', { name: 'Order' })).toBeInTheDocument();
+	});
+
+	it('lists every category of a multi-category product', () => {
+		render(ProductCard, { props: { product: baseProduct } });
+		expect(screen.getByText(/Bags, Beadwork ·/)).toBeInTheDocument();
 	});
 
 	it('renders without a broken layout when optional fields are missing', () => {

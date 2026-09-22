@@ -1,15 +1,15 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BEAD-001',
+	sku: 'AAA000032',
 	slug: 'golden-beaded-heart-keychain',
-	category: 'accessories',
+	categories: ['accessories', 'beadwork'],
 	status: 'available',
 
 	title: {
 		en: 'Golden beaded heart keychain',
 		pt: 'Porta-chaves coração em contas douradas',
 		uk: 'Брелок-серце із золотистого бісеру',
-		ru: 'Объемное сердце брелок из золотистого бисера'
+		ru: 'Брелок-сердце из золотистого бисера'
 	},
 	description: {
 		en: 'A three-dimensional heart keychain hand-woven from golden seed beads.',
@@ -56,5 +56,5 @@ export const product = {
 
 	featured: true,
 	featuredOrder: 2,
-	relatedSkus: ['BEAD-002', 'BEAD-003']
+	relatedSkus: ['AAA000033', 'AAA000034']
 };

@@ -18,9 +18,9 @@
 
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BAG-999', // must be unique, must match ^[A-Z][A-Z0-9]{1,9}-[0-9]{3,6}$, never change after publishing
+	sku: 'AAA000045', // must be unique, must match ^[A-Z]{3}[0-9]{6}$, never change after publishing
 	slug: 'example-product-slug', // lowercase, hyphen-separated, must be globally unique and stable
-	category: 'bags', // one of: bags, bracelets, jewellery, beadwork, knitted, accessories, other
+	categories: ['bags'], // 1+ of: bags, bracelets, jewellery, beadwork, knitted, accessories, other — FIRST entry is the primary
 	status: 'available', // one of: available, made_to_order, sold, hidden ('hidden' = not published)
 	isDemo: true, // set to true only for placeholder/demo content; omit for real products
 

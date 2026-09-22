@@ -1,15 +1,15 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BR-010',
+	sku: 'AAA000016',
 	slug: 'blue-white-patterned-bracelet-duo',
-	category: 'bracelets',
+	categories: ['bracelets', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
 		en: 'Blue and white bracelet duo, different patterns',
 		pt: 'Dupla de pulseiras azul e branca, padrões diferentes',
 		uk: 'Пара синього та білого браслетів різного візерунка',
-		ru: 'Два браслета синий и белый, разного узора'
+		ru: 'Два браслета — синий и белый, разного узора'
 	},
 	description: {
 		en: 'A pair of hand-woven bracelets, one in blue and one in white, each with a different bead pattern.',
@@ -30,7 +30,7 @@ export const product = {
 				en: 'Blue and white bracelet duo with different patterns',
 				pt: 'Dupla de pulseiras azul e branca com padrões diferentes',
 				uk: 'Пара синього та білого браслетів різного візерунка',
-				ru: 'Два браслета синий и белый, разного узора'
+				ru: 'Два браслета — синий и белый, разного узора'
 			}
 		}
 	],
@@ -61,5 +61,5 @@ export const product = {
 		ru: 'Можно заказать в других цветах'
 	},
 
-	relatedSkus: ['BR-006']
+	relatedSkus: ['AAA000012']
 };

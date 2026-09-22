@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BR-011',
+	sku: 'AAA000017',
 	slug: 'shambhala-beaded-bracelet',
-	category: 'bracelets',
+	categories: ['bracelets', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
@@ -56,5 +56,5 @@ export const product = {
 		ru: 'Можно заказать в другом цвете'
 	},
 
-	relatedSkus: ['BR-007']
+	relatedSkus: ['AAA000013']
 };

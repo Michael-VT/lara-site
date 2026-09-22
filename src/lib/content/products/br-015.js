@@ -1,15 +1,15 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BR-015',
+	sku: 'AAA000021',
 	slug: 'white-rhombus-bracelet',
-	category: 'bracelets',
+	categories: ['bracelets', 'beadwork', 'accessories'],
 	status: 'sold',
 
 	title: {
 		en: 'Bracelet with little white rhombuses',
 		pt: 'Pulseira com losanginhos brancos',
 		uk: 'Браслет із білими ромбиками',
-		ru: 'Браслет белые ромбики'
+		ru: 'Браслет с белыми ромбиками'
 	},
 	description: {
 		en: 'A bracelet patterned with little white rhombuses — a clean, graphic ornament.',
@@ -56,5 +56,5 @@ export const product = {
 		ru: 'Похожий можно заказать'
 	},
 
-	relatedSkus: ['BR-001']
+	relatedSkus: ['AAA000008']
 };

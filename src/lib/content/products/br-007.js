@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BR-007',
+	sku: 'AAA000013',
 	slug: 'red-clear-shambhala-bracelet',
-	category: 'bracelets',
+	categories: ['bracelets', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
@@ -68,5 +68,5 @@ export const product = {
 		ru: 'Можно заказать в другом цвете'
 	},
 
-	relatedSkus: ['BR-011']
+	relatedSkus: ['AAA000017']
 };

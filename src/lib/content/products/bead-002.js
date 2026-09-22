@@ -1,15 +1,15 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BEAD-002',
+	sku: 'AAA000033',
 	slug: 'red-beaded-heart-keychain',
-	category: 'accessories',
+	categories: ['accessories', 'beadwork'],
 	status: 'available',
 
 	title: {
 		en: 'Red beaded heart keychain',
 		pt: 'Porta-chaves coração em contas vermelhas',
 		uk: 'Брелок-серце із червоного бісеру',
-		ru: 'Объемное сердце брелок из красного бисера'
+		ru: 'Брелок-сердце из красного бисера'
 	},
 	description: {
 		en: 'A three-dimensional heart keychain hand-woven from red seed beads.',
@@ -54,5 +54,5 @@ export const product = {
 		ru: 'Чешский и китайский бисер'
 	},
 
-	relatedSkus: ['BEAD-001', 'BEAD-005']
+	relatedSkus: ['AAA000032', 'AAA000036']
 };

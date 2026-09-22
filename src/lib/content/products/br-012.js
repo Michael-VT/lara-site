@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BR-012',
+	sku: 'AAA000018',
 	slug: 'silver-white-large-bead-bracelet',
-	category: 'bracelets',
+	categories: ['bracelets', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
@@ -61,5 +61,5 @@ export const product = {
 		ru: 'Можно заказать в другом цвете'
 	},
 
-	relatedSkus: ['BR-005', 'BR-006']
+	relatedSkus: ['AAA000011', 'AAA000012']
 };

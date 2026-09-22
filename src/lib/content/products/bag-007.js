@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BAG-007',
+	sku: 'AAA000007',
 	slug: 'colorful-beaded-bag-and-bracelet-set',
-	category: 'bags',
+	categories: ['bags', 'bracelets', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
@@ -61,5 +61,5 @@ export const product = {
 		ru: 'Можно заказать в других цветах'
 	},
 
-	relatedSkus: ['BAG-005', 'BAG-006']
+	relatedSkus: ['AAA000005', 'AAA000006']
 };

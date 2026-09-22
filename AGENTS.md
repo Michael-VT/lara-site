@@ -84,7 +84,46 @@ Follow `docs/ADD-PRODUCT.md` (glossary + checklist).
 (`status: 'hidden'` until finished). Photos: `images/<folder>/` → map in
 `scripts/optimize-images.js` → `bun run optimize:images`.
 
-## State after the 2026-09-02 session (latest)
+## State after the 2026-09-16 session (latest — UNCOMMITTED at session exit)
+
+- **Batch awaiting commit + push** (owner-reviewed on LAN preview, deploy
+  pending his go): SKU/multi-category migration (below) + 2026-09-15 content
+  fixes + 2026-09-16 photo edits. Details of all three groups are in session
+  memory; highlights: `pricePerUnit` flag (BEAD-008/009, OTH-001) with
+  `product_pricePerOne` note; panama only `knitted`, customisation "colour
+  and size"; knit-003 «Сиреневая» + dimensions EU 38–40 (UA 44–46); size
+  chart gained a «Украина» column (`order_sizeUkraine`); 16 cross-locale
+  translation fixes incl. «искусственный жемчуг» (jwl-001..004) and
+  pt-PT «croché» (knit-*); bag-003 dupe photo removed, bag-001 gallery cut to
+  6, bag-008 main photo regenerated from owner-replaced source and the Limol
+  label re-added from `images/Материалы/100% мерсеризванный хлопок.png`
+  (the old label jpg is deleted — PNG is canonical; filename is an
+  NFC/NFD trap, copy to an ASCII path before processing).
+- `vite preview` (preview:lan) caches its file list at startup: restart it
+  after every rebuild or new files 404; a request for a deleted asset
+  crashes it with ENOENT (exit 1).
+
+## State after the 2026-09-14 session
+
+- **SKU + multi-category migration (2026-09-14, owner-requested and
+  owner-approved table)**: every product's SKU changed from `ABC-123` to a
+  universal article `AAA` + 6 digits (`^[A-Z]{3}[0-9]{6}$`), continuous
+  000001–000044 grouped by primary category (categories.js order; within a
+  group, the owner-approved table order). Next new product = `AAA000045`.
+  This is the **sanctioned one-time exception** to "SKUs never change" — that
+  rule holds again going forward. Legacy SKUs still resolve: generated
+  `src/lib/content/sku-aliases.js` is consulted by `getProductBySku` (old
+  `?sku=BAG-001` links/QRs keep working); alias integrity is validated at
+  build time in `catalog.js`. Products now carry `categories: string[]`
+  (1..n, first = primary — drives the JSON-LD category and numbering);
+  `relatedSkus` were remapped. Catalog category filter is multi-select
+  (toggle pills, OR-union, `?category=bags,beadwork`, canonical order in
+  URL; unknown ids in the URL degrade to "all"). Codemod kept for
+  provenance: `scripts/migrate-skus-categories.js` (dry-run by default;
+  it aborts once content no longer matches the legacy format — that is
+  expected after the migration).
+
+## State after the 2026-09-02 session
 
 - **Category reshuffle (2026-09-10, owner request)**: `BEAD-001..007` and
   `JWL-001..003` moved to `accessories`; earlier same day `ACC-001` was

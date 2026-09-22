@@ -7,10 +7,21 @@ test.describe('catalog', () => {
 		const cardsBefore = await page.locator('article').count();
 		expect(cardsBefore).toBeGreaterThan(0);
 
-		await page.getByLabel('Category').selectOption('bags');
+		await page.getByRole('button', { name: 'Bags', exact: true }).click();
 		await expect(page).toHaveURL(/category=bags/);
-		const cardsAfter = await page.locator('article').count();
-		expect(cardsAfter).toBeLessThanOrEqual(cardsBefore);
+		const bagsCards = await page.locator('article').count();
+		expect(bagsCards).toBeLessThanOrEqual(cardsBefore);
+
+		// Toggling a second category unions the results (multi-select OR).
+		await page.getByRole('button', { name: 'Knitted items', exact: true }).click();
+		await expect(page).toHaveURL(/category=bags(%2C|,)knitted/);
+		const unionCards = await page.locator('article').count();
+		expect(unionCards).toBeGreaterThanOrEqual(bagsCards);
+
+		// "All" clears the category selection.
+		await page.getByRole('button', { name: 'All' }).first().click();
+		await expect(page).not.toHaveURL(/category=/);
+		await expect(page.locator('article').count()).resolves.toBe(cardsBefore);
 	});
 });
 
@@ -20,18 +31,23 @@ test.describe('product page', () => {
 		await expect(
 			page.getByRole('heading', { level: 1, name: 'White beaded coin purse' })
 		).toBeVisible();
-		await expect(page.getByText('BAG-001')).toBeVisible();
+		await expect(page.getByText('AAA000001')).toBeVisible();
 
 		await page.getByRole('main').getByRole('link', { name: 'Order', exact: true }).first().click();
-		await expect(page).toHaveURL(/how-to-order\/\?sku=BAG-001/);
+		await expect(page).toHaveURL(/how-to-order\/\?sku=AAA000001/);
 	});
 });
 
 test.describe('how-to-order', () => {
 	test('resolves a valid SKU and shows the product summary', async ({ page }) => {
+		await page.goto('/en/how-to-order/?sku=AAA000001');
+		await expect(page.getByText('White beaded coin purse', { exact: true })).toBeVisible();
+		await expect(page.getByText('SKU: AAA000001')).toBeVisible();
+	});
+
+	test('still resolves a legacy SKU through the alias map', async ({ page }) => {
 		await page.goto('/en/how-to-order/?sku=BAG-001');
 		await expect(page.getByText('White beaded coin purse', { exact: true })).toBeVisible();
-		await expect(page.getByText('SKU: BAG-001')).toBeVisible();
 	});
 
 	test('falls back safely for an unknown SKU', async ({ page }) => {
@@ -43,11 +59,12 @@ test.describe('how-to-order', () => {
 	test('WhatsApp and Telegram links use the exact configured URLs', async ({ page }) => {
 		await page.goto('/en/how-to-order/');
 		const main = page.getByRole('main');
-		await expect(main.getByRole('link', { name: 'WhatsApp', exact: true })).toHaveAttribute(
+		// sr-only " — opens in new tab" suffix is part of the accessible name.
+		await expect(main.getByRole('link', { name: /^WhatsApp/ })).toHaveAttribute(
 			'href',
 			'https://wa.me/qr/SCHEPP5QIVBQL1'
 		);
-		await expect(main.getByRole('link', { name: '@ix_lara' })).toHaveAttribute(
+		await expect(main.getByRole('link', { name: /@ix_lara/ })).toHaveAttribute(
 			'href',
 			'https://t.me/ix_lara'
 		);

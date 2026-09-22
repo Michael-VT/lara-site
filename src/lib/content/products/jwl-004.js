@@ -1,15 +1,15 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'JWL-004',
+	sku: 'AAA000022',
 	slug: 'white-pearl-bead-necklace',
-	category: 'jewellery',
+	categories: ['jewellery', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
 		en: 'Necklace of white faux pearls and seed beads',
 		pt: 'Colar de pérolas brancas e miçangas',
-		uk: 'Намисто з білих перлинних намистин і бісеру',
-		ru: 'Колье из белых жемчужных бусин и бисера'
+		uk: 'Намисто з білих штучних перлин і бісеру',
+		ru: 'Колье из белого искусственного жемчуга и бисера'
 	},
 	description: {
 		en: 'A necklace hand-woven from white faux pearls and seed beads. Can be made to order in a different colour combination.',
@@ -29,8 +29,8 @@ export const product = {
 			alt: {
 				en: 'Necklace of white faux pearls and seed beads',
 				pt: 'Colar de pérolas brancas e miçangas',
-				uk: 'Намисто з білих перлинних намистин і бісеру',
-				ru: 'Колье из белых жемчужных бусин и бисера'
+				uk: 'Намисто з білих штучних перлин і бісеру',
+				ru: 'Колье из белого искусственного жемчуга и бисера'
 			}
 		}
 	],
@@ -38,14 +38,14 @@ export const product = {
 	materials: {
 		en: 'Faux pearls, seed beads',
 		pt: 'Pérolas artificiais, miçangas',
-		uk: 'Перлинні намистини, бісер',
-		ru: 'Жемчужные бусины, бисер'
+		uk: 'Штучні перлини, бісер',
+		ru: 'Искусственный жемчуг, бисер'
 	},
 	colours: {
 		en: 'White pearl shown; other colours available to order',
 		pt: 'Mostrado em tons de pérola branca; outras cores disponíveis por encomenda',
 		uk: 'Показані білі перлини; інші кольори доступні на замовлення',
-		ru: 'Показан белый жемчуг; другие цвета доступны на заказ'
+		ru: 'Показан белый искусственный жемчуг; другие цвета доступны на заказ'
 	},
 	customisation: {
 		en: 'Can be made to order in a different colour combination',
@@ -54,5 +54,5 @@ export const product = {
 		ru: 'Можно заказать в другом сочетании цветов'
 	},
 
-	relatedSkus: ['JWL-001', 'JWL-002', 'JWL-003']
+	relatedSkus: ['AAA000039', 'AAA000040', 'AAA000041']
 };

@@ -24,7 +24,7 @@ export const browserLocaleMap = Object.freeze({
 	en: 'en'
 });
 
-export const siteName = 'IX Lara Handmade';
+export const siteName = 'Larise.art Handmade';
 
 /**
  * Public base URL used for canonical/OG/sitemap generation.

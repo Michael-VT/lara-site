@@ -31,13 +31,14 @@
 	);
 
 	// Standard EU women's sizes, body measurements in cm.
+	// UA column: Ukrainian/RU sizing runs 6 above EU (EU 38 = UA 44).
 	const sizeRows = [
-		{ eu: '34', intl: 'XS', chest: '80–84', waist: '62–66', hips: '88–92' },
-		{ eu: '36', intl: 'S', chest: '84–88', waist: '66–70', hips: '92–96' },
-		{ eu: '38', intl: 'M', chest: '88–92', waist: '70–74', hips: '96–100' },
-		{ eu: '40', intl: 'L', chest: '92–96', waist: '74–78', hips: '100–104' },
-		{ eu: '42', intl: 'XL', chest: '96–100', waist: '78–82', hips: '104–108' },
-		{ eu: '44', intl: 'XXL', chest: '100–104', waist: '82–86', hips: '108–112' }
+		{ eu: '34', intl: 'XS', ua: '40', chest: '80–84', waist: '62–66', hips: '88–92' },
+		{ eu: '36', intl: 'S', ua: '42', chest: '84–88', waist: '66–70', hips: '92–96' },
+		{ eu: '38', intl: 'M', ua: '44', chest: '88–92', waist: '70–74', hips: '96–100' },
+		{ eu: '40', intl: 'L', ua: '46', chest: '92–96', waist: '74–78', hips: '100–104' },
+		{ eu: '42', intl: 'XL', ua: '48', chest: '96–100', waist: '78–82', hips: '104–108' },
+		{ eu: '44', intl: 'XXL', ua: '50', chest: '100–104', waist: '82–86', hips: '108–112' }
 	];
 </script>
 
@@ -144,6 +145,9 @@
 							{m.order_sizeIntl({}, { locale })}
 						</th>
 						<th scope="col" class="px-4 py-3 font-semibold text-foreground">
+							{m.order_sizeUkraine({}, { locale })}
+						</th>
+						<th scope="col" class="px-4 py-3 font-semibold text-foreground">
 							{m.order_sizeChest({}, { locale })}
 						</th>
 						<th scope="col" class="px-4 py-3 font-semibold text-foreground">
@@ -159,6 +163,7 @@
 						<tr class="border-t border-border">
 							<td class="px-4 py-2.5 font-medium text-foreground">{row.eu}</td>
 							<td class="px-4 py-2.5 text-muted-foreground">{row.intl}</td>
+							<td class="px-4 py-2.5 text-muted-foreground">{row.ua}</td>
 							<td class="px-4 py-2.5 text-muted-foreground">{row.chest}</td>
 							<td class="px-4 py-2.5 text-muted-foreground">{row.waist}</td>
 							<td class="px-4 py-2.5 text-muted-foreground">{row.hips}</td>

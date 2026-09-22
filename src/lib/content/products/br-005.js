@@ -1,15 +1,15 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BR-005',
+	sku: 'AAA000011',
 	slug: 'white-silver-princess-beaded-bracelet',
-	category: 'bracelets',
+	categories: ['bracelets', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
 		en: '"Princess" white and silver beaded bracelet',
 		pt: 'Pulseira "Princesa" em contas brancas e prateadas',
 		uk: 'Браслет «Принцеса» з білого та срібного бісеру',
-		ru: 'Браслет из белого и серебристого бисера «Для принцессы»'
+		ru: 'Браслет из белого и серебристого бисера «Принцесса»'
 	},
 	description: {
 		en: 'A hand-woven beaded bracelet in white and silver tones.',
@@ -49,5 +49,5 @@ export const product = {
 		ru: 'Чешский и китайский бисер'
 	},
 
-	relatedSkus: ['BR-004', 'BR-003']
+	relatedSkus: ['AAA000010', 'AAA000009']
 };

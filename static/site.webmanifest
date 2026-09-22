@@ -1,0 +1,13 @@
+{
+	"name": "Larise.art Handmade",
+	"short_name": "Larise",
+	"description": "Handmade beaded bracelets, bags and knits by Lara. Ready-to-ship and made-to-order.",
+	"start_url": "/en/",
+	"display": "browser",
+	"background_color": "#f4f2ec",
+	"theme_color": "#f4f2ec",
+	"icons": [
+		{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+		{ "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+	]
+}

@@ -1,19 +1,19 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'KNIT-003',
+	sku: 'AAA000029',
 	slug: 'lilac-top-down-crochet-top',
-	category: 'knitted',
+	categories: ['knitted'],
 	status: 'made_to_order',
 
 	title: {
 		en: 'Lilac top-down crochet top',
-		pt: 'Blusa lilás em crochê, trabalhada de cima para baixo',
+		pt: 'Blusa lilás em croché, trabalhada de cima para baixo',
 		uk: "Бузкова кофточка, в'язана гачком зверху вниз",
-		ru: 'Сиреневый кофточка, связанная крючком сверху вниз'
+		ru: 'Сиреневая кофточка, связанная крючком сверху вниз'
 	},
 	description: {
 		en: 'A hand-crocheted lilac top, worked top-down.',
-		pt: 'Uma blusa lilás em crochê, trabalhada à mão de cima para baixo.',
+		pt: 'Uma blusa lilás em croché, trabalhada à mão de cima para baixo.',
 		uk: "Бузкова кофточка, пов'язана вручну гачком зверху вниз.",
 		ru: 'Сиреневая кофточка, связанная вручную крючком сверху вниз.'
 	},
@@ -28,12 +28,19 @@ export const product = {
 			height: 1280,
 			alt: {
 				en: 'Lilac top-down crochet top',
-				pt: 'Blusa lilás em crochê, trabalhada de cima para baixo',
+				pt: 'Blusa lilás em croché, trabalhada de cima para baixo',
 				uk: "Бузкова кофточка, в'язана гачком зверху вниз",
 				ru: 'Сиреневая кофточка, связанная крючком сверху вниз'
 			}
 		}
 	],
+
+	dimensions: {
+		en: 'European sizes 38–40 (Ukrainian 44–46)',
+		pt: 'Tamanhos europeus 38–40 (ucranianos 44–46)',
+		uk: 'Європейські розміри 38–40 (українські 44–46)',
+		ru: 'Европейские размеры 38–40 (украинские 44–46)'
+	},
 
 	productionTime: {
 		en: 'Usually 20–25 days',
@@ -61,5 +68,5 @@ export const product = {
 		ru: 'Можно заказать в другом цвете, по вашим меркам; цена — за работу, пряжа оплачивается отдельно по чеку'
 	},
 
-	relatedSkus: ['KNIT-004']
+	relatedSkus: ['AAA000030']
 };

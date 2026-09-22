@@ -1,4 +1,5 @@
 import { rawProducts } from '../content/products/index.js';
+import { skuAliases } from '../content/sku-aliases.js';
 import { productSchema } from '../schemas/product.js';
 import { normalizeSku } from '../utils/sku.js';
 
@@ -28,6 +29,19 @@ function buildValidatedProducts() {
 		}
 	}
 
+	// Legacy alias integrity: every old SKU must map to a live product, and
+	// must not collide with a current SKU.
+	const aliasProblems = [];
+	for (const [legacy, target] of Object.entries(skuAliases)) {
+		if (!skuSeen.has(normalizeSku(target))) {
+			aliasProblems.push(`alias ${legacy} -> unknown SKU ${target}`);
+		}
+		if (skuSeen.has(normalizeSku(legacy))) {
+			aliasProblems.push(`alias ${legacy} collides with a current SKU`);
+		}
+	}
+	if (aliasProblems.length) throw new Error(`Invalid SKU aliases: ${aliasProblems.join('; ')}`);
+
 	return parsed;
 }
 
@@ -44,19 +58,28 @@ export function getProductBySlug(slug) {
 	return getPublicProducts().find((p) => p.slug === slug) ?? null;
 }
 
-/** @param {string} sku */
+/**
+ * Looks a product up by SKU. Legacy (pre-2026-09) SKUs resolve through the
+ * alias map, so old links/QRs keep working.
+ * @param {string} sku
+ */
 export function getProductBySku(sku) {
 	const normalized = normalizeSku(sku);
-	return getPublicProducts().find((p) => normalizeSku(p.sku) === normalized) ?? null;
+	const canonical = normalizeSku(skuAliases[normalized] ?? normalized);
+	return getPublicProducts().find((p) => normalizeSku(p.sku) === canonical) ?? null;
 }
 
 /**
+ * Filters by category (OR-union: a product matches if it has ANY of the
+ * given categories; empty/undefined = no category filter) and status
+ * (single value).
  * @param {ReturnType<typeof getPublicProducts>} products
- * @param {{ category?: string | null, status?: string | null }} filters
+ * @param {{ category?: string[] | null, status?: string | null }} filters
  */
 export function filterProducts(products, filters) {
 	return products.filter((p) => {
-		if (filters.category && p.category !== filters.category) return false;
+		if (filters.category?.length && !filters.category.some((c) => p.categories.includes(c)))
+			return false;
 		if (filters.status && p.status !== filters.status) return false;
 		return true;
 	});

@@ -20,27 +20,54 @@ describe('getPublicProducts', () => {
 describe('getProductBySlug / getProductBySku', () => {
 	it('finds a known product by slug', () => {
 		const product = getProductBySlug('white-beaded-coin-purse');
-		expect(product?.sku).toBe('BAG-001');
+		expect(product?.sku).toBe('AAA000001');
 	});
 
 	it('finds a known product by SKU, case-insensitively', () => {
-		expect(getProductBySku('bag-001')?.slug).toBe('white-beaded-coin-purse');
+		expect(getProductBySku('aaa000001')?.slug).toBe('white-beaded-coin-purse');
+		expect(getProductBySku('AAA000001')?.slug).toBe('white-beaded-coin-purse');
+	});
+
+	it('resolves legacy SKUs through the alias map', () => {
 		expect(getProductBySku('BAG-001')?.slug).toBe('white-beaded-coin-purse');
+		expect(getProductBySku('br-013')?.slug).toBe('white-pearl-large-small-bracelet');
 	});
 
 	it('returns null for unknown slug/SKU', () => {
 		expect(getProductBySlug('does-not-exist')).toBeNull();
 		expect(getProductBySku('ZZZ-999')).toBeNull();
+		expect(getProductBySku('AAA999999')).toBeNull();
 	});
 });
 
 describe('filterProducts', () => {
 	const products = getPublicProducts();
 
-	it('filters by category', () => {
-		const result = filterProducts(products, { category: 'bags' });
-		expect(result.every((p) => p.category === 'bags')).toBe(true);
+	it('filters by a single category (OR-union of one)', () => {
+		const result = filterProducts(products, { category: ['bags'] });
+		expect(result.every((p) => p.categories.includes('bags'))).toBe(true);
 		expect(result.length).toBeGreaterThan(0);
+	});
+
+	it('unions multiple categories', () => {
+		const bags = filterProducts(products, { category: ['bags'] });
+		const knitted = filterProducts(products, { category: ['knitted'] });
+		const both = filterProducts(products, { category: ['bags', 'knitted'] });
+		expect(both.length).toBeGreaterThanOrEqual(bags.length);
+		expect(both.length).toBeGreaterThanOrEqual(knitted.length);
+		for (const p of [...bags, ...knitted]) expect(both).toContain(p);
+	});
+
+	it('lists a multi-category product under each of its categories', () => {
+		const product = getProductBySlug('white-beaded-coin-purse');
+		expect(product?.categories.length).toBeGreaterThan(1);
+		for (const id of product?.categories ?? []) {
+			expect(filterProducts(products, { category: [id] })).toContain(product);
+		}
+	});
+
+	it('treats an empty category array as no filter', () => {
+		expect(filterProducts(products, { category: [] })).toHaveLength(products.length);
 	});
 
 	it('filters by status', () => {

@@ -9,25 +9,25 @@ the repo root. Run `bun run dev` (http://localhost:5173) while you work.
 bun scripts/new-product.js bags "red-beaded-evening-bag" --title "Red beaded evening bag"
 ```
 
-- Creates `src/lib/content/products/bag-008.js` (next free number for the
-  category prefix), pre-wired with four-locale skeletons and
-  `status: 'hidden'` (invisible until you finish).
+- Creates `src/lib/content/products/<slug>.js` with the next free universal
+  SKU (`AAA` + 6 digits, continuous across the whole catalog — e.g. the 44
+  products migrated on 2026-09 end at `AAA000044`, so the next scaffold gets
+  `AAA000045`), pre-wired with four-locale skeletons and `status: 'hidden'`
+  (invisible until you finish).
 - Registers the import + array entry in `src/lib/content/products/index.js`.
 
-Categories and SKU prefixes (defined in `src/lib/content/categories.js`):
+Categories (defined in `src/lib/content/categories.js`; a product lists **one
+or more** in `categories: []`, first entry = primary):
 
-| category    | SKU prefix   | locale label key       |
-| ----------- | ------------ | ---------------------- |
-| bags        | `BAG`        | `category_bags`        |
-| bracelets   | `BR`         | `category_bracelets`   |
-| jewellery   | `JEW`/`JWL`* | `category_jewellery`   |
-| beadwork    | `BEAD`       | `category_beadwork`    |
-| knitted     | `KNIT`       | `category_knitted`     |
-| accessories | `ACC`        | `category_accessories` |
-| other       | `OTH`        | `category_other`       |
-
-\* historical files use `JWL-…`; the config prefix is `JEW` — new jewellery
-items get `JEW-005` onward. Both validate (`^[A-Z][A-Z0-9]{1,9}-[0-9]{3,6}$`).
+| category    | locale label key       |
+| ----------- | ---------------------- |
+| bags        | `category_bags`        |
+| bracelets   | `category_bracelets`   |
+| jewellery   | `category_jewellery`   |
+| beadwork    | `category_beadwork`    |
+| knitted     | `category_knitted`     |
+| accessories | `category_accessories` |
+| other       | `category_other`       |
 
 ## 2. Photos
 
@@ -76,14 +76,16 @@ canonical title):
 Rules of thumb:
 
 - SKU and slug are **permanent** after publishing (QR codes, sitemap, external
-  links) — never change them.
+  links) — never change them. SKUs are `AAA` + 6 digits
+  (`^[A-Z]{3}[0-9]{6}$`); the pre-2026-09 `ABC-123` SKUs live on only as
+  aliases in `src/lib/content/sku-aliases.js` (old links still resolve).
 - `price`: omit, or `{ mode: 'fixed' | 'from' | 'on_request', amount?, typicalMax?, currency: 'EUR' }`.
   `from` + `typicalMax` renders "from €X" on cards plus a "typically €X–€Y"
   note on the product page. `on_request` is the exception, not the default —
   see `PRICELIST.md` for category starting prices.
 - `status`: `available` | `made_to_order` | `sold` | `hidden`.
 - `featured: true` + `featuredOrder` → homepage "Featured pieces" strip.
-- `relatedSkus: ['BEAD-001', …]` → "You may also like" on the product page.
+- `relatedSkus: ['AAA000032', …]` → "You may also like" on the product page.
 - Ukrainian apostrophes: ASCII `'` inside **double-quoted** JS strings
   (`"Об'ємний"`), matching the rest of the corpus.
 

@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BAG-008',
+	sku: 'AAA000026',
 	slug: 'irish-motif-knitted-bag',
-	category: 'knitted',
+	categories: ['knitted', 'bags'],
 	status: 'available',
 
 	title: {
@@ -42,8 +42,8 @@ export const product = {
 		{
 			src: '/images/products/irish-motif-knitted-bag/2.webp',
 			thumb: '/images/products/irish-motif-knitted-bag/2-thumb.webp',
-			width: 960,
-			height: 1280,
+			width: 1254,
+			height: 1254,
 			alt: {
 				en: 'Limol yarn label: 100% mercerised cotton',
 				pt: 'Etiqueta do fio Limol: 100% algodão mercerizado',
@@ -67,5 +67,5 @@ export const product = {
 		ru: 'Португальский мерсеризованный хлопок Limol №12'
 	},
 
-	relatedSkus: ['KNIT-002', 'KNIT-005']
+	relatedSkus: ['AAA000028', 'AAA000031']
 };

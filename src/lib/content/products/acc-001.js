@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'ACC-001',
+	sku: 'AAA000023',
 	slug: 'white-beaded-cup-coaster',
-	category: 'beadwork',
+	categories: ['beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
@@ -14,8 +14,8 @@ export const product = {
 	description: {
 		en: 'A hand-woven coaster made entirely from white seed beads, sized to fit under a cup or mug.',
 		pt: 'Uma base para chávena tecida à mão inteiramente em contas brancas, no tamanho ideal para uma chávena ou caneca.',
-		uk: 'Підставка під чашку, повністю сплетена вручну з білого бісеру.',
-		ru: 'Подставка под чашку, полностью сплетённая вручную из белого бисера.'
+		uk: 'Підставка під чашку, повністю сплетена вручну з білого бісеру, розміром під чашку або кружку.',
+		ru: 'Подставка под чашку, полностью сплетённая вручную из белого бисера, по размеру под чашку или кружку.'
 	},
 
 	price: { mode: 'from', amount: 5, currency: 'EUR' },

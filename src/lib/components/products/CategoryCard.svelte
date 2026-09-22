@@ -10,7 +10,7 @@
 	let locale = $derived(page.data.locale);
 	let href = $derived(toHref(`/${locale}/products/?category=${category.id}`));
 	let count = $derived(
-		getPublicProducts().filter((product) => product.category === category.id).length
+		getPublicProducts().filter((product) => product.categories.includes(category.id)).length
 	);
 </script>
 

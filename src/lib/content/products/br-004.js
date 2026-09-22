@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BR-004',
+	sku: 'AAA000010',
 	slug: 'white-gold-flower-beaded-bracelet',
-	category: 'bracelets',
+	categories: ['bracelets', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
@@ -63,5 +63,5 @@ export const product = {
 
 	featured: true,
 	featuredOrder: 4,
-	relatedSkus: ['BR-005', 'BR-003']
+	relatedSkus: ['AAA000011', 'AAA000009']
 };

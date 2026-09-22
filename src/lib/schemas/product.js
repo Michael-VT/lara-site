@@ -17,12 +17,13 @@ import { isValidSku } from '../utils/sku.js';
  * @typedef {{
  *   sku: string,
  *   slug: string,
- *   category: string,
+ *   categories: string[],
  *   status: ProductStatus,
  *   title: LocalizedText,
  *   shortDescription?: LocalizedText,
  *   description: LocalizedText,
  *   price?: Price,
+ *   pricePerUnit?: boolean,
  *   images: ProductImage[],
  *   materials?: LocalizedText,
  *   dimensions?: LocalizedText,
@@ -48,6 +49,15 @@ export const localizedTextSchema = z.object({
 
 export const productStatusSchema = z.enum(['available', 'made_to_order', 'sold', 'hidden']);
 
+/**
+ * One or more category ids; the first entry is the product's primary category
+ * (drives grouping/numbering and the JSON-LD category).
+ */
+export const productCategoriesSchema = z
+	.array(z.enum(/** @type {[string, ...string[]]} */ (categoryIds)))
+	.min(1)
+	.refine((ids) => new Set(ids).size === ids.length, { message: 'Duplicate category' });
+
 export const priceSchema = z.discriminatedUnion('mode', [
 	z.object({ mode: z.literal('fixed'), amount: z.number().positive(), currency: z.literal('EUR') }),
 	z.object({
@@ -72,7 +82,7 @@ export const productSchema = z.object({
 	slug: z
 		.string()
 		.regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'Slug must be lowercase, hyphen-separated ASCII'),
-	category: z.enum(/** @type {[string, ...string[]]} */ (categoryIds)),
+	categories: productCategoriesSchema,
 	status: productStatusSchema,
 
 	title: localizedTextSchema,
@@ -80,6 +90,12 @@ export const productSchema = z.object({
 	description: localizedTextSchema,
 
 	price: priceSchema.optional(),
+
+	/**
+	 * True when a listing photo shows many identical pieces (balls, blanks):
+	 * the price covers ONE piece. Renders a "price per one" note.
+	 */
+	pricePerUnit: z.boolean().optional(),
 
 	images: z.array(productImageSchema).min(1),
 

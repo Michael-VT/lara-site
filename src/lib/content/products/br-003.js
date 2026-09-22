@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BR-003',
+	sku: 'AAA000009',
 	slug: 'tenderness-beaded-bracelet',
-	category: 'bracelets',
+	categories: ['bracelets', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
@@ -49,5 +49,5 @@ export const product = {
 		ru: 'Чешский и китайский бисер'
 	},
 
-	relatedSkus: ['BR-001', 'BR-005']
+	relatedSkus: ['AAA000008', 'AAA000011']
 };

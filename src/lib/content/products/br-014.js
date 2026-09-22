@@ -1,15 +1,15 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BR-014',
+	sku: 'AAA000020',
 	slug: 'white-gold-rice-squares-bracelet',
-	category: 'bracelets',
+	categories: ['bracelets', 'beadwork', 'accessories'],
 	status: 'sold',
 
 	title: {
 		en: 'Bracelet of white and gold rice-bead squares',
 		pt: 'Pulseira de quadradinhos de contas arroz brancas e douradas',
 		uk: 'Браслет із квадратиків із білого та золотистого бісеру «рис»',
-		ru: 'Браслет квадратики белого-золотого риса'
+		ru: 'Браслет «Квадратики» из белого и золотистого бисера-рис'
 	},
 	description: {
 		en: 'A bracelet of square sections woven from white and gold rice beads — geometric and festive.',
@@ -61,5 +61,5 @@ export const product = {
 		ru: 'Похожий можно заказать'
 	},
 
-	relatedSkus: ['BR-009', 'BR-013']
+	relatedSkus: ['AAA000015', 'AAA000019']
 };

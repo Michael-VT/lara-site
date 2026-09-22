@@ -1,14 +1,14 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BAG-006',
+	sku: 'AAA000006',
 	slug: 'silver-beaded-mini-coin-purse',
-	category: 'bags',
+	categories: ['bags', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
 		en: 'Silver beaded mini coin purse',
 		pt: 'Mini bolsa moedeiro prateada em contas',
-		uk: 'Міні сумочка-гаманець зі срібного бісеру',
+		uk: 'Міні сумочка-гаманець зі сріблястого бісеру',
 		ru: 'Мини сумочка монетница из серебристого бисера'
 	},
 	description: {
@@ -29,7 +29,7 @@ export const product = {
 			alt: {
 				en: 'Silver beaded mini coin purse',
 				pt: 'Mini bolsa moedeiro prateada em contas',
-				uk: 'Міні сумочка-гаманець зі срібного бісеру',
+				uk: 'Міні сумочка-гаманець зі сріблястого бісеру',
 				ru: 'Мини сумочка монетница из серебристого бисера'
 			}
 		}
@@ -61,5 +61,5 @@ export const product = {
 		ru: 'Можно заказать в другом цвете'
 	},
 
-	relatedSkus: ['BAG-005', 'BAG-007']
+	relatedSkus: ['AAA000005', 'AAA000007']
 };

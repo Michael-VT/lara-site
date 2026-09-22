@@ -1,15 +1,15 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BEAD-008',
+	sku: 'AAA000024',
 	slug: 'colorful-beaded-balls',
-	category: 'beadwork',
+	categories: ['beadwork', 'other'],
 	status: 'available',
 
 	title: {
 		en: 'Colorful beaded balls',
 		pt: 'Bolas coloridas em contas',
 		uk: 'Різнокольорові кульки з бісеру',
-		ru: 'Разноцветные шарики'
+		ru: 'Разноцветные шарики из бисера'
 	},
 	description: {
 		en: 'A set of round ball keychains hand-woven from multi-coloured seed beads. Balls can be made from beads of different colours and sizes. Any quantity can be ordered.',
@@ -19,6 +19,7 @@ export const product = {
 	},
 
 	price: { mode: 'from', amount: 5, currency: 'EUR' },
+	pricePerUnit: true,
 
 	images: [
 		{
@@ -126,5 +127,5 @@ export const product = {
 		ru: 'Чешский и китайский бисер'
 	},
 
-	relatedSkus: ['BEAD-006', 'BEAD-007']
+	relatedSkus: ['AAA000037', 'AAA000038']
 };

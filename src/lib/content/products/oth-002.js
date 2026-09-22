@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'OTH-002',
+	sku: 'AAA000043',
 	slug: 'blue-gold-earring-ball',
-	category: 'other',
+	categories: ['other', 'beadwork'],
 	status: 'available',
 
 	title: {
@@ -66,5 +66,5 @@ export const product = {
 		ru: 'Можно заказать в другом цвете'
 	},
 
-	relatedSkus: ['OTH-003', 'BEAD-006']
+	relatedSkus: ['AAA000044', 'AAA000037']
 };

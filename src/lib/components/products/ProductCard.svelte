@@ -14,10 +14,16 @@
 
 	let locale = $derived(page.data.locale);
 	let title = $derived(localizeText(product.title, locale));
-	let category = $derived(getCategory(product.category));
+	let categoryLabels = $derived(
+		product.categories
+			.map((id) => getCategory(id))
+			.filter((c) => c !== undefined)
+			.map((c) => t(c.messageKey, {}, { locale }))
+			.join(', ')
+	);
 	let detailsHref = $derived(toHref(`/${locale}/products/${product.slug}/`));
 	let meta = $derived(
-		`${category ? `${t(category.messageKey, {}, { locale })} · ` : ''}${m.common_sku({}, { locale })}: ${product.sku}`
+		`${categoryLabels ? `${categoryLabels} · ` : ''}${m.common_sku({}, { locale })}: ${product.sku}`
 	);
 </script>
 
@@ -48,6 +54,11 @@
 		<div class="flex flex-wrap items-center justify-between gap-x-2 gap-y-1.5">
 			<ProductStatusBadge status={product.status} />
 			<PriceDisplay price={product.price} class="text-sm font-semibold text-foreground" />
+			{#if product.pricePerUnit}
+				<span class="text-xs text-muted-foreground">
+					{m.product_pricePerOne({}, { locale })}
+				</span>
+			{/if}
 		</div>
 
 		<div

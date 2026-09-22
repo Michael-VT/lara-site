@@ -1,6 +1,6 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"siteName": "IX Lara Handmade",
+	"siteName": "Larise.art Handmade",
 	"siteTagline": "Feito à mão de todo o Coração, com Amor!",
 	"home_seoTitle": "Pulseiras, bolsas e tricô feitos à mão",
 	"home_seoDescription": "Pulseiras em contas, bolsas, porta-chaves e peças de tricô feitas à mão por Lara em Portugal. Peças prontas a enviar e por encomenda.",
@@ -73,6 +73,7 @@
 	"product_priceOnRequest": "Preço sob consulta",
 	"product_priceFrom": "a partir de {amount}",
 	"product_priceTypical": "Normalmente {from}–{to}, dependendo do tamanho e do design",
+	"product_pricePerOne": "O preço é por uma peça",
 	"product_shippingNote": "O envio é calculado separadamente",
 	"product_metaDescriptionSuffix": "Feito à mão por Lara em Portugal. O envio é calculado separadamente.",
 	"product_madeToOrderNote": "Cada peça é feita à mão individualmente, podendo ocorrer pequenas variações.",
@@ -116,6 +117,7 @@
 	"order_sizesIntro": "As peças de tricô são feitas às suas medidas. Tamanhos europeus padrão como referência:",
 	"order_sizeEu": "Tamanho (UE)",
 	"order_sizeIntl": "Intl",
+	"order_sizeUkraine": "Ucrânia",
 	"order_sizeChest": "Peito, cm",
 	"order_sizeWaist": "Cintura, cm",
 	"order_sizeHips": "Ancas, cm",

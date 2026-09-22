@@ -1,19 +1,19 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'KNIT-001',
+	sku: 'AAA000027',
 	slug: 'crochet-panama-hat',
-	category: 'knitted',
+	categories: ['knitted'],
 	status: 'made_to_order',
 
 	title: {
 		en: 'Crochet panama hat',
-		pt: 'Chapéu panamá em crochê',
+		pt: 'Chapéu panamá em croché',
 		uk: "В'язана панама гачком",
-		ru: 'Панама'
+		ru: 'Панама, связанная крючком'
 	},
 	description: {
 		en: 'A hand-crocheted panama-style hat.',
-		pt: 'Um chapéu panamá em crochê, trabalhado à mão.',
+		pt: 'Um chapéu panamá em croché, trabalhado à mão.',
 		uk: "Панама, пов'язана вручну гачком.",
 		ru: 'Панама, связанная вручную крючком.'
 	},
@@ -28,7 +28,7 @@ export const product = {
 			height: 960,
 			alt: {
 				en: 'Crochet panama hat',
-				pt: 'Chapéu panamá em crochê',
+				pt: 'Chapéu panamá em croché',
 				uk: "В'язана панама гачком",
 				ru: 'Панама'
 			}
@@ -62,10 +62,10 @@ export const product = {
 		ru: 'Другие цвета доступны на заказ'
 	},
 	customisation: {
-		en: 'Can be made to order in a different colour',
-		pt: 'Pode ser encomendado noutra cor',
-		uk: 'Можна замовити в іншому кольорі',
-		ru: 'Можно заказать в другом цвете'
+		en: 'Can be made to order in a different colour and size',
+		pt: 'Pode ser encomendado noutra cor e tamanho',
+		uk: 'Можна замовити в іншому кольорі та розмірі',
+		ru: 'Можно заказать в другом цвете и размере'
 	},
 
 	relatedSkus: []

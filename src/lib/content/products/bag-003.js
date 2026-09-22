@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BAG-003',
+	sku: 'AAA000003',
 	slug: 'beaded-evening-bag',
-	category: 'bags',
+	categories: ['bags', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
@@ -56,18 +56,6 @@ export const product = {
 				uk: 'Нарядна сумочка з бісеру із брелоком-гаманцем, інший ракурс',
 				ru: 'Нарядная сумочка из бисера с подходящим брелоком-монетницей, другой ракурс'
 			}
-		},
-		{
-			src: '/images/products/beaded-evening-bag/4.webp',
-			thumb: '/images/products/beaded-evening-bag/4-thumb.webp',
-			width: 1182,
-			height: 1280,
-			alt: {
-				en: 'Beaded evening bag with matching coin purse and ring charms',
-				pt: 'Bolsa de noite em contas com pingente-moedeiro e anel a combinar',
-				uk: 'Нарядна сумочка з бісеру із брелоком-гаманцем та кільцем',
-				ru: 'Нарядная сумочка из бисера с брелоком-монетницей и кольцом'
-			}
 		}
 	],
 
@@ -78,5 +66,5 @@ export const product = {
 		ru: 'Чешский и китайский бисер'
 	},
 
-	relatedSkus: ['BAG-004', 'BAG-001']
+	relatedSkus: ['AAA000004', 'AAA000001']
 };

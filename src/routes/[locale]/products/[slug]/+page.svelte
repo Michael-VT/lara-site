@@ -19,7 +19,15 @@
 	let locale = $derived(page.data.locale);
 	let product = $derived(data.product);
 	let title = $derived(localizeText(product.title, locale));
-	let category = $derived(getCategory(product.category));
+	let categoryLabels = $derived(
+		product.categories
+			.map((id) => getCategory(id))
+			.filter((c) => c !== undefined)
+			.map((c) => t(c.messageKey, {}, { locale }))
+			.join(', ')
+	);
+	// schema.org Product.category is a single value — use the primary (first).
+	let primaryCategory = $derived(getCategory(product.categories[0]));
 
 	let sold = $derived(product.status === 'sold');
 
@@ -53,9 +61,10 @@
 		'@type': 'Product',
 		name: title,
 		sku: product.sku,
-		category: category ? t(category.messageKey, {}, { locale }) : undefined,
+		category: primaryCategory ? t(primaryCategory.messageKey, {}, { locale }) : undefined,
 		description: localizeText(product.description, locale),
-		image: product.images.map((img) => img.src),
+		// Google requires absolute URLs for JSON-LD image arrays.
+		image: product.images.map((img) => `${siteUrl}${img.src}`),
 		brand: { '@type': 'Brand', name: siteName },
 		offers:
 			product.price && product.price.mode !== 'on_request'
@@ -114,11 +123,9 @@
 		<ProductGallery images={product.images} />
 
 		<div class="rise-in rise-delay-1 flex flex-col gap-5">
-			{#if category}
+			{#if categoryLabels}
 				<div class="flex items-center gap-3">
-					<span class="eyebrow cat-eyebrow text-accent"
-						>{t(category.messageKey, {}, { locale })}</span
-					>
+					<span class="eyebrow cat-eyebrow text-accent">{categoryLabels}</span>
 					<span class="bead-rule w-8 text-accent" aria-hidden="true"></span>
 				</div>
 			{/if}
@@ -129,6 +136,12 @@
 				<ProductStatusBadge status={product.status} />
 				<PriceDisplay price={product.price} class="text-xl font-semibold text-foreground" />
 			</div>
+
+			{#if product.pricePerUnit}
+				<p class="-mt-3 text-sm font-medium text-foreground">
+					{m.product_pricePerOne({}, { locale })}
+				</p>
+			{/if}
 
 			{#if typicalRange}
 				<p class="-mt-3 text-sm text-muted-foreground">{typicalRange}</p>

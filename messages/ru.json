@@ -1,6 +1,6 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"siteName": "IX Lara Handmade",
+	"siteName": "Larise.art Handmade",
 	"siteTagline": "Ручная работа от всего Сердца, с Любовью!",
 	"home_seoTitle": "Браслеты, сумки и вязаные изделия ручной работы",
 	"home_seoDescription": "Браслеты, сумочки, брелоки и вязаные изделия ручной работы от Лары в Португалии. Готовые работы и изготовление на заказ.",
@@ -73,6 +73,7 @@
 	"product_priceOnRequest": "Цена по запросу",
 	"product_priceFrom": "от {amount}",
 	"product_priceTypical": "Обычно {from}–{to} в зависимости от размера и дизайна",
+	"product_pricePerOne": "Цена за одну штуку",
 	"product_shippingNote": "Доставка рассчитывается отдельно",
 	"product_metaDescriptionSuffix": "Ручная работа Лары из Португалии. Доставка рассчитывается отдельно.",
 	"product_madeToOrderNote": "Каждое изделие создаётся вручную, поэтому возможны небольшие отличия.",
@@ -116,6 +117,7 @@
 	"order_sizesIntro": "Вязаные изделия выполняются по вашим меркам. Для ориентира — стандартные европейские размеры:",
 	"order_sizeEu": "Размер (EU)",
 	"order_sizeIntl": "Междунар.",
+	"order_sizeUkraine": "Украина",
 	"order_sizeChest": "Обхват груди, см",
 	"order_sizeWaist": "Обхват талии, см",
 	"order_sizeHips": "Обхват бёдер, см",

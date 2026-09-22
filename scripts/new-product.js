@@ -3,9 +3,10 @@
 // Example:
 //   bun scripts/new-product.js bags "red-beaded-evening-bag" --title "Red beaded evening bag"
 //
-// Creates src/lib/content/products/{prefix}-{next-number}.js with a four-locale
-// skeleton (status: 'hidden' — the product stays invisible until you finish it
-// and flip the status) and registers it in products/index.js.
+// Creates src/lib/content/products/{slug}.js with a four-locale skeleton
+// (status: 'hidden' — the product stays invisible until you finish it and flip
+// the status), assigns the next universal SKU (AAA + 6 digits) and registers
+// the file in products/index.js.
 
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
@@ -40,13 +41,15 @@ if (rawProducts.some((p) => p.slug === slug)) {
 	process.exit(1);
 }
 
-const prefix = category.skuPrefix;
+// Next universal SKU: highest existing AAA-number + 1 (continuous across the
+// whole catalog, independent of category).
 const numbers = rawProducts
-	.filter((p) => p.sku.startsWith(`${prefix}-`))
-	.map((p) => Number.parseInt(p.sku.split('-')[1], 10));
+	.map((p) => /^AAA(\d{6})$/.exec(p.sku)?.[1])
+	.filter(Boolean)
+	.map(Number);
 const next = (numbers.length ? Math.max(...numbers) : 0) + 1;
-const sku = `${prefix}-${String(next).padStart(3, '0')}`;
-const fileName = `${prefix.toLowerCase()}-${String(next).padStart(3, '0')}.js`;
+const sku = `AAA${String(next).padStart(6, '0')}`;
+const fileName = `${slug}.js`;
 const filePath = join(root, 'src', 'lib', 'content', 'products', fileName);
 if (existsSync(filePath)) {
 	console.error(`${filePath} already exists — refusing to overwrite.`);
@@ -58,7 +61,7 @@ const content = `/** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
 	sku: '${sku}',
 	slug: '${slug}',
-	category: '${category.id}',
+	categories: ['${category.id}'], // first entry is the primary; add more as needed
 	status: 'hidden', // flip to 'available' (or 'made_to_order'/'sold') when ready to publish
 
 	title: {
@@ -94,7 +97,7 @@ export const product = {
 	materials: { en: 'TODO', pt: 'TODO', uk: 'TODO', ru: 'TODO' }, // e.g. en 'Seed beads' — see glossary
 
 	featured: false,
-	relatedSkus: [] // optional: SKUs of similar pieces, e.g. ['${prefix}-001']
+	relatedSkus: [] // optional: SKUs of similar pieces, e.g. ['${sku}']
 };
 `;
 
@@ -116,7 +119,7 @@ if (!existsSync(placeholder)) {
 // Register in index.js: append the import and the array entry.
 const indexPath = join(root, 'src', 'lib', 'content', 'products', 'index.js');
 let index = readFileSync(indexPath, 'utf-8');
-const varName = `${prefix.toLowerCase()}${String(next).padStart(3, '0')}`;
+const varName = slug.replace(/-([a-z0-9])/g, (_, c) => c.toUpperCase());
 index = index.replace(/(\w)(\s*\];\s*)$/, `$1,\n\t${varName}$2`);
 index = index.replace(
 	/(import[\s\S]*?from '\.\/[a-z0-9-]+\.js';\n)(?!\n?import)/,

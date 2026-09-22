@@ -4,7 +4,7 @@
 	import { buildHreflangAlternates, buildCanonical } from '$lib/utils/seo.js';
 
 	/** @type {{ title: string, description: string, image?: string }} */
-	let { title, description, image = '/images/hero/slide-1.svg' } = $props();
+	let { title, description, image = '/images/og.jpg' } = $props();
 
 	let alternates = $derived(buildHreflangAlternates(page.url.pathname));
 	let canonical = $derived(buildCanonical(page.url.pathname));

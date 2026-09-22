@@ -1,15 +1,15 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'JWL-001',
+	sku: 'AAA000039',
 	slug: 'gold-accented-beaded-ball-keychain',
-	category: 'accessories',
+	categories: ['accessories', 'beadwork'],
 	status: 'available',
 
 	title: {
 		en: 'Beaded ball keychain with pearl and gold accents',
 		pt: 'Porta-chaves bola em contas com pérolas e detalhes dourados',
 		uk: 'Брелок-кулька з перлинами та золотистими вставками',
-		ru: 'Брелок подвеска с золотистым бисером'
+		ru: 'Брелок-подвеска с жемчужными бусинами и золотистым бисером'
 	},
 	description: {
 		en: 'A round ball keychain charm hand-woven from faux pearls, seed beads and gold accent beads, finished with a chain and lobster clasp. Balls can be made from beads of different colours and sizes. Any quantity can be ordered.',
@@ -30,7 +30,7 @@ export const product = {
 				en: 'Beaded ball keychain with pearl and gold accents',
 				pt: 'Porta-chaves bola em contas com pérolas e detalhes dourados',
 				uk: 'Брелок-кулька з перлинами та золотистими вставками',
-				ru: 'Брелок подвеска с золотистым бисером'
+				ru: 'Брелок-подвеска с жемчужными бусинами и золотистым бисером'
 			}
 		},
 		{
@@ -51,13 +51,13 @@ export const product = {
 		en: 'Faux pearls, seed beads, metal chain and clasp',
 		pt: 'Pérolas artificiais, contas, corrente metálica e fecho mosquetão',
 		uk: 'Штучні перлини, бісер, металевий ланцюжок і карабін',
-		ru: 'Жемчужные бусины, бисер, металлическая цепочка и карабин'
+		ru: 'Искусственный жемчуг, бисер, металлическая цепочка и карабин'
 	},
 	colours: {
 		en: 'White pearl, red and gold shown; other colours available to order',
 		pt: 'Mostrados em tons de pérola branca, vermelho e dourado; outras cores disponíveis por encomenda',
 		uk: 'Показані білі перлини, червоний і золотистий кольори; інші кольори доступні на замовлення',
-		ru: 'Показаны белый жемчуг, красный и золотистый цвета; другие цвета доступны на заказ'
+		ru: 'Показаны белый искусственный жемчуг, красный и золотистый цвета; другие цвета доступны на заказ'
 	},
 	customisation: {
 		en: 'Can be made to order in a different colour combination',
@@ -66,5 +66,5 @@ export const product = {
 		ru: 'Можно заказать в другом сочетании цветов'
 	},
 
-	relatedSkus: ['JWL-002', 'JWL-003', 'JWL-004']
+	relatedSkus: ['AAA000040', 'AAA000041', 'AAA000022']
 };

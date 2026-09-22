@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BEAD-009',
+	sku: 'AAA000025',
 	slug: 'beaded-toy-balls',
-	category: 'beadwork',
+	categories: ['beadwork', 'other'],
 	status: 'available',
 
 	title: {
@@ -19,6 +19,7 @@ export const product = {
 	},
 
 	price: { mode: 'from', amount: 5, currency: 'EUR' },
+	pricePerUnit: true,
 
 	images: [
 		{
@@ -54,5 +55,5 @@ export const product = {
 		ru: 'Можно заказать в других цветах'
 	},
 
-	relatedSkus: ['BEAD-008']
+	relatedSkus: ['AAA000024']
 };

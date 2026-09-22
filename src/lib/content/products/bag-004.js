@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BAG-004',
+	sku: 'AAA000004',
 	slug: 'bright-mini-bag-for-girl',
-	category: 'bags',
+	categories: ['bags', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
@@ -85,5 +85,5 @@ export const product = {
 		ru: 'Чешский и китайский бисер'
 	},
 
-	relatedSkus: ['BAG-003', 'BAG-002']
+	relatedSkus: ['AAA000003', 'AAA000002']
 };

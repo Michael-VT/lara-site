@@ -3,7 +3,7 @@
 	import { goto } from '$app/navigation';
 	import { m } from '$lib/paraglide/messages.js';
 	import { t, pluralCountKey } from '$lib/utils/messages.js';
-	import { categories } from '$lib/content/categories.js';
+	import { categories, categoryIds } from '$lib/content/categories.js';
 	import { filterProducts } from '$lib/services/catalog.js';
 	import { toHref } from '$lib/utils/href.js';
 	import { getSearchParam } from '$lib/utils/locale.js';
@@ -30,21 +30,44 @@
 
 	const statusOptions = ['available', 'made_to_order', 'sold'];
 
-	let category = $derived(getSearchParam(page.url, 'category') ?? '');
+	/**
+	 * Parses the comma-joined `?category=` param into known category ids.
+	 * Unknown ids are dropped (an old/garbage link degrades to "all products"
+	 * rather than an empty grid); duplicates are removed.
+	 * @param {string | null} param
+	 * @returns {string[]}
+	 */
+	function parseCategoryParam(param) {
+		if (!param) return [];
+		const known = /** @type {string[]} */ (categoryIds);
+		const seen = new Set();
+		for (const raw of param.split(',')) {
+			const id = raw.trim().toLowerCase();
+			if (known.includes(id)) seen.add(id);
+		}
+		return [...seen];
+	}
+
+	let selectedCategories = $derived(parseCategoryParam(getSearchParam(page.url, 'category')));
 	let status = $derived(getSearchParam(page.url, 'status') ?? '');
 
 	let filtered = $derived(
 		filterProducts(data.products, {
-			category: category || null,
+			category: selectedCategories,
 			status: status || null
 		})
 	);
 
-	function updateFilters({ nextCategory = category, nextStatus = status } = {}) {
+	/**
+	 * @param {{ nextCategory?: string, nextStatus?: string }} [updates]
+	 */
+	function updateFilters({ nextCategory, nextStatus } = {}) {
 		const url = new URL(page.url);
-		if (nextCategory) url.searchParams.set('category', nextCategory);
+		const categoryValue = nextCategory ?? selectedCategories.join(',');
+		const statusValue = nextStatus ?? status;
+		if (categoryValue) url.searchParams.set('category', categoryValue);
 		else url.searchParams.delete('category');
-		if (nextStatus) url.searchParams.set('status', nextStatus);
+		if (statusValue) url.searchParams.set('status', statusValue);
 		else url.searchParams.delete('status');
 
 		goto(toHref(`${url.pathname}${url.search}`), {
@@ -52,6 +75,16 @@
 			keepFocus: true,
 			noScroll: true
 		});
+	}
+
+	/** @param {string} id */
+	function toggleCategory(id) {
+		const next = selectedCategories.includes(id)
+			? selectedCategories.filter((c) => c !== id)
+			: [...selectedCategories, id];
+		// Canonical (categories.js) order in the URL so shared links are stable.
+		const ordered = categories.map((c) => c.id).filter((c) => next.includes(c));
+		updateFilters({ nextCategory: ordered.join(',') });
 	}
 
 	function clearFilters() {
@@ -96,17 +129,17 @@
 					<button
 						type="button"
 						onclick={() => updateFilters({ nextCategory: '' })}
-						aria-pressed={!category}
-						class={!category ? pillActive : pillIdle}
+						aria-pressed={selectedCategories.length === 0}
+						class={selectedCategories.length === 0 ? pillActive : pillIdle}
 					>
 						{m.common_all({}, { locale })}
 					</button>
 					{#each categories as c (c.id)}
 						<button
 							type="button"
-							onclick={() => updateFilters({ nextCategory: c.id })}
-							aria-pressed={category === c.id}
-							class={category === c.id ? pillActive : pillIdle}
+							onclick={() => toggleCategory(c.id)}
+							aria-pressed={selectedCategories.includes(c.id)}
+							class={selectedCategories.includes(c.id) ? pillActive : pillIdle}
 						>
 							{t(c.messageKey, {}, { locale })}
 						</button>
@@ -143,7 +176,7 @@
 			</div>
 
 			<div class="flex flex-wrap items-center gap-x-5 gap-y-2 lg:flex-col lg:items-end">
-				{#if category || status}
+				{#if selectedCategories.length > 0 || status}
 					<button
 						type="button"
 						onclick={clearFilters}

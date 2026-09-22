@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BAG-002',
+	sku: 'AAA000002',
 	slug: 'black-beaded-coin-purse',
-	category: 'bags',
+	categories: ['bags', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
@@ -40,7 +40,7 @@ export const product = {
 			height: 1067,
 			alt: {
 				en: 'Black beaded heart-shaped coin purse clipped to a black leather bag',
-				pt: 'Bolsa moedeiro preta em forma de coração, presa a uma bolsa preta',
+				pt: 'Bolsa moedeiro preta em forma de coração, presa a uma bolsa preta de cabedal',
 				uk: 'Чорна сумочка-гаманець у формі серця на чорній шкіряній сумці',
 				ru: 'Чёрная сумочка-монетница в форме сердца на чёрной кожаной сумке'
 			}
@@ -61,5 +61,5 @@ export const product = {
 		ru: 'Чешский и китайский бисер'
 	},
 
-	relatedSkus: ['BAG-001', 'BEAD-004']
+	relatedSkus: ['AAA000001', 'AAA000035']
 };

@@ -1,19 +1,19 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'KNIT-005',
+	sku: 'AAA000031',
 	slug: 'crochet-cotton-skirt-and-bag-set',
-	category: 'knitted',
+	categories: ['knitted', 'bags'],
 	status: 'made_to_order',
 
 	title: {
 		en: 'Crochet cotton top, skirt and bag set',
-		pt: 'Conjunto de blusa, saia e bolsa em crochê de algodão',
+		pt: 'Conjunto de blusa, saia e bolsa em croché de algodão',
 		uk: "В'язані бавовняні кофточка, спідниця та сумочка гачком, набір",
-		ru: 'Кофта, юбка и сумочка, связанные крючком из португальских ниток, хлопок'
+		ru: 'Кофта, юбка и сумочка, связанные крючком из хлопка'
 	},
 	description: {
 		en: 'A hand-crocheted white cotton set — motif-joined top, skirt and matching bag — worked in Portuguese cotton yarn.',
-		pt: 'Um conjunto em crochê de algodão branco feito à mão — blusa unida por motivos, saia e bolsa a condizer — trabalhado em fio de algodão português.',
+		pt: 'Um conjunto em croché de algodão branco feito à mão — blusa unida por motivos, saia e bolsa a condizer — trabalhado em fio de algodão português.',
 		uk: "Білий бавовняний набір, пов'язаний вручну гачком, — кофточка з окремих мотивів, спідниця та сумочка — з португальської бавовняної пряжі.",
 		ru: 'Белые кофта, юбка и сумочка в комплекте, связанные вручную крючком из португальской хлопковой пряжи.'
 	},
@@ -28,7 +28,7 @@ export const product = {
 			height: 1280,
 			alt: {
 				en: 'Crochet cotton top, skirt and bag set',
-				pt: 'Conjunto de blusa, saia e bolsa em crochê de algodão',
+				pt: 'Conjunto de blusa, saia e bolsa em croché de algodão',
 				uk: "В'язані кофточка, спідниця та сумочка гачком з бавовни",
 				ru: 'Вязаные крючком кофта, юбка и сумочка из хлопка'
 			}
@@ -61,5 +61,5 @@ export const product = {
 		ru: 'Можно заказать в другом цвете, по вашим меркам; цена — за работу, пряжа оплачивается отдельно по чеку'
 	},
 
-	relatedSkus: ['KNIT-004']
+	relatedSkus: ['AAA000030']
 };

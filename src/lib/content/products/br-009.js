@@ -1,15 +1,15 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BR-009',
+	sku: 'AAA000015',
 	slug: 'white-rice-pearl-bead-bracelet',
-	category: 'bracelets',
+	categories: ['bracelets', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
 		en: 'White rice pearl bead bracelet',
 		pt: 'Pulseira de pérolas de arroz brancas',
 		uk: 'Браслет з білих перлин рису та бісеру',
-		ru: 'Белый браслет из риса и бисера'
+		ru: 'Белый браслет из рисового жемчуга и бисера'
 	},
 	description: {
 		en: 'A hand-woven bracelet made from white rice-shaped pearl beads and seed beads.',
@@ -30,7 +30,7 @@ export const product = {
 				en: 'White rice pearl bead bracelet',
 				pt: 'Pulseira de pérolas de arroz brancas',
 				uk: 'Браслет з білих перлин рису та бісеру',
-				ru: 'Белый браслет из риса и бисера'
+				ru: 'Белый браслет из рисового жемчуга и бисера'
 			}
 		}
 	],
@@ -61,5 +61,5 @@ export const product = {
 		ru: 'Можно заказать в другом цвете'
 	},
 
-	relatedSkus: ['BR-005']
+	relatedSkus: ['AAA000011']
 };

@@ -1,15 +1,15 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BEAD-004',
+	sku: 'AAA000035',
 	slug: 'black-beaded-heart-keychain',
-	category: 'accessories',
+	categories: ['accessories', 'beadwork'],
 	status: 'available',
 
 	title: {
 		en: 'Black beaded heart keychain',
 		pt: 'Porta-chaves coração em contas pretas',
 		uk: 'Брелок-серце із чорного бісеру',
-		ru: 'Объемное сердце брелок из черного бисера'
+		ru: 'Брелок-сердце из чёрного бисера'
 	},
 	description: {
 		en: 'A three-dimensional heart keychain hand-woven from black seed beads.',
@@ -42,5 +42,5 @@ export const product = {
 		ru: 'Чешский и китайский бисер'
 	},
 
-	relatedSkus: ['BEAD-005', 'BEAD-003']
+	relatedSkus: ['AAA000036', 'AAA000034']
 };

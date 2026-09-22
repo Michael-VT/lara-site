@@ -1,19 +1,19 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'KNIT-002',
+	sku: 'AAA000028',
 	slug: 'white-crochet-bag',
-	category: 'knitted',
+	categories: ['knitted', 'bags'],
 	status: 'made_to_order',
 
 	title: {
 		en: 'White crochet bag',
-		pt: 'Bolsa branca em crochê',
+		pt: 'Bolsa branca em croché',
 		uk: "Біла в'язана сумочка гачком",
 		ru: 'Вязаная белая сумочка, крючок'
 	},
 	description: {
 		en: 'A hand-crocheted white bag.',
-		pt: 'Uma bolsa branca em crochê, trabalhada à mão.',
+		pt: 'Uma bolsa branca em croché, trabalhada à mão.',
 		uk: "Біла сумочка, пов'язана вручну гачком.",
 		ru: 'Белая сумочка, связанная вручную крючком.'
 	},
@@ -28,7 +28,7 @@ export const product = {
 			height: 1070,
 			alt: {
 				en: 'White crochet bag',
-				pt: 'Bolsa branca em crochê',
+				pt: 'Bolsa branca em croché',
 				uk: "Біла в'язана сумочка гачком",
 				ru: 'Вязаная белая сумочка'
 			}
@@ -40,7 +40,7 @@ export const product = {
 			height: 697,
 			alt: {
 				en: 'White crochet bag, second view',
-				pt: 'Bolsa branca em crochê, outra vista',
+				pt: 'Bolsa branca em croché, outra vista',
 				uk: "Біла в'язана сумочка, інший ракурс",
 				ru: 'Вязаная белая сумочка, другой ракурс'
 			}

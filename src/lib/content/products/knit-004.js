@@ -1,19 +1,19 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'KNIT-004',
+	sku: 'AAA000030',
 	slug: 'white-cotton-motif-crochet-top',
-	category: 'knitted',
+	categories: ['knitted'],
 	status: 'made_to_order',
 
 	title: {
 		en: 'White cotton crochet top, motif-joined',
-		pt: 'Blusa branca em crochê de algodão, unida por motivos',
+		pt: 'Blusa branca em croché de algodão, unida por motivos',
 		uk: 'Біла бавовняна кофточка гачком з окремих мотивів',
-		ru: 'Белая кофточка, связанная из португальских ниток, хлопок. Вязание из отдельных мотивов'
+		ru: 'Белая хлопковая кофточка, связанная крючком из отдельных мотивов'
 	},
 	description: {
 		en: 'A hand-crocheted white cotton top made by joining individual motifs, worked in Portuguese cotton yarn.',
-		pt: 'Uma blusa branca em crochê de algodão, trabalhada à mão unindo motivos individuais, em fio de algodão português.',
+		pt: 'Uma blusa branca em croché de algodão, trabalhada à mão unindo motivos individuais, em fio de algodão português.',
 		uk: "Біла кофточка з португальської бавовняної пряжі, пов'язана вручну гачком з окремих мотивів.",
 		ru: 'Белая кофточка из португальской хлопковой пряжи, связанная вручную из отдельных мотивов.'
 	},
@@ -28,7 +28,7 @@ export const product = {
 			height: 610,
 			alt: {
 				en: 'White cotton crochet top made from joined motifs',
-				pt: 'Blusa branca em crochê de algodão, feita de motivos unidos',
+				pt: 'Blusa branca em croché de algodão, feita de motivos unidos',
 				uk: "Біла кофточка, пов'язана з окремих мотивів",
 				ru: 'Белая кофточка, связанная из отдельных мотивов'
 			}
@@ -61,5 +61,5 @@ export const product = {
 		ru: 'Можно заказать в другом цвете, по вашим меркам; цена — за работу, пряжа оплачивается отдельно по чеку'
 	},
 
-	relatedSkus: ['KNIT-003', 'KNIT-005']
+	relatedSkus: ['AAA000029', 'AAA000031']
 };

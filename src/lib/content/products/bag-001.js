@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BAG-001',
+	sku: 'AAA000001',
 	slug: 'white-beaded-coin-purse',
-	category: 'bags',
+	categories: ['bags', 'beadwork', 'accessories'],
 	status: 'available',
 
 	title: {
@@ -21,18 +21,6 @@ export const product = {
 	price: { mode: 'fixed', amount: 10, currency: 'EUR' },
 
 	images: [
-		{
-			src: '/images/products/white-beaded-coin-purse/5.webp',
-			thumb: '/images/products/white-beaded-coin-purse/5-thumb.webp',
-			width: 1280,
-			height: 951,
-			alt: {
-				en: 'White coin purse hand-woven from seed beads',
-				pt: 'Bolsa moedeiro branca, tecida à mão em contas',
-				uk: 'Біла сумочка-гаманець, сплетена вручну з бісеру',
-				ru: 'Белая сумочка-монетница, сплетённая из бисера'
-			}
-		},
 		{
 			src: '/images/products/white-beaded-coin-purse/2.webp',
 			thumb: '/images/products/white-beaded-coin-purse/2-thumb.webp',
@@ -82,18 +70,6 @@ export const product = {
 			}
 		},
 		{
-			src: '/images/products/white-beaded-coin-purse/6.webp',
-			thumb: '/images/products/white-beaded-coin-purse/6-thumb.webp',
-			width: 1280,
-			height: 1098,
-			alt: {
-				en: 'White coin purse with long beaded strap',
-				pt: 'Bolsa moedeiro branca com corrente de contas comprida',
-				uk: 'Біла сумочка-гаманець з довгим бісерним ланцюжком',
-				ru: 'Белая сумочка-монетница с длинной бисерной цепочкой'
-			}
-		},
-		{
 			src: '/images/products/white-beaded-coin-purse/7.webp',
 			thumb: '/images/products/white-beaded-coin-purse/7-thumb.webp',
 			width: 1148,
@@ -135,5 +111,5 @@ export const product = {
 
 	featured: true,
 	featuredOrder: 1,
-	relatedSkus: ['BAG-002', 'BEAD-001']
+	relatedSkus: ['AAA000002', 'AAA000032']
 };

@@ -1,15 +1,15 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'BEAD-007',
+	sku: 'AAA000038',
 	slug: 'white-beaded-flat-heart-keychain',
-	category: 'accessories',
+	categories: ['accessories', 'beadwork'],
 	status: 'available',
 
 	title: {
 		en: 'Flat white beaded heart keychain',
 		pt: 'Porta-chaves coração plano em contas brancas',
 		uk: 'Плаский брелок-серце з білого бісеру',
-		ru: 'Плоское сердце из белого бисера 8 мм'
+		ru: 'Плоский брелок-сердце из белого бисера'
 	},
 	description: {
 		en: 'A flat heart-shaped keychain hand-woven from 8 mm white seed beads.',
@@ -49,5 +49,5 @@ export const product = {
 
 	materials: { en: '8 mm seed beads', pt: 'Contas de 8 mm', uk: 'Бісер 8 мм', ru: 'Бисер 8 мм' },
 
-	relatedSkus: ['BEAD-006', 'BEAD-003']
+	relatedSkus: ['AAA000037', 'AAA000034']
 };

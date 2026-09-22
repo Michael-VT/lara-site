@@ -2,9 +2,9 @@ import { describe, it, expect } from 'vitest';
 import { productSchema } from '$lib/schemas/product.js';
 
 const base = {
-	sku: 'BAG-100',
+	sku: 'AAA000100',
 	slug: 'valid-product',
-	category: 'bags',
+	categories: ['bags'],
 	status: 'available',
 	title: { en: 'Title' },
 	description: { en: 'Description' },
@@ -18,6 +18,7 @@ describe('productSchema', () => {
 
 	it('rejects an invalid SKU', () => {
 		expect(() => productSchema.parse({ ...base, sku: 'bad sku' })).toThrow();
+		expect(() => productSchema.parse({ ...base, sku: 'BAG-100' })).toThrow(); // legacy format
 	});
 
 	it('rejects a missing English title', () => {
@@ -27,7 +28,21 @@ describe('productSchema', () => {
 	});
 
 	it('rejects an unsupported category', () => {
-		expect(() => productSchema.parse({ ...base, category: 'shoes' })).toThrow();
+		expect(() => productSchema.parse({ ...base, categories: ['shoes'] })).toThrow();
+	});
+
+	it('rejects an empty category list', () => {
+		expect(() => productSchema.parse({ ...base, categories: [] })).toThrow();
+	});
+
+	it('rejects duplicate categories', () => {
+		expect(() => productSchema.parse({ ...base, categories: ['bags', 'bags'] })).toThrow();
+	});
+
+	it('accepts multiple categories', () => {
+		expect(() =>
+			productSchema.parse({ ...base, categories: ['bags', 'beadwork', 'accessories'] })
+		).not.toThrow();
 	});
 
 	it('rejects an unsupported status', () => {

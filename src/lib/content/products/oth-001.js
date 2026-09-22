@@ -1,8 +1,8 @@
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
-	sku: 'OTH-001',
+	sku: 'AAA000042',
 	slug: 'craft-blanks-for-jewellery-and-decor',
-	category: 'other',
+	categories: ['other'],
 	status: 'made_to_order',
 
 	title: {
@@ -19,6 +19,7 @@ export const product = {
 	},
 
 	price: { mode: 'fixed', amount: 5, currency: 'EUR' },
+	pricePerUnit: true,
 
 	images: [
 		{

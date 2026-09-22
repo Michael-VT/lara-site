@@ -1,6 +1,6 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"siteName": "IX Lara Handmade",
+	"siteName": "Larise.art Handmade",
 	"siteTagline": "Handmade from the Heart, with Love!",
 	"home_seoTitle": "Handmade beaded bracelets, bags and knits",
 	"home_seoDescription": "Handmade beaded bracelets, bags, keychains and crochet knits by Lara in Portugal. Ready-to-ship pieces and made-to-order custom work.",
@@ -73,6 +73,7 @@
 	"product_priceOnRequest": "Price on request",
 	"product_priceFrom": "from {amount}",
 	"product_priceTypical": "Typically {from}–{to}, depending on size and design",
+	"product_pricePerOne": "Price is for one piece",
 	"product_shippingNote": "Shipping is calculated separately",
 	"product_metaDescriptionSuffix": "Handmade in Portugal by Lara. Shipping is calculated separately.",
 	"product_madeToOrderNote": "Each piece is handmade individually, so small variations may occur.",
@@ -116,6 +117,7 @@
 	"order_sizesIntro": "Knitted pieces are made to your measurements. Standard European sizes for reference:",
 	"order_sizeEu": "Size (EU)",
 	"order_sizeIntl": "Intl",
+	"order_sizeUkraine": "Ukraine",
 	"order_sizeChest": "Chest, cm",
 	"order_sizeWaist": "Waist, cm",
 	"order_sizeHips": "Hips, cm",
