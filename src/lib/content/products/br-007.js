@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/red-clear-shambhala-bracelet/1.webp',
 			thumb: '/images/products/red-clear-shambhala-bracelet/1-thumb.webp',
-			width: 1280,
-			height: 790,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Shambhala bracelet made from red and clear beads',
 				pt: 'Pulseira shambhala de contas vermelhas e transparentes',
@@ -36,8 +36,8 @@ export const product = {
 		{
 			src: '/images/products/red-clear-shambhala-bracelet/2.webp',
 			thumb: '/images/products/red-clear-shambhala-bracelet/2-thumb.webp',
-			width: 1280,
-			height: 1199,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Shambhala bracelet made from red and clear beads, another angle',
 				pt: 'Pulseira shambhala de contas vermelhas e transparentes, outro ângulo',

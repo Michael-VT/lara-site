@@ -36,10 +36,16 @@ export const product = {
 	],
 
 	materials: {
-		en: 'Czech and Chinese seed beads',
-		pt: 'Contas checas e chinesas',
-		uk: 'Чеський та китайський бісер',
-		ru: 'Чешский и китайский бисер'
+		en: 'Czech and Chinese seed beads, 6mm',
+		pt: 'Contas checas e chinesas, 6mm',
+		uk: 'Чеський та китайський бісер, 6мм',
+		ru: 'Чешский и китайский бисер, бусины 6 мм'
+	},
+	dimensions: {
+		en: 'Size: 14 cm in circumference',
+		pt: 'Tamanho: 14 cm de circunferência',
+		uk: 'Розмір: 14 см по колу',
+		ru: 'Размер: 14 см по периметру'
 	},
 
 	featured: true,

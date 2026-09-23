@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/silver-white-large-bead-bracelet/1.webp',
 			thumb: '/images/products/silver-white-large-bead-bracelet/1-thumb.webp',
-			width: 960,
-			height: 1280,
+			width: 941,
+			height: 1672,
 			alt: {
 				en: 'Bracelet of large silvery and white beads with small red spacers',
 				pt: 'Pulseira de contas grandes prateadas e brancas com pequenos realces vermelhos',

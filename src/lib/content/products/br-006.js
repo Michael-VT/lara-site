@@ -55,10 +55,10 @@ export const product = {
 	},
 
 	materials: {
-		en: 'Pearl and seed beads',
-		pt: 'Pérolas e contas',
-		uk: 'Перлини та бісер',
-		ru: 'Жемчужные бусины и бисер'
+		en: 'Pearl beads 4mm, 6mm, 8mm, and seed beads',
+		pt: 'Pérolas de 4mm, 6mm, 8mm, e contas',
+		uk: 'Перлини 4мм, 6мм, 8мм, та бісер',
+		ru: 'Бусины 4 мм, 6 мм, 8 мм и мелкий бисер'
 	},
 	colours: {
 		en: 'White and gold shown; other colours available to order',

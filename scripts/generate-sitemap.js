@@ -3,7 +3,15 @@ import { join } from 'node:path';
 import { locales, siteUrl } from '../src/lib/config/site.js';
 import { getPublicProducts } from '../src/lib/services/catalog.js';
 
-const staticPaths = ['', 'products/', 'how-to-order/', 'about/', 'contacts/', 'privacy/'];
+const staticPaths = [
+	'',
+	'products/',
+	'how-to-order/',
+	'journal/',
+	'about/',
+	'contacts/',
+	'privacy/'
+];
 const products = getPublicProducts();
 const productPaths = products.map((p) => `products/${p.slug}/`);
 const allPaths = [...staticPaths, ...productPaths];

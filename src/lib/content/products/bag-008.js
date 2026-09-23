@@ -30,7 +30,7 @@ export const product = {
 		{
 			src: '/images/products/irish-motif-knitted-bag/1.webp',
 			thumb: '/images/products/irish-motif-knitted-bag/1-thumb.webp',
-			width: 720,
+			width: 1193,
 			height: 1280,
 			alt: {
 				en: 'Hand-crocheted bag made of Irish motifs',

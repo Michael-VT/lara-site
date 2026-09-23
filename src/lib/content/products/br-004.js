@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/white-gold-flower-beaded-bracelet/1.webp',
 			thumb: '/images/products/white-gold-flower-beaded-bracelet/1-thumb.webp',
-			width: 1280,
-			height: 960,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'White and gold beaded bracelet with a flower motif',
 				pt: 'Pulseira em contas brancas e douradas com motivo floral',

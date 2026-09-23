@@ -120,11 +120,18 @@ export const product = {
 		}
 	],
 
+	dimensions: {
+		en: 'Circumference: 14 cm (≈4.5 cm diameter)',
+		pt: 'Circunferência: 14 cm (≈4,5 cm de diâmetro)',
+		uk: 'Обхват: 14 см (діаметр ≈ 4,5 см)',
+		ru: 'Окружность: 14 см (диаметр ≈ 4,5 см)'
+	},
+
 	materials: {
-		en: 'Czech and Chinese seed beads',
-		pt: 'Contas checas e chinesas',
-		uk: 'Чеський та китайський бісер',
-		ru: 'Чешский и китайский бисер'
+		en: 'Czech and Chinese seed beads, 6mm',
+		pt: 'Contas checas e chinesas, 6mm',
+		uk: 'Чеський та китайський бісер, 6мм',
+		ru: 'Чешский и китайский бисер, бусины 6 мм'
 	},
 
 	relatedSkus: ['AAA000037', 'AAA000038']

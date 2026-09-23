@@ -9,7 +9,7 @@ export const product = {
 		en: 'Red beaded mini coin purse',
 		pt: 'Mini bolsa moedeiro vermelha em contas',
 		uk: 'Міні сумочка-гаманець з червоного бісеру',
-		ru: 'Мини сумочка монетница из красного бисера'
+		ru: 'Сумочка монетница мини красная из бисера'
 	},
 	description: {
 		en: 'A small coin purse hand-woven entirely from red seed beads.',
@@ -24,29 +24,41 @@ export const product = {
 		{
 			src: '/images/products/red-beaded-mini-coin-purse/1.webp',
 			thumb: '/images/products/red-beaded-mini-coin-purse/1-thumb.webp',
-			width: 1280,
-			height: 1180,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Red beaded mini coin purse',
 				pt: 'Mini bolsa moedeiro vermelha em contas',
 				uk: 'Міні сумочка-гаманець з червоного бісеру',
 				ru: 'Мини сумочка монетница из красного бисера'
 			}
+		},
+		{
+			src: '/images/products/red-beaded-mini-coin-purse/2.webp',
+			thumb: '/images/products/red-beaded-mini-coin-purse/2-thumb.webp',
+			width: 1448,
+			height: 1086,
+			alt: {
+				en: 'Red beaded mini coin purse, another angle',
+				pt: 'Mini bolsa moedeiro vermelha em contas, outro ângulo',
+				uk: 'Міні сумочка-гаманець з червоного бісеру, інший ракурс',
+				ru: 'Мини сумочка монетница из красного бисера, другой ракурс'
+			}
 		}
 	],
 
 	dimensions: {
-		en: '5 × 6 cm, handle 12 cm',
-		pt: '5 × 6 cm, alça de 12 cm',
-		uk: '5 × 6 см, ручка 12 см',
-		ru: '5 × 6 см, ручка 12 см'
+		en: '5 × 6 cm, handle 24 cm',
+		pt: '5 × 6 cm, alça de 24 cm',
+		uk: '5 × 6 см, ручка 24 см',
+		ru: '5 × 6 см, ручка 24 см'
 	},
 
 	materials: {
-		en: 'Czech and Chinese seed beads',
-		pt: 'Contas checas e chinesas',
-		uk: 'Чеський та китайський бісер',
-		ru: 'Чешский и китайский бисер'
+		en: 'Chinese seed beads, 6mm',
+		pt: 'Contas chinesas, 6mm',
+		uk: 'Китайський бісер, 6мм',
+		ru: 'Китайский бисер, 6мм'
 	},
 	colours: {
 		en: 'Red shown; other colours available to order',

@@ -47,6 +47,13 @@ export const product = {
 		}
 	],
 
+	dimensions: {
+		en: 'Size: 5 cm',
+		pt: 'Tamanho: 5 cm',
+		uk: 'Розмір: 5 см',
+		ru: 'Размер: 5 см'
+	},
+
 	materials: { en: '8 mm seed beads', pt: 'Contas de 8 mm', uk: 'Бісер 8 мм', ru: 'Бисер 8 мм' },
 
 	relatedSkus: ['AAA000037', 'AAA000034']

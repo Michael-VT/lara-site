@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/white-crochet-bag/1.webp',
 			thumb: '/images/products/white-crochet-bag/1-thumb.webp',
-			width: 710,
-			height: 1070,
+			width: 1122,
+			height: 1402,
 			alt: {
 				en: 'White crochet bag',
 				pt: 'Bolsa branca em croché',
@@ -36,8 +36,8 @@ export const product = {
 		{
 			src: '/images/products/white-crochet-bag/2.webp',
 			thumb: '/images/products/white-crochet-bag/2-thumb.webp',
-			width: 910,
-			height: 697,
+			width: 1122,
+			height: 1402,
 			alt: {
 				en: 'White crochet bag, second view',
 				pt: 'Bolsa branca em croché, outra vista',

@@ -9,7 +9,7 @@ export const product = {
 		en: 'Black beaded coin purse',
 		pt: 'Bolsa moedeiro preta em contas',
 		uk: 'Чорна сумочка-гаманець з бісеру',
-		ru: 'Черная сумочка монетница из бисера'
+		ru: 'Сумочка монетница черная из бисера'
 	},
 	description: {
 		en: 'A small coin purse hand-woven entirely from black seed beads.',
@@ -48,17 +48,17 @@ export const product = {
 	],
 
 	dimensions: {
-		en: '5 × 6 cm, handle 12 cm',
-		pt: '5 × 6 cm, alça de 12 cm',
-		uk: '5 × 6 см, ручка 12 см',
-		ru: '5 × 6 см, ручка 12 см'
+		en: '5 × 6 cm, handle 24 cm',
+		pt: '5 × 6 cm, alça de 24 cm',
+		uk: '5 × 6 см, ручка 24 см',
+		ru: '5 × 6 см, ручка 24 см'
 	},
 
 	materials: {
-		en: 'Czech and Chinese seed beads',
-		pt: 'Contas checas e chinesas',
-		uk: 'Чеський та китайський бісер',
-		ru: 'Чешский и китайский бисер'
+		en: 'Chinese seed beads, 6mm',
+		pt: 'Contas chinesas, 6mm',
+		uk: 'Китайський бісер, 6мм',
+		ru: 'Китайский бисер, 6мм'
 	},
 
 	relatedSkus: ['AAA000001', 'AAA000035']

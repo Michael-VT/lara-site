@@ -14,7 +14,14 @@
 	let dialogEl = $state();
 
 	/* Full class names kept literal so the stagger utilities are always in the source. */
-	const stagger = ['rise-delay-1', 'rise-delay-2', 'rise-delay-3', 'rise-delay-4', 'rise-delay-4'];
+	const stagger = [
+		'rise-delay-1',
+		'rise-delay-2',
+		'rise-delay-3',
+		'rise-delay-4',
+		'rise-delay-5',
+		'rise-delay-6'
+	];
 
 	/** @param {import('$lib/config/site.js').Locale} targetLocale */
 	function selectLocale(targetLocale) {

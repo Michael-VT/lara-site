@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/white-bead-blue-bicone-ring-bracelet/1.webp',
 			thumb: '/images/products/white-bead-blue-bicone-ring-bracelet/1-thumb.webp',
-			width: 470,
-			height: 1280,
+			width: 941,
+			height: 1672,
 			alt: {
 				en: 'White beaded bracelet with blue bicone accent',
 				pt: 'Pulseira de contas brancas com acento em bicone azul',
@@ -36,8 +36,8 @@ export const product = {
 		{
 			src: '/images/products/white-bead-blue-bicone-ring-bracelet/2.webp',
 			thumb: '/images/products/white-bead-blue-bicone-ring-bracelet/2-thumb.webp',
-			width: 705,
-			height: 1280,
+			width: 941,
+			height: 1672,
 			alt: {
 				en: 'Matching ring with white beads and blue bicone accent',
 				pt: 'Anel a condizer de contas brancas com acento em bicone azul',

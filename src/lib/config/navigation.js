@@ -9,6 +9,7 @@ export const primaryNav = [
 	{ messageKey: 'nav_home', path: '' },
 	{ messageKey: 'nav_products', path: 'products' },
 	{ messageKey: 'nav_howToOrder', path: 'how-to-order' },
+	{ messageKey: 'nav_journal', path: 'journal' },
 	{ messageKey: 'nav_about', path: 'about' },
 	{ messageKey: 'nav_contacts', path: 'contacts' }
 ];
@@ -17,6 +18,7 @@ export const primaryNav = [
 export const footerNav = [
 	{ messageKey: 'nav_products', path: 'products' },
 	{ messageKey: 'nav_howToOrder', path: 'how-to-order' },
+	{ messageKey: 'nav_journal', path: 'journal' },
 	{ messageKey: 'nav_about', path: 'about' },
 	{ messageKey: 'nav_contacts', path: 'contacts' },
 	{ messageKey: 'privacy_heading', path: 'privacy' }

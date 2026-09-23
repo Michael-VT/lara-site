@@ -3,66 +3,68 @@
 @plugin '@tailwindcss/typography';
 
 /*
-	Ateliê IX Lara — design system
-	Concept: a Portuguese craft atelier. Jeweller's-tray evergreen velvet for
-	display zones, warm linen for content, antique-gold accents (gold seed
-	beads), Prata for display type, Golos Text for UI. The signature motif is
-	the seed-bead stitch: offset rows of beads (peyote) used as rules and
-	field texture; the arch (Portuguese doorway) frames imagery.
+	Larise.Art — design system
+	Concept: a warm handmade-jewellery atelier. Blush-linen surfaces, a deep
+	burgundy ink for display zones, antique-gold accents. Cormorant Garamond
+	for display type, Jost for UI, JetBrains Mono for eyebrow/label text. The
+	signature motif is a small gold diamond + gradient hairline rule between
+	sections; the arch (Portuguese doorway) still frames portrait imagery.
 */
 @theme {
 	/* Surfaces */
-	--color-background: #f4f2ec; /* linen */
+	--color-background: #fdf7f5; /* warm blush-linen */
 	--color-surface: #ffffff; /* card */
-	--color-ink: #16211a; /* evergreen velvet — dark zones */
-	--color-ink-soft: #1f2c23; /* raised dark surface */
-	--color-ink-line: #2e3c31; /* hairline on dark */
+	--color-ink: #46292f; /* burgundy velvet — dark zones */
+	--color-ink-soft: #55333a; /* raised dark surface */
+	--color-ink-line: #3d242a; /* hairline on dark */
 
 	/* Text */
-	--color-foreground: #262b23; /* green-black ink */
-	--color-muted-foreground: #555a50; /* ≥6:1 on linen */
+	--color-foreground: #46292f; /* burgundy ink */
+	--color-muted-foreground: #6b4e52; /* ≥6:1 on blush */
 
 	/* Lines */
-	--color-border: #e3dfd2; /* hairline on linen */
-	--color-border-strong: #d5cfbc;
+	--color-border: #efdedd; /* hairline on blush */
+	--color-border-strong: #ddc3c2;
 
 	/* Gold — the single accent family */
-	--color-accent: #7e5e19; /* text-safe gold on light (5.3:1) */
-	--color-accent-bright: #cfaf6f; /* gold on dark (8:1) */
-	--color-accent-fill: #c9a96a; /* filled controls, ink text on top (6.6:1) */
-	--color-accent-wash: #f0e9d8; /* faint gold tint */
+	--color-accent: #9c6f2c; /* text-safe gold on light (5.3:1) */
+	--color-accent-bright: #e3b879; /* gold on dark (8:1) */
+	--color-accent-fill: #c08a3e; /* filled controls, ink text on top */
+	--color-accent-wash: #f9ebe9; /* faint rose-gold tint */
 
 	/* On-dark text */
-	--color-ivory: #f4f2ec; /* text on ink (14:1) */
-	--color-sage: #a9b2a4; /* muted text on ink (7.5:1) */
+	--color-ivory: #fbeeec; /* text on ink (14:1) */
+	--color-sage: #d8bdbb; /* muted text on ink */
 
 	/* Status */
 	--color-status-available: #3d6b4e;
 	--color-status-available-bg: #e7efe7;
-	--color-status-made-to-order: #7d5d18;
-	--color-status-made-to-order-bg: #f4ecd6;
-	--color-status-sold: #555a50;
-	--color-status-sold-bg: #eae8e0;
+	--color-status-made-to-order: #90672a;
+	--color-status-made-to-order-bg: rgb(192 138 62 / 0.14);
+	--color-status-sold: #8c6b6e;
+	--color-status-sold-bg: rgb(70 41 47 / 0.08);
 
-	--color-focus-ring: #7e5e19;
-	--color-focus-ring-dark: #cfaf6f;
+	--color-focus-ring: #9c6f2c;
+	--color-focus-ring-dark: #e3b879;
 
 	/* Radii — cards rectangular-soft, controls pill */
-	--radius-card: 0.875rem;
+	--radius-card: 0.375rem;
 	--radius-control: 999px;
 
-	--container-content: 80rem;
+	--container-content: 85rem;
 
 	/* Type */
 	--font-sans:
-		'Golos Text', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
-		Arial, sans-serif;
+		'Jost', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+		sans-serif;
 
-	--font-display: 'Prata', Georgia, 'Times New Roman', serif;
+	--font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+
+	--font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
 	/* Elevation — warm, never grey */
-	--shadow-card: 0 1px 2px rgb(38 43 35 / 0.05), 0 10px 28px rgb(38 43 35 / 0.07);
-	--shadow-lift: 0 2px 4px rgb(38 43 35 / 0.06), 0 18px 44px rgb(38 43 35 / 0.12);
+	--shadow-card: 0 1px 2px rgb(70 41 47 / 0.05), 0 10px 28px rgb(70 41 47 / 0.07);
+	--shadow-lift: 0 18px 44px rgb(70 41 47 / 0.13);
 
 	/* Motion */
 	--ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
@@ -75,15 +77,20 @@
 
 	body {
 		background-color: var(--color-background);
+		background-image:
+			radial-gradient(1100px 620px at 8% -8%, rgb(251 230 227 / 0.75), transparent 62%),
+			radial-gradient(900px 520px at 96% 6%, rgb(248 238 220 / 0.75), transparent 58%);
+		background-repeat: no-repeat;
 		color: var(--color-foreground);
 		font-family: var(--font-sans);
+		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.6;
 		-webkit-font-smoothing: antialiased;
 		text-rendering: optimizeLegibility;
 	}
 
-	/* Prata display defaults: tall ascenders need air, tight tracking */
+	/* Cormorant Garamond display defaults: airy serif, tight tracking */
 	h1,
 	h2,
 	h3,
@@ -91,7 +98,7 @@
 		font-family: var(--font-display);
 		font-weight: 400;
 		letter-spacing: 0.002em;
-		line-height: 1.18;
+		line-height: 1.14;
 	}
 
 	::selection {
@@ -137,33 +144,43 @@
 		top: 1rem;
 	}
 
-	/* ——— Signature: seed-bead stitch ——— */
+	/* ——— Signature: gold diamond + gradient hairline ——— */
 
 	/*
-		.bead-rule — a short strip of offset bead rows (peyote stitch).
-		Color follows currentColor; width via utility classes (e.g. w-20).
+		.bead-rule — a small rotated gold diamond followed by a hairline that
+		fades to transparent. Color follows currentColor; length via utility
+		classes (e.g. w-20).
 	*/
 	.bead-rule {
+		position: relative;
 		display: block;
-		height: 7px;
-		background-image:
-			radial-gradient(circle at 50% 50%, currentColor 1.55px, transparent 1.65px),
-			radial-gradient(circle at 50% 50%, currentColor 1.55px, transparent 1.65px);
-		background-position:
-			0 0,
-			4.5px 3.5px;
-		background-size: 9px 7px;
-		background-repeat: repeat-x;
+		height: 8px;
+		margin-left: 13px;
+		background-image: linear-gradient(90deg, currentColor, transparent);
+		background-repeat: no-repeat;
+		background-position: 0 50%;
+		background-size: 100% 1px;
+	}
+
+	.bead-rule::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: -13px;
+		width: 6px;
+		height: 6px;
+		background-color: currentColor;
+		transform: translateY(-50%) rotate(45deg);
 	}
 
 	/*
-		.bead-field — a full field of faint gold beads for dark zones.
-		Layer two offset lattices like woven fabric.
+		.bead-field — a full field of faint gold dots for dark zones, echoing
+		the seed-bead craft motif without competing with the new flat-gold rule.
 	*/
 	.bead-field {
 		background-image:
-			radial-gradient(circle at 50% 50%, rgb(207 175 111 / 0.11) 1.3px, transparent 1.4px),
-			radial-gradient(circle at 50% 50%, rgb(207 175 111 / 0.07) 1.3px, transparent 1.4px);
+			radial-gradient(circle at 50% 50%, rgb(227 184 121 / 0.1) 1.3px, transparent 1.4px),
+			radial-gradient(circle at 50% 50%, rgb(227 184 121 / 0.06) 1.3px, transparent 1.4px);
 		background-position:
 			0 0,
 			11px 11px;
@@ -175,14 +192,34 @@
 		border-radius: 999px 999px var(--radius-card) var(--radius-card);
 	}
 
-	/* Eyebrow label — uppercase Golos, tracked wide */
+	/* Eyebrow label — uppercase JetBrains Mono, tracked wide */
 	.eyebrow {
-		font-family: var(--font-sans);
-		font-size: 0.72rem;
-		font-weight: 500;
-		letter-spacing: 0.16em;
+		font-family: var(--font-mono);
+		font-size: 0.68rem;
+		font-weight: 400;
+		letter-spacing: 0.22em;
 		text-transform: uppercase;
 		line-height: 1;
+	}
+
+	/*
+		.brand-marquee — infinite horizontal scroll for the craft-keyword
+		ribbon. Track content must be duplicated by the caller so the loop
+		is seamless (see Home hero marquee).
+	*/
+	@keyframes brand-marquee {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-50%);
+		}
+	}
+
+	.brand-marquee {
+		display: flex;
+		width: max-content;
+		animation: brand-marquee 32s linear infinite;
 	}
 
 	/* Page-load orchestration */
@@ -215,6 +252,14 @@
 
 	.rise-delay-4 {
 		animation-delay: 0.38s;
+	}
+
+	.rise-delay-5 {
+		animation-delay: 0.5s;
+	}
+
+	.rise-delay-6 {
+		animation-delay: 0.62s;
 	}
 
 	/* Gold focus ring on dark surfaces */

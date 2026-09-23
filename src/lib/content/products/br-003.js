@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/tenderness-beaded-bracelet/1.webp',
 			thumb: '/images/products/tenderness-beaded-bracelet/1-thumb.webp',
-			width: 1280,
-			height: 960,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Delicate hand-woven beaded bracelet',
 				pt: 'Pulseira delicada em contas, tecida à mão',
@@ -36,10 +36,10 @@ export const product = {
 	],
 
 	dimensions: {
-		en: 'Length: 16 cm, clasp fastening',
-		pt: 'Comprimento: 16 cm, fecho',
-		uk: 'Довжина: 16 см, застібка-замок',
-		ru: 'Длина: 16 см, застёжка-замок'
+		en: 'Length: 17 cm, clasp fastening',
+		pt: 'Comprimento: 17 cm, fecho',
+		uk: 'Довжина: 17 см, застібка-замок',
+		ru: 'Длина: 17 см, застёжка-замок'
 	},
 
 	materials: {

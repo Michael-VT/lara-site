@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/white-rice-pearl-bead-bracelet/1.webp',
 			thumb: '/images/products/white-rice-pearl-bead-bracelet/1-thumb.webp',
-			width: 399,
-			height: 1280,
+			width: 941,
+			height: 1672,
 			alt: {
 				en: 'White rice pearl bead bracelet',
 				pt: 'Pulseira de pérolas de arroz brancas',

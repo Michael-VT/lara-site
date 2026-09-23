@@ -21,17 +21,25 @@
 	}
 </script>
 
-<header class="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
+<header class="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur-md">
 	<div class="mx-auto flex max-w-content items-center justify-between gap-4 px-4 py-3 sm:px-6">
 		<a
 			href={buildNavHref(page.data.locale, '')}
 			class="-mx-1 flex min-h-11 items-center gap-3 px-1"
 		>
-			<span class="font-display text-[1.3rem] leading-none whitespace-nowrap text-foreground">
+			<img
+				src="/icons/icon-192.png"
+				alt=""
+				width="42"
+				height="42"
+				class="h-[42px] w-[42px] shrink-0 rounded-full object-cover"
+			/>
+			<span class="font-display text-[1.5rem] leading-none whitespace-nowrap text-foreground">
 				{siteName}
 			</span>
-			<!-- Signature: a short stitch of gold seed beads after the wordmark -->
-			<span class="bead-rule w-8 shrink-0 text-accent" aria-hidden="true"></span>
+			<!-- "handmade" is a brand lockup element (like the wordmark itself), kept
+			     in English across all locales — matches the approved design. -->
+			<span class="eyebrow hidden shrink-0 text-accent sm:inline">handmade</span>
 		</a>
 
 		<nav aria-label={m.nav_primary({}, { locale: page.data.locale })} class="hidden lg:block">
@@ -59,7 +67,7 @@
 
 			<a
 				href={toHref(`/${page.data.locale}/how-to-order/`)}
-				class="hidden min-h-11 items-center justify-center rounded-control bg-ink px-5 text-sm font-medium text-ivory shadow-card transition-[transform,box-shadow,background-color] duration-200 hover:-translate-y-px hover:bg-ink-soft lg:inline-flex"
+				class="hidden min-h-11 items-center justify-center rounded-control bg-ink px-5 text-sm font-medium text-ivory shadow-card transition-[transform,box-shadow,background-color] duration-200 hover:-translate-y-px hover:bg-accent-fill lg:inline-flex"
 			>
 				{m.nav_order({}, { locale: page.data.locale })}
 			</a>

@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/bright-mini-bag-for-girl/1.webp',
 			thumb: '/images/products/bright-mini-bag-for-girl/1-thumb.webp',
-			width: 1280,
-			height: 956,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Bright, brightly-coloured mini beaded bag for a girl',
 				pt: 'Mini-bolsa em contas de cores vivas para menina',
@@ -36,8 +36,8 @@ export const product = {
 		{
 			src: '/images/products/bright-mini-bag-for-girl/2.webp',
 			thumb: '/images/products/bright-mini-bag-for-girl/2-thumb.webp',
-			width: 1280,
-			height: 893,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Bright mini beaded bag with matching beaded bracelet',
 				pt: 'Mini-bolsa em contas de cores vivas com bracelete em contas a combinar',
@@ -48,8 +48,8 @@ export const product = {
 		{
 			src: '/images/products/bright-mini-bag-for-girl/3.webp',
 			thumb: '/images/products/bright-mini-bag-for-girl/3-thumb.webp',
-			width: 1144,
-			height: 1280,
+			width: 1122,
+			height: 1402,
 			alt: {
 				en: 'Bright mini beaded bag with matching beaded bracelet, another angle',
 				pt: 'Mini-bolsa em contas de cores vivas com bracelete em contas a combinar, outro ângulo',
@@ -60,8 +60,8 @@ export const product = {
 		{
 			src: '/images/products/bright-mini-bag-for-girl/4.webp',
 			thumb: '/images/products/bright-mini-bag-for-girl/4-thumb.webp',
-			width: 961,
-			height: 1280,
+			width: 1122,
+			height: 1402,
 			alt: {
 				en: 'Bright mini beaded bag with two matching bracelets',
 				pt: 'Mini-bolsa em contas de cores vivas com duas braceletes a combinar',

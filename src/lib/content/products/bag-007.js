@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/colorful-beaded-bag-and-bracelet-set/1.webp',
 			thumb: '/images/products/colorful-beaded-bag-and-bracelet-set/1-thumb.webp',
-			width: 1280,
-			height: 856,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Mini bag and shambala bracelet set',
 				pt: 'Conjunto de mini bolsa e bracelete shambala',

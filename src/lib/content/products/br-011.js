@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/shambhala-beaded-bracelet/1.webp',
 			thumb: '/images/products/shambhala-beaded-bracelet/1-thumb.webp',
-			width: 960,
-			height: 1280,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Shambhala-style beaded bracelet with a pearl and gold bead accent',
 				pt: 'Pulseira em estilo Shambhala com realce de pérolas e contas douradas',

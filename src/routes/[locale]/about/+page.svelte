@@ -5,6 +5,19 @@
 	import SeoHead from '$lib/components/layout/SeoHead.svelte';
 
 	let locale = $derived(page.data.locale);
+
+	let facts = $derived([
+		{ value: m.about_factYears({}, { locale }), label: m.about_factYearsLabel({}, { locale }) },
+		{
+			value: m.about_factUniqueValue({}, { locale }),
+			label: m.about_factUniqueLabel({}, { locale })
+		},
+		{ value: m.about_location({}, { locale }), label: m.about_locationLabel({}, { locale }) },
+		{
+			value: m.about_factMaterialsValue({}, { locale }),
+			label: m.about_factMaterialsLabel({}, { locale })
+		}
+	]);
 </script>
 
 <SeoHead
@@ -69,4 +82,33 @@
 			{m.about_location({}, { locale })}
 		</p>
 	</div>
+</div>
+
+<!-- Facts — full-bleed velvet band -->
+<section class="bead-field bg-ink">
+	<div
+		class="mx-auto grid max-w-content grid-cols-2 gap-px bg-ivory/15 px-4 sm:px-6 md:grid-cols-4"
+	>
+		{#each facts as fact (fact.label)}
+			<div class="flex flex-col gap-2.5 bg-ink px-6 py-9">
+				<span class="font-display text-3xl text-accent-bright sm:text-4xl">{fact.value}</span>
+				<span class="eyebrow text-sage">{fact.label}</span>
+			</div>
+		{/each}
+	</div>
+</section>
+
+<div class="mx-auto max-w-content px-4 py-20 text-center sm:px-6 sm:py-24">
+	<h2 class="mx-auto max-w-xl font-display text-3xl text-balance text-foreground sm:text-4xl">
+		{m.home_contactCtaHeading({}, { locale })}
+	</h2>
+	<p class="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">
+		{m.home_contactCtaBody({}, { locale })}
+	</p>
+	<a
+		href={toHref(`/${locale}/contacts/`)}
+		class="mt-8 inline-flex min-h-11 items-center justify-center rounded-control bg-ink px-8 text-sm font-medium text-ivory transition-[transform,background-color] duration-300 ease-out hover:scale-[1.02] hover:bg-accent-fill"
+	>
+		{m.home_contactCtaButton({}, { locale })}
+	</a>
 </div>

@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/white-gold-rice-squares-bracelet/1.webp',
 			thumb: '/images/products/white-gold-rice-squares-bracelet/1-thumb.webp',
-			width: 1280,
-			height: 720,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Bracelet of square sections woven from white and gold rice beads',
 				pt: 'Pulseira de secções quadradas tecidas com contas arroz brancas e douradas',

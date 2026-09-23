@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/white-rhombus-bracelet/1.webp',
 			thumb: '/images/products/white-rhombus-bracelet/1-thumb.webp',
-			width: 371,
-			height: 1280,
+			width: 941,
+			height: 1672,
 			alt: {
 				en: 'Bracelet patterned with little white rhombuses',
 				pt: 'Pulseira com padrão de losanginhos brancos',

@@ -6,10 +6,10 @@ export const product = {
 	status: 'available',
 
 	title: {
-		en: 'Golden beaded heart keychain',
-		pt: 'Porta-chaves coração em contas douradas',
-		uk: 'Брелок-серце із золотистого бісеру',
-		ru: 'Брелок-сердце из золотистого бисера'
+		en: 'Three-dimensional golden beaded heart keychain',
+		pt: 'Porta-chaves coração tridimensional em contas douradas',
+		uk: "Об'ємний брелок-серце із золотистого бісеру",
+		ru: 'Объёмный брелок-сердце из золотистого бисера'
 	},
 	description: {
 		en: 'A three-dimensional heart keychain hand-woven from golden seed beads.',
@@ -47,11 +47,18 @@ export const product = {
 		}
 	],
 
+	dimensions: {
+		en: 'Size: 5 × 3 cm',
+		pt: 'Tamanho: 5 × 3 cm',
+		uk: 'Розмір: 5 × 3 см',
+		ru: 'Размер: 5 × 3 см'
+	},
+
 	materials: {
-		en: 'Czech and Chinese seed beads',
-		pt: 'Contas checas e chinesas',
-		uk: 'Чеський та китайський бісер',
-		ru: 'Чешский и китайский бисер'
+		en: 'Czech and Chinese seed beads, 6 mm',
+		pt: 'Contas checas e chinesas, 6 mm',
+		uk: 'Чеський та китайський бісер, 6 мм',
+		ru: 'Чешский и китайский бисер, 6 мм'
 	},
 
 	featured: true,

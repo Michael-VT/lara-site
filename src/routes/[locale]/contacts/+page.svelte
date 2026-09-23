@@ -4,10 +4,19 @@
 	import { siteContacts } from '$lib/config/contacts.js';
 	import { buildMailtoUrl } from '$lib/utils/mailto.js';
 	import { toHref } from '$lib/utils/href.js';
+	import { getPublicProducts } from '$lib/services/catalog.js';
+	import { t, pluralCountKey } from '$lib/utils/messages.js';
 	import SeoHead from '$lib/components/layout/SeoHead.svelte';
 	import ContactCard from '$lib/components/contacts/ContactCard.svelte';
 
 	let locale = $derived(page.data.locale);
+	let productCount = $derived(getPublicProducts().length);
+	// Composed from the existing catalog_count* plurals ("44 товара") plus a
+	// static tail, rather than a bespoke string — sidesteps re-implementing
+	// ru/uk plural rules for a single sentence.
+	let productCountPhrase = $derived(
+		t(pluralCountKey(locale, productCount), { count: productCount }, { locale })
+	);
 	let mailtoUrl = $derived(
 		buildMailtoUrl({
 			email: siteContacts.email,
@@ -69,10 +78,29 @@
 		</div>
 	</section>
 
-	<a
-		href={toHref(`/${locale}/how-to-order/`)}
-		class="mt-10 inline-flex min-h-11 items-center justify-center rounded-control border border-border-strong bg-surface px-5 text-sm font-medium text-foreground transition-colors duration-300 hover:border-accent hover:bg-accent-wash hover:text-accent sm:mt-12"
-	>
-		{m.contacts_howToOrderCta({}, { locale })}
-	</a>
+	<div class="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2">
+		<a
+			href={toHref(`/${locale}/how-to-order/`)}
+			class="group flex flex-col gap-2 rounded-card bg-accent-wash p-7 transition-colors duration-300 hover:bg-ink hover:text-ivory"
+		>
+			<span class="font-display text-2xl text-foreground group-hover:text-ivory">
+				{m.contacts_quickLinksOrderTitle({}, { locale })}
+			</span>
+			<span class="text-sm leading-relaxed text-muted-foreground group-hover:text-ivory/75">
+				{m.contacts_quickLinksOrderDesc({}, { locale })}
+			</span>
+		</a>
+		<a
+			href={toHref(`/${locale}/products/`)}
+			class="group flex flex-col gap-2 rounded-card bg-accent-wash p-7 transition-colors duration-300 hover:bg-ink hover:text-ivory"
+		>
+			<span class="font-display text-2xl text-foreground group-hover:text-ivory">
+				{m.contacts_quickLinksCatalogTitle({}, { locale })}
+			</span>
+			<span class="text-sm leading-relaxed text-muted-foreground group-hover:text-ivory/75">
+				{productCountPhrase}
+				{m.contacts_quickLinksCatalogSuffix({}, { locale })}
+			</span>
+		</a>
+	</div>
 </div>

@@ -9,7 +9,7 @@ export const product = {
 		en: 'Silver beaded mini coin purse',
 		pt: 'Mini bolsa moedeiro prateada em contas',
 		uk: 'Міні сумочка-гаманець зі сріблястого бісеру',
-		ru: 'Мини сумочка монетница из серебристого бисера'
+		ru: 'Сумочка монетница мини серебристая из бисера'
 	},
 	description: {
 		en: 'A small coin purse hand-woven entirely from silver-toned seed beads.',
@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/silver-beaded-mini-coin-purse/1.webp',
 			thumb: '/images/products/silver-beaded-mini-coin-purse/1-thumb.webp',
-			width: 1280,
-			height: 1089,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Silver beaded mini coin purse',
 				pt: 'Mini bolsa moedeiro prateada em contas',
@@ -36,17 +36,17 @@ export const product = {
 	],
 
 	dimensions: {
-		en: '5 × 6 cm, handle 12 cm',
-		pt: '5 × 6 cm, alça de 12 cm',
-		uk: '5 × 6 см, ручка 12 см',
-		ru: '5 × 6 см, ручка 12 см'
+		en: '5 × 6 cm, handle 24 cm',
+		pt: '5 × 6 cm, alça de 24 cm',
+		uk: '5 × 6 см, ручка 24 см',
+		ru: '5 × 6 см, ручка 24 см'
 	},
 
 	materials: {
-		en: 'Czech and Chinese seed beads',
-		pt: 'Contas checas e chinesas',
-		uk: 'Чеський та китайський бісер',
-		ru: 'Чешский и китайский бисер'
+		en: 'Chinese seed beads, 6mm',
+		pt: 'Contas chinesas, 6mm',
+		uk: 'Китайський бісер, 6мм',
+		ru: 'Китайский бисер, 6мм'
 	},
 	colours: {
 		en: 'Silver shown; other colours available to order',

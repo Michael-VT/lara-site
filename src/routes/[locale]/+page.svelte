@@ -4,6 +4,7 @@
 	import { categories } from '$lib/content/categories.js';
 	import { toHref } from '$lib/utils/href.js';
 	import { siteName, siteUrl } from '$lib/config/site.js';
+	import { getPublicProducts } from '$lib/services/catalog.js';
 	import SeoHead from '$lib/components/layout/SeoHead.svelte';
 	import JsonLd from '$lib/components/layout/JsonLd.svelte';
 	import HeroSlider from '$lib/components/products/HeroSlider.svelte';
@@ -14,6 +15,7 @@
 
 	let { data } = $props();
 	let locale = $derived(page.data.locale);
+	let productCount = $derived(getPublicProducts().length);
 
 	let jsonLd = $derived({
 		'@context': 'https://schema.org',
@@ -60,11 +62,48 @@
 						{m.home_howItWorksCta({}, { locale })}
 					</a>
 				</div>
+				<div
+					class="rise-in rise-delay-4 mt-10 flex flex-wrap gap-x-8 gap-y-5 border-t border-ivory/15 pt-6"
+				>
+					<div>
+						<p class="font-display text-3xl text-ivory">{productCount}+</p>
+						<p class="eyebrow mt-1 text-sage">{m.home_statProductsLabel({}, { locale })}</p>
+					</div>
+					<div>
+						<p class="font-display text-3xl text-ivory">
+							{m.home_statUniqueValue({}, { locale })}
+						</p>
+						<p class="eyebrow mt-1 text-sage">{m.home_statUniqueLabel({}, { locale })}</p>
+					</div>
+					<div>
+						<p class="font-display text-3xl text-ivory">
+							{m.home_statLeadTimeValue({}, { locale })}
+						</p>
+						<p class="eyebrow mt-1 text-sage">{m.home_statLeadTimeLabel({}, { locale })}</p>
+					</div>
+				</div>
 			</div>
 			<HeroSlider />
 		</div>
 	</div>
 </section>
+
+<!-- Craft-keyword marquee ribbon -->
+<div
+	class="overflow-hidden border-y border-accent/30 bg-gradient-to-r from-accent-wash via-background to-accent-wash py-3.5"
+>
+	<div class="brand-marquee gap-10" aria-hidden="true">
+		<!-- Duplicated so the CSS translateX(-50%) loop is seamless. -->
+		<span class="eyebrow shrink-0 whitespace-nowrap text-accent">
+			{m.home_marqueeText({}, { locale })} · {m.home_marqueeText({}, { locale })} ·
+			{m.home_marqueeText({}, { locale })} · {m.home_marqueeText({}, { locale })}
+		</span>
+		<span class="eyebrow shrink-0 whitespace-nowrap text-accent">
+			{m.home_marqueeText({}, { locale })} · {m.home_marqueeText({}, { locale })} ·
+			{m.home_marqueeText({}, { locale })} · {m.home_marqueeText({}, { locale })}
+		</span>
+	</div>
+</div>
 
 <div class="mx-auto w-full max-w-content px-4 sm:px-6">
 	<!-- Categories -->
@@ -98,18 +137,6 @@
 			</div>
 			<div class="mt-10">
 				<ProductGrid products={data.featured} />
-			</div>
-		</section>
-	{/if}
-
-	{#if data.available.length > 0}
-		<section aria-labelledby="available-heading" class="py-20 sm:py-24">
-			<span class="bead-rule w-10 text-accent" aria-hidden="true"></span>
-			<h2 id="available-heading" class="mt-4 font-display text-3xl text-foreground sm:text-4xl">
-				{m.home_availableHeading({}, { locale })}
-			</h2>
-			<div class="mt-10">
-				<ProductGrid products={data.available} />
 			</div>
 		</section>
 	{/if}

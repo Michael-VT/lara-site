@@ -1,15 +1,14 @@
 {
-  "enableAllProjectMcpServers": true,
-  "enabledMcpjsonServers": [
-    "svelte"
-  ],
-  "skillOverrides": {
-    "gsd-add-tests": "off",
-    "gsd-audit-fix": "off"
-  },
-  "permissions": {
-    "allow": [
-      "mcp__svelte__svelte-autofixer"
-    ]
-  }
+	"permissions": {
+		"allow": ["mcp__svelte__svelte-autofixer"]
+	},
+	"enableAllProjectMcpServers": true,
+	"enabledMcpjsonServers": ["svelte"],
+	"skillOverrides": {
+		"gsd-add-tests": "off",
+		"gsd-audit-fix": "off"
+	},
+	"enabledPlugins": {
+		"playwright@claude-plugins-official": true
+	}
 }

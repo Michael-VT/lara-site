@@ -9,7 +9,7 @@ export const product = {
 		en: 'White beaded coin purse',
 		pt: 'Bolsa moedeiro branca em contas',
 		uk: 'Біла сумочка-гаманець з бісеру',
-		ru: 'Белая сумочка монетница из бисера'
+		ru: 'Сумочка монетница белая из бисера'
 	},
 	description: {
 		en: 'A small coin purse hand-woven entirely from white seed beads.',
@@ -21,42 +21,6 @@ export const product = {
 	price: { mode: 'fixed', amount: 10, currency: 'EUR' },
 
 	images: [
-		{
-			src: '/images/products/white-beaded-coin-purse/2.webp',
-			thumb: '/images/products/white-beaded-coin-purse/2-thumb.webp',
-			width: 1280,
-			height: 960,
-			alt: {
-				en: 'White coin purse, close-up view',
-				pt: 'Bolsa moedeiro branca, primeiro plano',
-				uk: 'Біла сумочка-гаманець, крупний план',
-				ru: 'Белая сумочка-монетница, крупный план'
-			}
-		},
-		{
-			src: '/images/products/white-beaded-coin-purse/3.webp',
-			thumb: '/images/products/white-beaded-coin-purse/3-thumb.webp',
-			width: 1280,
-			height: 787,
-			alt: {
-				en: 'White coin purse, side view',
-				pt: 'Bolsa moedeiro branca, vista lateral',
-				uk: 'Біла сумочка-гаманець, вид збоку',
-				ru: 'Белая сумочка-монетница, вид сбоку'
-			}
-		},
-		{
-			src: '/images/products/white-beaded-coin-purse/4.webp',
-			thumb: '/images/products/white-beaded-coin-purse/4-thumb.webp',
-			width: 1280,
-			height: 582,
-			alt: {
-				en: 'White coin purse on keyring',
-				pt: 'Bolsa moedeiro branca numa argola de chaves',
-				uk: 'Біла сумочка-гаманець на кільці для ключів',
-				ru: 'Белая сумочка-монетница на кольце для ключей'
-			}
-		},
 		{
 			src: '/images/products/white-beaded-coin-purse/1.webp',
 			thumb: '/images/products/white-beaded-coin-purse/1-thumb.webp',
@@ -70,15 +34,15 @@ export const product = {
 			}
 		},
 		{
-			src: '/images/products/white-beaded-coin-purse/7.webp',
-			thumb: '/images/products/white-beaded-coin-purse/7-thumb.webp',
-			width: 1148,
-			height: 1280,
+			src: '/images/products/white-beaded-coin-purse/2.webp',
+			thumb: '/images/products/white-beaded-coin-purse/2-thumb.webp',
+			width: 1280,
+			height: 960,
 			alt: {
-				en: 'White coin purse with long beaded strap',
-				pt: 'Bolsa moedeiro branca com corrente de contas comprida',
-				uk: 'Біла сумочка-гаманець з довгим бісерним ланцюжком',
-				ru: 'Белая сумочка-монетница с длинной бисерной цепочкой'
+				en: 'White coin purse, close-up view',
+				pt: 'Bolsa moedeiro branca, primeiro plano',
+				uk: 'Біла сумочка-гаманець, крупний план',
+				ru: 'Белая сумочка-монетница, крупный план'
 			}
 		},
 		{
@@ -87,26 +51,26 @@ export const product = {
 			width: 1098,
 			height: 1280,
 			alt: {
-				en: 'White coin purse shown with a matching bracelet',
-				pt: 'Bolsa moedeiro branca apresentada com uma bracelete a combinar',
-				uk: 'Біла сумочка-гаманець у комплекті з браслетом',
-				ru: 'Белая сумочка-монетница в комплекте с браслетом'
+				en: 'White coin purse shown with a Shambhala bracelet, €5, as an additional accessory to the bag',
+				pt: 'Bolsa moedeiro branca apresentada com uma bracelete Shambala, 5€, como acessório adicional à bolsa',
+				uk: 'Біла сумочка-гаманець у комплекті з браслетом шамбала, 5 євро, як додатковий аксесуар до сумочки',
+				ru: 'Белая сумочка-монетница в комплекте с браслетом шамбала, 5 евро, как дополнительный аксессуар к сумочке'
 			}
 		}
 	],
 
 	dimensions: {
-		en: '5 × 6 cm, handle 12 cm',
-		pt: '5 × 6 cm, alça de 12 cm',
-		uk: '5 × 6 см, ручка 12 см',
-		ru: '5 × 6 см, ручка 12 см'
+		en: '5 × 6 cm, handle 24 cm',
+		pt: '5 × 6 cm, alça de 24 cm',
+		uk: '5 × 6 см, ручка 24 см',
+		ru: '5 × 6 см, ручка 24 см'
 	},
 
 	materials: {
-		en: 'Czech and Chinese seed beads',
-		pt: 'Contas checas e chinesas',
-		uk: 'Чеський та китайський бісер',
-		ru: 'Чешский и китайский бисер'
+		en: 'Chinese seed beads, 6mm',
+		pt: 'Contas chinesas, 6mm',
+		uk: 'Китайський бісер, 6мм',
+		ru: 'Китайский бисер, 6мм'
 	},
 
 	featured: true,

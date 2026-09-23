@@ -36,10 +36,16 @@ export const product = {
 	],
 
 	materials: {
-		en: 'Faux pearls, seed beads, metal chain and clasp',
-		pt: 'Pérolas artificiais, contas, corrente metálica e fecho mosquetão',
-		uk: 'Штучні перлини, бісер, металевий ланцюжок і карабін',
-		ru: 'Искусственный жемчуг, бисер, металлическая цепочка и карабин'
+		en: 'Faux pearls, seed beads 6mm, metal chain and clasp',
+		pt: 'Pérolas artificiais, contas de 6mm, corrente metálica e fecho mosquetão',
+		uk: 'Штучні перлини, бісер 6мм, металевий ланцюжок і карабін',
+		ru: 'Искусственный жемчуг, бисер, бусины 6 мм, металлическая цепочка и карабин'
+	},
+	dimensions: {
+		en: 'Size: 14 cm in circumference',
+		pt: 'Tamanho: 14 cm de circunferência',
+		uk: 'Розмір: 14 см по колу',
+		ru: 'Размер: 14 см по периметру'
 	},
 	colours: {
 		en: 'White pearl, red and silver shown; other colours available to order',

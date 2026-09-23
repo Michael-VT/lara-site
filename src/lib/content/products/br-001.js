@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/sparkling-rhombus-bracelet/1.webp',
 			thumb: '/images/products/sparkling-rhombus-bracelet/1-thumb.webp',
-			width: 1280,
-			height: 960,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Beaded bracelet with a sparkling rhombus pattern',
 				pt: 'Pulseira de contas com um padrão de losangos brilhantes',
@@ -36,10 +36,10 @@ export const product = {
 	],
 
 	dimensions: {
-		en: 'Length: 16 cm, clasp fastening',
-		pt: 'Comprimento: 16 cm, fecho',
-		uk: 'Довжина: 16 см, застібка-замок',
-		ru: 'Длина: 16 см, застёжка-замок'
+		en: 'Length: 18 cm, clasp fastening',
+		pt: 'Comprimento: 18 cm, fecho',
+		uk: 'Довжина: 18 см, застібка-замок',
+		ru: 'Длина: 18 см, застёжка-замок'
 	},
 
 	materials: {
