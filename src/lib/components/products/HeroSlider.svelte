@@ -52,7 +52,7 @@
 	aria-roledescription="carousel"
 	aria-label={m.home_heroSlide1Title({}, { locale })}
 	tabindex="0"
-	class="rise-in focus-dark w-full"
+	class="rise-in w-full"
 	onkeydown={handleKeydown}
 	ontouchstart={handleTouchStart}
 	ontouchend={handleTouchEnd}
@@ -96,8 +96,8 @@
 				>
 					<span
 						class="block h-2 w-2 rounded-full transition-colors duration-300 {i === index
-							? 'bg-accent-bright'
-							: 'bg-ivory/25 group-hover:bg-ivory/50'}"
+							? 'bg-accent-fill'
+							: 'bg-border-strong group-hover:bg-accent/50'}"
 					></span>
 				</button>
 			{/each}
@@ -106,7 +106,7 @@
 			<button
 				type="button"
 				onclick={prev}
-				class="focus-dark flex min-h-11 min-w-11 items-center justify-center rounded-full border border-ivory/20 text-ivory transition-colors duration-300 hover:border-ivory/60 hover:bg-ivory/5"
+				class="flex min-h-11 min-w-11 items-center justify-center rounded-full border border-border-strong text-foreground transition-colors duration-300 hover:border-accent hover:bg-accent-wash"
 			>
 				<span class="sr-only">{m.common_previous({}, { locale })}</span>
 				<svg
@@ -128,7 +128,7 @@
 			<button
 				type="button"
 				onclick={next}
-				class="focus-dark flex min-h-11 min-w-11 items-center justify-center rounded-full border border-ivory/20 text-ivory transition-colors duration-300 hover:border-ivory/60 hover:bg-ivory/5"
+				class="flex min-h-11 min-w-11 items-center justify-center rounded-full border border-border-strong text-foreground transition-colors duration-300 hover:border-accent hover:bg-accent-wash"
 			>
 				<span class="sr-only">{m.common_next({}, { locale })}</span>
 				<svg
@@ -145,7 +145,7 @@
 		</div>
 	</div>
 
-	<p class="mt-2 text-[0.85rem] leading-relaxed text-sage" aria-live="polite">
+	<p class="mt-2 text-[0.85rem] leading-relaxed text-muted-foreground" aria-live="polite">
 		{t(heroSlides[index].titleKey, {}, { locale })}
 	</p>
 </div>

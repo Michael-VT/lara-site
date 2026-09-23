@@ -31,55 +31,73 @@
 />
 <JsonLd data={jsonLd} />
 
-<!-- Hero — full-bleed velvet tray -->
-<section class="bead-field bg-ink">
-	<div class="mx-auto w-full max-w-content px-4 py-16 sm:px-6 sm:py-24">
+<!-- Hero — light, photographic backdrop -->
+<section class="relative overflow-hidden">
+	<img
+		src="/images/hero/hero-bg.webp"
+		alt=""
+		aria-hidden="true"
+		width="1672"
+		height="941"
+		class="absolute inset-0 h-full w-full object-cover"
+	/>
+	<div
+		class="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/60"
+		aria-hidden="true"
+	></div>
+	<div class="relative mx-auto w-full max-w-content px-4 py-16 sm:px-6 sm:py-24">
 		<div class="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
 			<div>
 				<div class="rise-in rise-delay-1">
-					<span class="bead-rule w-12 text-accent-bright" aria-hidden="true"></span>
-					<p class="eyebrow mt-4 text-accent-bright">{m.siteName({}, { locale })}</p>
+					<span class="bead-rule w-12 text-accent" aria-hidden="true"></span>
+					<p class="eyebrow mt-4 text-accent">{m.siteName({}, { locale })}</p>
 				</div>
 				<h1
-					class="rise-in rise-delay-2 mt-6 font-display text-[clamp(2.6rem,5vw,4.2rem)] leading-[1.08] text-balance text-ivory"
+					class="rise-in rise-delay-2 mt-6 font-display text-[clamp(2.6rem,5vw,4.2rem)] leading-[1.08] text-balance text-foreground"
 				>
 					{m.siteTagline({}, { locale })}
 				</h1>
-				<p class="rise-in rise-delay-3 mt-5 max-w-md leading-relaxed text-sage">
+				<p class="rise-in rise-delay-3 mt-5 max-w-md leading-relaxed text-muted-foreground">
 					{m.home_heroSlide1Body({}, { locale })}
 				</p>
 				<div class="rise-in rise-delay-4 mt-9 flex flex-wrap items-center gap-4">
 					<a
 						href={toHref(`/${locale}/products/`)}
-						class="focus-dark inline-flex min-h-11 items-center justify-center rounded-control bg-accent-fill px-7 text-sm font-semibold text-ink transition-[filter,transform] duration-300 ease-out hover:scale-[1.02] hover:brightness-105"
+						class="inline-flex min-h-11 items-center justify-center rounded-control bg-accent-fill px-7 text-sm font-semibold text-ink transition-[filter,transform] duration-300 ease-out hover:scale-[1.02] hover:brightness-105"
 					>
 						{m.home_heroCta({}, { locale })}
 					</a>
 					<a
 						href={toHref(`/${locale}/how-to-order/`)}
-						class="focus-dark inline-flex min-h-11 items-center justify-center rounded-control border border-ivory/30 px-6 text-sm font-medium text-ivory transition-colors duration-300 hover:border-ivory"
+						class="inline-flex min-h-11 items-center justify-center rounded-control border border-border-strong px-6 text-sm font-medium text-foreground transition-colors duration-300 hover:border-accent"
 					>
 						{m.home_howItWorksCta({}, { locale })}
 					</a>
 				</div>
 				<div
-					class="rise-in rise-delay-4 mt-10 flex flex-wrap gap-x-8 gap-y-5 border-t border-ivory/15 pt-6"
+					class="rise-in rise-delay-4 mt-10 flex flex-wrap gap-x-8 gap-y-5 border-t border-border pt-6"
 				>
 					<div>
-						<p class="font-display text-3xl text-ivory">{productCount}+</p>
-						<p class="eyebrow mt-1 text-sage">{m.home_statProductsLabel({}, { locale })}</p>
+						<p class="font-display text-3xl text-foreground">{productCount}+</p>
+						<p class="eyebrow mt-1 text-muted-foreground">
+							{m.home_statProductsLabel({}, { locale })}
+						</p>
 					</div>
 					<div>
-						<p class="font-display text-3xl text-ivory">
+						<p class="font-display text-3xl text-foreground">
 							{m.home_statUniqueValue({}, { locale })}
 						</p>
-						<p class="eyebrow mt-1 text-sage">{m.home_statUniqueLabel({}, { locale })}</p>
+						<p class="eyebrow mt-1 text-muted-foreground">
+							{m.home_statUniqueLabel({}, { locale })}
+						</p>
 					</div>
 					<div>
-						<p class="font-display text-3xl text-ivory">
+						<p class="font-display text-3xl text-foreground">
 							{m.home_statLeadTimeValue({}, { locale })}
 						</p>
-						<p class="eyebrow mt-1 text-sage">{m.home_statLeadTimeLabel({}, { locale })}</p>
+						<p class="eyebrow mt-1 text-muted-foreground">
+							{m.home_statLeadTimeLabel({}, { locale })}
+						</p>
 					</div>
 				</div>
 			</div>
@@ -154,14 +172,14 @@
 	{/if}
 </div>
 
-<!-- How ordering works — full-bleed velvet band -->
-<section aria-labelledby="how-it-works-heading" class="bead-field bg-ink">
+<!-- How ordering works — light, full-bleed band -->
+<section aria-labelledby="how-it-works-heading" class="bead-field bg-accent-wash">
 	<div class="mx-auto w-full max-w-content px-4 py-20 sm:px-6 sm:py-24">
-		<span class="bead-rule w-10 text-accent-bright" aria-hidden="true"></span>
-		<h2 id="how-it-works-heading" class="mt-4 font-display text-3xl text-ivory sm:text-4xl">
+		<span class="bead-rule w-10 text-accent" aria-hidden="true"></span>
+		<h2 id="how-it-works-heading" class="mt-4 font-display text-3xl text-foreground sm:text-4xl">
 			{m.home_howItWorksHeading({}, { locale })}
 		</h2>
-		<p class="mt-4 max-w-xl leading-relaxed text-sage">
+		<p class="mt-4 max-w-xl leading-relaxed text-muted-foreground">
 			{m.home_howItWorksIntro({}, { locale })}
 		</p>
 		<div class="mt-12">
@@ -169,7 +187,7 @@
 		</div>
 		<a
 			href={toHref(`/${locale}/how-to-order/`)}
-			class="focus-dark mt-10 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-accent-bright underline-offset-4 hover:underline"
+			class="mt-10 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-accent underline-offset-4 hover:underline"
 		>
 			{m.home_howItWorksCta({}, { locale })}
 			<span aria-hidden="true">→</span>
