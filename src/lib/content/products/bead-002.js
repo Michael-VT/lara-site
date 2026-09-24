@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/red-beaded-heart-keychain/1.webp',
 			thumb: '/images/products/red-beaded-heart-keychain/1-thumb.webp',
-			width: 960,
-			height: 1280,
+			width: 1086,
+			height: 1448,
 			alt: {
 				en: 'Red beaded heart-shaped keychain',
 				pt: 'Porta-chaves em forma de coração em contas vermelhas',
