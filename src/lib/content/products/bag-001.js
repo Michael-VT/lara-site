@@ -12,10 +12,10 @@ export const product = {
 		ru: 'Сумочка монетница белая из бисера'
 	},
 	description: {
-		en: 'A small coin purse hand-woven entirely from white seed beads.',
-		pt: 'Uma pequena bolsa moedeiro, tecida à mão inteiramente em contas brancas.',
-		uk: 'Невелика сумочка-гаманець, повністю сплетена вручну з білого бісеру.',
-		ru: 'Небольшая сумочка-монетница, полностью сплетённая вручную из белого бисера.'
+		en: 'A small coin purse hand-woven entirely from white seed beads. Price does not include the cost of accessories.',
+		pt: 'Uma pequena bolsa moedeiro, tecida à mão inteiramente em contas brancas. O preço não inclui o custo dos acessórios.',
+		uk: 'Невелика сумочка-гаманець, повністю сплетена вручну з білого бісеру. Ціна не включає вартість аксесуарів.',
+		ru: 'Небольшая сумочка-монетница, полностью сплетённая вручную из белого бисера. В цену сумочки-монетницы не входит стоимость аксессуаров.'
 	},
 
 	price: { mode: 'fixed', amount: 10, currency: 'EUR' },
@@ -34,22 +34,10 @@ export const product = {
 			}
 		},
 		{
-			src: '/images/products/white-beaded-coin-purse/2.webp',
-			thumb: '/images/products/white-beaded-coin-purse/2-thumb.webp',
-			width: 1280,
-			height: 960,
-			alt: {
-				en: 'White coin purse, close-up view',
-				pt: 'Bolsa moedeiro branca, primeiro plano',
-				uk: 'Біла сумочка-гаманець, крупний план',
-				ru: 'Белая сумочка-монетница, крупный план'
-			}
-		},
-		{
 			src: '/images/products/white-beaded-coin-purse/8.webp',
 			thumb: '/images/products/white-beaded-coin-purse/8-thumb.webp',
-			width: 1098,
-			height: 1280,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'White coin purse shown with a Shambhala bracelet, €5, as an additional accessory to the bag',
 				pt: 'Bolsa moedeiro branca apresentada com uma bracelete Shambala, 5€, como acessório adicional à bolsa',

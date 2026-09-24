@@ -6,10 +6,10 @@ export const product = {
 	status: 'available',
 
 	title: {
-		en: 'Large and small bead pearl bracelet',
-		pt: 'Pulseira de pérolas com contas grandes e pequenas',
-		uk: 'Браслет з перлинами з великого і дрібного бісеру',
-		ru: 'Браслет из крупного и мелкого бисера'
+		en: '"Sarah" large and small bead bracelet',
+		pt: 'Pulseira de contas grandes e pequenas "Sarah"',
+		uk: 'Браслет з великого і дрібного бісеру «Сара»',
+		ru: 'Браслет из крупных и мелких бусин «Сара»'
 	},
 	description: {
 		en: 'A hand-woven bracelet combining pearl beads with gold and silver-toned seed beads.',
@@ -36,8 +36,8 @@ export const product = {
 		{
 			src: '/images/products/large-small-bead-pearl-bracelet/2.webp',
 			thumb: '/images/products/large-small-bead-pearl-bracelet/2-thumb.webp',
-			width: 406,
-			height: 1280,
+			width: 941,
+			height: 1672,
 			alt: {
 				en: 'Pearl bracelet with large and small beads, second view',
 				pt: 'Pulseira de pérolas com contas grandes e pequenas, outra vista',
@@ -55,10 +55,10 @@ export const product = {
 	},
 
 	materials: {
-		en: 'Pearl beads 4mm, 6mm, 8mm, and seed beads',
-		pt: 'Pérolas de 4mm, 6mm, 8mm, e contas',
-		uk: 'Перлини 4мм, 6мм, 8мм, та бісер',
-		ru: 'Бусины 4 мм, 6 мм, 8 мм и мелкий бисер'
+		en: 'Beads 4mm, 6mm, 8mm, and small Czech seed beads',
+		pt: 'Contas de 4mm, 6mm, 8mm, e miçangas checas pequenas',
+		uk: 'Бусини 4мм, 6мм, 8мм, та дрібний чеський бісер',
+		ru: 'Бусины 4 мм, 6 мм, 8 мм и мелкий чешский бисер'
 	},
 	colours: {
 		en: 'White and gold shown; other colours available to order',

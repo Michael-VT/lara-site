@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/silver-accented-beaded-ball-keychain/1.webp',
 			thumb: '/images/products/silver-accented-beaded-ball-keychain/1-thumb.webp',
-			width: 960,
-			height: 1280,
+			width: 1086,
+			height: 1448,
 			alt: {
 				en: 'Beaded ball keychain with pearl and silver accents',
 				pt: 'Porta-chaves bola em contas com pérolas e detalhes prateados',

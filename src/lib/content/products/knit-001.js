@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/crochet-panama-hat/1.webp',
 			thumb: '/images/products/crochet-panama-hat/1-thumb.webp',
-			width: 1280,
-			height: 960,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Crochet panama hat',
 				pt: 'Chapéu panamá em croché',

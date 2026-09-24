@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/white-beaded-cup-coaster/1.webp',
 			thumb: '/images/products/white-beaded-cup-coaster/1-thumb.webp',
-			width: 627,
-			height: 592,
+			width: 1254,
+			height: 1254,
 			alt: {
 				en: 'White beaded cup coaster',
 				pt: 'Base para chávena em contas brancas',

@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/red-gold-earring-ball/1.webp',
 			thumb: '/images/products/red-gold-earring-ball/1-thumb.webp',
-			width: 960,
-			height: 1280,
+			width: 1086,
+			height: 1448,
 			alt: {
 				en: 'Round ball for earrings woven from red and golden beads',
 				pt: 'Bola redonda para brincos tecida com contas vermelhas e douradas',

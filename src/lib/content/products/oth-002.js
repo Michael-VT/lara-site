@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/blue-gold-earring-ball/1.webp',
 			thumb: '/images/products/blue-gold-earring-ball/1-thumb.webp',
-			width: 960,
-			height: 1280,
+			width: 1086,
+			height: 1448,
 			alt: {
 				en: 'Round ball for earrings woven from blue and golden beads',
 				pt: 'Bola redonda para brincos tecida com contas azuis e douradas',
@@ -36,8 +36,8 @@ export const product = {
 		{
 			src: '/images/products/blue-gold-earring-ball/2.webp',
 			thumb: '/images/products/blue-gold-earring-ball/2-thumb.webp',
-			width: 960,
-			height: 1280,
+			width: 1086,
+			height: 1448,
 			alt: {
 				en: 'Round ball for earrings woven from blue and golden beads, another view',
 				pt: 'Bola redonda para brincos tecida com contas azuis e douradas, outra vista',

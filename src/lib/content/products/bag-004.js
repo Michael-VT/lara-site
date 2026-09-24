@@ -6,16 +6,16 @@ export const product = {
 	status: 'available',
 
 	title: {
-		en: 'Bright mini bag for a girl',
-		pt: 'Mini-bolsa colorida para menina',
-		uk: 'Яскрава міні-сумочка для дівчинки',
-		ru: 'Яркая мини-сумочка для девочки'
+		en: 'Colourful beaded coin purse',
+		pt: 'Bolsa moedeiro colorida em contas',
+		uk: 'Сумочка монетниця різнокольорова з бісеру',
+		ru: 'Сумочка монетница разноцветная'
 	},
 	description: {
-		en: 'A small, brightly-coloured hand-woven beaded bag sized for a child, shown with a matching bracelet.',
-		pt: 'Uma mini-bolsa colorida em contas, tecida à mão em tamanho de menina, apresentada com uma bracelete a combinar.',
-		uk: 'Невелика яскрава сумочка, сплетена вручну з бісеру, розмір — для дівчинки, показана з відповідним браслетом.',
-		ru: 'Небольшая яркая сумочка, сплетённая вручную из бисера, размер — для девочки, показана с подходящим браслетом.'
+		en: 'A small, brightly-coloured hand-woven beaded bag sized for a child, shown with a matching bracelet. Price does not include the cost of accessories.',
+		pt: 'Uma mini-bolsa colorida em contas, tecida à mão em tamanho de menina, apresentada com uma bracelete a combinar. O preço não inclui o custo dos acessórios.',
+		uk: 'Невелика яскрава сумочка, сплетена вручну з бісеру, розмір — для дівчинки, показана з відповідним браслетом. Ціна не включає вартість аксесуарів.',
+		ru: 'Небольшая яркая сумочка, сплетённая вручную из бисера, размер — для девочки, показана с подходящим браслетом. В цену сумочки-монетницы не входит стоимость аксессуаров.'
 	},
 
 	price: { mode: 'fixed', amount: 10, currency: 'EUR' },
@@ -72,10 +72,10 @@ export const product = {
 	],
 
 	dimensions: {
-		en: '5 × 6 cm, handle 12 cm',
-		pt: '5 × 6 cm, alça de 12 cm',
-		uk: '5 × 6 см, ручка 12 см',
-		ru: '5 × 6 см, ручка 12 см'
+		en: '5 × 6 cm, handle 24 cm',
+		pt: '5 × 6 cm, alça de 24 cm',
+		uk: '5 × 6 см, ручка 24 см',
+		ru: '5 × 6 см, ручка 24 см'
 	},
 
 	materials: {

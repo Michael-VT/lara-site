@@ -25,8 +25,8 @@ export const product = {
 		{
 			src: '/images/products/craft-blanks-for-jewellery-and-decor/1.webp',
 			thumb: '/images/products/craft-blanks-for-jewellery-and-decor/1-thumb.webp',
-			width: 960,
-			height: 1280,
+			width: 1254,
+			height: 1254,
 			alt: {
 				en: 'Assorted craft blanks for earrings, keychains and decor',
 				pt: 'Peças-base variadas para brincos, chaveiros e decoração',

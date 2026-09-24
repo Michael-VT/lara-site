@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/gold-accented-beaded-ball-keychain/1.webp',
 			thumb: '/images/products/gold-accented-beaded-ball-keychain/1-thumb.webp',
-			width: 960,
-			height: 1280,
+			width: 1086,
+			height: 1448,
 			alt: {
 				en: 'Beaded ball keychain with pearl and gold accents',
 				pt: 'Porta-chaves bola em contas com pérolas e detalhes dourados',
@@ -36,8 +36,8 @@ export const product = {
 		{
 			src: '/images/products/gold-accented-beaded-ball-keychain/2.webp',
 			thumb: '/images/products/gold-accented-beaded-ball-keychain/2-thumb.webp',
-			width: 960,
-			height: 1280,
+			width: 1086,
+			height: 1448,
 			alt: {
 				en: 'Three beaded ball keychains shown together',
 				pt: 'Três porta-chaves de bola em contas juntos',

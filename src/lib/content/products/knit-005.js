@@ -12,10 +12,10 @@ export const product = {
 		ru: 'Кофта, юбка и сумочка, связанные крючком из хлопка'
 	},
 	description: {
-		en: 'A hand-crocheted white cotton set — motif-joined top, skirt and matching bag — worked in Portuguese cotton yarn.',
-		pt: 'Um conjunto em croché de algodão branco feito à mão — blusa unida por motivos, saia e bolsa a condizer — trabalhado em fio de algodão português.',
-		uk: "Білий бавовняний набір, пов'язаний вручну гачком, — кофточка з окремих мотивів, спідниця та сумочка — з португальської бавовняної пряжі.",
-		ru: 'Белые кофта, юбка и сумочка в комплекте, связанные вручную крючком из португальской хлопковой пряжи.'
+		en: 'A hand-crocheted white cotton top, skirt and bag, worked in Portuguese cotton yarn. Price is from €50 per item, excluding the cost of yarn.',
+		pt: 'Uma blusa, saia e bolsa em croché de algodão branco, feitas à mão, trabalhadas em fio de algodão português. Preço a partir de 50€ por peça, sem o custo do fio.',
+		uk: "Білі кофточка, спідниця та сумочка, пов'язані вручну гачком з португальської бавовняної пряжі. Ціна від 50 євро за виріб, без вартості пряжі.",
+		ru: 'Белая кофта, юбка, сумочка, связанные вручную крючком из португальской хлопковой пряжи. Цена от 50 евро за одно изделие, без стоимости пряжи.'
 	},
 
 	price: { mode: 'from', amount: 50, typicalMax: 90, currency: 'EUR' },
@@ -31,6 +31,18 @@ export const product = {
 				pt: 'Conjunto de blusa, saia e bolsa em croché de algodão',
 				uk: "В'язані кофточка, спідниця та сумочка гачком з бавовни",
 				ru: 'Вязаные крючком кофта, юбка и сумочка из хлопка'
+			}
+		},
+		{
+			src: '/images/products/crochet-cotton-skirt-and-bag-set/2.webp',
+			thumb: '/images/products/crochet-cotton-skirt-and-bag-set/2-thumb.webp',
+			width: 1254,
+			height: 1254,
+			alt: {
+				en: 'Limol yarn label: 100% mercerised cotton',
+				pt: 'Etiqueta do fio Limol: 100% algodão mercerizado',
+				uk: 'Бірка пряжі Limol: 100% мерсеризована бавовна',
+				ru: 'Бирка пряжи Limol: 100% мерсеризованный хлопок'
 			}
 		}
 	],
