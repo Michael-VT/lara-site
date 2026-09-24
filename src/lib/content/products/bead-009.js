@@ -25,8 +25,8 @@ export const product = {
 		{
 			src: '/images/products/beaded-toy-balls/1.webp',
 			thumb: '/images/products/beaded-toy-balls/1-thumb.webp',
-			width: 1280,
-			height: 1215,
+			width: 1254,
+			height: 1254,
 			alt: {
 				en: 'Beaded toy balls',
 				pt: 'Bolas de brinquedo em contas',

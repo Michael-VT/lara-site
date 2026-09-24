@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/red-white-beaded-ball-keychain/1.webp',
 			thumb: '/images/products/red-white-beaded-ball-keychain/1-thumb.webp',
-			width: 1280,
-			height: 960,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'Round keychain woven from red and white seed beads',
 				pt: 'Porta-chaves redondo tecido com contas vermelhas e brancas',
