@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/lilac-top-down-crochet-top/1.webp',
 			thumb: '/images/products/lilac-top-down-crochet-top/1-thumb.webp',
-			width: 1043,
-			height: 1280,
+			width: 1122,
+			height: 1402,
 			alt: {
 				en: 'Lilac top-down crochet top',
 				pt: 'Blusa lilás em croché, trabalhada de cima para baixo',

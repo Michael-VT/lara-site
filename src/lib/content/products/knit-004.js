@@ -24,8 +24,8 @@ export const product = {
 		{
 			src: '/images/products/white-cotton-motif-crochet-top/1.webp',
 			thumb: '/images/products/white-cotton-motif-crochet-top/1-thumb.webp',
-			width: 722,
-			height: 610,
+			width: 1448,
+			height: 1086,
 			alt: {
 				en: 'White cotton crochet top made from joined motifs',
 				pt: 'Blusa branca em croché de algodão, feita de motivos unidos',
