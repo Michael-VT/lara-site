@@ -199,5 +199,8 @@
 	"journal_tagMaterials": "Materiais",
 	"journal_tagWorkshop": "Ateliê",
 	"journal_tagCare": "Cuidados",
-	"journal_tagIdeas": "Ideias"
+	"journal_tagIdeas": "Ideias",
+	"journal_breadcrumbJournal": "Diário",
+	"journal_readStory": "Ler a história",
+	"journal_backToJournal": "Voltar ao Diário"
 }

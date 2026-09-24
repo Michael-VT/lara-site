@@ -4,6 +4,7 @@
 	import { t, pluralCountKey } from '$lib/utils/messages.js';
 	import { localizeText } from '$lib/services/catalog.js';
 	import { journalPosts, journalTagKeys } from '$lib/content/journal.js';
+	import { toHref } from '$lib/utils/href.js';
 	import SeoHead from '$lib/components/layout/SeoHead.svelte';
 
 	let locale = $derived(page.data.locale);
@@ -92,19 +93,39 @@
 		class="rise-in rise-delay-2 mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3"
 	>
 		{#each filtered as post (post.slug)}
-			<article
-				class="flex flex-col gap-3 rounded-card border border-border bg-surface p-6 shadow-card"
-			>
-				<span class="eyebrow text-accent">
-					{t(post.tagKey, {}, { locale })} · {formatDate(post.date)}
-				</span>
-				<h3 class="font-display text-xl leading-snug text-foreground">
-					{localizeText(post.title, locale)}
-				</h3>
-				<p class="text-sm leading-relaxed text-muted-foreground">
-					{localizeText(post.excerpt, locale)}
-				</p>
-			</article>
+			{#if post.body}
+				<a
+					href={toHref(`/${locale}/journal/${post.slug}/`)}
+					class="flex flex-col gap-3 rounded-card border border-border bg-surface p-6 shadow-card transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-lift"
+				>
+					<span class="eyebrow text-accent">
+						{t(post.tagKey, {}, { locale })} · {formatDate(post.date)}
+					</span>
+					<h3 class="font-display text-xl leading-snug text-foreground">
+						{localizeText(post.title, locale)}
+					</h3>
+					<p class="text-sm leading-relaxed text-muted-foreground">
+						{localizeText(post.excerpt, locale)}
+					</p>
+					<span class="mt-1 text-sm font-medium text-accent">
+						{m.journal_readStory({}, { locale })} →
+					</span>
+				</a>
+			{:else}
+				<article
+					class="flex flex-col gap-3 rounded-card border border-border bg-surface p-6 shadow-card"
+				>
+					<span class="eyebrow text-accent">
+						{t(post.tagKey, {}, { locale })} · {formatDate(post.date)}
+					</span>
+					<h3 class="font-display text-xl leading-snug text-foreground">
+						{localizeText(post.title, locale)}
+					</h3>
+					<p class="text-sm leading-relaxed text-muted-foreground">
+						{localizeText(post.excerpt, locale)}
+					</p>
+				</article>
+			{/if}
 		{/each}
 	</div>
 </div>

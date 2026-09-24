@@ -2,6 +2,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { locales, siteUrl } from '../src/lib/config/site.js';
 import { getPublicProducts } from '../src/lib/services/catalog.js';
+import { journalPosts } from '../src/lib/content/journal.js';
 
 const staticPaths = [
 	'',
@@ -14,7 +15,8 @@ const staticPaths = [
 ];
 const products = getPublicProducts();
 const productPaths = products.map((p) => `products/${p.slug}/`);
-const allPaths = [...staticPaths, ...productPaths];
+const journalPaths = journalPosts.filter((p) => p.body).map((p) => `journal/${p.slug}/`);
+const allPaths = [...staticPaths, ...productPaths, ...journalPaths];
 
 function alternatesFor(path) {
 	const links = locales

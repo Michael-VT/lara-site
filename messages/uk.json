@@ -199,5 +199,8 @@
 	"journal_tagMaterials": "Матеріали",
 	"journal_tagWorkshop": "Майстерня",
 	"journal_tagCare": "Догляд",
-	"journal_tagIdeas": "Ідеї"
+	"journal_tagIdeas": "Ідеї",
+	"journal_breadcrumbJournal": "Журнал",
+	"journal_readStory": "Читати історію",
+	"journal_backToJournal": "Назад до Журналу"
 }
