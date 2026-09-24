@@ -74,10 +74,14 @@
 		</div>
 	</header>
 
-	<!-- Lead post — full-bleed velvet banner. Individual article pages don't
-	     exist yet, so this is presented as a static teaser, not a link. -->
-	<article
-		class="rise-in rise-delay-1 mt-10 flex flex-col gap-6 rounded-card bg-ink p-7 text-ivory sm:p-10"
+	<!-- Lead post — full-bleed velvet banner. Links through to its own article
+	     page when the post has full body content. -->
+	<svelte:element
+		this={lead.body ? 'a' : 'article'}
+		href={lead.body ? toHref(`/${locale}/journal/${lead.slug}/`) : undefined}
+		class="rise-in rise-delay-1 mt-10 flex flex-col gap-6 rounded-card bg-ink p-7 text-ivory transition-[transform,box-shadow] duration-200 sm:p-10 {lead.body
+			? 'hover:-translate-y-0.5 hover:shadow-lift'
+			: ''}"
 	>
 		<span class="eyebrow text-accent-bright">
 			{t(lead.tagKey, {}, { locale })} · {formatDate(lead.date)} ·
@@ -87,7 +91,12 @@
 			{localizeText(lead.title, locale)}
 		</h2>
 		<p class="max-w-xl leading-relaxed text-sage">{localizeText(lead.excerpt, locale)}</p>
-	</article>
+		{#if lead.body}
+			<span class="text-sm font-medium text-accent-bright">
+				{m.journal_readStory({}, { locale })} →
+			</span>
+		{/if}
+	</svelte:element>
 
 	<div
 		class="rise-in rise-delay-2 mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3"

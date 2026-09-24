@@ -346,6 +346,7 @@ export const journalPosts = [
 		tagKey: 'journal_tagWorkshop',
 		date: '2026-09-24',
 		readMinutes: 5,
+		featured: true,
 		title: {
 			en: 'My little beaded coin purses',
 			pt: 'As minhas pequenas bolsas-moedeiro de contas',
@@ -353,10 +354,10 @@ export const journalPosts = [
 			uk: 'Мої маленькі сумочки-гаманці з бісеру'
 		},
 		excerpt: {
-			en: 'Beads, fishing line strong enough for a 15 kg catch, and heart-shaped clasps — how one photo online turned into a whole collection of tiny beaded purses.',
-			pt: 'Contas, um fio de pesca resistente até 15 kg e fechos em coração — como uma fotografia na internet se tornou numa coleção de pequenas bolsas de contas.',
-			ru: 'Бисер, рыболовная леска на 15 кг и карабины — как одна фотография в интернете превратилась в целую коллекцию маленьких сумочек-монетниц.',
-			uk: 'Бісер, риболовна волосінь на 15 кг і карабіни — як одна фотографія в інтернеті перетворилася на цілу колекцію маленьких сумочок-гаманців.'
+			en: 'Beads, a fishing line strong enough for a 15 kg catch, and a growing collection of tiny purses — how one photo online turned into a whole family of colours.',
+			pt: 'Contas, um fio de pesca resistente até 15 kg e uma coleção cada vez maior de bolsinhas — como uma fotografia na internet se tornou numa família inteira de cores.',
+			ru: 'Бисер, рыболовная леска на 15 кг и целая растущая коллекция маленьких сумочек — как одна фотография в интернете превратилась в семью разных цветов.',
+			uk: 'Бісер, риболовна волосінь на 15 кг і ціла зростаюча колекція маленьких сумочок — як одна фотографія в інтернеті перетворилася на родину різних кольорів.'
 		},
 		body: [
 			{
@@ -975,25 +976,6 @@ export const journalPosts = [
 				}
 			}
 		]
-	},
-	{
-		slug: 'czech-vs-japanese-beads',
-		tagKey: 'journal_tagMaterials',
-		date: '2026-05-12',
-		readMinutes: 5,
-		featured: true,
-		title: {
-			en: 'Czech beads vs. Japanese beads: what I choose and why',
-			pt: 'Contas checas vs. japonesas: o que escolho e porquê',
-			ru: 'Чешский бисер против японского: что я выбираю и почему',
-			uk: 'Чеський бісер проти японського: що я обираю і чому'
-		},
-		excerpt: {
-			en: 'Calibration, shine, price and wear — compared side by side on a bracelet I made twice, once in each material.',
-			pt: 'Calibragem, brilho, preço e durabilidade — comparados numa pulseira que fiz duas vezes, uma em cada material.',
-			ru: 'Калибровка, блеск, цена и износ — сравниваю на примере браслета, который плела дважды из разных материалов.',
-			uk: 'Калібрування, блиск, ціна та зношування — порівнюю на прикладі браслета, який плела двічі з різних матеріалів.'
-		}
 	},
 	{
 		slug: 'caring-for-beadwork',
