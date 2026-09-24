@@ -17,6 +17,24 @@
  */
 export const journalPosts = [
 	{
+		slug: 'beaded-ball-keychains',
+		tagKey: 'journal_tagWorkshop',
+		date: '2026-09-24',
+		readMinutes: 3,
+		title: {
+			en: 'Beaded ball keychains: a small gift, a full evening of work',
+			pt: 'Porta-chaves de bola em contas: uma prenda pequena, uma noite inteira de trabalho',
+			ru: 'Брелоки-шарики из бисера: маленький подарок, целый вечер работы',
+			uk: 'Брелоки-кульки з бісеру: маленький подарунок, цілий вечір роботи'
+		},
+		excerpt: {
+			en: 'Each ball is dozens of beads woven one by one around a core — why a five-euro keychain takes almost as long as a bracelet.',
+			pt: 'Cada bola é feita com dezenas de contas tecidas uma a uma à volta de um núcleo — porque um porta-chaves de 5€ demora quase tanto como uma pulseira.',
+			ru: 'Каждый шарик — десятки бусин, сплетённых по одной вокруг основы. Рассказываю, почему брелок за 5 евро отнимает почти столько же времени, сколько браслет.',
+			uk: 'Кожна кулька — десятки намистин, сплетених по одній навколо основи. Розповідаю, чому брелок за 5 євро забирає майже стільки ж часу, скільки браслет.'
+		}
+	},
+	{
 		slug: 'czech-vs-japanese-beads',
 		tagKey: 'journal_tagMaterials',
 		date: '2026-05-12',
