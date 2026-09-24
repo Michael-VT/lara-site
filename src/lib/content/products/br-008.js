@@ -18,7 +18,7 @@ export const product = {
 		ru: 'Браслет из белого бисера с подходящим кольцом в комплекте и акцентом из синего биконуса, сплетённый вручную.'
 	},
 
-	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
+	price: { mode: 'fixed', amount: 10, currency: 'EUR' },
 
 	images: [
 		{
@@ -48,10 +48,10 @@ export const product = {
 	],
 
 	dimensions: {
-		en: 'Length: 16 cm, clasp fastening',
-		pt: 'Comprimento: 16 cm, fecho',
-		uk: 'Довжина: 16 см, застібка-замок',
-		ru: 'Длина: 16 см, застёжка-замок'
+		en: 'Length: 16 cm, clasp fastening; ring size 19',
+		pt: 'Comprimento: 16 cm, fecho; anel tamanho 19',
+		uk: 'Довжина: 16 см, застібка-замок; розмір кільця 19',
+		ru: 'Длина: 16 см, застёжка-замок; размер кольца 19'
 	},
 
 	materials: {

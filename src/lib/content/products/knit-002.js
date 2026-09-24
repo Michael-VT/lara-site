@@ -55,10 +55,10 @@ export const product = {
 	},
 
 	materials: {
-		en: 'Portuguese cotton yarn',
-		pt: 'Fio de algodão português',
-		uk: 'Португальська бавовняна пряжа',
-		ru: 'Португальская хлопковая пряжа'
+		en: 'Acrylic yarn',
+		pt: 'Fio acrílico',
+		uk: 'Акрилова пряжа',
+		ru: 'Акриловые нитки'
 	},
 	colours: {
 		en: 'White shown; other colours available to order',

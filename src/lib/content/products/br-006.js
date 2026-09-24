@@ -32,18 +32,6 @@ export const product = {
 				uk: 'Браслет з перлинами з великого і дрібного бісеру',
 				ru: 'Браслет из крупного и мелкого бисера'
 			}
-		},
-		{
-			src: '/images/products/large-small-bead-pearl-bracelet/2.webp',
-			thumb: '/images/products/large-small-bead-pearl-bracelet/2-thumb.webp',
-			width: 941,
-			height: 1672,
-			alt: {
-				en: 'Pearl bracelet with large and small beads, second view',
-				pt: 'Pulseira de pérolas com contas grandes e pequenas, outra vista',
-				uk: 'Браслет з перлинами з великого і дрібного бісеру, інший ракурс',
-				ru: 'Браслет из крупного и мелкого бисера, другой ракурс'
-			}
 		}
 	],
 
