@@ -76,14 +76,14 @@
 		tabindex="-1"
 		aria-label={m.nav_menu({}, { locale: page.data.locale })}
 		onkeydown={handleKeydown}
-		class="bead-field fixed inset-0 z-50 flex flex-col overflow-y-auto bg-ink px-6 pt-4 pb-8 sm:px-10"
+		class="bead-field fixed inset-0 z-50 flex flex-col overflow-y-auto bg-background px-6 pt-4 pb-8 sm:px-10"
 	>
 		<div class="flex items-center justify-between">
-			<span class="eyebrow text-accent-bright">{m.nav_menu({}, { locale: page.data.locale })}</span>
+			<span class="eyebrow text-accent">{m.nav_menu({}, { locale: page.data.locale })}</span>
 			<button
 				type="button"
 				onclick={onclose}
-				class="focus-dark flex min-h-11 min-w-11 items-center justify-center rounded-control text-accent-bright transition-colors hover:bg-ink-soft"
+				class="flex min-h-11 min-w-11 items-center justify-center rounded-control text-foreground transition-colors hover:bg-accent-wash"
 			>
 				<span class="sr-only">{m.nav_closeMenu({}, { locale: page.data.locale })}</span>
 				<svg
@@ -112,14 +112,14 @@
 							{href}
 							aria-current={active ? 'page' : undefined}
 							onclick={onclose}
-							class="focus-dark flex min-h-11 items-center gap-4 py-1 font-display text-[2rem] leading-tight transition-colors duration-300 {active
-								? 'text-accent-bright'
-								: 'text-ivory hover:text-accent-bright'}"
+							class="flex min-h-11 items-center gap-4 py-1 font-display text-[2rem] leading-tight transition-colors duration-300 {active
+								? 'text-accent'
+								: 'text-foreground hover:text-accent'}"
 						>
 							{t(item.messageKey, {}, { locale: page.data.locale })}
 							{#if active}
 								<!-- Signature: the current page carries a stitched gold bead marker -->
-								<span class="bead-rule w-10 text-accent-bright" aria-hidden="true"></span>
+								<span class="bead-rule w-10 text-accent" aria-hidden="true"></span>
 							{/if}
 						</a>
 					</li>
@@ -131,7 +131,7 @@
 			<a
 				href={toHref(`/${page.data.locale}/how-to-order/`)}
 				onclick={onclose}
-				class="focus-dark inline-flex min-h-11 items-center justify-center rounded-control bg-accent-fill px-6 py-3 text-center text-sm font-medium text-ink transition-[transform,box-shadow] duration-200 hover:-translate-y-px"
+				class="inline-flex min-h-11 items-center justify-center rounded-control bg-accent-fill px-6 py-3 text-center text-sm font-medium text-ink transition-[transform,box-shadow] duration-200 hover:-translate-y-px"
 			>
 				{m.nav_order({}, { locale: page.data.locale })}
 			</a>
@@ -149,9 +149,9 @@
 									{ locale: page.data.locale }
 								)}
 								onclick={() => selectLocale(targetLocale)}
-								class="focus-dark flex min-h-11 items-center rounded-control px-4 text-sm font-medium tracking-widest uppercase transition-colors {active
-									? 'bg-ink-soft text-accent-bright ring-1 ring-accent-bright/40 ring-inset'
-									: 'text-sage hover:bg-ink-soft hover:text-ivory'}"
+								class="flex min-h-11 items-center rounded-control px-4 text-sm font-medium tracking-widest uppercase transition-colors {active
+									? 'bg-accent-wash text-accent ring-1 ring-accent/40 ring-inset'
+									: 'text-muted-foreground hover:bg-accent-wash hover:text-foreground'}"
 							>
 								{targetLocale}
 							</a>
