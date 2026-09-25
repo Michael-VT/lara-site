@@ -9,7 +9,7 @@ export const product = {
 		en: 'Silver and white large bead bracelet',
 		pt: 'Pulseira de contas grandes prateadas e brancas',
 		uk: 'Браслет із сріблястих і білих великих намистин',
-		ru: 'Браслет из серебристых и белых крупных бусин'
+		ru: 'Браслет шамбала из серебристых и белых крупных бусин'
 	},
 	description: {
 		en: 'A bracelet of large silvery and white beads, set off by small deep-red spacer beads.',

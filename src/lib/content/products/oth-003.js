@@ -35,6 +35,13 @@ export const product = {
 		}
 	],
 
+	dimensions: {
+		en: 'Circumference: 6 cm',
+		pt: 'Perímetro: 6 cm',
+		uk: 'Розмір по периметру: 6 см',
+		ru: 'Размер по периметру: 6 см'
+	},
+
 	materials: {
 		en: 'Beads',
 		pt: 'Contas',

@@ -3,7 +3,7 @@ export const product = {
 	sku: 'AAA000020',
 	slug: 'white-gold-rice-squares-bracelet',
 	categories: ['bracelets', 'beadwork', 'accessories'],
-	status: 'sold',
+	status: 'available',
 
 	title: {
 		en: 'Bracelet of white and gold rice-bead squares',

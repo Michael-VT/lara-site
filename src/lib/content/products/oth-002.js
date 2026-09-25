@@ -47,11 +47,18 @@ export const product = {
 		}
 	],
 
+	dimensions: {
+		en: 'Circumference: 5 cm',
+		pt: 'Perímetro: 5 cm',
+		uk: 'Розмір по периметру: 5 см',
+		ru: 'Размер по периметру: 5 см'
+	},
+
 	materials: {
-		en: 'Beads',
-		pt: 'Contas',
-		uk: 'Намистини',
-		ru: 'Бусины'
+		en: 'Beads, 3 mm',
+		pt: 'Contas, 3 mm',
+		uk: 'Намистини, 3 мм',
+		ru: 'Бусины, 3 мм'
 	},
 	colours: {
 		en: 'Blue and gold shown; other colours available to order',
