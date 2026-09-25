@@ -88,6 +88,8 @@
 	"product_related": "Вам також може сподобатися",
 	"product_contactReassurance": "Наявність, точна ціна, доставка та оплата узгоджуються особисто після звернення — нічого не списується автоматично.",
 	"product_soldNotice": "Саме цей виріб уже продано. Він залишається тут як приклад роботи.",
+	"product_journalQuestion": "❤️ Хочете дізнатися, як з’явився цей виріб?",
+	"product_journalCta": "Історія створення цього виробу — «{title}» — у журналі →",
 	"product_galleryThumbnail": "Переглянути зображення {index} з {count}",
 	"product_galleryOpenFullscreen": "Відкрити зображення {index} з {count} на весь екран",
 	"product_lightboxClose": "Закрити перегляд на весь екран",

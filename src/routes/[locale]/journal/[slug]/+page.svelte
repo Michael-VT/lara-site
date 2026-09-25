@@ -111,20 +111,40 @@
 				</p>
 			{:else if block.type === 'img'}
 				<figure class="my-2">
-					<img
-						src={block.src}
-						width={block.width}
-						height={block.height}
-						alt={localizeText(block.alt, locale)}
-						loading="lazy"
-						class="w-full rounded-card object-cover shadow-card"
-					/>
+					{#if block.linkPath}
+						<a href={toHref(`/${locale}${block.linkPath}`)}>
+							<img
+								src={block.src}
+								width={block.width}
+								height={block.height}
+								alt={localizeText(block.alt, locale)}
+								loading="lazy"
+								class="w-full rounded-card object-cover shadow-card transition-opacity duration-200 hover:opacity-90"
+							/>
+						</a>
+					{:else}
+						<img
+							src={block.src}
+							width={block.width}
+							height={block.height}
+							alt={localizeText(block.alt, locale)}
+							loading="lazy"
+							class="w-full rounded-card object-cover shadow-card"
+						/>
+					{/if}
 					{#if block.caption}
 						<figcaption class="mt-2 text-center text-sm text-muted-foreground">
 							{localizeText(block.caption, locale)}
 						</figcaption>
 					{/if}
 				</figure>
+			{:else if block.type === 'link'}
+				<a
+					href={toHref(`/${locale}${block.path}`)}
+					class="inline-flex min-h-11 w-fit items-center rounded-control bg-accent-fill px-6 text-base font-semibold text-ink shadow-card transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-lift"
+				>
+					{localizeText(block.text, locale)}
+				</a>
 			{/if}
 		{/each}
 	</div>

@@ -44,6 +44,18 @@ export const product = {
 				uk: 'Кільце з білого бісеру та синього біконуса в комплекті',
 				ru: 'Кольцо из белого бисера и синего биконуса в комплекте'
 			}
+		},
+		{
+			src: '/images/products/white-bead-blue-bicone-ring-bracelet/3.webp',
+			thumb: '/images/products/white-bead-blue-bicone-ring-bracelet/3-thumb.webp',
+			width: 1254,
+			height: 1254,
+			alt: {
+				en: 'Matching ring with white beads and blue bicone accent, close-up',
+				pt: 'Anel a condizer de contas brancas com acento em bicone azul, pormenor',
+				uk: 'Кільце з білого бісеру та синього біконуса в комплекті, крупним планом',
+				ru: 'Кольцо из белого бисера и синего биконуса в комплекте, крупным планом'
+			}
 		}
 	],
 

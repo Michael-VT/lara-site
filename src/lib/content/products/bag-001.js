@@ -63,5 +63,6 @@ export const product = {
 
 	featured: true,
 	featuredOrder: 1,
-	relatedSkus: ['AAA000002', 'AAA000032']
+	relatedSkus: ['AAA000002', 'AAA000032'],
+	journalSlug: 'beaded-mini-coin-purses'
 };

@@ -61,5 +61,6 @@ export const product = {
 		ru: 'Китайский бисер, 6мм'
 	},
 
-	relatedSkus: ['AAA000001', 'AAA000035']
+	relatedSkus: ['AAA000001', 'AAA000035'],
+	journalSlug: 'beaded-mini-coin-purses'
 };

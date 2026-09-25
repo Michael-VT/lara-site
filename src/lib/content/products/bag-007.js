@@ -61,5 +61,6 @@ export const product = {
 		ru: 'Можно заказать в других цветах'
 	},
 
-	relatedSkus: ['AAA000005', 'AAA000006']
+	relatedSkus: ['AAA000005', 'AAA000006'],
+	journalSlug: 'beaded-mini-coin-purses'
 };

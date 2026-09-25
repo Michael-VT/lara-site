@@ -3,6 +3,8 @@
 	import { m } from '$lib/paraglide/messages.js';
 	import { t } from '$lib/utils/messages.js';
 	import { localizeText } from '$lib/services/catalog.js';
+	import { journalPosts } from '$lib/content/journal.js';
+	import { toHref } from '$lib/utils/href.js';
 	import { getCategory } from '$lib/content/categories.js';
 	import SeoHead from '$lib/components/layout/SeoHead.svelte';
 	import JsonLd from '$lib/components/layout/JsonLd.svelte';
@@ -110,6 +112,12 @@
 	let metaDescription = $derived(
 		`${localizeText(product.shortDescription ?? product.description, locale)} ${m.product_metaDescriptionSuffix({}, { locale })}`
 	);
+
+	let journalPost = $derived(
+		product.journalSlug
+			? journalPosts.find((p) => p.slug === product.journalSlug && p.body)
+			: undefined
+	);
 </script>
 
 <SeoHead {title} description={metaDescription} image={product.images[0].src} />
@@ -190,6 +198,18 @@
 				<p class="text-xs text-muted-foreground">{m.product_contactReassurance({}, { locale })}</p>
 				<p class="text-xs text-muted-foreground">{m.product_shippingNote({}, { locale })}</p>
 			</div>
+
+			{#if journalPost}
+				<div class="border-t border-border pt-6">
+					<p class="text-sm text-muted-foreground">{m.product_journalQuestion({}, { locale })}</p>
+					<a
+						href={toHref(`/${locale}/journal/${journalPost.slug}/`)}
+						class="mt-1 inline-flex min-h-11 items-center text-sm font-medium text-accent transition-colors duration-200 hover:text-foreground"
+					>
+						{m.product_journalCta({ title: localizeText(journalPost.title, locale) }, { locale })}
+					</a>
+				</div>
+			{/if}
 		</div>
 	</div>
 

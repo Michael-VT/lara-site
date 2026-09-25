@@ -8,8 +8,10 @@
  *       width: number,
  *       height: number,
  *       alt: import('$lib/schemas/product.js').LocalizedText,
- *       caption?: import('$lib/schemas/product.js').LocalizedText
+ *       caption?: import('$lib/schemas/product.js').LocalizedText,
+ *       linkPath?: string
  *     }
+ *   | { type: 'link', path: string, text: import('$lib/schemas/product.js').LocalizedText }
  * } JournalBlock
  *
  * @typedef {object} JournalPost
@@ -338,6 +340,34 @@ export const journalPosts = [
 					ru: 'Наверное, именно за это я и люблю рукоделие: **одна новая идея превращается в вещь, которой ещё вчера не существовало.**',
 					uk: 'Мабуть, саме за це я й люблю рукоділля: **одна нова ідея перетворюється на річ, якої ще вчора не існувало.**'
 				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'The bag is ready 🤎',
+					pt: 'A bolsa está pronta 🤎',
+					ru: 'Сумочка готова 🤎',
+					uk: 'Сумочка готова 🤎'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'You can see photos, details and availability of this bag in the catalogue.',
+					pt: 'Pode ver fotografias, características e disponibilidade desta bolsa no catálogo.',
+					ru: 'Посмотреть фотографии, характеристики и наличие этой сумочки можно в каталоге.',
+					uk: 'Переглянути фотографії, характеристики та наявність цієї сумочки можна в каталозі.'
+				}
+			},
+			{
+				type: 'link',
+				path: '/products/brown-lace-crochet-bag/',
+				text: {
+					en: 'View the bag →',
+					pt: 'Ver a bolsa →',
+					ru: 'Посмотреть сумочку →',
+					uk: 'Переглянути сумочку →'
+				}
 			}
 		]
 	},
@@ -462,6 +492,7 @@ export const journalPosts = [
 			{
 				type: 'img',
 				src: '/images/journal/beaded-mini-coin-purses/01-first-white-purse.webp',
+				linkPath: '/products/white-beaded-coin-purse/',
 				width: 1152,
 				height: 1536,
 				alt: {
@@ -492,6 +523,7 @@ export const journalPosts = [
 			{
 				type: 'img',
 				src: '/images/journal/beaded-mini-coin-purses/02-line-closeup.webp',
+				linkPath: '/products/white-beaded-coin-purse/',
 				width: 1152,
 				height: 1536,
 				alt: {
@@ -549,6 +581,7 @@ export const journalPosts = [
 			{
 				type: 'img',
 				src: '/images/journal/beaded-mini-coin-purses/03-colorful-in-progress.webp',
+				linkPath: '/products/colorful-beaded-bag-and-bracelet-set/',
 				width: 1536,
 				height: 1152,
 				alt: {
@@ -606,6 +639,7 @@ export const journalPosts = [
 			{
 				type: 'img',
 				src: '/images/journal/beaded-mini-coin-purses/04-colorful-finished.webp',
+				linkPath: '/products/colorful-beaded-bag-and-bracelet-set/',
 				width: 1231,
 				height: 1277,
 				alt: {
@@ -675,6 +709,7 @@ export const journalPosts = [
 			{
 				type: 'img',
 				src: '/images/journal/beaded-mini-coin-purses/06-black.webp',
+				linkPath: '/products/black-beaded-coin-purse/',
 				width: 1448,
 				height: 1086,
 				alt: {
@@ -705,6 +740,7 @@ export const journalPosts = [
 			{
 				type: 'img',
 				src: '/images/journal/beaded-mini-coin-purses/07-red.webp',
+				linkPath: '/products/red-beaded-mini-coin-purse/',
 				width: 1306,
 				height: 1204,
 				alt: {
@@ -726,6 +762,7 @@ export const journalPosts = [
 			{
 				type: 'img',
 				src: '/images/journal/beaded-mini-coin-purses/08-silver.webp',
+				linkPath: '/products/silver-beaded-mini-coin-purse/',
 				width: 1359,
 				height: 1157,
 				alt: {
@@ -804,6 +841,7 @@ export const journalPosts = [
 			{
 				type: 'img',
 				src: '/images/journal/beaded-mini-coin-purses/10-black-outdoors.webp',
+				linkPath: '/products/black-beaded-coin-purse/',
 				width: 1152,
 				height: 1536,
 				alt: {
@@ -829,6 +867,25 @@ export const journalPosts = [
 					pt: 'Aqui o meu pequeno trabalho já não está em casa, entre contas, fio e ferramentas. Tornou-se um verdadeiro acessório e parte de uma bolsa maior.',
 					ru: 'Здесь моя маленькая работа уже не лежит дома среди бусин, лески и инструментов. Она стала настоящим аксессуаром и частью большой сумки.',
 					uk: 'Тут моя маленька робота вже не лежить удома серед бісеру, волосіні та інструментів. Вона стала справжнім аксесуаром і частиною великої сумки.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Did you like my little purses?',
+					pt: 'Gostou das minhas pequenas bolsas?',
+					ru: 'Понравились мои маленькие сумочки?',
+					uk: 'Сподобалися мої маленькі сумочки?'
+				}
+			},
+			{
+				type: 'link',
+				path: '/products/?category=bags',
+				text: {
+					en: 'View the beaded coin purses in the catalogue →',
+					pt: 'Ver as bolsas-moedeiro de contas no catálogo →',
+					ru: 'Посмотреть сумочки-монетницы в каталоге →',
+					uk: 'Переглянути сумочки-гаманці в каталозі →'
 				}
 			},
 			{

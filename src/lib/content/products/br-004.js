@@ -32,6 +32,18 @@ export const product = {
 				uk: 'Браслет із квітковим візерунком з білого та золотистого бісеру',
 				ru: 'Браслет с цветочным узором из белого и золотистого бисера'
 			}
+		},
+		{
+			src: '/images/products/white-gold-flower-beaded-bracelet/2.webp',
+			thumb: '/images/products/white-gold-flower-beaded-bracelet/2-thumb.webp',
+			width: 512,
+			height: 1024,
+			alt: {
+				en: 'White and gold beaded bracelet with a flower motif, another view',
+				pt: 'Pulseira em contas brancas e douradas com motivo floral, outra vista',
+				uk: 'Браслет із квітковим візерунком з білого та золотистого бісеру, інший ракурс',
+				ru: 'Браслет с цветочным узором из белого и золотистого бисера, другой ракурс'
+			}
 		}
 	],
 

@@ -39,7 +39,8 @@ const productGroups = [
 			'Белая сумочка монетница из белого бисера': 'white-beaded-coin-purse',
 			'Черная сумочка монетница из черного бисера': 'black-beaded-coin-purse',
 			'Сумочка из бисера для торжества': 'beaded-evening-bag',
-			'Яркая мини-сумочка для девочки': 'bright-mini-bag-for-girl'
+			'Яркая мини-сумочка для девочки': 'bright-mini-bag-for-girl',
+			'Коричневая ажурная сумочка ручной работы': 'brown-lace-crochet-bag'
 		}
 	},
 	{
@@ -47,7 +48,6 @@ const productGroups = [
 		items: {
 			'Браслет Сверкающий ромб': 'sparkling-rhombus-bracelet',
 			'Браслет из бисера Нежность': 'tenderness-beaded-bracelet',
-			'Браслет из белого и золотистого бисера Цветочек': 'white-gold-flower-beaded-bracelet',
 			'Браслет из белого и серебристого бисера для принцессы':
 				'white-silver-princess-beaded-bracelet',
 			'Браслет из крупного и мелкого бисера': 'large-small-bead-pearl-bracelet',
@@ -60,6 +60,7 @@ const productGroups = [
 			'Браслет-шнурок с бисером на регулируемом узле': 'shambhala-beaded-bracelet',
 			'Браслет из крупного и мелкого белого жемчуга': 'white-pearl-large-small-bracelet',
 			'Браслет квадратики белого-золотого риса': 'white-gold-rice-squares-bracelet',
+			'Браслет из белого и золотистого бисера Цветочек': 'white-gold-flower-beaded-bracelet',
 			'Браслет белые ромбики': 'white-rhombus-bracelet'
 		}
 	},
@@ -218,6 +219,12 @@ async function processSpecialAsset(asset) {
 	return { out: asset.outPath, width: meta.width, height: meta.height };
 }
 
+// Optional `--only slug1,slug2` restricts processing to specific product
+// slugs, so re-running the optimizer to add/replace one product's photos
+// doesn't re-encode (and risk drifting) every other product's images.
+const onlyFlagIndex = process.argv.indexOf('--only');
+const onlySlugs = onlyFlagIndex !== -1 ? new Set(process.argv[onlyFlagIndex + 1].split(',')) : null;
+
 const report = [];
 
 for (const group of productGroups) {
@@ -228,6 +235,7 @@ for (const group of productGroups) {
 	}
 
 	for (const [productFolder, slug] of Object.entries(group.items)) {
+		if (onlySlugs && !onlySlugs.has(slug)) continue;
 		const result = await processProductFolder(group.sourceFolder, productFolder, slug);
 		if (!result) {
 			console.warn(`⚠ No images found for "${group.sourceFolder}/${productFolder}"`);
@@ -241,12 +249,14 @@ for (const group of productGroups) {
 	}
 }
 
-for (const asset of specialAssets) {
-	const result = await processSpecialAsset(asset);
-	if (result) {
-		console.log(`✔ ${result.out} (${result.width}×${result.height})`);
-	} else {
-		console.warn(`⚠ Special asset source not found: ${asset.sourcePath.join('/')}`);
+if (!onlySlugs) {
+	for (const asset of specialAssets) {
+		const result = await processSpecialAsset(asset);
+		if (result) {
+			console.log(`✔ ${result.out} (${result.width}×${result.height})`);
+		} else {
+			console.warn(`⚠ Special asset source not found: ${asset.sourcePath.join('/')}`);
+		}
 	}
 }
 

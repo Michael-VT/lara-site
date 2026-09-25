@@ -34,6 +34,7 @@ import { isValidSku } from '../utils/sku.js';
  *   featured?: boolean,
  *   featuredOrder?: number,
  *   relatedSkus?: string[],
+ *   journalSlug?: string,
  *   isDemo?: boolean,
  *   createdAt?: string,
  *   updatedAt?: string
@@ -109,6 +110,9 @@ export const productSchema = z.object({
 	featured: z.boolean().optional(),
 	featuredOrder: z.number().int().optional(),
 	relatedSkus: z.array(z.string()).optional(),
+
+	/** Slug of a journal post ('behind the making of this piece') linked from the product page. */
+	journalSlug: z.string().optional(),
 
 	isDemo: z.boolean().optional(),
 
