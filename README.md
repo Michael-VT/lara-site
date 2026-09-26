@@ -2,7 +2,7 @@
 
 A multilingual (English / Português / Українська / Русский) static showcase and catalog for handmade products, built with SvelteKit + Svelte 5, Tailwind CSS, and Paraglide JS. It is **not** an online shop — there is no cart, checkout, or payment. Every enquiry is routed to WhatsApp, Telegram, or email, with the product's SKU carried along automatically.
 
-> The catalog now has 9 real handmade products with real photos. The **"About" page copy is still `TODO`** placeholder text (no biography was provided) — see [Placeholder content](#placeholder-content) before going live. Product `status` (available/made to order/sold) was set to a reasonable default and should be double-checked against reality.
+> The catalog has 45 real handmade products with real photos, real "About" copy, and a Journal section with full articles (not just teasers). See [Known open items](#known-open-items) for what's still unfinished.
 
 ## Stack
 
@@ -54,24 +54,22 @@ CI should run, in order: `lint`, `check`, `test`, `test:e2e`, `validate:content`
 
 ## Adding or editing a product
 
-No component code needs to change to add a product.
+No component code needs to change to add a product. **`docs/ADD-PRODUCT.md` is the authoritative, up-to-date step-by-step** (scaffolding command, photo pipeline, translation glossary, publish checklist) — read that file, not this section, when actually adding a piece. In short:
 
-1. **Add photos.** Drop the original photo(s) into a new folder under `images/` at the repo root (folder name can be descriptive, e.g. in Russian — that's just for your own organization). Add an entry mapping that folder name to your product's slug in `scripts/optimize-images.js` (`slugMap`), then run `bun run optimize:images`. It writes optimized WebP files (full-size + thumbnail) into `static/images/products/{slug}/` and prints a JSON report with the exact width/height to use in your product file.
-2. **Copy the template.** Duplicate `src/lib/content/products/_template.example.js` to a new file, e.g. `src/lib/content/products/bag-003.js`.
-3. **Fill in the required fields**: a unique `sku` (matching `^[A-Z][A-Z0-9]{1,9}-[0-9]{3,6}$`, e.g. `BAG-003`), a unique `slug`, `category`, `status`, English `title` and `description`, and at least one image (`src`, `thumb`, `width`, `height`, `alt`) using the paths/dimensions from step 1.
-4. **Add translations** for `pt`/`uk`/`ru` where you have them. Missing translations automatically fall back to English — the site never breaks because of a missing translation.
-5. **Register it** by importing the file and adding it to the `rawProducts` array in `src/lib/content/products/index.js`.
-6. **Remove `isDemo: true`** once it's a real product (or leave it — it's just a marker, not enforced unless `PUBLIC_PRODUCTION=true`).
-7. **Validate and test**: `bun run validate:content`, then `bun run test`.
-8. **Build and deploy** the generated `build/` directory.
+1. `bun scripts/new-product.js <category> <slug> --title "..."` scaffolds `src/lib/content/products/<slug>.js` with the next free SKU, a four-locale skeleton, and registers it in `index.js`.
+2. Drop the original photos into a new folder under `images/` (any name, even in Russian — it's just for your own organization), map that folder to the product's slug in `scripts/optimize-images.js` (`productGroups`), then run `bun run optimize:images` (or `bun run optimize:images -- --only <slug>` to touch only that one product — see the note in [Available scripts](#available-scripts)).
+3. Fill in `title`/`description`/`materials`/etc. for all four locales (`en → pt → uk → ru`), using the glossary in `docs/ADD-PRODUCT.md` for consistent terminology.
+4. Flip `status` from `hidden` to `available` (or `made_to_order`/`sold`) when ready to publish.
+5. `bun run validate:content && bun run check && bun run test && bun run build`, then spot-check all four locales.
 
 See `src/lib/content/products/bag-001.js` for a complete, real example.
 
 ### SKU rules
 
-- Must be globally unique and must **never change** once a product has been shared publicly (it's how customers reference items in conversation).
+- Format: `AAA` + 6 digits (`^[A-Z]{3}[0-9]{6}$`), e.g. `AAA000045` — one continuous sequence across the whole catalog, not per-category. `scripts/new-product.js` assigns the next free one automatically.
+- Must be globally unique and must **never change** once a product has been shared publicly (it's how customers reference items in conversation, and it's embedded in generated QR codes).
 - Case-insensitive at input, normalized to uppercase for display and comparison.
-- Suggested prefixes: `BAG`, `BR` (bracelets), `JEW`, `BEAD`, `KNIT`, `ACC`, `OTH`.
+- Pre-2026-09 SKUs used a different format (`BAG-001`, `BR-010`, ...); those are invalid for new content but still resolve via `src/lib/content/sku-aliases.js` so old links/QR codes never break.
 
 ### Statuses
 
@@ -161,13 +159,21 @@ The runtime image contains only Nginx and the built static files — no source, 
 
 The `build/` output also works as-is on Cloudflare Pages, Netlify, and Vercel's static hosting. For GitHub Pages under a sub-path, configure `paths.base` in `vite.config.js`'s `sveltekit()` options.
 
-## Placeholder content
+## Known open items
 
-Still needed before launch:
+- Two source-photo folders under `images/` have photos that were never wired into a product (`Изделия из бисера/Разноцветные шарики` and `Браслеты/Браслет из крупного и мелкого бисера` both have more originals on disk than any product currently references) — need a decision on whether they're new products, extra angles of existing ones, or leftovers.
+- A PageSpeed/Lighthouse pass flagged mobile performance issues (LCP ~6.3s, target ~2.5s): the hero slider eager-loads all slides instead of just the visible one, render-blocking font imports, and an accent color that's slightly under WCAG AA contrast. Not yet fixed.
 
-- "About" copy (`about_intro`, `about_story`, `about_process`, `about_materials` in `messages/*.json`) is marked `TODO` — replace with the real biography.
-- The hero slider and About-page images (`static/images/hero/`, `static/images/about/`) are still neutral generated placeholders — swap in real photos.
-- Every product currently defaults to `status: 'available'` and `price: { mode: 'on_request' }` since neither was supplied — check each product in `src/lib/content/products/` and correct the status (`available` / `made_to_order` / `sold`) and add a real price if you want one shown.
+## How this site is maintained
+
+This is a one-person project (the "owner" below) maintained largely through pair-programming sessions with an AI coding assistant (Claude Code) rather than by hand-editing every file. If you're picking this up — human or AI — here's the process that's actually been used session to session:
+
+- **Content lives in data, not components.** Every product is a plain JS object in `src/lib/content/products/*.js`, validated by a Zod schema (`src/lib/schemas/product.js`) at import time. Journal articles are the same idea in `src/lib/content/journal.js`. Adding a piece or a story almost never requires touching a `.svelte` file — see [Adding or editing a product](#adding-or-editing-a-product).
+- **`docs/ADD-PRODUCT.md` and `AGENTS.md` are the working memory for content changes.** `ADD-PRODUCT.md` is the step-by-step for new pieces (glossary, SKU rules, photo pipeline). `AGENTS.md` collects "known landmines" discovered the hard way — e.g. a `bun` + `sharp` bug that occasionally corrupts WebP output during the photo pipeline (fix: re-encode via plain `node` instead, then visually check the result) — so nobody has to rediscover them.
+- **Photos are optimized, never committed raw into `static/`.** Originals go under `images/<descriptive folder>/` at the repo root (kept in git as the source of truth), get mapped to a product slug in `scripts/optimize-images.js`, and `bun run optimize:images` (optionally `-- --only <slug>` to touch a single product) converts them to sized WebP under `static/images/products/<slug>/`. Always spot-check the output visually before committing — see the landmine above.
+- **Everything is drafted locally before it goes live.** Changes are made as local git commits first; `bun run dev:lan` (or `scripts/preview.sh` for a production-like build) serves the site on the local network so it can be reviewed from a phone or another computer before anything is pushed. Only after that review does a push to `origin/main` happen — and pushing to GitHub is a separate step from actually deploying to `larise.art`, which the owner does himself.
+- **Cross-referenced content stays two-way.** For example, a product can carry an optional `journalSlug` pointing at the article about how it was made (renders a "want to know how this was made?" teaser on the product page); a journal article can link text or a specific photo back to the product it's about (the generic `link` block type and `img.linkPath` in `journal.js`). Reuse this pattern rather than inventing a one-off link every time a piece and its backstory need to reference each other.
+- **Translations are written by the assistant, checked by the owner.** The owner (not a developer, writes Russian) supplies real copy in Russian; the assistant translates to `en`/`pt`/`uk` following the glossary in `docs/ADD-PRODUCT.md` to keep terminology (bead types, techniques, materials) consistent across the whole catalog, and the owner catches anything that reads wrong visually on the live pages.
 
 ## Testing
 
