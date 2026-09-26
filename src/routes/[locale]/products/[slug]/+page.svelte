@@ -28,9 +28,6 @@
 			.map((c) => t(c.messageKey, {}, { locale }))
 			.join(', ')
 	);
-	// schema.org Product.category is a single value — use the primary (first).
-	let primaryCategory = $derived(getCategory(product.categories[0]));
-
 	let sold = $derived(product.status === 'sold');
 
 	// Typical-range note, only when the "from" price carries a known upper bound.
@@ -63,7 +60,6 @@
 		'@type': 'Product',
 		name: title,
 		sku: product.sku,
-		category: primaryCategory ? t(primaryCategory.messageKey, {}, { locale }) : undefined,
 		description: localizeText(product.description, locale),
 		// Google requires absolute URLs for JSON-LD image arrays.
 		image: product.images.map((img) => `${siteUrl}${img.src}`),

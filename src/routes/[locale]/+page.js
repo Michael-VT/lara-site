@@ -6,6 +6,6 @@ export function load() {
 	const products = getPublicProducts();
 	return {
 		featured: getFeaturedProducts(),
-		madeToOrder: filterProducts(products, { status: 'made_to_order' })
+		available: filterProducts(products, { status: 'available' })
 	};
 }

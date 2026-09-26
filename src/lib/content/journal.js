@@ -355,7 +355,7 @@ export const journalPosts = [
 				text: {
 					en: 'You can see photos, details and availability of this bag in the catalogue.',
 					pt: 'Pode ver fotografias, características e disponibilidade desta bolsa no catálogo.',
-					ru: 'Посмотреть фотографии, характеристики и наличие этой сумочки можно в каталоге.',
+					ru: 'Посмотреть фотографии, характеристики и наличие этой сумочки можно в галерее.',
 					uk: 'Переглянути фотографії, характеристики та наявність цієї сумочки можна в каталозі.'
 				}
 			},
@@ -884,7 +884,7 @@ export const journalPosts = [
 				text: {
 					en: 'View the beaded coin purses in the catalogue →',
 					pt: 'Ver as bolsas-moedeiro de contas no catálogo →',
-					ru: 'Посмотреть сумочки-монетницы в каталоге →',
+					ru: 'Посмотреть сумочки-монетницы в галерее →',
 					uk: 'Переглянути сумочки-гаманці в каталозі →'
 				}
 			},

@@ -1,14 +1,14 @@
 <script>
 	import { page } from '$app/state';
 	import { m } from '$lib/paraglide/messages.js';
-	import { categories } from '$lib/content/categories.js';
+	import { t } from '$lib/utils/messages.js';
 	import { toHref } from '$lib/utils/href.js';
 	import { siteName, siteUrl } from '$lib/config/site.js';
-	import { getPublicProducts } from '$lib/services/catalog.js';
+	import { getPublicProducts, localizeText } from '$lib/services/catalog.js';
+	import { journalPosts } from '$lib/content/journal.js';
 	import SeoHead from '$lib/components/layout/SeoHead.svelte';
 	import JsonLd from '$lib/components/layout/JsonLd.svelte';
 	import HeroSlider from '$lib/components/products/HeroSlider.svelte';
-	import CategoryCard from '$lib/components/products/CategoryCard.svelte';
 	import ProductGrid from '$lib/components/products/ProductGrid.svelte';
 	import HowToOrderSteps from '$lib/components/contacts/HowToOrderSteps.svelte';
 	import AboutPreview from '$lib/components/layout/AboutPreview.svelte';
@@ -16,6 +16,12 @@
 	let { data } = $props();
 	let locale = $derived(page.data.locale);
 	let productCount = $derived(getPublicProducts().length);
+	let journalPreview = $derived(journalPosts.filter((p) => p.body).slice(0, 3));
+
+	/** @param {string} iso */
+	function formatDate(iso) {
+		return new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long' }).format(new Date(iso));
+	}
 
 	let jsonLd = $derived({
 		'@context': 'https://schema.org',
@@ -124,19 +130,6 @@
 </div>
 
 <div class="mx-auto w-full max-w-content px-4 sm:px-6">
-	<!-- Categories -->
-	<section aria-labelledby="categories-heading" class="py-20 sm:py-24">
-		<span class="bead-rule w-10 text-accent" aria-hidden="true"></span>
-		<h2 id="categories-heading" class="mt-4 font-display text-3xl text-foreground sm:text-4xl">
-			{m.home_categoriesHeading({}, { locale })}
-		</h2>
-		<div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-			{#each categories as category (category.id)}
-				<CategoryCard {category} />
-			{/each}
-		</div>
-	</section>
-
 	{#if data.featured.length > 0}
 		<section aria-labelledby="featured-heading" class="py-20 sm:py-24">
 			<div class="flex flex-wrap items-end justify-between gap-4">
@@ -159,14 +152,67 @@
 		</section>
 	{/if}
 
-	{#if data.madeToOrder.length > 0}
-		<section aria-labelledby="made-to-order-heading" class="py-20 sm:py-24">
-			<span class="bead-rule w-10 text-accent" aria-hidden="true"></span>
-			<h2 id="made-to-order-heading" class="mt-4 font-display text-3xl text-foreground sm:text-4xl">
-				{m.home_madeToOrderHeading({}, { locale })}
-			</h2>
+	{#if data.available.length > 0}
+		<section aria-labelledby="available-heading" class="py-20 sm:py-24">
+			<div class="flex flex-wrap items-end justify-between gap-4">
+				<div>
+					<span class="bead-rule w-10 text-accent" aria-hidden="true"></span>
+					<h2 id="available-heading" class="mt-4 font-display text-3xl text-foreground sm:text-4xl">
+						{m.home_availableHeading({}, { locale })}
+					</h2>
+				</div>
+				<a
+					href={toHref(`/${locale}/products/?status=available`)}
+					class="inline-flex min-h-11 items-center text-sm font-medium text-accent underline-offset-4 hover:underline"
+				>
+					{m.home_viewAll({}, { locale })}
+				</a>
+			</div>
 			<div class="mt-10">
-				<ProductGrid products={data.madeToOrder} />
+				<ProductGrid products={data.available} />
+			</div>
+		</section>
+	{/if}
+
+	{#if journalPreview.length > 0}
+		<section aria-labelledby="journal-heading" class="py-20 sm:py-24">
+			<div class="flex flex-wrap items-end justify-between gap-4">
+				<div>
+					<span class="bead-rule w-10 text-accent" aria-hidden="true"></span>
+					<h2 id="journal-heading" class="mt-4 font-display text-3xl text-foreground sm:text-4xl">
+						{m.home_journalHeading({}, { locale })}
+					</h2>
+					<p class="mt-3 max-w-xl leading-relaxed text-muted-foreground">
+						{m.home_journalIntro({}, { locale })}
+					</p>
+				</div>
+				<a
+					href={toHref(`/${locale}/journal/`)}
+					class="inline-flex min-h-11 items-center text-sm font-medium text-accent underline-offset-4 hover:underline"
+				>
+					{m.home_journalViewAll({}, { locale })}
+				</a>
+			</div>
+			<div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+				{#each journalPreview as post (post.slug)}
+					<a
+						href={toHref(`/${locale}/journal/${post.slug}/`)}
+						class="flex flex-col gap-3 rounded-card border border-border bg-surface p-6 shadow-card transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-lift"
+					>
+						<span class="eyebrow text-accent">
+							{t(post.tagKey, {}, { locale })} · {formatDate(post.date)}
+						</span>
+						<h3 class="font-display text-xl leading-snug text-foreground">
+							{localizeText(post.title, locale)}
+						</h3>
+						<p class="text-sm leading-relaxed text-muted-foreground">
+							{localizeText(post.excerpt, locale)}
+						</p>
+						<span class="mt-1 text-sm font-medium text-accent">
+							{m.journal_readStory({}, { locale })} →
+						</span>
+					</a>
+				{/each}
 			</div>
 		</section>
 	{/if}
