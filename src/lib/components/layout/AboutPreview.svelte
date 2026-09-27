@@ -13,8 +13,8 @@
 		<img
 			src="/images/about/home-portrait.webp"
 			alt={m.about_portraitAlt({}, { locale })}
-			width="570"
-			height="1280"
+			width="857"
+			height="1836"
 			loading="lazy"
 			class="frame-arch aspect-[3/4] w-full object-cover object-top"
 		/>

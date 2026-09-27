@@ -1091,8 +1091,8 @@ export const journalPosts = [
 	{
 		slug: 'five-handmade-gift-ideas',
 		tagKey: 'journal_tagIdeas',
-		date: '2026-03-03',
-		readMinutes: 3,
+		date: '2026-09-27',
+		readMinutes: 6,
 		title: {
 			en: 'Gift ideas: five handmade picks',
 			pt: 'Ideias de prendas: cinco sugestões artesanais',
@@ -1104,7 +1104,361 @@ export const journalPosts = [
 			pt: 'Uma lista rápida para aniversários, casamentos e "sem motivo".',
 			ru: 'Небольшая шпаргалка на день рождения, свадьбу и «просто так».',
 			uk: 'Невеличка шпаргалка на день народження, весілля і «просто так».'
-		}
+		},
+		body: [
+			{
+				type: 'p',
+				text: {
+					en: 'Five small and big gifts for someone you want to make happy.',
+					pt: 'Cinco prendas pequenas e grandes para quem se quer fazer feliz.',
+					ru: 'Пять маленьких и больших подарков для тех, кого хочется порадовать.',
+					uk: 'П’ять маленьких і великих подарунків для тих, кого хочеться порадувати.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "Sometimes you want to give something special — not necessarily expensive or large. Just a beautiful thing, chosen with the person in mind. Handmade pieces have exactly that small charm: each one is a little different from the next, and carries the warmth of the maker's hands.",
+					pt: 'Às vezes apetece oferecer algo especial — não necessariamente caro ou grande. Só uma coisa bonita, escolhida a pensar na pessoa. As peças artesanais têm exactamente esse pequeno encanto: cada uma é um pouco diferente da outra, e guarda o calor das mãos de quem a fez.',
+					ru: 'Иногда хочется подарить что-нибудь особенное — не обязательно дорогое или большое. Просто красивую вещь, выбранную с вниманием к человеку. Изделия ручной работы как раз обладают этим маленьким очарованием: каждое немного отличается от другого и хранит тепло рук мастера.',
+					uk: 'Іноді хочеться подарувати щось особливе — не обов’язково дороге чи велике. Просто гарну річ, обрану з увагою до людини. Вироби ручної роботи якраз мають цю маленьку чарівність: кожен трохи відрізняється від іншого і зберігає тепло рук майстрині.'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: '1. A beaded coin purse',
+					pt: '1. Uma bolsa-moedeiro de contas',
+					ru: '1. Сумочка-монетница из бусин',
+					uk: '1. Сумочка-гаманець з бісеру'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'A small, unusual and pretty little bag — a sweet gift for a girl or young woman. It can hold coins, a small piece of jewellery, or some other little treasure.',
+					pt: 'Uma bolsinha pequena, pouco comum e bonita — uma prenda querida para uma menina ou jovem. Pode guardar moedas, uma pequena joia, ou algum mimo que seja especial para a pessoa.',
+					ru: 'Маленькая, необычная и нарядная сумочка — милый подарок для девочки или молодой девушки. В неё можно положить монетки, небольшое украшение или какую-нибудь дорогую сердцу мелочь.',
+					uk: 'Маленька, незвичайна і святкова сумочка — милий подарунок для дівчинки чи молодої дівчини. У неї можна покласти монетки, невелику прикрасу або якусь дорогу серцю дрібничку.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'The purse itself can also become a small ornament — the beads catch the light beautifully, and its tiny size gives it a special charm.',
+					pt: 'A própria bolsa também pode tornar-se um pequeno adorno — as contas brilham lindamente à luz, e o tamanho miniatura dá-lhe um charme especial.',
+					ru: 'А ещё сама сумочка может стать маленьким украшением — бусины красиво переливаются на свету, а миниатюрный размер придаёт ей особое очарование.',
+					uk: 'А ще сама сумочка може стати маленькою прикрасою — намистини гарно переливаються на світлі, а мініатюрний розмір надає їй особливого шарму.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/red-beaded-mini-coin-purse/1.webp',
+				linkPath: '/products/red-beaded-mini-coin-purse/',
+				width: 1448,
+				height: 1086,
+				alt: {
+					en: 'Red beaded mini coin purse',
+					pt: 'Mini bolsa moedeiro vermelha em contas',
+					uk: 'Міні сумочка-гаманець з червоного бісеру',
+					ru: 'Мини сумочка монетница из красного бисера'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'But a little purse like this has another role too — as a decoration for a bigger bag. Just clip it onto the handle, and a familiar bag gets a whole new mood. A little beaded purse looks like a charm or an ornament, while staying a real, tiny bag in its own right.',
+					pt: 'Mas uma bolsinha assim também pode ter outro papel — como enfeite para uma bolsa maior. Basta prendê-la à asa, e uma bolsa habitual ganha um ar completamente diferente. Uma pequena bolsa de contas parece um pingente ou um adorno, mas continua a ser uma verdadeira mini-bolsa.',
+					ru: 'Но у такой малышки может быть и ещё одна роль — украшение для большой сумки. Достаточно прикрепить её к ручке, и привычная сумка получает совсем другое настроение. Маленькая сумочка из бусин выглядит как подвеска или украшение, но при этом остаётся настоящей миниатюрной сумочкой.',
+					uk: 'Але в такої малючки може бути і ще одна роль — прикраса для великої сумки. Достатньо причепити її до ручки, і звична сумка отримує зовсім інший настрій. Маленька сумочка з бісеру виглядає як підвіска чи прикраса, але при цьому залишається справжньою мініатюрною сумочкою.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'I love it when one small detail can make a familiar thing feel a little more unusual and personal.',
+					pt: 'Gosto quando um pequeno detalhe consegue tornar algo familiar um pouco mais especial e pessoal.',
+					ru: 'Мне нравится, когда одна маленькая деталь способна сделать знакомую вещь чуть более необычной и индивидуальной.',
+					uk: 'Мені подобається, коли одна маленька деталь здатна зробити знайому річ трохи незвичнішою й індивідуальнішою.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/black-beaded-coin-purse/2.webp',
+				linkPath: '/products/black-beaded-coin-purse/',
+				width: 1280,
+				height: 1067,
+				alt: {
+					en: 'Black beaded heart-shaped coin purse clipped to a black leather bag',
+					pt: 'Bolsa moedeiro preta em forma de coração, presa a uma bolsa preta de cabedal',
+					uk: 'Чорна сумочка-гаманець у формі серця на чорній шкіряній сумці',
+					ru: 'Чёрная сумочка-монетница в форме сердца на чёрной кожаной сумке'
+				}
+			},
+			{
+				type: 'link',
+				path: '/journal/beaded-mini-coin-purses/',
+				text: {
+					en: 'Read the story of my coin purses →',
+					pt: 'Ler a história das minhas bolsas-moedeiro →',
+					ru: 'История сумочек-монетниц →',
+					uk: 'Читати історію моїх сумочок-гаманців →'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: '2. A handmade bracelet',
+					pt: '2. Uma pulseira artesanal',
+					ru: '2. Браслет ручной работы',
+					uk: '2. Браслет ручної роботи'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "A bracelet is a small and very personal gift for a friend, sister or daughter. It's easy to match to a mood: delicate, romantic, bright, or simply understated.",
+					pt: 'Uma pulseira é uma prenda pequena e muito pessoal para uma amiga, irmã ou filha. É fácil de escolher conforme o estilo: delicada, romântica, vibrante ou bem simples.',
+					ru: 'Браслет — небольшой и очень личный подарок подруге, сестре или дочери. Его легко подобрать по настроению: нежный, романтичный, яркий или совсем лаконичный.',
+					uk: 'Браслет — невеликий і дуже особистий подарунок подрузі, сестрі чи доньці. Його легко підібрати за настроєм: ніжний, романтичний, яскравий або зовсім лаконічний.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Every bracelet has its own character. "Princess", "Little Flower" and "Tenderness" turned out completely different from one another, though each stays a light, feminine piece.',
+					pt: 'Cada pulseira tem o seu próprio carácter. "Princesa", "Florzinha" e "Ternura" ficaram completamente diferentes umas das outras, embora todas continuem a ser peças leves e femininas.',
+					ru: 'У каждого браслета свой характер. «Принцесса», «Цветочек» и «Нежность» получились совершенно разными, хотя каждый из них остаётся лёгким и женственным украшением.',
+					uk: 'У кожного браслета свій характер. «Принцеса», «Квіточка» і «Ніжність» вийшли зовсім різними, хоча кожен із них залишається легкою жіночною прикрасою.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/white-silver-princess-beaded-bracelet/1.webp',
+				linkPath: '/products/white-silver-princess-beaded-bracelet/',
+				width: 1448,
+				height: 1086,
+				alt: {
+					en: 'White and silver beaded bracelet',
+					pt: 'Pulseira em contas brancas e prateadas',
+					uk: 'Браслет з білого та срібного бісеру',
+					ru: 'Браслет из белого и серебристого бисера'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/white-gold-flower-beaded-bracelet/1.webp',
+				linkPath: '/products/white-gold-flower-beaded-bracelet/',
+				width: 1448,
+				height: 1086,
+				alt: {
+					en: 'White and gold beaded bracelet with a flower motif',
+					pt: 'Pulseira em contas brancas e douradas com motivo floral',
+					uk: 'Браслет із квітковим візерунком з білого та золотистого бісеру',
+					ru: 'Браслет с цветочным узором из белого и золотистого бисера'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/tenderness-beaded-bracelet/1.webp',
+				linkPath: '/products/tenderness-beaded-bracelet/',
+				width: 1448,
+				height: 1086,
+				alt: {
+					en: 'Delicate hand-woven beaded bracelet',
+					pt: 'Pulseira delicada em contas, tecida à mão',
+					uk: 'Ніжний браслет із бісеру ручної роботи',
+					ru: 'Нежный браслет из бисера ручной работы'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: '3. A handmade bag',
+					pt: '3. Uma bolsa artesanal',
+					ru: '3. Сумочка ручной работы',
+					uk: '3. Сумочка ручної роботи'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'A bag is a more noticeable gift, but still a very personal one. It can become part of a favourite look and stay with its owner for more than one season.',
+					pt: 'Uma bolsa é já uma prenda mais visível, mas continua a ser muito pessoal. Pode tornar-se parte de um look preferido e acompanhar a sua dona por mais do que uma estação.',
+					ru: 'Сумочка — подарок уже более заметный, но при этом очень личный. Она может стать частью любимого образа и сопровождать свою хозяйку не один сезон.',
+					uk: 'Сумочка — подарунок уже помітніший, але водночас дуже особистий. Вона може стати частиною улюбленого образу і супроводжувати свою господиню не один сезон.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "I especially love pieces where the interesting texture and details aren't obvious at first glance. You want to look closer, touch them, notice the weave, the shape of the handles, the clasp.",
+					pt: 'Gosto especialmente de peças em que a textura e os detalhes interessantes não se notam logo à primeira vista. Dá vontade de as observar mais de perto, tocar-lhes, reparar na tecelagem, na forma das asas, no fecho.',
+					ru: 'Мне особенно нравятся вещи, в которых интересная фактура и детали заметны не сразу. Их хочется рассматривать поближе, прикасаться к ним, замечать плетение, форму ручек, застёжку.',
+					uk: 'Мені особливо подобаються речі, в яких цікава фактура і деталі помітні не одразу. Їх хочеться роздивлятися зблизька, торкатися, помічати плетіння, форму ручок, застібку.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/white-crochet-bag/1.webp',
+				linkPath: '/products/white-crochet-bag/',
+				width: 1122,
+				height: 1402,
+				alt: {
+					en: 'White crochet bag',
+					pt: 'Bolsa branca em croché',
+					uk: 'Біла в’язана сумочка гачком',
+					ru: 'Вязаная белая сумочка'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/brown-lace-crochet-bag/2.webp',
+				linkPath: '/products/brown-lace-crochet-bag/',
+				width: 1067,
+				height: 1280,
+				alt: {
+					en: 'Brown lace crochet bag with a gold chain strap and heart-shaped clasps',
+					pt: 'Bolsa em croché rendado castanha com corrente dourada e fechos em coração',
+					uk: 'Коричнева ажурна сумочка із золотистим ланцюжком і карабінами-сердечками',
+					ru: 'Коричневая ажурная сумочка с золотистой цепочкой и карабинами-сердечками'
+				}
+			},
+			{
+				type: 'link',
+				path: '/journal/brown-lace-crochet-bag/',
+				text: {
+					en: 'Read how this bag was made →',
+					pt: 'Ler como esta bolsa foi feita →',
+					ru: 'История создания этой сумочки →',
+					uk: 'Читати історію створення цієї сумочки →'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: '4. A beaded piece of jewellery or accessory',
+					pt: '4. Uma joia ou acessório de contas',
+					ru: '4. Украшение или аксессуар из бисера',
+					uk: '4. Прикраса або аксесуар з бісеру'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Sometimes the best gift is a very small one. A necklace, a keychain or a little beaded accessory can be given just because, with no special occasion needed.',
+					pt: 'Às vezes a melhor prenda é bem pequena. Um colar, um porta-chaves ou um pequeno acessório de contas pode ser oferecido só porque sim, sem motivo especial.',
+					ru: 'Иногда лучший подарок — совсем небольшой. Колье, брелок или маленький аксессуар из бисера можно подарить просто так, без особенного повода.',
+					uk: 'Іноді найкращий подарунок — зовсім невеликий. Намисто, брелок або маленький аксесуар з бісеру можна подарувати просто так, без особливого приводу.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "These pieces draw you in with their details: the mix of beads, the shine, the colour, and the careful handwork. And that's exactly why a small gift can feel very personal — especially when it's chosen with the person's character and favourite colours in mind.",
+					pt: 'Estas peças conquistam pelos detalhes: a combinação das contas, o brilho, a cor e o trabalho manual cuidado. E é exactamente por isso que uma prenda pequena pode ser muito pessoal — sobretudo quando é escolhida a pensar no carácter e nas cores preferidas da pessoa.',
+					ru: 'Такие вещи привлекают деталями: сочетанием бусин, блеском, цветом и аккуратной ручной работой. И именно поэтому небольшой подарок может оказаться очень личным — особенно если выбрать его, думая о характере и любимых цветах человека.',
+					uk: 'Такі речі приваблюють деталями: поєднанням намистин, блиском, кольором і акуратною ручною роботою. І саме тому невеликий подарунок може виявитися дуже особистим — особливо якщо обрати його, думаючи про характер і улюблені кольори людини.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/white-pearl-bead-necklace/1.webp',
+				linkPath: '/products/white-pearl-bead-necklace/',
+				width: 1086,
+				height: 1448,
+				alt: {
+					en: 'Necklace of white faux pearls and seed beads',
+					pt: 'Colar de pérolas brancas e miçangas',
+					uk: 'Намисто з білих штучних перлин і бісеру',
+					ru: 'Колье из белого искусственного жемчуга и бисера'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/red-beaded-heart-keychain/1.webp',
+				linkPath: '/products/red-beaded-heart-keychain/',
+				width: 1086,
+				height: 1448,
+				alt: {
+					en: 'Red beaded heart-shaped keychain',
+					pt: 'Porta-chaves em forma de coração em contas vermelhas',
+					uk: 'Брелок у вигляді серця з червоного бісеру',
+					ru: 'Брелок в виде сердца из красного бисера'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: '5. A knitted piece',
+					pt: '5. Uma peça em croché',
+					ru: '5. Вязаная вещь',
+					uk: '5. В’язана річ'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "Knitted things are associated with warmth and care. A crochet hat can become a light, unusual addition to a summer look, while a soft white top is a cosy piece you'll enjoy wearing again and again.",
+					pt: 'As peças em croché associam-se a carinho e conforto. Um chapéu pode tornar-se um complemento leve e pouco comum para um look de verão, e uma blusa branca e macia é uma peça aconchegante que se gosta de usar vezes sem conta.',
+					ru: 'Вязаные вещи ассоциируются с теплом и заботой. Панамка может стать лёгким и необычным дополнением летнего образа, а мягкая белая кофта — уютной вещью, которую приятно носить снова и снова.',
+					uk: 'В’язані речі асоціюються з теплом і турботою. Панамка може стати легким і незвичним доповненням літнього образу, а м’яка біла кофточка — затишною річчю, яку приємно носити знову і знову.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'It\'s especially lovely when a piece is made for one specific person — with the right size, colour, and small details that make it truly "theirs".',
+					pt: 'É especialmente bonito quando uma peça é feita para uma pessoa em concreto — com o tamanho certo, a cor certa e pequenos detalhes que a tornam verdadeiramente "sua".',
+					ru: 'Особенно приятно, когда такая вещь создаётся для конкретного человека — с подходящим размером, цветом и небольшими деталями, которые делают её именно «своей».',
+					uk: 'Особливо приємно, коли така річ створюється для конкретної людини — з відповідним розміром, кольором і невеликими деталями, які роблять її саме «своєю».'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/crochet-panama-hat/1.webp',
+				linkPath: '/products/crochet-panama-hat/',
+				width: 1448,
+				height: 1086,
+				alt: {
+					en: 'Crochet panama hat',
+					pt: 'Chapéu panamá em croché',
+					uk: 'В’язана панама гачком',
+					ru: 'Панама'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/white-cotton-motif-crochet-top/1.webp',
+				linkPath: '/products/white-cotton-motif-crochet-top/',
+				width: 1448,
+				height: 1086,
+				alt: {
+					en: 'White cotton crochet top made from joined motifs',
+					pt: 'Blusa branca em croché de algodão, feita de motivos unidos',
+					uk: 'Біла кофточка, пов’язана з окремих мотивів',
+					ru: 'Белая кофточка, связанная из отдельных мотивов'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "You don't always need a big occasion to give a gift. Sometimes it's enough to see a beautiful thing and think: \"she'll love this.\"",
+					pt: 'Nem sempre é preciso um grande motivo para fazer uma prenda. Às vezes basta ver uma coisa bonita e pensar logo: "ela vai adorar isto."',
+					ru: 'Не всегда нужен большой повод, чтобы сделать подарок. Иногда достаточно увидеть красивую вещь и сразу подумать: «Это ей понравится».',
+					uk: 'Не завжди потрібен великий привід, щоб зробити подарунок. Іноді достатньо побачити гарну річ і одразу подумати: «Їй це сподобається».'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'And if none of the finished pieces is quite the right one, you can pick an idea you like and talk about a similar piece, made specially for its future owner.',
+					pt: 'E se, entre as peças já feitas, não encontrar exactamente a certa, pode escolher uma ideia de que goste e combinar uma peça semelhante, feita especialmente para a sua futura dona.',
+					ru: 'А если среди готовых работ не нашлось именно той, можно выбрать понравившуюся идею и обсудить похожее изделие, созданное специально для будущей хозяйки.',
+					uk: 'А якщо серед готових робіт не знайшлося саме тієї, можна обрати ідею, яка сподобалася, і обговорити схожий виріб, створений спеціально для майбутньої господині.'
+				}
+			}
+		]
 	},
 	{
 		slug: 'measuring-for-a-knitted-top',
