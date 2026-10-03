@@ -48,7 +48,7 @@
 				)}
 			</p>
 		</div>
-		<p class="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+		<p class="mt-3 max-w-2xl leading-relaxed font-medium text-muted-foreground">
 			{m.journal_intro({}, { locale })}
 		</p>
 
@@ -90,7 +90,9 @@
 		<h2 class="max-w-2xl font-display text-3xl leading-tight text-ivory sm:text-4xl">
 			{localizeText(lead.title, locale)}
 		</h2>
-		<p class="max-w-xl leading-relaxed text-sage">{localizeText(lead.excerpt, locale)}</p>
+		<p class="max-w-xl leading-relaxed font-medium text-sage">
+			{localizeText(lead.excerpt, locale)}
+		</p>
 		{#if lead.body}
 			<span class="text-sm font-medium text-accent-bright">
 				{m.journal_readStory({}, { locale })} →
@@ -113,7 +115,7 @@
 					<h3 class="font-display text-xl leading-snug text-foreground">
 						{localizeText(post.title, locale)}
 					</h3>
-					<p class="text-sm leading-relaxed text-muted-foreground">
+					<p class="text-sm leading-relaxed font-medium text-muted-foreground">
 						{localizeText(post.excerpt, locale)}
 					</p>
 					<span class="mt-1 text-sm font-medium text-accent">
@@ -130,7 +132,7 @@
 					<h3 class="font-display text-xl leading-snug text-foreground">
 						{localizeText(post.title, locale)}
 					</h3>
-					<p class="text-sm leading-relaxed text-muted-foreground">
+					<p class="text-sm leading-relaxed font-medium text-muted-foreground">
 						{localizeText(post.excerpt, locale)}
 					</p>
 				</article>

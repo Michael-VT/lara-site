@@ -1038,19 +1038,445 @@ export const journalPosts = [
 		slug: 'caring-for-beadwork',
 		tagKey: 'journal_tagCare',
 		date: '2026-04-28',
-		readMinutes: 4,
+		readMinutes: 6,
 		title: {
-			en: 'How to care for beadwork jewellery',
-			pt: 'Como cuidar de joias em contas',
-			ru: 'Как ухаживать за изделиями из бисера',
-			uk: 'Як доглядати за виробами з бісеру'
+			en: 'How to keep beadwork jewellery beautiful for years',
+			pt: 'Como manter a beleza das joias em contas durante anos',
+			ru: 'Как сохранить красоту изделий из бисера и бусин надолго',
+			uk: 'Як надовго зберегти красу виробів із бісеру та намистин'
 		},
 		excerpt: {
 			en: 'Storage, cleaning, and what not to do so the thread lasts for years.',
 			pt: 'Armazenamento, limpeza e o que evitar para o fio durar anos.',
 			ru: 'Хранение, чистка и что точно не стоит делать, чтобы нить прослужила годы.',
 			uk: 'Зберігання, чищення і чого точно не варто робити, щоб нитка прослужила роки.'
-		}
+		},
+		body: [
+			{
+				type: 'p',
+				text: {
+					en: 'I love seed beads and beads for the way they play with light. Sometimes you pick up a finished piece, turn it toward the window — and it shines in a completely different way. ✨',
+					pt: 'Adoro o bisel e as contas pela forma como brincam com a luz. Às vezes pegamos numa peça pronta, viramo-la para a janela — e ela brilha de um jeito completamente diferente. ✨',
+					ru: 'Я очень люблю бисер и бусины за то, как они умеют играть со светом. Иногда возьмёшь готовое изделие в руки, повернёшь его к окну — и оно совсем по-другому засияет. ✨',
+					uk: 'Я дуже люблю бісер і намистини за те, як вони вміють грати зі світлом. Іноді береш готовий виріб у руки, повертаєш його до вікна — і він зовсім по-іншому починає сяяти. ✨'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'And of course, when you make something like this with your own hands, you want it to stay as beautiful, bright and shiny as it was on day one, for as long as possible.',
+					pt: 'E claro, quando fazemos uma peça assim com as nossas próprias mãos, queremos que ela continue tão bonita, vibrante e brilhante quanto no primeiro dia, pelo maior tempo possível.',
+					ru: 'И конечно, когда делаешь такую вещь своими руками, хочется, чтобы она как можно дольше оставалась такой же красивой, яркой и блестящей, как в первый день.',
+					uk: 'І звісно, коли робиш таку річ власними руками, хочеться, щоб вона якомога довше залишалася такою ж гарною, яскравою і блискучою, як у перший день.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "In fact, beadwork and beaded pieces don't need any complicated care. You just need to remember a few small rules. I'd like to share them with you.",
+					pt: 'Na verdade, as peças de bisel e contas não exigem cuidados complicados. Basta lembrar algumas pequenas regras. Quero partilhá-las convosco.',
+					ru: 'На самом деле изделия из бисера и бусин не требуют какого-то сложного ухода. Нужно просто помнить несколько небольших правил. Хочу поделиться ими с вами.',
+					uk: 'Насправді вироби з бісеру та намистин не потребують якогось складного догляду. Потрібно просто пам’ятати кілька невеликих правил. Хочу поділитися ними з вами.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/white-bead-blue-bicone-ring-bracelet/1.webp',
+				linkPath: '/products/white-bead-blue-bicone-ring-bracelet/',
+				width: 941,
+				height: 1672,
+				alt: {
+					en: 'White beaded bracelet with blue bicone accent',
+					pt: 'Pulseira de contas brancas com acento em bicone azul',
+					uk: 'Браслет із білого бісеру та синього біконуса',
+					ru: 'Браслет из белого бисера и синего биконуса'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: "💧 Seed beads and beads don't love water",
+					pt: '💧 O bisel e as contas não gostam muito de água',
+					ru: '💧 Бисер и бусины не очень любят воду',
+					uk: '💧 Бісер і намистини не дуже люблять воду'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "If it's a bracelet, ring or other piece of jewellery, it's best to take it off before a shower, a bath, or a trip to the pool.",
+					pt: 'Se for uma pulseira, anel ou outra joia, o melhor é tirá-la antes do duche, do banho ou de ir à piscina.',
+					ru: 'Если это браслет, кольцо или другое украшение, лучше снимать его перед душем, ванной или походом в бассейн.',
+					uk: 'Якщо це браслет, кільце чи інша прикраса, краще знімати її перед душем, ванною або походом у басейн.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "And I'd especially advise against swimming in jewellery in the sea. Salt, water and sun are a wonderful combination for us, but not the best one for beads. 😊",
+					pt: 'E, principalmente, não aconselho nadar no mar com joias postas. Sal, água e sol são uma combinação ótima para nós, mas não tanto para o bisel. 😊',
+					ru: 'И особенно я бы не советовала купаться в украшениях в море. Соль, вода и солнце — прекрасное сочетание для нас, но не самое лучшее для бисера. 😊',
+					uk: 'І особливо я б не радила купатися в прикрасах у морі. Сіль, вода і сонце — чудове поєднання для нас, але не найкраще для бісеру. 😊'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Even if nothing happens to the beads right away, over time their coating can lose its original shine, and the metal parts can darken.',
+					pt: 'Mesmo que nada aconteça às contas de imediato, com o tempo o revestimento pode perder o brilho original, e as partes metálicas podem escurecer.',
+					ru: 'Даже если с бусинами ничего не случится сразу, со временем их покрытие может потерять первоначальный блеск, а металлические детали — потемнеть.',
+					uk: 'Навіть якщо з намистинами нічого не станеться одразу, з часом їхнє покриття може втратити початковий блиск, а металеві деталі — потемніти.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "If a piece accidentally gets wet, it's not a big deal. Just gently blot it with a soft cloth and let it dry naturally.",
+					pt: 'Se uma peça se molhar por acidente, não há problema. Basta secá-la delicadamente com um pano macio e deixá-la secar naturalmente.',
+					ru: 'Если изделие случайно намокло, ничего страшного. Просто аккуратно промокните его мягкой салфеткой и оставьте высохнуть естественным образом.',
+					uk: 'Якщо виріб випадково намок, нічого страшного. Просто акуратно промокніть його м’якою серветкою і дайте висохнути природним шляхом.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/white-silver-princess-beaded-bracelet/1.webp',
+				linkPath: '/products/white-silver-princess-beaded-bracelet/',
+				width: 1448,
+				height: 1086,
+				alt: {
+					en: 'White and silver beaded bracelet',
+					pt: 'Pulseira em contas brancas e prateadas',
+					uk: 'Браслет з білого та срібного бісеру',
+					ru: 'Браслет из белого и серебристого бисера'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: "☀️ Don't leave it in bright sun for long",
+					pt: '☀️ Não deixe muito tempo ao sol forte',
+					ru: '☀️ Не оставляйте надолго на ярком солнце',
+					uk: '☀️ Не залишайте надовго на яскравому сонці'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Wearing jewellery in summer is, of course, absolutely fine — and encouraged!',
+					pt: 'Usar joias no verão é, claro, perfeitamente possível — e recomendado!',
+					ru: 'Носить украшения летом, конечно же, можно и нужно!',
+					uk: 'Носити прикраси влітку, звісно ж, можна і потрібно!'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "But I wouldn't recommend storing them where direct sunlight falls on them every day. For example, try not to leave a bracelet or a bag on a windowsill or in a car under the sun for long.",
+					pt: 'Mas não aconselho guardá-las onde a luz solar direta incide todos os dias. Por exemplo, evite deixar uma pulseira ou uma bolsa muito tempo no parapeito da janela ou dentro do carro ao sol.',
+					ru: 'Но хранить их там, где на них каждый день падают прямые солнечные лучи, я бы не советовала. Например, не стоит надолго оставлять браслет или сумочку на подоконнике или в машине под солнцем.',
+					uk: 'Але зберігати їх там, куди щодня потрапляють прямі сонячні промені, я б не радила. Наприклад, не варто надовго залишати браслет або сумочку на підвіконні чи в машині на сонці.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Some beads have a beautiful coloured, pearlescent or metallic coating, and constant bright sun can gradually change its shade over time.',
+					pt: 'Algumas contas têm um belo revestimento colorido, perolado ou metalizado, e o sol forte constante pode, com o tempo, alterar o seu tom.',
+					ru: 'Некоторые бусины имеют красивое цветное, перламутровое или металлизированное покрытие, и постоянное яркое солнце со временем может изменить его оттенок.',
+					uk: 'Деякі намистини мають гарне кольорове, перламутрове чи металізоване покриття, і постійне яскраве сонце з часом може змінити його відтінок.'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: '🌸 Perfume and cream first — jewellery after',
+					pt: '🌸 Primeiro o perfume e o creme — depois a joia',
+					ru: '🌸 Сначала духи и крем — потом украшение',
+					uk: '🌸 Спочатку парфуми і крем — потім прикраса'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "It's a very small habit, but it helps keep jewellery looking beautiful for much longer.",
+					pt: 'É um hábito muito simples, mas ajuda a manter as joias bonitas por muito mais tempo.',
+					ru: 'Это совсем маленькая привычка, но она помогает сохранить украшения красивыми намного дольше.',
+					uk: 'Це зовсім невелика звичка, але вона допомагає зберегти прикраси гарними набагато довше.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'First apply your cream, perfume, hairspray or other cosmetics. Wait a little, and only then put on your bracelet, ring or other piece of jewellery.',
+					pt: 'Primeiro aplique o creme, o perfume, o laquê ou outra cosmética. Espere um pouco e só depois coloque a pulseira, o anel ou outra joia.',
+					ru: 'Сначала нанесите крем, духи, лак для волос или другую косметику. Подождите немного, а уже потом надевайте браслет, кольцо или другое украшение.',
+					uk: 'Спочатку нанесіть крем, парфуми, лак для волосся чи іншу косметику. Трохи зачекайте, а вже потім надягайте браслет, кільце чи іншу прикрасу.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Try to keep perfume and cosmetics from getting directly onto the beads. Some coatings are quite delicate and can gradually lose their shine.',
+					pt: 'Tente evitar que o perfume e os cosméticos caiam diretamente sobre as contas. Alguns revestimentos são bastante delicados e podem perder o brilho aos poucos.',
+					ru: 'Старайтесь, чтобы духи и косметические средства не попадали прямо на бусины. Некоторые покрытия довольно нежные и могут постепенно потерять свой блеск.',
+					uk: 'Намагайтеся, щоб парфуми та косметичні засоби не потрапляли прямо на намистини. Деякі покриття доволі ніжні і можуть поступово втратити свій блиск.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/white-bead-blue-bicone-ring-bracelet/3.webp',
+				linkPath: '/products/white-bead-blue-bicone-ring-bracelet/',
+				width: 1254,
+				height: 1254,
+				alt: {
+					en: 'Matching ring with white beads and blue bicone accent, close-up',
+					pt: 'Anel a condizer de contas brancas com acento em bicone azul, pormenor',
+					uk: 'Кільце з білого бісеру та синього біконуса в комплекті, крупним планом',
+					ru: 'Кольцо из белого бисера и синего биконуса в комплекте, крупным планом'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: '👜 Beaded bags love gentle care too',
+					pt: '👜 As bolsas de contas também gostam de cuidado delicado',
+					ru: '👜 Сумочки из бусин тоже любят бережное отношение',
+					uk: '👜 Сумочки з намистин теж люблять дбайливе ставлення'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "A beaded bag shouldn't be washed or soaked in water.",
+					pt: 'Uma bolsa de contas não deve ser lavada nem molhada em água.',
+					ru: 'Сумочку из бусин не нужно стирать или замачивать в воде.',
+					uk: 'Сумочку з намистин не потрібно прати чи замочувати у воді.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'If it gets a little dusty, it is enough to gently wipe it with a soft dry cloth. If needed, you can use a slightly damp cloth, then let the bag dry well afterwards.',
+					pt: 'Se ficar um pouco empoeirada, basta limpá-la delicadamente com um pano macio e seco. Se necessário, pode usar um pano ligeiramente húmido e depois deixar a bolsa secar bem.',
+					ru: 'Если она немного запылилась, достаточно осторожно протереть её мягкой сухой салфеткой. При необходимости можно использовать слегка влажную ткань, а потом дать сумочке хорошо высохнуть.',
+					uk: 'Якщо вона трохи запилилася, достатньо обережно протерти її м’якою сухою серветкою. За потреби можна скористатися злегка вологою тканиною, а потім дати сумочці добре висохнути.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "And one more piece of advice — don't overload a bag like this.",
+					pt: 'E mais um conselho meu — não sobrecarregue esta bolsa.',
+					ru: 'И ещё один мой совет — не перегружайте такую сумочку.',
+					uk: 'І ще одна моя порада — не перевантажуйте таку сумочку.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "Even though I try to use sturdy materials for my pieces, a beaded bag is still a handmade item. It's made for beautiful, useful little things, not for heavy items. 😊",
+					pt: 'Apesar de eu tentar usar materiais resistentes nas minhas peças, uma bolsa de contas continua a ser feita à mão. Ela foi criada para pequenos objetos bonitos e úteis, não para coisas pesadas. 😊',
+					ru: 'Несмотря на то что для своих изделий я стараюсь использовать прочные материалы, сумочка из бусин всё-таки остаётся ручной работой. Она создана для красивых и нужных мелочей, а не для тяжёлых вещей. 😊',
+					uk: 'Попри те, що для своїх виробів я намагаюся використовувати міцні матеріали, сумочка з намистин все ж залишається ручною роботою. Вона створена для гарних і потрібних дрібничок, а не для важких речей. 😊'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/beaded-evening-bag/1.webp',
+				linkPath: '/products/beaded-evening-bag/',
+				width: 1254,
+				height: 1254,
+				alt: {
+					en: 'Beaded evening bag for special occasions',
+					pt: 'Bolsa de noite em contas para ocasiões especiais',
+					uk: 'Нарядна сумочка з бісеру для урочистих подій',
+					ru: 'Нарядная сумочка из бисера для торжества'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/black-beaded-coin-purse/2.webp',
+				linkPath: '/products/black-beaded-coin-purse/',
+				width: 1280,
+				height: 1067,
+				alt: {
+					en: 'Black beaded heart-shaped coin purse clipped to a black leather bag',
+					pt: 'Bolsa moedeiro preta em forma de coração, presa a uma bolsa preta de cabedal',
+					uk: 'Чорна сумочка-гаманець у формі серця на чорній шкіряній сумці',
+					ru: 'Чёрная сумочка-монетница в форме сердца на чёрной кожаной сумке'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: '🧼 Skip harsh cleaning products',
+					pt: '🧼 Não use produtos de limpeza fortes',
+					ru: '🧼 Не нужно использовать сильные чистящие средства',
+					uk: '🧼 Не варто використовувати сильні миючі засоби'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Sometimes you want to give a piece a really good clean so it shines again. But this is exactly where it is best not to overdo it.',
+					pt: 'Às vezes apetece limpar bem uma joia para que volte a brilhar. Mas é aqui que convém não exagerar.',
+					ru: 'Иногда хочется хорошенько почистить украшение, чтобы оно снова блестело. Но здесь как раз лучше не переусердствовать.',
+					uk: 'Іноді хочеться добряче почистити прикрасу, щоб вона знову заблищала. Але тут якраз краще не перестаратися.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Alcohol, acetone, dish soap and other household cleaning products are best kept for other purposes.',
+					pt: 'O álcool, a acetona, o detergente da loiça e outros produtos de limpeza domésticos são melhor guardados para outros fins.',
+					ru: 'Спирт, ацетон, средства для мытья посуды и другие бытовые чистящие средства лучше оставить для других целей.',
+					uk: 'Спирт, ацетон, засоби для миття посуду та інші побутові миючі засоби краще залишити для інших цілей.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'In most cases, a soft dry cloth is all seed beads and beads really need.',
+					pt: 'Na maioria dos casos, um pano macio e seco é suficiente para o bisel e as contas.',
+					ru: 'В большинстве случаев бисеру и бусинам достаточно мягкой сухой салфетки.',
+					uk: 'У більшості випадків бісеру та намистинам достатньо м’якої сухої серветки.'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: '📦 How I recommend storing your pieces',
+					pt: '📦 Como aconselho guardar as peças',
+					ru: '📦 Как я советую хранить изделия',
+					uk: '📦 Як я раджу зберігати вироби'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Best of all is a dry place, kept separate from other jewellery.',
+					pt: 'O ideal é um local seco, separado das outras joias.',
+					ru: 'Лучше всего — в сухом месте, отдельно от других украшений.',
+					uk: 'Найкраще — у сухому місці, окремо від інших прикрас.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "You can put a piece in a small box or a soft pouch. That way the beads won't constantly rub against metal, chains and other jewellery, and are less likely to get scratched.",
+					pt: 'Pode colocar a peça numa caixinha ou num saquinho macio. Assim, as contas não ficam a esfregar constantemente em metal, correntes e outras joias, e correm menos risco de riscar.',
+					ru: 'Можно положить изделие в небольшую коробочку или мягкий мешочек. Тогда бусины не будут постоянно тереться о металл, цепочки и другие украшения и меньше рискуют поцарапаться.',
+					uk: 'Можна покласти виріб у невелику коробочку або м’який мішечок. Тоді намистини не будуть постійно тертися об метал, ланцюжки та інші прикраси і менше ризикують подряпатися.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "The bathroom, though, isn't the best place to keep them — it's too humid there.",
+					pt: 'Já a casa de banho não é muito adequada para guardar — é demasiado húmida.',
+					ru: 'А вот ванная комната для хранения не очень подходит — там слишком влажно.',
+					uk: 'А от ванна кімната для зберігання не дуже підходить — там занадто волого.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "I'd suggest storing a beaded bag so that it can simply lie or stand without anything pressing down on it. That way it will keep its shape for longer.",
+					pt: 'Sugiro guardar a bolsa de contas de forma que fique deitada ou em pé sem nada a fazer pressão em cima. Assim, mantém a forma por mais tempo.',
+					ru: 'Сумочку из бусин я бы советовала хранить так, чтобы она спокойно лежала или стояла и сверху на неё ничего не давило. Тогда она дольше сохранит свою форму.',
+					uk: 'Сумочку з намистин я б радила зберігати так, щоб вона спокійно лежала або стояла і зверху на неї нічого не тиснуло. Тоді вона довше збереже свою форму.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/white-pearl-bead-necklace/1.webp',
+				linkPath: '/products/white-pearl-bead-necklace/',
+				width: 1086,
+				height: 1448,
+				alt: {
+					en: 'Necklace of white faux pearls and seed beads',
+					pt: 'Colar de pérolas brancas e miçangas',
+					uk: 'Намисто з білих штучних перлин і бісеру',
+					ru: 'Колье из белого искусственного жемчуга и бисера'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: '❤️ And most important of all — wear your favourite things',
+					pt: '❤️ E o mais importante — use as suas peças favoritas',
+					ru: '❤️ И самое главное — носите свои любимые вещи',
+					uk: '❤️ І найголовніше — носіть свої улюблені речі'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "I really don't want you to come away from all this advice thinking that beadwork should be put in a box and only brought out for big occasions. 😊",
+					pt: 'Não quero, de todo, que depois de todos estes conselhos vos pareça que as peças de bisel devem ficar guardadas numa caixa e só sair em grandes ocasiões. 😊',
+					ru: 'Я совсем не хочу, чтобы после всех этих советов вам показалось, что изделия из бисера нужно положить в коробочку и доставать только по большим праздникам. 😊',
+					uk: 'Я зовсім не хочу, щоб після всіх цих порад вам здалося, що вироби з бісеру треба покласти в коробочку і діставати тільки на великі свята. 😊'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Quite the opposite!',
+					pt: 'Muito pelo contrário!',
+					ru: 'Совсем наоборот!',
+					uk: 'Зовсім навпаки!'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Wear them, take them with you, pair them with your favourite clothes, give them as gifts, and enjoy them.',
+					pt: 'Usem-nas, levem-nas convosco, combinem-nas com a roupa que mais gostam, ofereçam-nas e desfrutem delas.',
+					ru: 'Носите их, берите с собой, сочетайте с любимой одеждой, дарите и получайте удовольствие.',
+					uk: 'Носіть їх, беріть із собою, поєднуйте з улюбленим одягом, даруйте і отримуйте задоволення.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Just treat handmade pieces with a little bit of care.',
+					pt: 'Basta tratar as peças artesanais com um pouco de cuidado.',
+					ru: 'Просто относитесь к ручной работе с небольшой заботой.',
+					uk: 'Просто ставтеся до ручної роботи з невеликою турботою.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'And then your favourite bracelet, a little coin purse or a beaded bag will keep delighting you with its colour and shine for a long time.',
+					pt: 'E assim, a pulseira favorita, a pequena bolsa-moedeiro ou a bolsa de contas continuarão a alegrar-vos com a sua cor e brilho por muito tempo.',
+					ru: 'И тогда любимый браслет, маленькая сумочка-монетница или сумочка из бусин ещё долго будут радовать вас своим цветом и блеском.',
+					uk: 'І тоді улюблений браслет, маленька сумочка-монетниця чи сумочка з намистин ще довго будуть радувати вас своїм кольором і блиском.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'After all, things made by hand also love a little care in return. ❤️',
+					pt: 'Afinal, as coisas feitas à mão também gostam um pouco de ser cuidadas. ❤️',
+					ru: 'Ведь вещи, сделанные руками, тоже немного любят, когда о них заботятся. ❤️',
+					uk: 'Адже речі, зроблені руками, теж трохи люблять, коли про них піклуються. ❤️'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/products/bright-mini-bag-for-girl/2.webp',
+				linkPath: '/products/bright-mini-bag-for-girl/',
+				width: 1448,
+				height: 1086,
+				alt: {
+					en: 'Bright mini beaded bag with matching beaded bracelet',
+					pt: 'Mini-bolsa em contas de cores vivas com bracelete em contas a combinar',
+					uk: 'Яскрава міні-сумочка з бісеру з відповідним браслетом',
+					ru: 'Яркая мини-сумочка из бисера с подходящим браслетом'
+				}
+			}
+		]
 	},
 	{
 		slug: 'a-day-in-the-workshop',

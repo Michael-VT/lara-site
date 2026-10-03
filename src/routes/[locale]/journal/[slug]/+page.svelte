@@ -105,7 +105,7 @@
 					{localizeText(block.text, locale)}
 				</h2>
 			{:else if block.type === 'p'}
-				<p class="leading-relaxed text-muted-foreground">
+				<p class="leading-relaxed font-medium text-muted-foreground">
 					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 					{@html renderInline(localizeText(block.text, locale))}
 				</p>
