@@ -48,6 +48,6 @@ writeFileSync(join(outDir, 'sitemap.xml'), sitemap);
 // Keep robots.txt in lockstep with the deployed origin (static copy may lag).
 writeFileSync(
 	join(outDir, 'robots.txt'),
-	`# allow crawling everything by default\nUser-agent: *\nDisallow:\n\n# content signals: no AI training, no AI assistant input, search allowed\nContent-Signal: ai-train=no, ai-input=no, search=yes\n\nSitemap: ${siteUrl}/sitemap.xml\n`
+	`# allow crawling everything by default\nUser-agent: *\nDisallow:\n\n# these query-string variants duplicate /how-to-order/ and /products/ and\n# already carry a canonical tag pointing elsewhere; blocking the crawl\n# outright saves Googlebot from wasting budget discovering hundreds of them\nDisallow: /*?sku=\nDisallow: /*?status=\nDisallow: /*?category=\n\n# content signals: no AI training, no AI assistant input, search allowed\nContent-Signal: ai-train=no, ai-input=no, search=yes\n\nSitemap: ${siteUrl}/sitemap.xml\n`
 );
 console.log(`✔ Generated build/sitemap.xml with ${locales.length * allPaths.length} URLs.`);

@@ -141,6 +141,7 @@
 			{:else if block.type === 'link'}
 				<a
 					href={toHref(`/${locale}${block.path}`)}
+					rel={block.path.includes('?') ? 'nofollow' : undefined}
 					class="inline-flex min-h-11 w-fit items-center rounded-control bg-accent-fill px-6 text-base font-semibold text-ink shadow-card transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-lift"
 				>
 					{localizeText(block.text, locale)}

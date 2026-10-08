@@ -2,6 +2,13 @@
 User-agent: *
 Disallow:
 
+# these query-string variants duplicate /how-to-order/ and /products/ and
+# already carry a canonical tag pointing elsewhere; blocking the crawl
+# outright saves Googlebot from wasting budget discovering hundreds of them
+Disallow: /*?sku=
+Disallow: /*?status=
+Disallow: /*?category=
+
 # content signals: no AI training, no AI assistant input, search allowed
 Content-Signal: ai-train=no, ai-input=no, search=yes
 

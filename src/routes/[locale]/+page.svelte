@@ -163,6 +163,7 @@
 				</div>
 				<a
 					href={toHref(`/${locale}/products/?status=available`)}
+					rel="nofollow"
 					class="inline-flex min-h-11 items-center text-sm font-medium text-accent underline-offset-4 hover:underline"
 				>
 					{m.home_viewAll({}, { locale })}

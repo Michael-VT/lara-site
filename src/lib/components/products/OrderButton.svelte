@@ -21,4 +21,4 @@
 	);
 </script>
 
-<a {href} class={className || `${baseStyle} ${stateStyle}`}>{label}</a>
+<a {href} rel="nofollow" class={className || `${baseStyle} ${stateStyle}`}>{label}</a>
