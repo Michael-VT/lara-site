@@ -45,6 +45,7 @@
 		aria-hidden="true"
 		width="1672"
 		height="941"
+		fetchpriority="high"
 		class="absolute inset-0 h-full w-full object-cover"
 	/>
 	<div
