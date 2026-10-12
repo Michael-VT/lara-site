@@ -41,6 +41,8 @@
 <section class="relative overflow-hidden">
 	<img
 		src="/images/hero/hero-bg.webp"
+		srcset="/images/hero/hero-bg-mobile.webp 1000w, /images/hero/hero-bg.webp 1672w"
+		sizes="100vw"
 		alt=""
 		aria-hidden="true"
 		width="1672"
