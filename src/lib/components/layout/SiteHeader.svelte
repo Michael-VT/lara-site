@@ -28,7 +28,7 @@
 			class="-mx-1 flex min-h-11 items-center gap-3 px-1"
 		>
 			<img
-				src="/icons/icon-192.png"
+				src="/icons/favicon-48.png"
 				alt=""
 				width="42"
 				height="42"

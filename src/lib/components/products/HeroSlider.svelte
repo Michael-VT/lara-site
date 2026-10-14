@@ -71,6 +71,10 @@
 				>
 					<img
 						src={slide.image}
+						srcset={slide.mobileImage
+							? `${slide.mobileImage} ${slide.mobileWidth}w, ${slide.image} ${slide.width}w`
+							: undefined}
+						sizes="(min-width: 1024px) 600px, 100vw"
 						alt={t(slide.altKey, {}, { locale })}
 						width={slide.width}
 						height={slide.height}

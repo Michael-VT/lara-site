@@ -5,6 +5,8 @@
  * @property {string} image
  * @property {number} width - intrinsic image width (px)
  * @property {number} height - intrinsic image height (px)
+ * @property {string} [mobileImage] - smaller width variant served to narrow viewports via srcset
+ * @property {number} [mobileWidth] - intrinsic width of mobileImage (px)
  * @property {string} altKey - key of the m.* message function used as the image alt text
  */
 
@@ -16,6 +18,8 @@ export const heroSlides = [
 		image: '/images/hero/slide-1.webp',
 		width: 1280,
 		height: 960,
+		mobileImage: '/images/hero/slide-1-mobile.webp',
+		mobileWidth: 900,
 		altKey: 'home_heroSlide1Title'
 	},
 	{
@@ -24,6 +28,8 @@ export const heroSlides = [
 		image: '/images/hero/slide-2.webp',
 		width: 1280,
 		height: 1071,
+		mobileImage: '/images/hero/slide-2-mobile.webp',
+		mobileWidth: 900,
 		altKey: 'home_heroSlide2Title'
 	},
 	{
@@ -32,6 +38,8 @@ export const heroSlides = [
 		image: '/images/hero/slide-3.webp',
 		width: 582,
 		height: 1280,
+		mobileImage: '/images/hero/slide-3-mobile.webp',
+		mobileWidth: 410,
 		altKey: 'home_heroSlide3Title'
 	}
 ];
