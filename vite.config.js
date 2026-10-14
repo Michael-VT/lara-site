@@ -18,6 +18,10 @@ export default defineConfig({
 				runes: ({ filename }) =>
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			},
+			// Inline small per-page CSS chunks instead of a separate render-blocking
+			// request; the shared design-system/font chunk is far above this and stays
+			// external (it's too large to inline without bloating every page's HTML).
+			inlineStyleThreshold: 4096,
 			adapter: adapter({
 				fallback: '404.html'
 			}),
