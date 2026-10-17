@@ -144,6 +144,7 @@
 				</div>
 				<a
 					href={toHref(`/${locale}/products/`)}
+					aria-label={`${m.home_viewAll({}, { locale })} — ${m.home_featuredHeading({}, { locale })}`}
 					class="inline-flex min-h-11 items-center text-sm font-medium text-accent underline-offset-4 hover:underline"
 				>
 					{m.home_viewAll({}, { locale })}
@@ -167,6 +168,7 @@
 				<a
 					href={toHref(`/${locale}/products/?status=available`)}
 					rel="nofollow"
+					aria-label={`${m.home_viewAll({}, { locale })} — ${m.home_availableHeading({}, { locale })}`}
 					class="inline-flex min-h-11 items-center text-sm font-medium text-accent underline-offset-4 hover:underline"
 				>
 					{m.home_viewAll({}, { locale })}
