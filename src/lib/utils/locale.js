@@ -40,6 +40,26 @@ export function resolveLocale({ stored, browserLanguages }) {
 }
 
 /**
+ * Persists an explicit language choice so the next visit to `/` lands on it:
+ * localStorage for fallback, and a cookie because the edge redirect in
+ * `worker/index.js` runs before any JS loads and can only read cookies.
+ * @param {import('$lib/config/site.js').Locale} locale
+ */
+export function persistLocaleChoice(locale) {
+	try {
+		localStorage.setItem('locale', locale);
+	} catch {
+		// localStorage may be unavailable (private browsing, disabled storage) — safe to ignore.
+	}
+	try {
+		// 1 year, all paths, Lax is enough since this never needs to be sent cross-site.
+		document.cookie = `locale=${locale}; path=/; max-age=31536000; samesite=lax`;
+	} catch {
+		// document.cookie can throw under strict privacy settings — safe to ignore.
+	}
+}
+
+/**
  * Reads a query parameter from `url`, safely returning `null` while a page
  * is being prerendered (SvelteKit disallows reading query state then, since
  * a statically-generated page can't vary by query string).

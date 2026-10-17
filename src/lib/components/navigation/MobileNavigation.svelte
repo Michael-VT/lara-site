@@ -3,7 +3,7 @@
 	import { primaryNav } from '$lib/config/navigation.js';
 	import { locales, localeNames } from '$lib/config/site.js';
 	import { buildNavHref, toHref } from '$lib/utils/href.js';
-	import { buildLocaleSwitchHref } from '$lib/utils/locale.js';
+	import { buildLocaleSwitchHref, persistLocaleChoice } from '$lib/utils/locale.js';
 	import { m } from '$lib/paraglide/messages.js';
 	import { t } from '$lib/utils/messages.js';
 
@@ -25,11 +25,7 @@
 
 	/** @param {import('$lib/config/site.js').Locale} targetLocale */
 	function selectLocale(targetLocale) {
-		try {
-			localStorage.setItem('locale', targetLocale);
-		} catch {
-			// localStorage may be unavailable (private browsing, disabled storage) — safe to ignore.
-		}
+		persistLocaleChoice(targetLocale);
 		onclose();
 	}
 

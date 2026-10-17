@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/state';
 	import { locales, localeNames } from '$lib/config/site.js';
-	import { buildLocaleSwitchHref } from '$lib/utils/locale.js';
+	import { buildLocaleSwitchHref, persistLocaleChoice } from '$lib/utils/locale.js';
 	import { toHref } from '$lib/utils/href.js';
 	import { m } from '$lib/paraglide/messages.js';
 
@@ -24,11 +24,7 @@
 
 	/** @param {import('$lib/config/site.js').Locale} targetLocale */
 	function onSelect(targetLocale) {
-		try {
-			localStorage.setItem('locale', targetLocale);
-		} catch {
-			// localStorage may be unavailable (private browsing, disabled storage) — safe to ignore.
-		}
+		persistLocaleChoice(targetLocale);
 		close();
 	}
 
