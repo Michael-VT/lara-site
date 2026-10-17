@@ -29,7 +29,7 @@
 	/* Gold — the single accent family */
 	--color-accent: #8a5e22; /* text-safe gold on light (4.9:1 on accent-wash, 5.7:1 on white) */
 	--color-accent-bright: #e3b879; /* gold on dark (8:1) */
-	--color-accent-fill: #c08a3e; /* filled controls, ink text on top */
+	--color-accent-fill: #cc964c; /* filled controls, ink text on top (5:1) */
 	--color-accent-wash: #f9ebe9; /* faint rose-gold tint */
 
 	/* On-dark text */
