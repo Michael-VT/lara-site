@@ -39,17 +39,24 @@
 
 <!-- Hero — light, photographic backdrop -->
 <section class="relative overflow-hidden">
-	<img
-		src="/images/hero/hero-bg.webp"
-		srcset="/images/hero/hero-bg-mobile.webp 1000w, /images/hero/hero-bg.webp 1672w"
-		sizes="100vw"
-		alt=""
-		aria-hidden="true"
-		width="1672"
-		height="941"
-		fetchpriority="high"
-		class="absolute inset-0 h-full w-full object-cover"
-	/>
+	<picture class="absolute inset-0 block h-full w-full">
+		<source
+			type="image/avif"
+			srcset="/images/hero/hero-bg-mobile.avif 1000w, /images/hero/hero-bg.avif 1672w"
+			sizes="100vw"
+		/>
+		<img
+			src="/images/hero/hero-bg.webp"
+			srcset="/images/hero/hero-bg-mobile.webp 1000w, /images/hero/hero-bg.webp 1672w"
+			sizes="100vw"
+			alt=""
+			aria-hidden="true"
+			width="1672"
+			height="941"
+			fetchpriority="high"
+			class="h-full w-full object-cover"
+		/>
+	</picture>
 	<div
 		class="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/60"
 		aria-hidden="true"

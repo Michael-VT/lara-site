@@ -69,19 +69,28 @@
 					aria-label="{i + 1} / {heroSlides.length}"
 					aria-hidden={i !== index}
 				>
-					<img
-						src={slide.image}
-						srcset={slide.mobileImage
-							? `${slide.mobileImage} ${slide.mobileWidth}w, ${slide.image} ${slide.width}w`
-							: undefined}
-						sizes="(min-width: 1024px) 600px, 100vw"
-						alt={t(slide.altKey, {}, { locale })}
-						width={slide.width}
-						height={slide.height}
-						class="h-full w-full object-cover"
-						loading="eager"
-						fetchpriority={i === 0 ? 'high' : 'auto'}
-					/>
+					<picture>
+						<source
+							type="image/avif"
+							srcset={slide.mobileImage
+								? `${slide.mobileImage.replace('.webp', '.avif')} ${slide.mobileWidth}w, ${slide.image.replace('.webp', '.avif')} ${slide.width}w`
+								: slide.image.replace('.webp', '.avif')}
+							sizes="(min-width: 1024px) 600px, 100vw"
+						/>
+						<img
+							src={slide.image}
+							srcset={slide.mobileImage
+								? `${slide.mobileImage} ${slide.mobileWidth}w, ${slide.image} ${slide.width}w`
+								: undefined}
+							sizes="(min-width: 1024px) 600px, 100vw"
+							alt={t(slide.altKey, {}, { locale })}
+							width={slide.width}
+							height={slide.height}
+							class="h-full w-full object-cover"
+							loading="eager"
+							fetchpriority={i === 0 ? 'high' : 'auto'}
+						/>
+					</picture>
 				</div>
 			{/each}
 		</div>
