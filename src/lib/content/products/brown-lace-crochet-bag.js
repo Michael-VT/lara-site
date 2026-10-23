@@ -22,18 +22,6 @@ export const product = {
 
 	images: [
 		{
-			src: '/images/products/brown-lace-crochet-bag/1.webp',
-			thumb: '/images/products/brown-lace-crochet-bag/1-thumb.webp',
-			width: 1067,
-			height: 1280,
-			alt: {
-				en: 'Brown lace crochet bag with a faux-pearl clasp, flat view',
-				pt: 'Bolsa em croché rendado castanha com fecho de pérola, vista de frente',
-				uk: 'Коричнева ажурна сумочка з перлинною застібкою, вигляд спереду',
-				ru: 'Коричневая ажурная сумочка с жемчужной застёжкой, вид спереди'
-			}
-		},
-		{
 			src: '/images/products/brown-lace-crochet-bag/2.webp',
 			thumb: '/images/products/brown-lace-crochet-bag/2-thumb.webp',
 			width: 1067,
@@ -43,6 +31,18 @@ export const product = {
 				pt: 'Bolsa em croché rendado castanha com corrente dourada e fechos em coração',
 				uk: 'Коричнева ажурна сумочка із золотистим ланцюжком і карабінами-сердечками',
 				ru: 'Коричневая ажурная сумочка с золотистой цепочкой и карабинами-сердечками'
+			}
+		},
+		{
+			src: '/images/products/brown-lace-crochet-bag/1.webp',
+			thumb: '/images/products/brown-lace-crochet-bag/1-thumb.webp',
+			width: 1067,
+			height: 1280,
+			alt: {
+				en: 'Brown lace crochet bag with a faux-pearl clasp, flat view',
+				pt: 'Bolsa em croché rendado castanha com fecho de pérola, vista de frente',
+				uk: 'Коричнева ажурна сумочка з перлинною застібкою, вигляд спереду',
+				ru: 'Коричневая ажурная сумочка с жемчужной застёжкой, вид спереди'
 			}
 		}
 	],

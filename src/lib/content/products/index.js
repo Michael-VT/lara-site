@@ -43,6 +43,7 @@ import { product as knit003 } from './knit-003.js';
 import { product as knit004 } from './knit-004.js';
 import { product as knit005 } from './knit-005.js';
 import { product as brownLaceCrochetBag } from './brown-lace-crochet-bag.js';
+import { product as lacePhonePouch } from './lace-phone-pouch.js';
 
 /** @type {import('$lib/schemas/product.js').Product[]} */
 export const rawProducts = [
@@ -90,5 +91,6 @@ export const rawProducts = [
 	knit003,
 	knit004,
 	knit005,
-	brownLaceCrochetBag
+	brownLaceCrochetBag,
+	lacePhonePouch
 ];

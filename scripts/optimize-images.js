@@ -40,7 +40,8 @@ const productGroups = [
 			'Черная сумочка монетница из черного бисера': 'black-beaded-coin-purse',
 			'Сумочка из бисера для торжества': 'beaded-evening-bag',
 			'Яркая мини-сумочка для девочки': 'bright-mini-bag-for-girl',
-			'Коричневая ажурная сумочка ручной работы': 'brown-lace-crochet-bag'
+			'Коричневая ажурная сумочка ручной работы': 'brown-lace-crochet-bag',
+			'Кружевная сумочка для телефона': 'lace-phone-pouch'
 		}
 	},
 	{

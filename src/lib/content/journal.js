@@ -1479,22 +1479,448 @@ export const journalPosts = [
 		]
 	},
 	{
-		slug: 'a-day-in-the-workshop',
+		slug: 'lace-phone-pouch',
 		tagKey: 'journal_tagWorkshop',
-		date: '2026-04-09',
-		readMinutes: 6,
+		date: '2026-10-22',
+		readMinutes: 5,
 		title: {
-			en: 'A day in the workshop: from sketch to the final knot',
-			pt: 'Um dia no ateliê: do esboço ao nó final',
-			ru: 'Один день в мастерской: от эскиза до узелка',
-			uk: 'Один день у майстерні: від ескізу до вузлика'
+			en: 'From a lace idea to a phone pouch. Oh-la-la! ❤️',
+			pt: 'De uma ideia rendada a uma bolsa para telemóvel. Oh-la-la! ❤️',
+			ru: 'От кружевной идеи до сумочки для телефона. И Оля-ля! ❤️',
+			uk: 'Від ажурної ідеї до сумочки для телефону. І Оля-ля! ❤️'
 		},
 		excerpt: {
-			en: 'How many hours a heart keychain takes — and why I never make two the same.',
-			pt: 'Quantas horas leva um porta-chaves coração — e porque nunca faço dois iguais.',
-			ru: 'Сколько часов уходит на брелок-сердце и почему я не делаю два одинаковых.',
-			uk: 'Скільки годин іде на брелок-сердечко і чому я не роблю два однакових.'
-		}
+			en: 'How a heart-shaped lace pattern turned into a phone pouch — with a felt lining, a twisted cord strap and tiny rose buttons.',
+			pt: 'Como um padrão rendado em forma de coração se tornou numa bolsa para telemóvel — com forro em feltro, alça de cordão trançado e botões em forma de rosa.',
+			ru: 'Как кружевная схема в форме сердечка превратилась в ажурную сумочку для телефона — с фетровой подкладкой, витым шнуром и пуговицами-розочками.',
+			uk: 'Як ажурна схема у формі сердечка перетворилася на сумочку для телефону — з фетровою підкладкою, витим шнуром і ґудзиками-трояндочками.'
+		},
+		body: [
+			{
+				type: 'img',
+				src: '/images/journal/lace-phone-pouch/01-finished-bag.webp',
+				width: 1024,
+				height: 1536,
+				alt: {
+					en: 'The finished lace phone pouch with a long twisted-cord strap',
+					pt: 'A bolsa rendada para telemóvel terminada, com alça longa de cordão trançado',
+					ru: 'Готовая ажурная сумочка для телефона с длинной витой ручкой',
+					uk: 'Готова ажурна сумочка для телефону з довгою витою ручкою'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Sometimes a new piece begins completely unexpectedly. You see a beautiful pattern, admire it, and think: "Why not give it a try?"',
+					pt: 'Por vezes, uma peça nova começa de forma completamente inesperada. Vemos um padrão bonito, ficamos a admirá-lo e pensamos: "E porque não tentar?"',
+					ru: 'Иногда новая работа начинается совершенно неожиданно. Увидишь красивый узор, залюбуешься и подумаешь: «А почему бы не попробовать?»',
+					uk: 'Іноді нова робота починається зовсім несподівано. Побачиш красивий візерунок, замилуєшся і подумаєш: «А чому б не спробувати?»'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "That's exactly how the story of my new little bag began.",
+					pt: 'Foi assim que começou também a história da minha nova bolsa.',
+					ru: 'Вот так началась и история моей новой сумочки.',
+					uk: 'Так почалася і історія моєї нової сумочки.'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: 'It all started with a lace heart',
+					pt: 'Tudo começou com um coração de crochê',
+					ru: 'Всё началось с кружевного сердечка',
+					uk: 'Все почалося з ажурного сердечка'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'One day I came across a pattern for an unusual crocheted bag. Delicate, lacy, with beautiful scalloped edges, it caught my eye right away. I especially loved its shape — it looked a little like a heart.',
+					pt: 'Um dia encontrei um padrão para uma bolsa de crochê pouco comum. Delicada, rendada, com bordas bonitas em forma de concha, chamou-me logo a atenção. Gostei especialmente da sua forma — parecida com um coração.',
+					ru: 'Однажды мне попалась схема необычной сумочки, связанной крючком. Нежная, ажурная, с красивыми кружевными краями, она сразу привлекла моё внимание. Особенно понравилась её форма — немного напоминающая сердечко.',
+					uk: "Якось мені потрапила схема незвичної сумочки, зв'язаної гачком. Нiжна, ажурна, з гарними мереживними краями, вона відразу привернула мою увагу. Особливо сподобалася її форма — трохи схожа на сердечко."
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/journal/lace-phone-pouch/02-pattern-idea.webp',
+				width: 853,
+				height: 1280,
+				alt: {
+					en: 'The crochet chart for the heart pattern, with a stitch-symbol legend, that started the idea',
+					pt: 'O esquema de crochê do coração, com legenda de pontos, que deu origem à ideia',
+					ru: 'Схема вязания сердечка с условными обозначениями, с которой началась идея',
+					uk: 'Схема в’язання сердечка з умовними позначеннями, з якої почалася ідея'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'But looking at the pattern, I started thinking: "What beauty! What if I made a bag like this not just pretty, but useful too?"',
+					pt: 'Mas, ao olhar para o padrão, pensei: "Que lindo! E se fizesse uma bolsa assim não só bonita, mas também útil?"',
+					ru: 'Но, рассматривая схему, я задумалась: «Какая красота! А что, если сделать такую сумочку не только нарядной, но и полезной?»',
+					uk: 'Але, розглядаючи схему, я задумалася: «Яка краса! А що, якщо зробити таку сумочку не тільки гарною, а й корисною?»'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'For example, one you could carry a phone in. Sometimes you just want to go for a walk without a big bag, but you still need your phone close at hand.',
+					pt: 'Por exemplo, uma em que se pudesse levar o telemóvel. Às vezes apetece sair para um passeio sem uma bolsa grande, mas o telemóvel continua a ser preciso à mão.',
+					ru: 'Например, чтобы в ней можно было носить телефон. Ведь иногда так хочется выйти на прогулку налегке, не брать с собой большую сумку, а телефон всё-таки должен быть под рукой.',
+					uk: 'Наприклад, щоб у ній можна було носити телефон. Бо іноді так хочеться вийти на прогулянку без великої сумки, а телефон все одно має бути під рукою.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'And that’s when my little creative experiments began!',
+					pt: 'E foi aí que começaram as minhas pequenas experiências criativas!',
+					ru: 'И тут начались мои маленькие творческие эксперименты!',
+					uk: 'І тут почалися мої маленькі творчі експерименти!'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: 'When the pattern starts to change',
+					pt: 'Quando o padrão começa a mudar',
+					ru: 'Когда узор начинает меняться',
+					uk: 'Коли візерунок починає змінюватися'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'The original design was very pretty, but quite airy and delicate. For a phone, a bag like that seemed too fragile to me.',
+					pt: 'O desenho original era muito bonito, mas bastante leve e delicado. Para um telemóvel, essa bolsa pareceu-me demasiado frágil.',
+					ru: 'Первоначальный рисунок был очень красивым, но довольно воздушным и нежным. Для телефона такая сумочка показалась мне слишком хрупкой.',
+					uk: 'Первісний малюнок був дуже гарним, але досить повітряним і нiжним. Для телефону така сумочка здалася мені занадто крихкою.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'So I decided to adjust the pattern a little: I added similar crochet elements and widened the lace to get the bag to the size I needed.',
+					pt: 'Por isso decidi alterar um pouco o padrão: adicionei elementos de crochê semelhantes e alarguei o rendado para que a bolsa ficasse com o tamanho certo.',
+					ru: 'Поэтому я решила немного изменить схему: добавила похожие элементы вязания и расширила ажурный узор, чтобы сумочка получилась нужного размера.',
+					uk: "Тому я вирішила трохи змінити схему: додала схожі елементи в'язання і розширила ажурний візерунок, щоб сумочка вийшла потрібного розміру."
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/journal/lace-phone-pouch/03-start-of-crochet.webp',
+				width: 1312,
+				height: 1199,
+				alt: {
+					en: 'The first rows of the future bag, yarn and hook',
+					pt: 'As primeiras carreiras da futura bolsa, fio e agulha',
+					ru: 'Первые ряды будущей сумочки, нитки и крючок',
+					uk: 'Перші ряди майбутньої сумочки, нитки та гачок'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Stitch by stitch, row by row — and the lace fabric gradually took on a new shape. I wanted to keep the lightness and beauty of the original design, but make the bag more practical for everyday use.',
+					pt: 'Ponto a ponto, carreira a carreira — e o tecido rendado foi ganhando pouco a pouco uma nova forma. Queria manter a leveza e a beleza do desenho original, mas tornar a bolsa mais prática para o dia a dia.',
+					ru: 'Петелька за петелькой, ряд за рядом — и кружевное полотно постепенно приобретало новую форму. Мне хотелось сохранить лёгкость и красоту первоначального рисунка, но сделать сумочку более удобной для повседневного использования.',
+					uk: 'Петелька за петелькою, ряд за рядом — і ажурне полотно поступово набувало нової форми. Мені хотілося зберегти легкість і красу первісного малюнка, але зробити сумочку зручнішою для повсякденного використання.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/journal/lace-phone-pouch/04-lace-pattern.webp',
+				width: 1145,
+				height: 1374,
+				alt: {
+					en: 'A lace detail of the future bag against a light background',
+					pt: 'Um detalhe rendado da futura bolsa sobre um fundo claro',
+					ru: 'Ажурная деталь будущей сумочки на светлом фоне',
+					uk: 'Ажурна деталь майбутньої сумочки на світлому тлі'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'And I think it worked!',
+					pt: 'E acho que resultou!',
+					ru: 'И, кажется, у меня получилось!',
+					uk: 'І, здається, у мене вийшло!'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: 'A little secret inside',
+					pt: 'Um pequeno segredo por dentro',
+					ru: 'Маленький секрет внутри',
+					uk: 'Маленький секрет усередині'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "Once the main part was ready, the next question came up: how do I protect the phone without hiding the pretty lace pattern?",
+					pt: 'Quando a parte principal ficou pronta, surgiu a próxima questão: como proteger o telemóvel sem esconder o bonito padrão rendado?',
+					ru: 'Когда основная часть была готова, возник следующий вопрос: как защитить телефон и при этом не закрыть красивый ажурный узор?',
+					uk: 'Коли основна частина була готова, виникло наступне питання: як захистити телефон і при цьому не закрити гарний ажурний візерунок?'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'The solution turned out to be quite simple — felt! I made a light-coloured felt lining that gave the bag its shape and sturdiness.',
+					pt: 'A solução acabou por ser bastante simples — feltro! Fiz um forro de feltro claro que deu à bolsa a sua forma e firmeza.',
+					ru: 'Решение нашлось довольно простое — фетр! Я сделала светлую фетровую подкладку, которая придала сумочке форму и плотность.',
+					uk: 'Рішення знайшлося досить просте — фетр! Я зробила світлу фетрову підкладку, яка надала сумочці форми і щільності.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/journal/lace-phone-pouch/06-lining-inside.webp',
+				width: 1086,
+				height: 1448,
+				alt: {
+					en: 'Inside the bag: the light felt lining and where the cord attaches',
+					pt: 'Por dentro da bolsa: o forro de feltro claro e a fixação do cordão',
+					ru: 'Внутри сумочки: светлая фетровая подкладка и крепление шнура',
+					uk: 'Усередині сумочки: світла фетрова підкладка і кріплення шнура'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "And a little miracle happened: against the light background, the lace pattern looked even more striking! Now the phone doesn't touch the lace crochet directly, and the bag itself holds its shape much better.",
+					pt: 'E aconteceu um pequeno milagre: sobre o fundo claro, o padrão rendado ficou ainda mais expressivo! Agora o telemóvel já não toca diretamente no crochê rendado, e a própria bolsa mantém melhor a forma.',
+					ru: 'И произошло маленькое чудо: на светлом фоне кружевной рисунок стал выглядеть ещё выразительнее! Теперь телефон не соприкасается непосредственно с ажурным вязанием, а сама сумочка лучше держит форму.',
+					uk: "І сталося маленьке диво: на світлому тлі ажурний малюнок став виглядати ще виразніше! Тепер телефон не торкається безпосередньо ажурного в'язання, а сама сумочка краще тримає форму."
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Pretty? Yes! Practical? Also yes!',
+					pt: 'Bonito? Sim! Prático? Também sim!',
+					ru: 'Красиво? Да! Практично? Тоже да!',
+					uk: 'Красиво? Так! Практично? Теж так!'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: 'And what about the strap?',
+					pt: 'E a alça?',
+					ru: 'А как же ручка?',
+					uk: 'А як же ручка?'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'The strap needed a bit of imagination too. I chose a beautiful twisted cord in a soft shade that matched the yarn colour.',
+					pt: 'A alça também precisou de alguma imaginação. Escolhi um bonito cordão trançado num tom suave, a condizer com a cor do fio.',
+					ru: 'С ручкой тоже пришлось немного пофантазировать. Я выбрала красивый витой шнур нежного оттенка, подходящего к цвету ниток.',
+					uk: 'З ручкою теж довелося трохи поекспериментувати. Я обрала гарний витий шнур нiжного відтінку, що підходив до кольору ниток.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/journal/lace-phone-pouch/05-materials.webp',
+				width: 1312,
+				height: 1199,
+				alt: {
+					en: 'The yarn and twisted cord used for the bag',
+					pt: 'O fio e o cordão trançado usados na bolsa',
+					ru: 'Нитки и витой шнур, использованные для сумочки',
+					uk: 'Нитки і витий шнур, використані для сумочки'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'To make the attachment neat, I placed the cord between the layers of the felt lining. Decorative metal connectors helped finish it off nicely and keep the twists together.',
+					pt: 'Para que a fixação ficasse arrumada, coloquei o cordão entre as camadas do forro de feltro. Conectores metálicos decorativos ajudaram a acabá-lo bem e a manter as voltas juntas.',
+					ru: 'Чтобы крепление получилось аккуратным, расположила шнур между деталями фетровой подкладки. А декоративные металлические соединители помогли красиво оформить его и удержать витки вместе.',
+					uk: "Щоб кріплення вийшло акуратним, я розташувала шнур між деталями фетрової підкладки. А декоративні металеві з'єднувачі допомогли красиво оформити його і утримати витки разом."
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'The result was a comfortable, long strap that lets the bag be worn over the shoulder.',
+					pt: 'O resultado foi uma alça longa e confortável, que permite usar a bolsa a tiracolo.',
+					ru: 'Получилась удобная длинная ручка, благодаря которой сумочку можно носить на плече.',
+					uk: 'Вийшла зручна довга ручка, завдяки якій сумочку можна носити на плечі.'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: 'The finishing touches — tiny roses',
+					pt: 'Os últimos toques — pequenas rosas',
+					ru: 'Последние штрихи — маленькие розочки',
+					uk: 'Останні штрихи — маленькі трояндочки'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'And what would a lace bag be without a little decoration? For the clasp, I chose pretty sew-on metal buttons shaped like tiny roses. They suited the delicate pattern perfectly.',
+					pt: 'E que bolsa rendada seria sem um pouco de decoração? Para o fecho, escolhi bonitos botões metálicos de costura em forma de pequenas rosas. Combinaram perfeitamente com o padrão delicado.',
+					ru: 'Ну и какая же кружевная сумочка без украшений? Для застёжки я выбрала красивые пришивные металлические пуговицы в форме маленьких розочек. Они прекрасно подошли к нежному узору.',
+					uk: 'Ну і яка ж ажурна сумочка без прикрас? Для застібки я обрала гарні металеві ґудзики у формі маленьких трояндочок. Вони чудово підійшли до нiжного візерунка.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/journal/lace-phone-pouch/07-flap-and-clasp.webp',
+				width: 1086,
+				height: 1448,
+				alt: {
+					en: 'The flap of the bag and the rose-shaped buttons, against a light background',
+					pt: 'A pala da bolsa e os botões em forma de rosa, sobre um fundo claro',
+					ru: 'Клапан сумочки и пришивные пуговицы-розочки на светлом фоне',
+					uk: 'Клапан сумочки та ґудзики-трояндочки на світлому тлі'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'One more little rose decorated the bottom of the bag, like a final touch to this lace story.',
+					pt: 'Mais uma pequena rosa decorou a parte inferior da bolsa, como um ponto final nesta história de crochê.',
+					ru: 'Ещё одна розочка украсила нижнюю часть сумочки, словно поставив последнюю точку в этой кружевной истории.',
+					uk: 'Ще одна трояндочка прикрасила нижню частину сумочки, наче поставивши останню крапку в цій ажурній історії.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/journal/lace-phone-pouch/08-back-side.webp',
+				width: 1086,
+				height: 1448,
+				alt: {
+					en: 'The back of the bag, with the flap neatly sewn on',
+					pt: 'A parte de trás da bolsa, com a pala cosida com cuidado',
+					ru: 'Обратная сторона сумочки с аккуратно пришитым клапаном',
+					uk: 'Зворотна сторона сумочки з акуратно пришитим клапаном'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'And here I am, looking at the finished piece…',
+					pt: 'E aqui estou eu, a olhar para a peça terminada…',
+					ru: 'И вот я смотрю на готовую работу…',
+					uk: 'І от я дивлюся на готову роботу…'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: '**Oh-la-la! The phone pouch is ready!** ❤️',
+					pt: '**Oh-la-la! A bolsa para telemóvel está pronta!** ❤️',
+					ru: '**Оля-ля! Сумочка для телефона готова!** ❤️',
+					uk: '**І Оля-ля! Сумочка для телефону готова!** ❤️'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: 'A small bag with a lot of character',
+					pt: 'Uma bolsa pequena com muito carácter',
+					ru: 'Маленькая сумочка с большим характером',
+					uk: 'Маленька сумочка з великим характером'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'The result is a light, delicate, unusual little bag that combines lace beauty with practicality.',
+					pt: 'O resultado é uma bolsa leve, delicada e pouco comum, que junta a beleza do crochê com a praticidade.',
+					ru: 'Получилась лёгкая, нежная, необычная сумочка, в которой соединились кружевная красота и практичность.',
+					uk: 'Вийшла легка, нiжна, незвичайна сумочка, в якій поєдналися ажурна краса і практичність.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: '**Bag size — 21 × 21 cm. Strap length — 72 cm (along the full length of the cord).**',
+					pt: '**Tamanho da bolsa — 21 × 21 cm. Comprimento da alça — 72 cm (ao longo de todo o cordão).**',
+					ru: '**Размеры сумочки — 21 × 21 см. Длина ручки — 72 см (по всей длине шнура).**',
+					uk: '**Розміри сумочки — 21 × 21 см. Довжина ручки — 72 см (по всій довжині шнура).**'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "It's perfect for a walk, a summer getaway, meeting friends, or simply to add a little romance to an everyday look. And of course, a piece like this could make an unusual gift for someone close to you.",
+					pt: 'É perfeita para um passeio, uma escapadela de verão, um encontro com amigas, ou simplesmente para dar um toque de romantismo a um look do dia a dia. E claro, uma peça assim pode ser um presente original para alguém especial.',
+					ru: 'Она подойдёт для прогулки, летнего отдыха, встречи с подругами или просто для того, чтобы добавить немного романтики в повседневный образ. И, конечно, такая вещица может стать необычным подарком для близкого человека.',
+					uk: 'Вона підійде для прогулянки, літнього відпочинку, зустрічі з подругами або просто щоб додати трохи романтики у повсякденний образ. І звісно, така річ може стати незвичайним подарунком для близької людини.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/journal/lace-phone-pouch/09-finished-bag-original.webp',
+				width: 1024,
+				height: 1536,
+				alt: {
+					en: 'The phone pouch out for a walk by the sea',
+					pt: 'A bolsa para telemóvel num passeio à beira-mar',
+					ru: 'Сумочка для телефона на прогулке у моря',
+					uk: 'Сумочка для телефону на прогулянці біля моря'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "But for me, the most interesting part of this story isn't even the finished bag — it's how one small idea gradually turned into another.",
+					pt: 'Mas, para mim, a parte mais interessante desta história não é a bolsa terminada — é a forma como uma pequena ideia se foi transformando noutra, pouco a pouco.',
+					ru: 'Но для меня самое интересное в этой истории даже не готовая сумочка, а то, как одна маленькая идея постепенно превращалась в другую.',
+					uk: 'Але для мене найцікавіше в цій історії навіть не готова сумочка, а те, як одна маленька ідея поступово перетворювалася на іншу.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "Because handmade craft isn't just about following a pattern. It's also the chance to invent, to change things, to try, sometimes to unravel and start again. And to feel enormous joy when what you imagined finally comes together!",
+					pt: 'Porque o trabalho manual não é só saber seguir um padrão. É também a oportunidade de inventar, alterar, experimentar, por vezes desfazer e começar de novo. E sentir uma enorme satisfação quando o que imaginámos finalmente resulta!',
+					ru: 'Ведь рукоделие — это не только умение вязать по схеме. Это ещё и возможность придумывать, изменять, пробовать, иногда распускать и начинать заново. И получать огромное удовольствие, когда задуманное наконец получается!',
+					uk: "Адже рукоділля — це не тільки вміння в'язати за схемою. Це ще й можливість вигадувати, змінювати, пробувати, іноді розпускати і починати знову. І отримувати величезне задоволення, коли задумане нарешті вдається!"
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: '**These are exactly the little creative adventures I love about my workshop, Larise.** 🌷',
+					pt: '**São exatamente estas pequenas aventuras criativas que adoro na minha oficina, Larise.** 🌷',
+					ru: '**Вот за такие маленькие творческие приключения я и люблю свою мастерскую Larise.** 🌷',
+					uk: '**Саме за такі маленькі творчі пригоди я і люблю свою майстерню Larise.** 🌷'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'You can see photos, details and availability of this bag in the catalogue.',
+					pt: 'Pode ver fotografias, características e disponibilidade desta bolsa no catálogo.',
+					ru: 'Посмотреть фотографии, характеристики и наличие этой сумочки можно в галерее.',
+					uk: 'Переглянути фотографії, характеристики та наявність цієї сумочки можна в каталозі.'
+				}
+			},
+			{
+				type: 'link',
+				path: '/products/lace-phone-pouch/',
+				text: {
+					en: 'View the bag →',
+					pt: 'Ver a bolsa →',
+					ru: 'Посмотреть сумочку →',
+					uk: 'Переглянути сумочку →'
+				}
+			}
+		]
 	},
 	{
 		slug: 'portuguese-cotton',
