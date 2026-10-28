@@ -1284,13 +1284,13 @@ export const journalPosts = [
 				type: 'img',
 				src: '/images/products/beaded-evening-bag/1.webp',
 				linkPath: '/products/beaded-evening-bag/',
-				width: 1254,
-				height: 1254,
+				width: 1086,
+				height: 1448,
 				alt: {
-					en: 'Beaded evening bag for special occasions',
-					pt: 'Bolsa de noite em contas para ocasiões especiais',
-					uk: 'Нарядна сумочка з бісеру для урочистих подій',
-					ru: 'Нарядная сумочка из бисера для торжества'
+					en: 'Pearl Tenderness beaded bag with pearls and satin ribbon',
+					pt: 'Bolsa Ternura de Pérolas com pérolas e fita de cetim',
+					uk: 'Сумочка «Перлинна ніжність» з перлин та атласної стрічки',
+					ru: 'Сумочка «Жемчужная нежность» из жемчуга с атласной лентой'
 				}
 			},
 			{
