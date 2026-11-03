@@ -2,9 +2,20 @@
 	import { page } from '$app/state';
 	import { m } from '$lib/paraglide/messages.js';
 	import { toHref } from '$lib/utils/href.js';
+	import { siteUrl } from '$lib/config/site.js';
 	import SeoHead from '$lib/components/layout/SeoHead.svelte';
+	import JsonLd from '$lib/components/layout/JsonLd.svelte';
 
 	let locale = $derived(page.data.locale);
+
+	let jsonLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'AboutPage',
+		name: m.about_heading({}, { locale }),
+		description: m.about_intro({}, { locale }),
+		url: `${siteUrl}/${locale}/about/`,
+		about: { '@id': `${siteUrl}/#organization` }
+	});
 
 	let facts = $derived([
 		{ value: m.about_factYears({}, { locale }), label: m.about_factYearsLabel({}, { locale }) },
@@ -25,6 +36,7 @@
 	description={m.about_intro({}, { locale })}
 	image="/images/about/home-portrait.webp"
 />
+<JsonLd data={jsonLd} />
 
 <div class="mx-auto max-w-content px-4 py-12 sm:px-6 sm:py-16">
 	<div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
@@ -84,7 +96,7 @@
 	</div>
 </div>
 
-<!-- Facts — full-bleed velvet band -->
+<!-- Facts - full-bleed velvet band -->
 <section class="bead-field bg-ink">
 	<div
 		class="mx-auto grid max-w-content grid-cols-2 gap-px bg-ivory/15 px-4 sm:px-6 md:grid-cols-4"

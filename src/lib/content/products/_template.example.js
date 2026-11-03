@@ -3,7 +3,7 @@
 // picks the next SKU and registers the file in index.js).
 //
 // All localized fields (title, description, every images[].alt, materials,
-// colours, customisation…) must provide ALL FOUR locales: en, pt, uk, ru —
+// colours, customisation...) must provide ALL FOUR locales: en, pt, uk, ru -
 // in that key order. The site previously tolerated missing locales with an
 // English fallback; that fallback is now considered a content bug.
 // Glossary for consistent pt/uk craft vocabulary: docs/ADD-PRODUCT.md.
@@ -13,14 +13,14 @@
 // `scripts/optimize-images.js` (`productGroups`), then run `bun run optimize:images`.
 // It writes optimized WebP files to `static/images/products/{slug}/`:
 // `1.webp` (full size, for the product page) and `1-thumb.webp` (small, for
-// grid/thumbnail views) — reference both below, and set width/height to the
+// grid/thumbnail views) - reference both below, and set width/height to the
 // real intrinsic pixel size of the full-size file.
 
 /** @type {import('$lib/schemas/product.js').Product} */
 export const product = {
 	sku: 'AAA000045', // must be unique, must match ^[A-Z]{3}[0-9]{6}$, never change after publishing
 	slug: 'example-product-slug', // lowercase, hyphen-separated, must be globally unique and stable
-	categories: ['bags'], // 1+ of: bags, bracelets, jewellery, beadwork, knitted, accessories, other — FIRST entry is the primary
+	categories: ['bags'], // 1+ of: bags, bracelets, jewellery, beadwork, knitted, accessories, other - FIRST entry is the primary
 	status: 'available', // one of: available, made_to_order, sold, hidden ('hidden' = not published)
 	isDemo: true, // set to true only for placeholder/demo content; omit for real products
 
@@ -39,8 +39,8 @@ export const product = {
 
 	// price is optional; omit entirely, or use one of:
 	// { mode: 'fixed', amount: 20, currency: 'EUR' }
-	// { mode: 'from', amount: 20, typicalMax: 35, currency: 'EUR' }  // typicalMax → product-page "typically €X–€Y" note
-	// { mode: 'on_request' }  // exception only — most products should carry a starting price
+	// { mode: 'from', amount: 20, typicalMax: 35, currency: 'EUR' }  // typicalMax → product-page "typically €X-€Y" note
+	// { mode: 'on_request' }  // exception only - most products should carry a starting price
 	price: { mode: 'from', amount: 20, currency: 'EUR' },
 
 	images: [
@@ -58,7 +58,7 @@ export const product = {
 		}
 	],
 
-	// Optional detail fields — include only when you have the data
+	// Optional detail fields - include only when you have the data
 	// (also four locales each, same rules). Rendered in the details grid.
 	materials: { en: '', pt: '', uk: '', ru: '' },
 	dimensions: { en: '', pt: '', uk: '', ru: '' },

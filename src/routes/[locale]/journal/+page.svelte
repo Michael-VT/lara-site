@@ -5,12 +5,29 @@
 	import { localizeText } from '$lib/services/catalog.js';
 	import { journalPosts, journalTagKeys } from '$lib/content/journal.js';
 	import { toHref } from '$lib/utils/href.js';
+	import { siteUrl } from '$lib/config/site.js';
 	import SeoHead from '$lib/components/layout/SeoHead.svelte';
+	import JsonLd from '$lib/components/layout/JsonLd.svelte';
 
 	let locale = $derived(page.data.locale);
 
 	let lead = $derived(journalPosts.find((p) => p.featured) ?? journalPosts[0]);
 	let rest = $derived(journalPosts.filter((p) => p !== lead));
+
+	let publishedPosts = $derived(journalPosts.filter((p) => p.body));
+	let jsonLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'CollectionPage',
+		name: m.journal_seoTitle({}, { locale }),
+		description: m.journal_seoDescription({}, { locale }),
+		url: `${siteUrl}/${locale}/journal/`,
+		hasPart: publishedPosts.map((post) => ({
+			'@type': 'BlogPosting',
+			headline: localizeText(post.title, locale),
+			url: `${siteUrl}/${locale}/journal/${post.slug}/`,
+			datePublished: post.date
+		}))
+	});
 
 	let activeTag = $state('');
 
@@ -31,6 +48,7 @@
 	title={m.journal_seoTitle({}, { locale })}
 	description={m.journal_seoDescription({}, { locale })}
 />
+<JsonLd data={jsonLd} />
 
 <div class="mx-auto max-w-content px-4 py-20 sm:px-6 sm:py-24">
 	<header class="rise-in">
@@ -74,7 +92,7 @@
 		</div>
 	</header>
 
-	<!-- Lead post — full-bleed velvet banner. Links through to its own article
+	<!-- Lead post - full-bleed velvet banner. Links through to its own article
 	     page when the post has full body content. -->
 	<svelte:element
 		this={lead.body ? 'a' : 'article'}

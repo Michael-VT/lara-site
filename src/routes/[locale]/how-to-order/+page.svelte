@@ -10,7 +10,10 @@
 	import { buildMailtoUrl } from '$lib/utils/mailto.js';
 	import { getSearchParam } from '$lib/utils/locale.js';
 	import { siteContacts } from '$lib/config/contacts.js';
+	import { siteUrl } from '$lib/config/site.js';
+	import { toHref } from '$lib/utils/href.js';
 	import SeoHead from '$lib/components/layout/SeoHead.svelte';
+	import JsonLd from '$lib/components/layout/JsonLd.svelte';
 	import SelectedProductSummary from '$lib/components/contacts/SelectedProductSummary.svelte';
 	import PreparedMessage from '$lib/components/contacts/PreparedMessage.svelte';
 	import ContactCard from '$lib/components/contacts/ContactCard.svelte';
@@ -20,6 +23,15 @@
 	let rawSku = $derived(getSearchParam(page.url, 'sku'));
 	let product = $derived(rawSku ? getProductBySku(rawSku) : null);
 	let notFound = $derived(Boolean(rawSku) && !product);
+
+	let jsonLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'WebPage',
+		name: m.order_heading({}, { locale }),
+		description: m.order_genericIntro({}, { locale }),
+		url: `${siteUrl}/${locale}/how-to-order/`,
+		isPartOf: { '@id': `${siteUrl}/#organization` }
+	});
 
 	let message = $derived(
 		product ? buildProductEnquiryMessage({ product, locale }) : buildGenericEnquiryMessage(locale)
@@ -33,12 +45,12 @@
 	// Standard EU women's sizes, body measurements in cm.
 	// UA column: Ukrainian/RU sizing runs 6 above EU (EU 38 = UA 44).
 	const sizeRows = [
-		{ eu: '34', intl: 'XS', ua: '40', chest: '80–84', waist: '62–66', hips: '88–92' },
-		{ eu: '36', intl: 'S', ua: '42', chest: '84–88', waist: '66–70', hips: '92–96' },
-		{ eu: '38', intl: 'M', ua: '44', chest: '88–92', waist: '70–74', hips: '96–100' },
-		{ eu: '40', intl: 'L', ua: '46', chest: '92–96', waist: '74–78', hips: '100–104' },
-		{ eu: '42', intl: 'XL', ua: '48', chest: '96–100', waist: '78–82', hips: '104–108' },
-		{ eu: '44', intl: 'XXL', ua: '50', chest: '100–104', waist: '82–86', hips: '108–112' }
+		{ eu: '34', intl: 'XS', ua: '40', chest: '80-84', waist: '62-66', hips: '88-92' },
+		{ eu: '36', intl: 'S', ua: '42', chest: '84-88', waist: '66-70', hips: '92-96' },
+		{ eu: '38', intl: 'M', ua: '44', chest: '88-92', waist: '70-74', hips: '96-100' },
+		{ eu: '40', intl: 'L', ua: '46', chest: '92-96', waist: '74-78', hips: '100-104' },
+		{ eu: '42', intl: 'XL', ua: '48', chest: '96-100', waist: '78-82', hips: '104-108' },
+		{ eu: '44', intl: 'XXL', ua: '50', chest: '100-104', waist: '82-86', hips: '108-112' }
 	];
 </script>
 
@@ -46,6 +58,7 @@
 	title={m.order_heading({}, { locale })}
 	description={m.order_genericIntro({}, { locale })}
 />
+<JsonLd data={jsonLd} />
 
 <div class="mx-auto max-w-content px-4 py-12 sm:px-6 sm:py-16">
 	<header class="rise-in max-w-2xl">
@@ -71,6 +84,15 @@
 		<div class="rise-in rise-delay-1 mt-8">
 			<SelectedProductSummary {product} />
 		</div>
+	{:else}
+		<p class="mt-6">
+			<a
+				href={toHref(`/${locale}/products/`)}
+				class="inline-flex min-h-11 items-center text-sm font-medium text-accent transition-colors duration-200 hover:text-foreground"
+			>
+				{m.home_heroCta({}, { locale })}
+			</a>
+		</p>
 	{/if}
 
 	<div class="rise-in rise-delay-1 mt-10 sm:mt-12">

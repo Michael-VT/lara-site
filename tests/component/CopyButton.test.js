@@ -26,7 +26,7 @@ describe('CopyButton', () => {
 		await fireEvent.click(screen.getByRole('button', { name: 'Copy message' }));
 
 		const messages = await screen.findAllByText(
-			"Couldn't copy automatically — please select and copy the text manually."
+			"Couldn't copy automatically - please select and copy the text manually."
 		);
 		expect(messages.length).toBeGreaterThan(0);
 	});

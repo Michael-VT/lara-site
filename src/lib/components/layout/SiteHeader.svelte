@@ -15,7 +15,7 @@
 
 	function closeMobileNavigation() {
 		mobileOpen = false;
-		// Return keyboard focus to the trigger — Escape/overlay close must not
+		// Return keyboard focus to the trigger - Escape/overlay close must not
 		// drop users to <body>.
 		menuTriggerEl?.focus();
 	}
@@ -38,7 +38,7 @@
 				{siteName}
 			</span>
 			<!-- "handmade" is a brand lockup element (like the wordmark itself), kept
-			     in English across all locales — matches the approved design. -->
+			     in English across all locales - matches the approved design. -->
 			<span class="eyebrow hidden shrink-0 text-accent sm:inline">handmade</span>
 		</a>
 
@@ -98,7 +98,7 @@
 <MobileNavigation open={mobileOpen} onclose={closeMobileNavigation} />
 
 <style>
-	/* Nav links — quiet Golos labels stitched with a gold bead-thread underline
+	/* Nav links - quiet Golos labels stitched with a gold bead-thread underline
 	   that draws itself in on hover and stays sewn on the current page. */
 	.nav-link {
 		transition: color 0.2s ease;

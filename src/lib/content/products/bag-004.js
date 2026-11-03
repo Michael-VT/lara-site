@@ -14,8 +14,8 @@ export const product = {
 	description: {
 		en: 'A small, brightly-coloured hand-woven beaded bag sized for a child, shown with a matching bracelet. Price does not include the cost of accessories.',
 		pt: 'Uma mini-bolsa colorida em contas, tecida à mão em tamanho de menina, apresentada com uma bracelete a combinar. O preço não inclui o custo dos acessórios.',
-		uk: 'Невелика яскрава сумочка, сплетена вручну з бісеру, розмір — для дівчинки, показана з відповідним браслетом. Ціна не включає вартість аксесуарів.',
-		ru: 'Небольшая яркая сумочка, сплетённая вручную из бисера, размер — для девочки, показана с подходящим браслетом. В цену сумочки-монетницы не входит стоимость аксессуаров.'
+		uk: 'Невелика яскрава сумочка, сплетена вручну з бісеру, розмір - для дівчинки, показана з відповідним браслетом. Ціна не включає вартість аксесуарів.',
+		ru: 'Небольшая яркая сумочка, сплетённая вручную из бисера, размер - для девочки, показана с подходящим браслетом. В цену сумочки-монетницы не входит стоимость аксессуаров.'
 	},
 
 	price: { mode: 'fixed', amount: 10, currency: 'EUR' },

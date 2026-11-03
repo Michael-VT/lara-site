@@ -12,10 +12,10 @@ export const product = {
 		ru: 'Шарик для серёжек из синих и золотистых бусин'
 	},
 	description: {
-		en: 'A round ball hand-woven from blue and golden beads — a ready component for earrings, also suited to a keychain or pendant.',
-		pt: 'Bola redonda tecida à mão com contas azuis e douradas — base pronta para brincos, também serve para chaveiro ou pingente.',
-		uk: 'Круглий шарик, сплетений вручну із синіх та золотистих намистин, — готова основа для сережок; підійде й для брелока або підвіски.',
-		ru: 'Круглый шарик, сплетённый вручную из синих и золотистых бусин, — готовая основа для серёжек; подойдёт и для брелока или подвески.'
+		en: 'A round ball hand-woven from blue and golden beads - a ready component for earrings, also suited to a keychain or pendant.',
+		pt: 'Bola redonda tecida à mão com contas azuis e douradas - base pronta para brincos, também serve para chaveiro ou pingente.',
+		uk: 'Круглий шарик, сплетений вручну із синіх та золотистих намистин, - готова основа для сережок; підійде й для брелока або підвіски.',
+		ru: 'Круглый шарик, сплетённый вручную из синих и золотистых бусин, - готовая основа для серёжек; подойдёт и для брелока или подвески.'
 	},
 
 	price: { mode: 'from', amount: 5, currency: 'EUR' },

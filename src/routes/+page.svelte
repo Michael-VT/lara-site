@@ -12,7 +12,7 @@
 		try {
 			stored = localStorage.getItem('locale');
 		} catch {
-			// localStorage may be unavailable — fall back to browser language detection.
+			// localStorage may be unavailable - fall back to browser language detection.
 		}
 
 		const locale = resolveLocale({

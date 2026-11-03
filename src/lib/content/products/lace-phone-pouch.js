@@ -30,7 +30,7 @@ export const product = {
 				en: 'Lace phone pouch, front view',
 				pt: 'Bolsa rendada para telemóvel, vista de frente',
 				uk: 'Ажурна сумочка для телефону, вигляд спереду',
-				ru: 'Кружевная сумочка для телефона — вид спереди'
+				ru: 'Кружевная сумочка для телефона - вид спереди'
 			}
 		},
 		{

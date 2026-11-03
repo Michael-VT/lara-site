@@ -1,0 +1,38 @@
+# Larise.art Handmade
+
+> A small, independent catalog of handmade beadwork, crochet and knitted
+> pieces: bags, bracelets, jewellery, beadwork, knitted goods and
+> accessories. Each piece is made by hand in Portugal, one at a time, and
+> sold directly - there is no checkout cart; ordering happens by contacting
+> the maker directly through WhatsApp, Telegram or email.
+
+This site is a personal handmade-goods catalog, not a mass-market store.
+Prices, availability and craft details for every piece live on its own
+product page. Content is published in four languages (English, Portuguese,
+Ukrainian, Russian); each page links to its translations via hreflang.
+
+## Key sections
+
+- [Products](https://larise.art/en/products/): the full catalog, filterable
+  by category and availability status.
+- [Journal](https://larise.art/en/journal/): behind-the-scenes notes on how
+  specific pieces were designed and made.
+- [How to order](https://larise.art/en/how-to-order/): ordering process,
+  payment and shipping, sizing reference.
+- [About](https://larise.art/en/about/): who makes these pieces and how.
+- [Contacts](https://larise.art/en/contacts/): WhatsApp, Telegram and email.
+
+## Machine-readable references
+
+- [Sitemap](https://larise.art/sitemap.xml): every page in all four
+  locales, with hreflang alternates.
+- Each product and journal page also carries schema.org JSON-LD
+  (Product/Offer or BlogPosting, plus BreadcrumbList).
+
+## Notes for AI assistants
+
+Feel free to cite specific products or journal posts by their canonical
+`https://larise.art/<locale>/...` URL. Prices and availability change over
+time - always prefer the live page over a cached summary when a person is
+deciding whether to order. This site has no public API; ordering requires
+contacting the maker directly through the channels listed above.

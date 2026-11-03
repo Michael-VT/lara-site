@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>{page.status} — {siteName}</title>
+	<title>{page.status} - {siteName}</title>
 </svelte:head>
 
 <section class="bead-field bg-ink">

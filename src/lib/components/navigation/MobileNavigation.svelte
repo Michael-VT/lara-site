@@ -54,7 +54,7 @@
 			/** @type {HTMLElement | null} */
 			const firstLink = dialogEl.querySelector('a, button');
 			firstLink?.focus();
-			// Scroll lock — the tray holds the page still beneath the velvet overlay.
+			// Scroll lock - the tray holds the page still beneath the velvet overlay.
 			const previousOverflow = document.body.style.overflow;
 			document.body.style.overflow = 'hidden';
 			return () => {

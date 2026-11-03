@@ -9,13 +9,13 @@ export const product = {
 		en: 'Blue and white bracelet duo, different patterns',
 		pt: 'Dupla de pulseiras azul e branca, padrões diferentes',
 		uk: 'Пара синього та білого браслетів різного візерунка',
-		ru: 'Два браслета — синий и белый, разного узора'
+		ru: 'Два браслета - синий и белый, разного узора'
 	},
 	description: {
 		en: 'A pair of hand-woven bracelets, one in blue and one in white, each with a different bead pattern. Each bracelet is priced from €8.',
 		pt: 'Par de pulseiras tecidas à mão, uma azul e outra branca, cada uma com um padrão diferente. Cada pulseira custa a partir de 8€.',
-		uk: 'Пара браслетів, сплетених вручну: синій і білий, кожен зі своїм візерунком. Ціна кожного браслета — від 8 євро.',
-		ru: 'Пара браслетов, сплетённых вручную: синий и белый, каждый со своим узором. Цена каждого браслета — от 8 евро.'
+		uk: 'Пара браслетів, сплетених вручну: синій і білий, кожен зі своїм візерунком. Ціна кожного браслета - від 8 євро.',
+		ru: 'Пара браслетов, сплетённых вручную: синий и белый, каждый со своим узором. Цена каждого браслета - от 8 евро.'
 	},
 
 	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },
@@ -30,7 +30,7 @@ export const product = {
 				en: 'Blue and white bracelet duo with different patterns',
 				pt: 'Dupla de pulseiras azul e branca com padrões diferentes',
 				uk: 'Пара синього та білого браслетів різного візерунка',
-				ru: 'Два браслета — синий и белый, разного узора'
+				ru: 'Два браслета - синий и белый, разного узора'
 			}
 		}
 	],

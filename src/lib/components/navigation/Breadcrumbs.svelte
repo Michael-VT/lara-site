@@ -3,10 +3,12 @@
 	import { m } from '$lib/paraglide/messages.js';
 	import { toHref } from '$lib/utils/href.js';
 
-	/** @type {{ current: string }} */
-	let { current } = $props();
+	/** @type {{ current: string, section?: { label: string, href: string } }} */
+	let { current, section } = $props();
 
 	let locale = $derived(page.data.locale);
+	let sectionLabel = $derived(section?.label ?? m.product_breadcrumbProducts({}, { locale }));
+	let sectionHref = $derived(section?.href ?? toHref(`/${locale}/products/`));
 </script>
 
 <nav aria-label={m.common_breadcrumb({}, { locale })} class="text-sm text-muted-foreground">
@@ -21,9 +23,9 @@
 		<li aria-hidden="true" class="mx-2 h-1 w-1 rounded-full bg-accent"></li>
 		<li>
 			<a
-				href={toHref(`/${locale}/products/`)}
+				href={sectionHref}
 				class="inline-flex min-h-11 items-center transition-colors duration-200 hover:text-foreground"
-				>{m.product_breadcrumbProducts({}, { locale })}</a
+				>{sectionLabel}</a
 			>
 		</li>
 		<li aria-hidden="true" class="mx-2 h-1 w-1 rounded-full bg-accent"></li>

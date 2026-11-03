@@ -48,10 +48,10 @@ export const product = {
 	],
 
 	productionTime: {
-		en: 'Usually 20–25 days',
-		pt: 'Normalmente 20–25 dias',
-		uk: 'Зазвичай 20–25 днів',
-		ru: 'Обычно 20–25 дней'
+		en: 'Usually 20-25 days',
+		pt: 'Normalmente 20-25 dias',
+		uk: 'Зазвичай 20-25 днів',
+		ru: 'Обычно 20-25 дней'
 	},
 
 	materials: {

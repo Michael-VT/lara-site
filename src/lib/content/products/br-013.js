@@ -12,10 +12,10 @@ export const product = {
 		ru: 'Браслет из крупного и мелкого белого жемчуга'
 	},
 	description: {
-		en: 'A bracelet strung with alternating large and small white pearls — a classic, softly glowing piece.',
-		pt: 'Pulseira com pérolas brancas grandes e pequenas alternadas — uma peça clássica de brilho suave.',
-		uk: 'Браслет із чергуванням крупного та дрібного білого перлів — класична, м’яко сяюча прикраса.',
-		ru: 'Браслет с чередованием крупных и мелких белых жемчужин — классическое, мягко сияющее украшение.'
+		en: 'A bracelet strung with alternating large and small white pearls - a classic, softly glowing piece.',
+		pt: 'Pulseira com pérolas brancas grandes e pequenas alternadas - uma peça clássica de brilho suave.',
+		uk: "Браслет із чергуванням крупного та дрібного білого перлів - класична, м'яко сяюча прикраса.",
+		ru: 'Браслет с чередованием крупных и мелких белых жемчужин - классическое, мягко сияющее украшение.'
 	},
 
 	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },

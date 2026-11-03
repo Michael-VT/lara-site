@@ -1,5 +1,5 @@
 /**
- * Escapes HTML then converts `**bold**` markers to `<strong>` — the only
+ * Escapes HTML then converts `**bold**` markers to `<strong>` - the only
  * inline markup journal article body text uses. Content is site-owner
  * authored copy, not user input, so the result is safe to render with
  * `{@html}`.

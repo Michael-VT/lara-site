@@ -49,13 +49,13 @@ export function persistLocaleChoice(locale) {
 	try {
 		localStorage.setItem('locale', locale);
 	} catch {
-		// localStorage may be unavailable (private browsing, disabled storage) — safe to ignore.
+		// localStorage may be unavailable (private browsing, disabled storage) - safe to ignore.
 	}
 	try {
 		// 1 year, all paths, Lax is enough since this never needs to be sent cross-site.
 		document.cookie = `locale=${locale}; path=/; max-age=31536000; samesite=lax`;
 	} catch {
-		// document.cookie can throw under strict privacy settings — safe to ignore.
+		// document.cookie can throw under strict privacy settings - safe to ignore.
 	}
 }
 

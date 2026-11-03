@@ -1,6 +1,6 @@
 /**
  * Central, single source of truth for all contact details used across the site.
- * Never hard-code these values anywhere else — always import from here.
+ * Never hard-code these values anywhere else - always import from here.
  */
 export const siteContacts = Object.freeze({
 	email: 'ix.lara@gmail.com',

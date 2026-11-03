@@ -26,7 +26,7 @@
  */
 
 /**
- * Launch content for the Journal — written in the same voice as the rest of
+ * Launch content for the Journal - written in the same voice as the rest of
  * the site's copy. Replace with the owner's own posts over time; the page
  * works the same either way.
  * @type {JournalPost[]}
@@ -40,41 +40,41 @@ export const journalPosts = [
 		title: {
 			en: 'A small bag: a new idea, a new experience',
 			pt: 'Uma bolsa pequena: uma ideia nova, uma experiência nova',
-			ru: 'Маленькая сумочка — новая идея и новый опыт',
+			ru: 'Маленькая сумочка - новая идея и новый опыт',
 			uk: 'Маленька сумочка: нова ідея, новий досвід'
 		},
 		excerpt: {
-			en: 'Yarn, a lace pattern, a lining, and a gold chain with heart-shaped clasps — how one idea became a new little bag.',
-			pt: 'Fio, um padrão rendado, forro e uma corrente dourada com fechos em coração — como uma ideia se tornou numa nova bolsa pequena.',
-			ru: 'Нитки, ажурный узор, подкладка и золотистая цепочка с карабинами-сердечками — как из одной идеи получилась новая маленькая сумочка.',
-			uk: 'Нитки, ажурний візерунок, підкладка і золотистий ланцюжок із карабінами-сердечками — як з однієї ідеї вийшла нова маленька сумочка.'
+			en: 'Yarn, a lace pattern, a lining, and a gold chain with heart-shaped clasps - how one idea became a new little bag.',
+			pt: 'Fio, um padrão rendado, forro e uma corrente dourada com fechos em coração - como uma ideia se tornou numa nova bolsa pequena.',
+			ru: 'Нитки, ажурный узор, подкладка и золотистая цепочка с карабинами-сердечками - как из одной идеи получилась новая маленькая сумочка.',
+			uk: 'Нитки, ажурний візерунок, підкладка і золотистий ланцюжок із карабінами-сердечками - як з однієї ідеї вийшла нова маленька сумочка.'
 		},
 		body: [
 			{
 				type: 'p',
 				text: {
-					en: "I've already crocheted several bags, and each one turned out completely different — in style, colour and size.",
-					pt: 'Já fiz várias bolsas em croché, e cada uma ficou completamente diferente — no estilo, na cor e no tamanho.',
-					ru: 'Я уже связала несколько сумочек крючком, и каждая из них получилась совершенно особенной — разной по стилю, цвету и размеру.',
-					uk: "Я вже пов'язала кілька сумочок гачком, і кожна з них вийшла зовсім особливою — різною за стилем, кольором і розміром."
+					en: "I've already crocheted several bags, and each one turned out completely different - in style, colour and size.",
+					pt: 'Já fiz várias bolsas em croché, e cada uma ficou completamente diferente - no estilo, na cor e no tamanho.',
+					ru: 'Я уже связала несколько сумочек крючком, и каждая из них получилась совершенно особенной - разной по стилю, цвету и размеру.',
+					uk: "Я вже пов'язала кілька сумочок гачком, і кожна з них вийшла зовсім особливою - різною за стилем, кольором і розміром."
 				}
 			},
 			{
 				type: 'p',
 				text: {
-					en: "But I wanted to try something new again — something I hadn't made before. This time the idea was a **small, light bag that doesn't weigh you down**, just big enough for a phone, a few notes or cards.",
-					pt: 'Mas voltei a querer experimentar algo novo — algo que ainda não tinha feito. Desta vez surgiu a ideia de fazer uma **bolsa pequena e leve, que não pesa**, com espaço suficiente para um telemóvel, umas notas ou cartões.',
-					ru: 'Но мне снова захотелось попробовать что-нибудь новое — такое, чего я раньше ещё не делала. На этот раз появилась идея связать **маленькую, лёгкую и негромоздкую сумочку**, в которую можно положить телефон, несколько купюр или карточек.',
-					uk: "Але мені знову захотілося спробувати щось нове — те, чого я раніше ще не робила. Цього разу з'явилася ідея зв'язати **маленьку, легку і негучну сумочку**, в яку можна покласти телефон, кілька купюр або карток."
+					en: "But I wanted to try something new again - something I hadn't made before. This time the idea was a **small, light bag that doesn't weigh you down**, just big enough for a phone, a few notes or cards.",
+					pt: 'Mas voltei a querer experimentar algo novo - algo que ainda não tinha feito. Desta vez surgiu a ideia de fazer uma **bolsa pequena e leve, que não pesa**, com espaço suficiente para um telemóvel, umas notas ou cartões.',
+					ru: 'Но мне снова захотелось попробовать что-нибудь новое - такое, чего я раньше ещё не делала. На этот раз появилась идея связать **маленькую, лёгкую и негромоздкую сумочку**, в которую можно положить телефон, несколько купюр или карточек.',
+					uk: "Але мені знову захотілося спробувати щось нове - те, чого я раніше ще не робила. Цього разу з'явилася ідея зв'язати **маленьку, легку і негучну сумочку**, в яку можна покласти телефон, кілька купюр або карток."
 				}
 			},
 			{
 				type: 'p',
 				text: {
-					en: 'I found an interesting pattern — and decided to give it a try.',
-					pt: 'Encontrei um padrão interessante — e decidi experimentar.',
-					ru: 'Нашла интересную схему — и решила попробовать.',
-					uk: 'Знайшла цікаву схему — і вирішила спробувати.'
+					en: 'I found an interesting pattern - and decided to give it a try.',
+					pt: 'Encontrei um padrão interessante - e decidi experimentar.',
+					ru: 'Нашла интересную схему - и решила попробовать.',
+					uk: 'Знайшла цікаву схему - і вирішила спробувати.'
 				}
 			},
 			{
@@ -89,10 +89,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'For this bag I chose **Puppets Eldorado — 100% mercerised cotton** in a beautiful dark brown shade.',
-					pt: 'Para esta bolsa escolhi **Puppets Eldorado — 100% algodão mercerizado**, num bonito tom castanho-escuro.',
-					ru: 'Для сумочки я выбрала **Puppets Eldorado — 100% мерсеризованный хлопок** красивого тёмно-коричневого оттенка.',
-					uk: 'Для сумочки я обрала **Puppets Eldorado — 100% мерсеризовану бавовну** гарного темно-коричневого відтінку.'
+					en: 'For this bag I chose **Puppets Eldorado - 100% mercerised cotton** in a beautiful dark brown shade.',
+					pt: 'Para esta bolsa escolhi **Puppets Eldorado - 100% algodão mercerizado**, num bonito tom castanho-escuro.',
+					ru: 'Для сумочки я выбрала **Puppets Eldorado - 100% мерсеризованный хлопок** красивого тёмно-коричневого оттенка.',
+					uk: 'Для сумочки я обрала **Puppets Eldorado - 100% мерсеризовану бавовну** гарного темно-коричневого відтінку.'
 				}
 			},
 			{
@@ -149,10 +149,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: "The bag came together quite easily and quickly. Though the pattern itself needs attention — get distracted for a moment and it's easy to miss a stitch.",
+					en: "The bag came together quite easily and quickly. Though the pattern itself needs attention - get distracted for a moment and it's easy to miss a stitch.",
 					pt: 'A bolsa foi feita com relativa facilidade e rapidez. Mas o padrão exige atenção: basta distrair-se um pouco para saltar um ponto.',
-					ru: 'Вязалась сумочка довольно легко и быстро. Правда, сам узор требует внимательности: стоит немного отвлечься — и можно пропустить нужную петлю.',
-					uk: "В'язалася сумочка досить легко і швидко. Правда, сам візерунок вимагає уважності: варто трохи відволіктися — і можна пропустити потрібну петлю."
+					ru: 'Вязалась сумочка довольно легко и быстро. Правда, сам узор требует внимательности: стоит немного отвлечься - и можно пропустить нужную петлю.',
+					uk: "В'язалася сумочка досить легко і швидко. Правда, сам візерунок вимагає уважності: варто трохи відволіктися - і можна пропустити потрібну петлю."
 				}
 			},
 			{
@@ -176,10 +176,10 @@ export const journalPosts = [
 					uk: "Сумочка в процесі в'язання"
 				},
 				caption: {
-					en: 'The bag mid-work — the lace pattern is gradually taking shape.',
-					pt: 'A bolsa a meio do trabalho — o padrão rendado vai ganhando forma pouco a pouco.',
-					ru: 'Сумочка в процессе работы — постепенно ажурный узор начинает приобретать форму.',
-					uk: 'Сумочка в процесі роботи — поступово ажурний візерунок починає набувати форми.'
+					en: 'The bag mid-work - the lace pattern is gradually taking shape.',
+					pt: 'A bolsa a meio do trabalho - o padrão rendado vai ganhando forma pouco a pouco.',
+					ru: 'Сумочка в процессе работы - постепенно ажурный узор начинает приобретать форму.',
+					uk: 'Сумочка в процесі роботи - поступово ажурний візерунок починає набувати форми.'
 				}
 			},
 			{
@@ -206,13 +206,13 @@ export const journalPosts = [
 					en: 'At first I thought of using a dark fabric, brown for example. But it turned out that on a dark background, the pretty crochet pattern almost disappears.',
 					pt: 'No início pensei em usar um tecido escuro, castanho por exemplo. Mas percebi que, sobre um fundo escuro, o bonito desenho do croché quase desaparece.',
 					ru: 'Сначала думала использовать тёмную ткань, например коричневую. Но оказалось, что на тёмном фоне красивый рисунок вязания практически теряется.',
-					uk: 'Спочатку думала використати темну тканину, наприклад коричневу. Але виявилося, що на темному тлі гарний малюнок в’язання практично губиться.'
+					uk: "Спочатку думала використати темну тканину, наприклад коричневу. Але виявилося, що на темному тлі гарний малюнок в'язання практично губиться."
 				}
 			},
 			{
 				type: 'p',
 				text: {
-					en: 'So I chose a **light-coloured fabric** instead. And that turned out to be the right call — against it, the lace pattern became much more visible.',
+					en: 'So I chose a **light-coloured fabric** instead. And that turned out to be the right call - against it, the lace pattern became much more visible.',
 					pt: 'Por isso escolhi um **tecido claro**. E foi a decisão certa: contra ele, o padrão rendado ficou muito mais visível.',
 					ru: 'Поэтому я выбрала **светлую ткань**. И это оказалось правильным решением: на её фоне ажурный рисунок стал намного заметнее.',
 					uk: 'Тому я обрала **світлу тканину**. І це виявилося правильним рішенням: на її тлі ажурний малюнок став набагато помітнішим.'
@@ -278,8 +278,8 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: "Once I'd put all the pieces together — added the lining, the clasp with its little pearl bead, and the chain — the bag finally had its finished look.",
-					pt: 'Depois de juntar todas as peças — o forro, o fecho com a pequena pérola e a corrente — a bolsa ganhou finalmente o seu aspeto acabado.',
+					en: "Once I'd put all the pieces together - added the lining, the clasp with its little pearl bead, and the chain - the bag finally had its finished look.",
+					pt: 'Depois de juntar todas as peças - o forro, o fecho com a pequena pérola e a corrente - a bolsa ganhou finalmente o seu aspeto acabado.',
 					ru: 'Когда я соединила все детали, добавила подкладку, застёжку с жемчужной бусинкой и цепочку, сумочка наконец приобрела законченный вид.',
 					uk: "Коли я з'єднала всі деталі, додала підкладку, застібку з перлинкою і ланцюжок, сумочка нарешті набула завершеного вигляду."
 				}
@@ -308,10 +308,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'The bag came out **light, small and easy to carry** — exactly what I wanted. Enough room for a phone, a few cards or a little cash, just the essentials.',
-					pt: 'A bolsa ficou **leve, pequena e prática** — exatamente como eu queria. Cabe um telemóvel, uns cartões ou algum dinheiro, só o essencial.',
-					ru: 'Сумочка получилась **лёгкой, небольшой и удобной** — именно такой, какую я и хотела. В неё можно положить телефон, карточки или немного наличных и взять с собой самое необходимое.',
-					uk: 'Сумочка вийшла **легкою, невеликою і зручною** — саме такою, якою я й хотіла. У неї можна покласти телефон, картки або трохи готівки і взяти з собою найнеобхідніше.'
+					en: 'The bag came out **light, small and easy to carry** - exactly what I wanted. Enough room for a phone, a few cards or a little cash, just the essentials.',
+					pt: 'A bolsa ficou **leve, pequena e prática** - exatamente como eu queria. Cabe um telemóvel, uns cartões ou algum dinheiro, só o essencial.',
+					ru: 'Сумочка получилась **лёгкой, небольшой и удобной** - именно такой, какую я и хотела. В неё можно положить телефон, карточки или немного наличных и взять с собой самое необходимое.',
+					uk: 'Сумочка вийшла **легкою, невеликою і зручною** - саме такою, якою я й хотіла. У неї можна покласти телефон, картки або трохи готівки і взяти з собою найнеобхідніше.'
 				}
 			},
 			{
@@ -326,10 +326,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: "And the best part — I tried making something I'd never made before, once again.",
-					pt: 'E o melhor de tudo — voltei a experimentar fazer algo que nunca tinha feito.',
-					ru: 'И самое приятное — я снова попробовала сделать то, чего раньше никогда не делала.',
-					uk: 'І найприємніше — я знову спробувала зробити те, чого раніше ніколи не робила.'
+					en: "And the best part - I tried making something I'd never made before, once again.",
+					pt: 'E o melhor de tudo - voltei a experimentar fazer algo que nunca tinha feito.',
+					ru: 'И самое приятное - я снова попробовала сделать то, чего раньше никогда не делала.',
+					uk: 'І найприємніше - я знову спробувала зробити те, чого раніше ніколи не робила.'
 				}
 			},
 			{
@@ -384,19 +384,19 @@ export const journalPosts = [
 			uk: 'Мої маленькі сумочки-гаманці з бісеру'
 		},
 		excerpt: {
-			en: 'Beads, a fishing line strong enough for a 15 kg catch, and a growing collection of tiny purses — how one photo online turned into a whole family of colours.',
-			pt: 'Contas, um fio de pesca resistente até 15 kg e uma coleção cada vez maior de bolsinhas — como uma fotografia na internet se tornou numa família inteira de cores.',
-			ru: 'Бисер, рыболовная леска на 15 кг и целая растущая коллекция маленьких сумочек — как одна фотография в интернете превратилась в семью разных цветов.',
-			uk: 'Бісер, риболовна волосінь на 15 кг і ціла зростаюча колекція маленьких сумочок — як одна фотографія в інтернеті перетворилася на родину різних кольорів.'
+			en: 'Beads, a fishing line strong enough for a 15 kg catch, and a growing collection of tiny purses - how one photo online turned into a whole family of colours.',
+			pt: 'Contas, um fio de pesca resistente até 15 kg e uma coleção cada vez maior de bolsinhas - como uma fotografia na internet se tornou numa família inteira de cores.',
+			ru: 'Бисер, рыболовная леска на 15 кг и целая растущая коллекция маленьких сумочек - как одна фотография в интернете превратилась в семью разных цветов.',
+			uk: 'Бісер, риболовна волосінь на 15 кг і ціла зростаюча колекція маленьких сумочок - як одна фотографія в інтернеті перетворилася на родину різних кольорів.'
 		},
 		body: [
 			{
 				type: 'p',
 				text: {
-					en: 'One day I saw a photo online of a tiny beaded coin purse — and I got completely hooked on the idea of making a little masterpiece like that myself.',
-					pt: 'Um dia vi na internet uma fotografia de uma pequena bolsa-moedeiro de contas — e fiquei completamente apaixonada pela ideia de fazer sozinha uma pequena obra-prima assim.',
-					ru: 'Однажды я увидела в интернете фотографию маленькой сумочки-монетницы из бусин — и загорелась идеей самой сделать такой маленький шедевр.',
-					uk: 'Одного разу я побачила в інтернеті фотографію маленької сумочки-гаманця з бісеру — і загорілася ідеєю самій зробити такий маленький шедевр.'
+					en: 'One day I saw a photo online of a tiny beaded coin purse - and I got completely hooked on the idea of making a little masterpiece like that myself.',
+					pt: 'Um dia vi na internet uma fotografia de uma pequena bolsa-moedeiro de contas - e fiquei completamente apaixonada pela ideia de fazer sozinha uma pequena obra-prima assim.',
+					ru: 'Однажды я увидела в интернете фотографию маленькой сумочки-монетницы из бусин - и загорелась идеей самой сделать такой маленький шедевр.',
+					uk: 'Одного разу я побачила в інтернеті фотографію маленької сумочки-гаманця з бісеру - і загорілася ідеєю самій зробити такий маленький шедевр.'
 				}
 			},
 			{
@@ -438,10 +438,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'I bought line about 0.5 mm thick from several different shops and tried a few options, but the perfect one turned out to be sold… in a fishing tackle shop!',
+					en: 'I bought line about 0.5 mm thick from several different shops and tried a few options, but the perfect one turned out to be sold... in a fishing tackle shop!',
 					pt: 'Comprei fio com cerca de 0,5 mm de espessura em várias lojas, experimentei diferentes opções, mas o que serviu perfeitamente foi vendido... numa loja de pesca!',
-					ru: 'Я покупала леску толщиной около 0,5 мм в разных магазинах, пробовала разные варианты, но идеально подошла леска, которая продавалась… в рыболовном магазине!',
-					uk: 'Я купувала волосінь товщиною близько 0,5 мм у різних магазинах, пробувала різні варіанти, але ідеально підійшла волосінь, яка продавалася… в риболовному магазині!'
+					ru: 'Я покупала леску толщиной около 0,5 мм в разных магазинах, пробовала разные варианты, но идеально подошла леска, которая продавалась... в рыболовном магазине!',
+					uk: 'Я купувала волосінь товщиною близько 0,5 мм у різних магазинах, пробувала різні варіанти, але ідеально підійшла волосінь, яка продавалася... в риболовному магазині!'
 				}
 			},
 			{
@@ -465,10 +465,10 @@ export const journalPosts = [
 			{
 				type: 'h2',
 				text: {
-					en: 'And the process began…',
-					pt: 'E o processo começou…',
-					ru: 'И пошёл процесс…',
-					uk: 'І почався процес…'
+					en: 'And the process began...',
+					pt: 'E o processo começou...',
+					ru: 'И пошёл процесс...',
+					uk: 'І почався процес...'
 				}
 			},
 			{
@@ -483,10 +483,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'Bead by bead, row by row — and slowly, out of separate pearly beads, the shape of the future coin purse began to appear.',
-					pt: 'Conta a conta, fiada a fiada — e aos poucos, a partir de contas nacaradas soltas, começou a aparecer a forma da futura bolsa-moedeiro.',
-					ru: 'Бусинка за бусинкой, ряд за рядом — и постепенно из отдельных жемчужных бусин начала появляться форма будущей монетницы.',
-					uk: "Намистинка за намистинкою, ряд за рядом — і поступово з окремих перламутрових намистин почала з'являтися форма майбутнього гаманця."
+					en: 'Bead by bead, row by row - and slowly, out of separate pearly beads, the shape of the future coin purse began to appear.',
+					pt: 'Conta a conta, fiada a fiada - e aos poucos, a partir de contas nacaradas soltas, começou a aparecer a forma da futura bolsa-moedeiro.',
+					ru: 'Бусинка за бусинкой, ряд за рядом - и постепенно из отдельных жемчужных бусин начала появляться форма будущей монетницы.',
+					uk: "Намистинка за намистинкою, ряд за рядом - і поступово з окремих перламутрових намистин почала з'являтися форма майбутнього гаманця."
 				}
 			},
 			{
@@ -514,7 +514,7 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'You can also clearly see the fishing line in the photo — the thread that everything is woven onto.',
+					en: 'You can also clearly see the fishing line in the photo - the thread that everything is woven onto.',
 					pt: 'Na fotografia também se vê bem o próprio fio de nylon, sobre o qual assenta toda a tecelagem.',
 					ru: 'На фотографии хорошо видно и саму леску, на которой держится всё плетение.',
 					uk: 'На фотографії добре видно і саму волосінь, на якій тримається все плетіння.'
@@ -572,10 +572,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'That’s how the next one appeared — cheerful and colourful.',
-					pt: 'Assim surgiu a seguinte — alegre e colorida.',
-					ru: 'Так появилась следующая — весёлая и разноцветная.',
-					uk: "Так з'явилася наступна — весела і різнокольорова."
+					en: "That's how the next one appeared - cheerful and colourful.",
+					pt: 'Assim surgiu a seguinte - alegre e colorida.',
+					ru: 'Так появилась следующая - весёлая и разноцветная.',
+					uk: "Так з'явилася наступна - весела і різнокольорова."
 				}
 			},
 			{
@@ -621,10 +621,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'The colourful one turned out really cheerful — it mixed white, pink, yellow, turquoise, red, grey and other little beads.',
-					pt: 'A colorida ficou muito alegre — misturaram-se contas brancas, rosa, amarelas, turquesa, vermelhas, cinzentas e outras.',
-					ru: 'Разноцветная получилась очень весёлой — в ней смешались белые, розовые, жёлтые, бирюзовые, красные, серые и другие бусинки.',
-					uk: 'Різнокольорова вийшла дуже веселою — у ній змішалися білі, рожеві, жовті, бірюзові, червоні, сірі та інші намистини.'
+					en: 'The colourful one turned out really cheerful - it mixed white, pink, yellow, turquoise, red, grey and other little beads.',
+					pt: 'A colorida ficou muito alegre - misturaram-se contas brancas, rosa, amarelas, turquesa, vermelhas, cinzentas e outras.',
+					ru: 'Разноцветная получилась очень весёлой - в ней смешались белые, розовые, жёлтые, бирюзовые, красные, серые и другие бусинки.',
+					uk: 'Різнокольорова вийшла дуже веселою - у ній змішалися білі, рожеві, жовті, бірюзові, червоні, сірі та інші намистини.'
 				}
 			},
 			{
@@ -671,9 +671,9 @@ export const journalPosts = [
 				type: 'p',
 				text: {
 					en: 'The graphite one was completely different: more restrained and elegant.',
-					pt: 'E a grafite — completamente diferente: mais contida e elegante.',
-					ru: 'А графитовая — совсем другой: более сдержанной и элегантной.',
-					uk: 'А графітова — зовсім інша: більш стримана і елегантна.'
+					pt: 'E a grafite - completamente diferente: mais contida e elegante.',
+					ru: 'А графитовая - совсем другой: более сдержанной и элегантной.',
+					uk: 'А графітова - зовсім інша: більш стримана і елегантна.'
 				}
 			},
 			{
@@ -693,8 +693,8 @@ export const journalPosts = [
 				text: {
 					en: "What I especially liked is that just changing the bead colour completely changes the purse's whole character.",
 					pt: 'Gostei especialmente de perceber que basta mudar a cor das contas para o carácter da bolsa ficar completamente diferente.',
-					ru: 'Мне особенно понравилось, что достаточно изменить только цвет бусин — и характер сумочки становится совершенно другим.',
-					uk: 'Мені особливо сподобалося, що достатньо змінити лише колір намистин — і характер сумочки стає зовсім іншим.'
+					ru: 'Мне особенно понравилось, что достаточно изменить только цвет бусин - и характер сумочки становится совершенно другим.',
+					uk: 'Мені особливо сподобалося, що достатньо змінити лише колір намистин - і характер сумочки стає зовсім іншим.'
 				}
 			},
 			{
@@ -753,10 +753,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'And after it — a shimmering silver one.',
-					pt: 'E a seguir — uma prateada brilhante.',
-					ru: 'А следом — блестящая серебристая.',
-					uk: 'А слідом — блискуча срібляста.'
+					en: 'And after it - a shimmering silver one.',
+					pt: 'E a seguir - uma prateada brilhante.',
+					ru: 'А следом - блестящая серебристая.',
+					uk: 'А слідом - блискуча срібляста.'
 				}
 			},
 			{
@@ -775,10 +775,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'And, of course, one of my favourites — the pearly white one.',
-					pt: 'E, claro, uma das minhas preferidas — a branca nacarada.',
-					ru: 'И, конечно, одна из моих любимых — белая жемчужная.',
-					uk: 'І, звісно ж, одна з моїх улюблених — біла перламутрова.'
+					en: 'And, of course, one of my favourites - the pearly white one.',
+					pt: 'E, claro, uma das minhas preferidas - a branca nacarada.',
+					ru: 'И, конечно, одна из моих любимых - белая жемчужная.',
+					uk: 'І, звісно ж, одна з моїх улюблених - біла перламутрова.'
 				}
 			},
 			{
@@ -891,10 +891,10 @@ export const journalPosts = [
 			{
 				type: 'h2',
 				text: {
-					en: 'And then my little purses started to travel…',
-					pt: 'E depois as minhas bolsas começaram a viajar…',
-					ru: 'А потом мои сумочки начали путешествовать…',
-					uk: 'А потім мої сумочки почали подорожувати…'
+					en: 'And then my little purses started to travel...',
+					pt: 'E depois as minhas bolsas começaram a viajar...',
+					ru: 'А потом мои сумочки начали путешествовать...',
+					uk: 'А потім мої сумочки почали подорожувати...'
 				}
 			},
 			{
@@ -927,10 +927,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'Then a third… 😊',
-					pt: 'Depois uma terceira… 😊',
-					ru: 'Потом третью… 😊',
-					uk: 'Потім третю… 😊'
+					en: 'Then a third... 😊',
+					pt: 'Depois uma terceira... 😊',
+					ru: 'Потом третью... 😊',
+					uk: 'Потім третю... 😊'
 				}
 			},
 			{
@@ -954,7 +954,7 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'And I really love thinking that somewhere far from me these little things are living now — things that once started as just a handful of beads, a tiny clasp frame, and that very same fishing line. ))',
+					en: 'And I really love thinking that somewhere far from me these little things are living now - things that once started as just a handful of beads, a tiny clasp frame, and that very same fishing line. ))',
 					pt: 'E é muito bom pensar que, longe de mim, vivem agora estas pequenas peças que começaram apenas com um punhado de contas, um pequeno fecho e aquele mesmo fio de pesca. ))',
 					ru: 'И мне очень приятно думать, что где-то далеко от меня сейчас живут эти маленькие вещицы, которые когда-то начинались всего лишь с горстки бусинок, маленького фермуара и той самой рыболовной лески. ))',
 					uk: 'І мені дуже приємно думати, що десь далеко від мене зараз живуть ці маленькі речі, які колись починалися лише з жмені бісеру, маленької застібки і тієї самої риболовної волосіні. ))'
@@ -981,10 +981,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'It turned out — I could. ❤️',
-					pt: 'Afinal — consegui. ❤️',
-					ru: 'Оказалось — смогу. ❤️',
-					uk: 'Виявилося — зможу. ❤️'
+					en: 'It turned out - I could. ❤️',
+					pt: 'Afinal - consegui. ❤️',
+					ru: 'Оказалось - смогу. ❤️',
+					uk: 'Виявилося - зможу. ❤️'
 				}
 			},
 			{
@@ -999,10 +999,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: "You see something beautiful, and an idea appears. Then you start looking for materials, you try, sometimes something doesn't work out, you redo it…",
-					pt: 'Vê-se algo bonito, e surge uma ideia. Depois começa-se a procurar materiais, experimenta-se, às vezes algo não corre bem, refaz-se…',
-					ru: 'Ты видишь что-то красивое, и у тебя появляется идея. Потом начинаешь искать материалы, пробуешь, иногда что-то не получается, переделываешь…',
-					uk: "Ти бачиш щось красиве, і в тебе з'являється ідея. Потім починаєш шукати матеріали, пробуєш, іноді щось не виходить, переробляєш…"
+					en: "You see something beautiful, and an idea appears. Then you start looking for materials, you try, sometimes something doesn't work out, you redo it...",
+					pt: 'Vê-se algo bonito, e surge uma ideia. Depois começa-se a procurar materiais, experimenta-se, às vezes algo não corre bem, refaz-se...',
+					ru: 'Ты видишь что-то красивое, и у тебя появляется идея. Потом начинаешь искать материалы, пробуешь, иногда что-то не получается, переделываешь...',
+					uk: "Ти бачиш щось красиве, і в тебе з'являється ідея. Потім починаєш шукати матеріали, пробуєш, іноді щось не виходить, переробляєш..."
 				}
 			},
 			{
@@ -1019,8 +1019,8 @@ export const journalPosts = [
 				text: {
 					en: 'And the best part is when the thing you made starts bringing joy not only to you, but to other people too.',
 					pt: 'E o melhor de tudo é quando a peça que fizemos começa a alegrar não só a nós, mas também outras pessoas.',
-					ru: 'И самое приятное — когда сделанная тобой вещь начинает радовать не только тебя, но и других людей.',
-					uk: 'І найприємніше — коли зроблена тобою річ починає радувати не тільки тебе, а й інших людей.'
+					ru: 'И самое приятное - когда сделанная тобой вещь начинает радовать не только тебя, но и других людей.',
+					uk: 'І найприємніше - коли зроблена тобою річ починає радувати не тільки тебе, а й інших людей.'
 				}
 			},
 			{
@@ -1055,10 +1055,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'I love seed beads and beads for the way they play with light. Sometimes you pick up a finished piece, turn it toward the window — and it shines in a completely different way. ✨',
-					pt: 'Adoro o bisel e as contas pela forma como brincam com a luz. Às vezes pegamos numa peça pronta, viramo-la para a janela — e ela brilha de um jeito completamente diferente. ✨',
-					ru: 'Я очень люблю бисер и бусины за то, как они умеют играть со светом. Иногда возьмёшь готовое изделие в руки, повернёшь его к окну — и оно совсем по-другому засияет. ✨',
-					uk: 'Я дуже люблю бісер і намистини за те, як вони вміють грати зі світлом. Іноді береш готовий виріб у руки, повертаєш його до вікна — і він зовсім по-іншому починає сяяти. ✨'
+					en: 'I love seed beads and beads for the way they play with light. Sometimes you pick up a finished piece, turn it toward the window - and it shines in a completely different way. ✨',
+					pt: 'Adoro o bisel e as contas pela forma como brincam com a luz. Às vezes pegamos numa peça pronta, viramo-la para a janela - e ela brilha de um jeito completamente diferente. ✨',
+					ru: 'Я очень люблю бисер и бусины за то, как они умеют играть со светом. Иногда возьмёшь готовое изделие в руки, повернёшь его к окну - и оно совсем по-другому засияет. ✨',
+					uk: 'Я дуже люблю бісер і намистини за те, як вони вміють грати зі світлом. Іноді береш готовий виріб у руки, повертаєш його до вікна - і він зовсім по-іншому починає сяяти. ✨'
 				}
 			},
 			{
@@ -1076,7 +1076,7 @@ export const journalPosts = [
 					en: "In fact, beadwork and beaded pieces don't need any complicated care. You just need to remember a few small rules. I'd like to share them with you.",
 					pt: 'Na verdade, as peças de bisel e contas não exigem cuidados complicados. Basta lembrar algumas pequenas regras. Quero partilhá-las convosco.',
 					ru: 'На самом деле изделия из бисера и бусин не требуют какого-то сложного ухода. Нужно просто помнить несколько небольших правил. Хочу поделиться ими с вами.',
-					uk: 'Насправді вироби з бісеру та намистин не потребують якогось складного догляду. Потрібно просто пам’ятати кілька невеликих правил. Хочу поділитися ними з вами.'
+					uk: "Насправді вироби з бісеру та намистин не потребують якогось складного догляду. Потрібно просто пам'ятати кілька невеликих правил. Хочу поділитися ними з вами."
 				}
 			},
 			{
@@ -1115,8 +1115,8 @@ export const journalPosts = [
 				text: {
 					en: "And I'd especially advise against swimming in jewellery in the sea. Salt, water and sun are a wonderful combination for us, but not the best one for beads. 😊",
 					pt: 'E, principalmente, não aconselho nadar no mar com joias postas. Sal, água e sol são uma combinação ótima para nós, mas não tanto para o bisel. 😊',
-					ru: 'И особенно я бы не советовала купаться в украшениях в море. Соль, вода и солнце — прекрасное сочетание для нас, но не самое лучшее для бисера. 😊',
-					uk: 'І особливо я б не радила купатися в прикрасах у морі. Сіль, вода і сонце — чудове поєднання для нас, але не найкраще для бісеру. 😊'
+					ru: 'И особенно я бы не советовала купаться в украшениях в море. Соль, вода и солнце - прекрасное сочетание для нас, но не самое лучшее для бисера. 😊',
+					uk: 'І особливо я б не радила купатися в прикрасах у морі. Сіль, вода і сонце - чудове поєднання для нас, але не найкраще для бісеру. 😊'
 				}
 			},
 			{
@@ -1124,8 +1124,8 @@ export const journalPosts = [
 				text: {
 					en: 'Even if nothing happens to the beads right away, over time their coating can lose its original shine, and the metal parts can darken.',
 					pt: 'Mesmo que nada aconteça às contas de imediato, com o tempo o revestimento pode perder o brilho original, e as partes metálicas podem escurecer.',
-					ru: 'Даже если с бусинами ничего не случится сразу, со временем их покрытие может потерять первоначальный блеск, а металлические детали — потемнеть.',
-					uk: 'Навіть якщо з намистинами нічого не станеться одразу, з часом їхнє покриття може втратити початковий блиск, а металеві деталі — потемніти.'
+					ru: 'Даже если с бусинами ничего не случится сразу, со временем их покрытие может потерять первоначальный блеск, а металлические детали - потемнеть.',
+					uk: 'Навіть якщо з намистинами нічого не станеться одразу, з часом їхнє покриття може втратити початковий блиск, а металеві деталі - потемніти.'
 				}
 			},
 			{
@@ -1134,7 +1134,7 @@ export const journalPosts = [
 					en: "If a piece accidentally gets wet, it's not a big deal. Just gently blot it with a soft cloth and let it dry naturally.",
 					pt: 'Se uma peça se molhar por acidente, não há problema. Basta secá-la delicadamente com um pano macio e deixá-la secar naturalmente.',
 					ru: 'Если изделие случайно намокло, ничего страшного. Просто аккуратно промокните его мягкой салфеткой и оставьте высохнуть естественным образом.',
-					uk: 'Якщо виріб випадково намок, нічого страшного. Просто акуратно промокніть його м’якою серветкою і дайте висохнути природним шляхом.'
+					uk: "Якщо виріб випадково намок, нічого страшного. Просто акуратно промокніть його м'якою серветкою і дайте висохнути природним шляхом."
 				}
 			},
 			{
@@ -1162,8 +1162,8 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'Wearing jewellery in summer is, of course, absolutely fine — and encouraged!',
-					pt: 'Usar joias no verão é, claro, perfeitamente possível — e recomendado!',
+					en: 'Wearing jewellery in summer is, of course, absolutely fine - and encouraged!',
+					pt: 'Usar joias no verão é, claro, perfeitamente possível - e recomendado!',
 					ru: 'Носить украшения летом, конечно же, можно и нужно!',
 					uk: 'Носити прикраси влітку, звісно ж, можна і потрібно!'
 				}
@@ -1189,10 +1189,10 @@ export const journalPosts = [
 			{
 				type: 'h2',
 				text: {
-					en: '🌸 Perfume and cream first — jewellery after',
-					pt: '🌸 Primeiro o perfume e o creme — depois a joia',
-					ru: '🌸 Сначала духи и крем — потом украшение',
-					uk: '🌸 Спочатку парфуми і крем — потім прикраса'
+					en: '🌸 Perfume and cream first - jewellery after',
+					pt: '🌸 Primeiro o perfume e o creme - depois a joia',
+					ru: '🌸 Сначала духи и крем - потом украшение',
+					uk: '🌸 Спочатку парфуми і крем - потім прикраса'
 				}
 			},
 			{
@@ -1259,16 +1259,16 @@ export const journalPosts = [
 					en: 'If it gets a little dusty, it is enough to gently wipe it with a soft dry cloth. If needed, you can use a slightly damp cloth, then let the bag dry well afterwards.',
 					pt: 'Se ficar um pouco empoeirada, basta limpá-la delicadamente com um pano macio e seco. Se necessário, pode usar um pano ligeiramente húmido e depois deixar a bolsa secar bem.',
 					ru: 'Если она немного запылилась, достаточно осторожно протереть её мягкой сухой салфеткой. При необходимости можно использовать слегка влажную ткань, а потом дать сумочке хорошо высохнуть.',
-					uk: 'Якщо вона трохи запилилася, достатньо обережно протерти її м’якою сухою серветкою. За потреби можна скористатися злегка вологою тканиною, а потім дати сумочці добре висохнути.'
+					uk: "Якщо вона трохи запилилася, достатньо обережно протерти її м'якою сухою серветкою. За потреби можна скористатися злегка вологою тканиною, а потім дати сумочці добре висохнути."
 				}
 			},
 			{
 				type: 'p',
 				text: {
-					en: "And one more piece of advice — don't overload a bag like this.",
-					pt: 'E mais um conselho meu — não sobrecarregue esta bolsa.',
-					ru: 'И ещё один мой совет — не перегружайте такую сумочку.',
-					uk: 'І ще одна моя порада — не перевантажуйте таку сумочку.'
+					en: "And one more piece of advice - don't overload a bag like this.",
+					pt: 'E mais um conselho meu - não sobrecarregue esta bolsa.',
+					ru: 'И ещё один мой совет - не перегружайте такую сумочку.',
+					uk: 'І ще одна моя порада - не перевантажуйте таку сумочку.'
 				}
 			},
 			{
@@ -1339,7 +1339,7 @@ export const journalPosts = [
 					en: 'In most cases, a soft dry cloth is all seed beads and beads really need.',
 					pt: 'Na maioria dos casos, um pano macio e seco é suficiente para o bisel e as contas.',
 					ru: 'В большинстве случаев бисеру и бусинам достаточно мягкой сухой салфетки.',
-					uk: 'У більшості випадків бісеру та намистинам достатньо м’якої сухої серветки.'
+					uk: "У більшості випадків бісеру та намистинам достатньо м'якої сухої серветки."
 				}
 			},
 			{
@@ -1356,8 +1356,8 @@ export const journalPosts = [
 				text: {
 					en: 'Best of all is a dry place, kept separate from other jewellery.',
 					pt: 'O ideal é um local seco, separado das outras joias.',
-					ru: 'Лучше всего — в сухом месте, отдельно от других украшений.',
-					uk: 'Найкраще — у сухому місці, окремо від інших прикрас.'
+					ru: 'Лучше всего - в сухом месте, отдельно от других украшений.',
+					uk: 'Найкраще - у сухому місці, окремо від інших прикрас.'
 				}
 			},
 			{
@@ -1366,16 +1366,16 @@ export const journalPosts = [
 					en: "You can put a piece in a small box or a soft pouch. That way the beads won't constantly rub against metal, chains and other jewellery, and are less likely to get scratched.",
 					pt: 'Pode colocar a peça numa caixinha ou num saquinho macio. Assim, as contas não ficam a esfregar constantemente em metal, correntes e outras joias, e correm menos risco de riscar.',
 					ru: 'Можно положить изделие в небольшую коробочку или мягкий мешочек. Тогда бусины не будут постоянно тереться о металл, цепочки и другие украшения и меньше рискуют поцарапаться.',
-					uk: 'Можна покласти виріб у невелику коробочку або м’який мішечок. Тоді намистини не будуть постійно тертися об метал, ланцюжки та інші прикраси і менше ризикують подряпатися.'
+					uk: "Можна покласти виріб у невелику коробочку або м'який мішечок. Тоді намистини не будуть постійно тертися об метал, ланцюжки та інші прикраси і менше ризикують подряпатися."
 				}
 			},
 			{
 				type: 'p',
 				text: {
-					en: "The bathroom, though, isn't the best place to keep them — it's too humid there.",
-					pt: 'Já a casa de banho não é muito adequada para guardar — é demasiado húmida.',
-					ru: 'А вот ванная комната для хранения не очень подходит — там слишком влажно.',
-					uk: 'А от ванна кімната для зберігання не дуже підходить — там занадто волого.'
+					en: "The bathroom, though, isn't the best place to keep them - it's too humid there.",
+					pt: 'Já a casa de banho não é muito adequada para guardar - é demasiado húmida.',
+					ru: 'А вот ванная комната для хранения не очень подходит - там слишком влажно.',
+					uk: 'А от ванна кімната для зберігання не дуже підходить - там занадто волого.'
 				}
 			},
 			{
@@ -1403,10 +1403,10 @@ export const journalPosts = [
 			{
 				type: 'h2',
 				text: {
-					en: '❤️ And most important of all — wear your favourite things',
-					pt: '❤️ E o mais importante — use as suas peças favoritas',
-					ru: '❤️ И самое главное — носите свои любимые вещи',
-					uk: '❤️ І найголовніше — носіть свої улюблені речі'
+					en: '❤️ And most important of all - wear your favourite things',
+					pt: '❤️ E o mais importante - use as suas peças favoritas',
+					ru: '❤️ И самое главное - носите свои любимые вещи',
+					uk: '❤️ І найголовніше - носіть свої улюблені речі'
 				}
 			},
 			{
@@ -1490,10 +1490,10 @@ export const journalPosts = [
 			uk: 'Від ажурної ідеї до сумочки для телефону. І Оля-ля! ❤️'
 		},
 		excerpt: {
-			en: 'How a heart-shaped lace pattern turned into a phone pouch — with a felt lining, a twisted cord strap and tiny rose buttons.',
-			pt: 'Como um padrão rendado em forma de coração se tornou numa bolsa para telemóvel — com forro em feltro, alça de cordão trançado e botões em forma de rosa.',
-			ru: 'Как кружевная схема в форме сердечка превратилась в ажурную сумочку для телефона — с фетровой подкладкой, витым шнуром и пуговицами-розочками.',
-			uk: 'Як ажурна схема у формі сердечка перетворилася на сумочку для телефону — з фетровою підкладкою, витим шнуром і ґудзиками-трояндочками.'
+			en: 'How a heart-shaped lace pattern turned into a phone pouch - with a felt lining, a twisted cord strap and tiny rose buttons.',
+			pt: 'Como um padrão rendado em forma de coração se tornou numa bolsa para telemóvel - com forro em feltro, alça de cordão trançado e botões em forma de rosa.',
+			ru: 'Как кружевная схема в форме сердечка превратилась в ажурную сумочку для телефона - с фетровой подкладкой, витым шнуром и пуговицами-розочками.',
+			uk: 'Як ажурна схема у формі сердечка перетворилася на сумочку для телефону - з фетровою підкладкою, витим шнуром і ґудзиками-трояндочками.'
 		},
 		body: [
 			{
@@ -1538,10 +1538,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'One day I came across a pattern for an unusual crocheted bag. Delicate, lacy, with beautiful scalloped edges, it caught my eye right away. I especially loved its shape — it looked a little like a heart.',
-					pt: 'Um dia encontrei um padrão para uma bolsa de crochê pouco comum. Delicada, rendada, com bordas bonitas em forma de concha, chamou-me logo a atenção. Gostei especialmente da sua forma — parecida com um coração.',
-					ru: 'Однажды мне попалась схема необычной сумочки, связанной крючком. Нежная, ажурная, с красивыми кружевными краями, она сразу привлекла моё внимание. Особенно понравилась её форма — немного напоминающая сердечко.',
-					uk: "Якось мені потрапила схема незвичної сумочки, зв'язаної гачком. Нiжна, ажурна, з гарними мереживними краями, вона відразу привернула мою увагу. Особливо сподобалася її форма — трохи схожа на сердечко."
+					en: 'One day I came across a pattern for an unusual crocheted bag. Delicate, lacy, with beautiful scalloped edges, it caught my eye right away. I especially loved its shape - it looked a little like a heart.',
+					pt: 'Um dia encontrei um padrão para uma bolsa de crochê pouco comum. Delicada, rendada, com bordas bonitas em forma de concha, chamou-me logo a atenção. Gostei especialmente da sua forma - parecida com um coração.',
+					ru: 'Однажды мне попалась схема необычной сумочки, связанной крючком. Нежная, ажурная, с красивыми кружевными краями, она сразу привлекла моё внимание. Особенно понравилась её форма - немного напоминающая сердечко.',
+					uk: "Якось мені потрапила схема незвичної сумочки, зв'язаної гачком. Нiжна, ажурна, з гарними мереживними краями, вона відразу привернула мою увагу. Особливо сподобалася її форма - трохи схожа на сердечко."
 				}
 			},
 			{
@@ -1553,7 +1553,7 @@ export const journalPosts = [
 					en: 'The crochet chart for the heart pattern, with a stitch-symbol legend, that started the idea',
 					pt: 'O esquema de crochê do coração, com legenda de pontos, que deu origem à ideia',
 					ru: 'Схема вязания сердечка с условными обозначениями, с которой началась идея',
-					uk: 'Схема в’язання сердечка з умовними позначеннями, з якої почалася ідея'
+					uk: "Схема в'язання сердечка з умовними позначеннями, з якої почалася ідея"
 				}
 			},
 			{
@@ -1577,7 +1577,7 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'And that’s when my little creative experiments began!',
+					en: "And that's when my little creative experiments began!",
 					pt: 'E foi aí que começaram as minhas pequenas experiências criativas!',
 					ru: 'И тут начались мои маленькие творческие эксперименты!',
 					uk: 'І тут почалися мої маленькі творчі експерименти!'
@@ -1625,10 +1625,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'Stitch by stitch, row by row — and the lace fabric gradually took on a new shape. I wanted to keep the lightness and beauty of the original design, but make the bag more practical for everyday use.',
-					pt: 'Ponto a ponto, carreira a carreira — e o tecido rendado foi ganhando pouco a pouco uma nova forma. Queria manter a leveza e a beleza do desenho original, mas tornar a bolsa mais prática para o dia a dia.',
-					ru: 'Петелька за петелькой, ряд за рядом — и кружевное полотно постепенно приобретало новую форму. Мне хотелось сохранить лёгкость и красоту первоначального рисунка, но сделать сумочку более удобной для повседневного использования.',
-					uk: 'Петелька за петелькою, ряд за рядом — і ажурне полотно поступово набувало нової форми. Мені хотілося зберегти легкість і красу первісного малюнка, але зробити сумочку зручнішою для повсякденного використання.'
+					en: 'Stitch by stitch, row by row - and the lace fabric gradually took on a new shape. I wanted to keep the lightness and beauty of the original design, but make the bag more practical for everyday use.',
+					pt: 'Ponto a ponto, carreira a carreira - e o tecido rendado foi ganhando pouco a pouco uma nova forma. Queria manter a leveza e a beleza do desenho original, mas tornar a bolsa mais prática para o dia a dia.',
+					ru: 'Петелька за петелькой, ряд за рядом - и кружевное полотно постепенно приобретало новую форму. Мне хотелось сохранить лёгкость и красоту первоначального рисунка, но сделать сумочку более удобной для повседневного использования.',
+					uk: 'Петелька за петелькою, ряд за рядом - і ажурне полотно поступово набувало нової форми. Мені хотілося зберегти легкість і красу первісного малюнка, але зробити сумочку зручнішою для повсякденного використання.'
 				}
 			},
 			{
@@ -1673,10 +1673,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'The solution turned out to be quite simple — felt! I made a light-coloured felt lining that gave the bag its shape and sturdiness.',
-					pt: 'A solução acabou por ser bastante simples — feltro! Fiz um forro de feltro claro que deu à bolsa a sua forma e firmeza.',
-					ru: 'Решение нашлось довольно простое — фетр! Я сделала светлую фетровую подкладку, которая придала сумочке форму и плотность.',
-					uk: 'Рішення знайшлося досить просте — фетр! Я зробила світлу фетрову підкладку, яка надала сумочці форми і щільності.'
+					en: 'The solution turned out to be quite simple - felt! I made a light-coloured felt lining that gave the bag its shape and sturdiness.',
+					pt: 'A solução acabou por ser bastante simples - feltro! Fiz um forro de feltro claro que deu à bolsa a sua forma e firmeza.',
+					ru: 'Решение нашлось довольно простое - фетр! Я сделала светлую фетровую подкладку, которая придала сумочке форму и плотность.',
+					uk: 'Рішення знайшлося досить просте - фетр! Я зробила світлу фетрову підкладку, яка надала сумочці форми і щільності.'
 				}
 			},
 			{
@@ -1760,10 +1760,10 @@ export const journalPosts = [
 			{
 				type: 'h2',
 				text: {
-					en: 'The finishing touches — tiny roses',
-					pt: 'Os últimos toques — pequenas rosas',
-					ru: 'Последние штрихи — маленькие розочки',
-					uk: 'Останні штрихи — маленькі трояндочки'
+					en: 'The finishing touches - tiny roses',
+					pt: 'Os últimos toques - pequenas rosas',
+					ru: 'Последние штрихи - маленькие розочки',
+					uk: 'Останні штрихи - маленькі трояндочки'
 				}
 			},
 			{
@@ -1811,10 +1811,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'And here I am, looking at the finished piece…',
-					pt: 'E aqui estou eu, a olhar para a peça terminada…',
-					ru: 'И вот я смотрю на готовую работу…',
-					uk: 'І от я дивлюся на готову роботу…'
+					en: 'And here I am, looking at the finished piece...',
+					pt: 'E aqui estou eu, a olhar para a peça terminada...',
+					ru: 'И вот я смотрю на готовую работу...',
+					uk: 'І от я дивлюся на готову роботу...'
 				}
 			},
 			{
@@ -1847,10 +1847,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: '**Bag size — 21 × 21 cm. Strap length — 72 cm (along the full length of the cord).**',
-					pt: '**Tamanho da bolsa — 21 × 21 cm. Comprimento da alça — 72 cm (ao longo de todo o cordão).**',
-					ru: '**Размеры сумочки — 21 × 21 см. Длина ручки — 72 см (по всей длине шнура).**',
-					uk: '**Розміри сумочки — 21 × 21 см. Довжина ручки — 72 см (по всій довжині шнура).**'
+					en: '**Bag size - 21 × 21 cm. Strap length - 72 cm (along the full length of the cord).**',
+					pt: '**Tamanho da bolsa - 21 × 21 cm. Comprimento da alça - 72 cm (ao longo de todo o cordão).**',
+					ru: '**Размеры сумочки - 21 × 21 см. Длина ручки - 72 см (по всей длине шнура).**',
+					uk: '**Розміри сумочки - 21 × 21 см. Довжина ручки - 72 см (по всій довжині шнура).**'
 				}
 			},
 			{
@@ -1877,8 +1877,8 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: "But for me, the most interesting part of this story isn't even the finished bag — it's how one small idea gradually turned into another.",
-					pt: 'Mas, para mim, a parte mais interessante desta história não é a bolsa terminada — é a forma como uma pequena ideia se foi transformando noutra, pouco a pouco.',
+					en: "But for me, the most interesting part of this story isn't even the finished bag - it's how one small idea gradually turned into another.",
+					pt: 'Mas, para mim, a parte mais interessante desta história não é a bolsa terminada - é a forma como uma pequena ideia se foi transformando noutra, pouco a pouco.',
 					ru: 'Но для меня самое интересное в этой истории даже не готовая сумочка, а то, как одна маленькая идея постепенно превращалась в другую.',
 					uk: 'Але для мене найцікавіше в цій історії навіть не готова сумочка, а те, як одна маленька ідея поступово перетворювалася на іншу.'
 				}
@@ -1888,8 +1888,8 @@ export const journalPosts = [
 				text: {
 					en: "Because handmade craft isn't just about following a pattern. It's also the chance to invent, to change things, to try, sometimes to unravel and start again. And to feel enormous joy when what you imagined finally comes together!",
 					pt: 'Porque o trabalho manual não é só saber seguir um padrão. É também a oportunidade de inventar, alterar, experimentar, por vezes desfazer e começar de novo. E sentir uma enorme satisfação quando o que imaginámos finalmente resulta!',
-					ru: 'Ведь рукоделие — это не только умение вязать по схеме. Это ещё и возможность придумывать, изменять, пробовать, иногда распускать и начинать заново. И получать огромное удовольствие, когда задуманное наконец получается!',
-					uk: "Адже рукоділля — це не тільки вміння в'язати за схемою. Це ще й можливість вигадувати, змінювати, пробувати, іноді розпускати і починати знову. І отримувати величезне задоволення, коли задумане нарешті вдається!"
+					ru: 'Ведь рукоделие - это не только умение вязать по схеме. Это ещё и возможность придумывать, изменять, пробовать, иногда распускать и начинать заново. И получать огромное удовольствие, когда задуманное наконец получается!',
+					uk: "Адже рукоділля - це не тільки вміння в'язати за схемою. Це ще й можливість вигадувати, змінювати, пробувати, іноді розпускати і починати знову. І отримувати величезне задоволення, коли задумане нарешті вдається!"
 				}
 			},
 			{
@@ -1931,7 +1931,7 @@ export const journalPosts = [
 			en: "Portuguese cotton: why it's the only yarn I knit with",
 			pt: 'Algodão português: porque é o único fio que uso',
 			ru: 'Португальский хлопок: почему я вяжу только им',
-			uk: 'Португальська бавовна: чому в’яжу тільки нею'
+			uk: "Португальська бавовна: чому в'яжу тільки нею"
 		},
 		excerpt: {
 			en: "The yarn that keeps a top's shape and doesn't fade in the sun.",
@@ -1949,7 +1949,7 @@ export const journalPosts = [
 			en: 'Gift ideas: five handmade picks',
 			pt: 'Ideias de prendas: cinco sugestões artesanais',
 			ru: 'Что подарить: пять идей ручной работы',
-			uk: 'Що подарувати: п’ять ідей ручної роботи'
+			uk: "Що подарувати: п'ять ідей ручної роботи"
 		},
 		excerpt: {
 			en: 'A quick cheat sheet for birthdays, weddings, and "just because".',
@@ -1964,16 +1964,16 @@ export const journalPosts = [
 					en: 'Five small and big gifts for someone you want to make happy.',
 					pt: 'Cinco prendas pequenas e grandes para quem se quer fazer feliz.',
 					ru: 'Пять маленьких и больших подарков для тех, кого хочется порадовать.',
-					uk: 'П’ять маленьких і великих подарунків для тих, кого хочеться порадувати.'
+					uk: "П'ять маленьких і великих подарунків для тих, кого хочеться порадувати."
 				}
 			},
 			{
 				type: 'p',
 				text: {
-					en: "Sometimes you want to give something special — not necessarily expensive or large. Just a beautiful thing, chosen with the person in mind. Handmade pieces have exactly that small charm: each one is a little different from the next, and carries the warmth of the maker's hands.",
-					pt: 'Às vezes apetece oferecer algo especial — não necessariamente caro ou grande. Só uma coisa bonita, escolhida a pensar na pessoa. As peças artesanais têm exactamente esse pequeno encanto: cada uma é um pouco diferente da outra, e guarda o calor das mãos de quem a fez.',
-					ru: 'Иногда хочется подарить что-нибудь особенное — не обязательно дорогое или большое. Просто красивую вещь, выбранную с вниманием к человеку. Изделия ручной работы как раз обладают этим маленьким очарованием: каждое немного отличается от другого и хранит тепло рук мастера.',
-					uk: 'Іноді хочеться подарувати щось особливе — не обов’язково дороге чи велике. Просто гарну річ, обрану з увагою до людини. Вироби ручної роботи якраз мають цю маленьку чарівність: кожен трохи відрізняється від іншого і зберігає тепло рук майстрині.'
+					en: "Sometimes you want to give something special - not necessarily expensive or large. Just a beautiful thing, chosen with the person in mind. Handmade pieces have exactly that small charm: each one is a little different from the next, and carries the warmth of the maker's hands.",
+					pt: 'Às vezes apetece oferecer algo especial - não necessariamente caro ou grande. Só uma coisa bonita, escolhida a pensar na pessoa. As peças artesanais têm exactamente esse pequeno encanto: cada uma é um pouco diferente da outra, e guarda o calor das mãos de quem a fez.',
+					ru: 'Иногда хочется подарить что-нибудь особенное - не обязательно дорогое или большое. Просто красивую вещь, выбранную с вниманием к человеку. Изделия ручной работы как раз обладают этим маленьким очарованием: каждое немного отличается от другого и хранит тепло рук мастера.',
+					uk: "Іноді хочеться подарувати щось особливе - не обов'язково дороге чи велике. Просто гарну річ, обрану з увагою до людини. Вироби ручної роботи якраз мають цю маленьку чарівність: кожен трохи відрізняється від іншого і зберігає тепло рук майстрині."
 				}
 			},
 			{
@@ -1988,19 +1988,19 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'A small, unusual and pretty little bag — a sweet gift for a girl or young woman. It can hold coins, a small piece of jewellery, or some other little treasure.',
-					pt: 'Uma bolsinha pequena, pouco comum e bonita — uma prenda querida para uma menina ou jovem. Pode guardar moedas, uma pequena joia, ou algum mimo que seja especial para a pessoa.',
-					ru: 'Маленькая, необычная и нарядная сумочка — милый подарок для девочки или молодой девушки. В неё можно положить монетки, небольшое украшение или какую-нибудь дорогую сердцу мелочь.',
-					uk: 'Маленька, незвичайна і святкова сумочка — милий подарунок для дівчинки чи молодої дівчини. У неї можна покласти монетки, невелику прикрасу або якусь дорогу серцю дрібничку.'
+					en: 'A small, unusual and pretty little bag - a sweet gift for a girl or young woman. It can hold coins, a small piece of jewellery, or some other little treasure.',
+					pt: 'Uma bolsinha pequena, pouco comum e bonita - uma prenda querida para uma menina ou jovem. Pode guardar moedas, uma pequena joia, ou algum mimo que seja especial para a pessoa.',
+					ru: 'Маленькая, необычная и нарядная сумочка - милый подарок для девочки или молодой девушки. В неё можно положить монетки, небольшое украшение или какую-нибудь дорогую сердцу мелочь.',
+					uk: 'Маленька, незвичайна і святкова сумочка - милий подарунок для дівчинки чи молодої дівчини. У неї можна покласти монетки, невелику прикрасу або якусь дорогу серцю дрібничку.'
 				}
 			},
 			{
 				type: 'p',
 				text: {
-					en: 'The purse itself can also become a small ornament — the beads catch the light beautifully, and its tiny size gives it a special charm.',
-					pt: 'A própria bolsa também pode tornar-se um pequeno adorno — as contas brilham lindamente à luz, e o tamanho miniatura dá-lhe um charme especial.',
-					ru: 'А ещё сама сумочка может стать маленьким украшением — бусины красиво переливаются на свету, а миниатюрный размер придаёт ей особое очарование.',
-					uk: 'А ще сама сумочка може стати маленькою прикрасою — намистини гарно переливаються на світлі, а мініатюрний розмір надає їй особливого шарму.'
+					en: 'The purse itself can also become a small ornament - the beads catch the light beautifully, and its tiny size gives it a special charm.',
+					pt: 'A própria bolsa também pode tornar-se um pequeno adorno - as contas brilham lindamente à luz, e o tamanho miniatura dá-lhe um charme especial.',
+					ru: 'А ещё сама сумочка может стать маленьким украшением - бусины красиво переливаются на свету, а миниатюрный размер придаёт ей особое очарование.',
+					uk: 'А ще сама сумочка може стати маленькою прикрасою - намистини гарно переливаються на світлі, а мініатюрний розмір надає їй особливого шарму.'
 				}
 			},
 			{
@@ -2019,10 +2019,10 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: 'But a little purse like this has another role too — as a decoration for a bigger bag. Just clip it onto the handle, and a familiar bag gets a whole new mood. A little beaded purse looks like a charm or an ornament, while staying a real, tiny bag in its own right.',
-					pt: 'Mas uma bolsinha assim também pode ter outro papel — como enfeite para uma bolsa maior. Basta prendê-la à asa, e uma bolsa habitual ganha um ar completamente diferente. Uma pequena bolsa de contas parece um pingente ou um adorno, mas continua a ser uma verdadeira mini-bolsa.',
-					ru: 'Но у такой малышки может быть и ещё одна роль — украшение для большой сумки. Достаточно прикрепить её к ручке, и привычная сумка получает совсем другое настроение. Маленькая сумочка из бусин выглядит как подвеска или украшение, но при этом остаётся настоящей миниатюрной сумочкой.',
-					uk: 'Але в такої малючки може бути і ще одна роль — прикраса для великої сумки. Достатньо причепити її до ручки, і звична сумка отримує зовсім інший настрій. Маленька сумочка з бісеру виглядає як підвіска чи прикраса, але при цьому залишається справжньою мініатюрною сумочкою.'
+					en: 'But a little purse like this has another role too - as a decoration for a bigger bag. Just clip it onto the handle, and a familiar bag gets a whole new mood. A little beaded purse looks like a charm or an ornament, while staying a real, tiny bag in its own right.',
+					pt: 'Mas uma bolsinha assim também pode ter outro papel - como enfeite para uma bolsa maior. Basta prendê-la à asa, e uma bolsa habitual ganha um ar completamente diferente. Uma pequena bolsa de contas parece um pingente ou um adorno, mas continua a ser uma verdadeira mini-bolsa.',
+					ru: 'Но у такой малышки может быть и ещё одна роль - украшение для большой сумки. Достаточно прикрепить её к ручке, и привычная сумка получает совсем другое настроение. Маленькая сумочка из бусин выглядит как подвеска или украшение, но при этом остаётся настоящей миниатюрной сумочкой.',
+					uk: 'Але в такої малючки може бути і ще одна роль - прикраса для великої сумки. Достатньо причепити її до ручки, і звична сумка отримує зовсім інший настрій. Маленька сумочка з бісеру виглядає як підвіска чи прикраса, але при цьому залишається справжньою мініатюрною сумочкою.'
 				}
 			},
 			{
@@ -2071,8 +2071,8 @@ export const journalPosts = [
 				text: {
 					en: "A bracelet is a small and very personal gift for a friend, sister or daughter. It's easy to match to a mood: delicate, romantic, bright, or simply understated.",
 					pt: 'Uma pulseira é uma prenda pequena e muito pessoal para uma amiga, irmã ou filha. É fácil de escolher conforme o estilo: delicada, romântica, vibrante ou bem simples.',
-					ru: 'Браслет — небольшой и очень личный подарок подруге, сестре или дочери. Его легко подобрать по настроению: нежный, романтичный, яркий или совсем лаконичный.',
-					uk: 'Браслет — невеликий і дуже особистий подарунок подрузі, сестрі чи доньці. Його легко підібрати за настроєм: ніжний, романтичний, яскравий або зовсім лаконічний.'
+					ru: 'Браслет - небольшой и очень личный подарок подруге, сестре или дочери. Его легко подобрать по настроению: нежный, романтичный, яркий или совсем лаконичный.',
+					uk: 'Браслет - невеликий і дуже особистий подарунок подрузі, сестрі чи доньці. Його легко підібрати за настроєм: ніжний, романтичний, яскравий або зовсім лаконічний.'
 				}
 			},
 			{
@@ -2137,8 +2137,8 @@ export const journalPosts = [
 				text: {
 					en: 'A bag is a more noticeable gift, but still a very personal one. It can become part of a favourite look and stay with its owner for more than one season.',
 					pt: 'Uma bolsa é já uma prenda mais visível, mas continua a ser muito pessoal. Pode tornar-se parte de um look preferido e acompanhar a sua dona por mais do que uma estação.',
-					ru: 'Сумочка — подарок уже более заметный, но при этом очень личный. Она может стать частью любимого образа и сопровождать свою хозяйку не один сезон.',
-					uk: 'Сумочка — подарунок уже помітніший, але водночас дуже особистий. Вона може стати частиною улюбленого образу і супроводжувати свою господиню не один сезон.'
+					ru: 'Сумочка - подарок уже более заметный, но при этом очень личный. Она может стать частью любимого образа и сопровождать свою хозяйку не один сезон.',
+					uk: 'Сумочка - подарунок уже помітніший, але водночас дуже особистий. Вона може стати частиною улюбленого образу і супроводжувати свою господиню не один сезон.'
 				}
 			},
 			{
@@ -2159,7 +2159,7 @@ export const journalPosts = [
 				alt: {
 					en: 'White crochet bag',
 					pt: 'Bolsa branca em croché',
-					uk: 'Біла в’язана сумочка гачком',
+					uk: "Біла в'язана сумочка гачком",
 					ru: 'Вязаная белая сумочка'
 				}
 			},
@@ -2200,17 +2200,17 @@ export const journalPosts = [
 				text: {
 					en: 'Sometimes the best gift is a very small one. A necklace, a keychain or a little beaded accessory can be given just because, with no special occasion needed.',
 					pt: 'Às vezes a melhor prenda é bem pequena. Um colar, um porta-chaves ou um pequeno acessório de contas pode ser oferecido só porque sim, sem motivo especial.',
-					ru: 'Иногда лучший подарок — совсем небольшой. Колье, брелок или маленький аксессуар из бисера можно подарить просто так, без особенного повода.',
-					uk: 'Іноді найкращий подарунок — зовсім невеликий. Намисто, брелок або маленький аксесуар з бісеру можна подарувати просто так, без особливого приводу.'
+					ru: 'Иногда лучший подарок - совсем небольшой. Колье, брелок или маленький аксессуар из бисера можно подарить просто так, без особенного повода.',
+					uk: 'Іноді найкращий подарунок - зовсім невеликий. Намисто, брелок або маленький аксесуар з бісеру можна подарувати просто так, без особливого приводу.'
 				}
 			},
 			{
 				type: 'p',
 				text: {
-					en: "These pieces draw you in with their details: the mix of beads, the shine, the colour, and the careful handwork. And that's exactly why a small gift can feel very personal — especially when it's chosen with the person's character and favourite colours in mind.",
-					pt: 'Estas peças conquistam pelos detalhes: a combinação das contas, o brilho, a cor e o trabalho manual cuidado. E é exactamente por isso que uma prenda pequena pode ser muito pessoal — sobretudo quando é escolhida a pensar no carácter e nas cores preferidas da pessoa.',
-					ru: 'Такие вещи привлекают деталями: сочетанием бусин, блеском, цветом и аккуратной ручной работой. И именно поэтому небольшой подарок может оказаться очень личным — особенно если выбрать его, думая о характере и любимых цветах человека.',
-					uk: 'Такі речі приваблюють деталями: поєднанням намистин, блиском, кольором і акуратною ручною роботою. І саме тому невеликий подарунок може виявитися дуже особистим — особливо якщо обрати його, думаючи про характер і улюблені кольори людини.'
+					en: "These pieces draw you in with their details: the mix of beads, the shine, the colour, and the careful handwork. And that's exactly why a small gift can feel very personal - especially when it's chosen with the person's character and favourite colours in mind.",
+					pt: 'Estas peças conquistam pelos detalhes: a combinação das contas, o brilho, a cor e o trabalho manual cuidado. E é exactamente por isso que uma prenda pequena pode ser muito pessoal - sobretudo quando é escolhida a pensar no carácter e nas cores preferidas da pessoa.',
+					ru: 'Такие вещи привлекают деталями: сочетанием бусин, блеском, цветом и аккуратной ручной работой. И именно поэтому небольшой подарок может оказаться очень личным - особенно если выбрать его, думая о характере и любимых цветах человека.',
+					uk: 'Такі речі приваблюють деталями: поєднанням намистин, блиском, кольором і акуратною ручною роботою. І саме тому невеликий подарунок може виявитися дуже особистим - особливо якщо обрати його, думаючи про характер і улюблені кольори людини.'
 				}
 			},
 			{
@@ -2245,7 +2245,7 @@ export const journalPosts = [
 					en: '5. A knitted piece',
 					pt: '5. Uma peça em croché',
 					ru: '5. Вязаная вещь',
-					uk: '5. В’язана річ'
+					uk: "5. В'язана річ"
 				}
 			},
 			{
@@ -2253,17 +2253,17 @@ export const journalPosts = [
 				text: {
 					en: "Knitted things are associated with warmth and care. A crochet hat can become a light, unusual addition to a summer look, while a soft white top is a cosy piece you'll enjoy wearing again and again.",
 					pt: 'As peças em croché associam-se a carinho e conforto. Um chapéu pode tornar-se um complemento leve e pouco comum para um look de verão, e uma blusa branca e macia é uma peça aconchegante que se gosta de usar vezes sem conta.',
-					ru: 'Вязаные вещи ассоциируются с теплом и заботой. Панамка может стать лёгким и необычным дополнением летнего образа, а мягкая белая кофта — уютной вещью, которую приятно носить снова и снова.',
-					uk: 'В’язані речі асоціюються з теплом і турботою. Панамка може стати легким і незвичним доповненням літнього образу, а м’яка біла кофточка — затишною річчю, яку приємно носити знову і знову.'
+					ru: 'Вязаные вещи ассоциируются с теплом и заботой. Панамка может стать лёгким и необычным дополнением летнего образа, а мягкая белая кофта - уютной вещью, которую приятно носить снова и снова.',
+					uk: "В'язані речі асоціюються з теплом і турботою. Панамка може стати легким і незвичним доповненням літнього образу, а м'яка біла кофточка - затишною річчю, яку приємно носити знову і знову."
 				}
 			},
 			{
 				type: 'p',
 				text: {
-					en: 'It\'s especially lovely when a piece is made for one specific person — with the right size, colour, and small details that make it truly "theirs".',
-					pt: 'É especialmente bonito quando uma peça é feita para uma pessoa em concreto — com o tamanho certo, a cor certa e pequenos detalhes que a tornam verdadeiramente "sua".',
-					ru: 'Особенно приятно, когда такая вещь создаётся для конкретного человека — с подходящим размером, цветом и небольшими деталями, которые делают её именно «своей».',
-					uk: 'Особливо приємно, коли така річ створюється для конкретної людини — з відповідним розміром, кольором і невеликими деталями, які роблять її саме «своєю».'
+					en: 'It\'s especially lovely when a piece is made for one specific person - with the right size, colour, and small details that make it truly "theirs".',
+					pt: 'É especialmente bonito quando uma peça é feita para uma pessoa em concreto - com o tamanho certo, a cor certa e pequenos detalhes que a tornam verdadeiramente "sua".',
+					ru: 'Особенно приятно, когда такая вещь создаётся для конкретного человека - с подходящим размером, цветом и небольшими деталями, которые делают её именно «своей».',
+					uk: 'Особливо приємно, коли така річ створюється для конкретної людини - з відповідним розміром, кольором і невеликими деталями, які роблять її саме «своєю».'
 				}
 			},
 			{
@@ -2275,7 +2275,7 @@ export const journalPosts = [
 				alt: {
 					en: 'Crochet panama hat',
 					pt: 'Chapéu panamá em croché',
-					uk: 'В’язана панама гачком',
+					uk: "В'язана панама гачком",
 					ru: 'Панама'
 				}
 			},
@@ -2288,7 +2288,7 @@ export const journalPosts = [
 				alt: {
 					en: 'White cotton crochet top made from joined motifs',
 					pt: 'Blusa branca em croché de algodão, feita de motivos unidos',
-					uk: 'Біла кофточка, пов’язана з окремих мотивів',
+					uk: "Біла кофточка, пов'язана з окремих мотивів",
 					ru: 'Белая кофточка, связанная из отдельных мотивов'
 				}
 			},
@@ -2321,13 +2321,13 @@ export const journalPosts = [
 			en: 'How to take measurements for a knitted top',
 			pt: 'Como tirar medidas para um top de tricô',
 			ru: 'Как снять мерки для вязаного топа',
-			uk: 'Як зняти мірки для в’язаного топа'
+			uk: "Як зняти мірки для в'язаного топа"
 		},
 		excerpt: {
-			en: 'Three measurements, a tape measure, and ten minutes — for a perfect fit.',
-			pt: 'Três medidas, uma fita métrica e dez minutos — para um caimento perfeito.',
-			ru: 'Три замера, сантиметровая лента и десять минут — и вещь сядет идеально.',
-			uk: 'Три заміри, сантиметрова стрічка і десять хвилин — і річ сяде ідеально.'
+			en: 'Three measurements, a tape measure, and ten minutes - for a perfect fit.',
+			pt: 'Três medidas, uma fita métrica e dez minutos - para um caimento perfeito.',
+			ru: 'Три замера, сантиметровая лента и десять минут - и вещь сядет идеально.',
+			uk: 'Три заміри, сантиметрова стрічка і десять хвилин - і річ сяде ідеально.'
 		}
 	}
 ];

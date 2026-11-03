@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Builds the site exactly as it will be deployed, then serves it locally
 # (and on your home network) so you can browse it the way a real visitor
-# would — not the dev server with its editor overlays, the actual static
+# would - not the dev server with its editor overlays, the actual static
 # production build.
 set -euo pipefail
 cd "$(dirname "$0")/.."

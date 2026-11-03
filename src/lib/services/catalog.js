@@ -5,7 +5,7 @@ import { normalizeSku } from '../utils/sku.js';
 
 /**
  * Validates and parses raw product content. Throws on any schema violation,
- * which is what we want at build/test time — invalid content must fail loudly.
+ * which is what we want at build/test time - invalid content must fail loudly.
  */
 function buildValidatedProducts() {
 	const parsed = rawProducts.map((p) => productSchema.parse(p));

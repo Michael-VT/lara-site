@@ -12,10 +12,10 @@ export const product = {
 		ru: 'Браслет «Квадратики» из белого и золотистого бисера-рис'
 	},
 	description: {
-		en: 'A bracelet of square sections woven from white and gold rice beads — geometric and festive.',
-		pt: 'Pulseira de secções quadradas tecidas com contas arroz brancas e douradas — geométrica e festiva.',
-		uk: 'Браслет із квадратних секцій, сплетених із білого та золотистого бісеру «рис», — геометричний та урочистий.',
-		ru: 'Браслет из квадратных секций, сплетённых из белого и золотистого бисера-«риса», — геометричный и нарядный.'
+		en: 'A bracelet of square sections woven from white and gold rice beads - geometric and festive.',
+		pt: 'Pulseira de secções quadradas tecidas com contas arroz brancas e douradas - geométrica e festiva.',
+		uk: 'Браслет із квадратних секцій, сплетених із білого та золотистого бісеру «рис», - геометричний та урочистий.',
+		ru: 'Браслет из квадратных секций, сплетённых из белого и золотистого бисера-«риса», - геометричный и нарядный.'
 	},
 
 	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },

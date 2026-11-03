@@ -8,6 +8,8 @@
 	import { siteName, siteUrl } from '$lib/config/site.js';
 	import SeoHead from '$lib/components/layout/SeoHead.svelte';
 	import JsonLd from '$lib/components/layout/JsonLd.svelte';
+	import Breadcrumbs from '$lib/components/navigation/Breadcrumbs.svelte';
+	import { buildBreadcrumbLd } from '$lib/utils/seo.js';
 
 	let { data } = $props();
 	let locale = $derived(page.data.locale);
@@ -34,61 +36,40 @@
 		datePublished: post.date,
 		image: firstImage ? `${siteUrl}${firstImage.src}` : undefined,
 		author: { '@type': 'Person', name: siteName },
+		publisher: { '@id': `${siteUrl}/#organization` },
 		mainEntityOfPage: `${siteUrl}/${locale}/journal/${post.slug}/`
 	});
 
-	let breadcrumbLd = $derived({
-		'@context': 'https://schema.org',
-		'@type': 'BreadcrumbList',
-		itemListElement: [
-			{
-				'@type': 'ListItem',
-				position: 1,
-				name: m.product_breadcrumbHome({}, { locale }),
-				item: `${siteUrl}/${locale}/`
-			},
-			{
-				'@type': 'ListItem',
-				position: 2,
-				name: m.journal_breadcrumbJournal({}, { locale }),
-				item: `${siteUrl}/${locale}/journal/`
-			},
-			{
-				'@type': 'ListItem',
-				position: 3,
-				name: title,
-				item: `${siteUrl}/${locale}/journal/${post.slug}/`
-			}
-		]
-	});
+	let breadcrumbLd = $derived(
+		buildBreadcrumbLd([
+			{ name: m.product_breadcrumbHome({}, { locale }), path: `/${locale}/` },
+			{ name: m.journal_breadcrumbJournal({}, { locale }), path: `/${locale}/journal/` },
+			{ name: title, path: `/${locale}/journal/${post.slug}/` }
+		])
+	);
 </script>
 
-<SeoHead {title} description={excerpt} image={firstImage?.src} />
+<SeoHead
+	{title}
+	description={excerpt}
+	image={firstImage?.src}
+	imageAlt={firstImage ? localizeText(firstImage.alt, locale) : undefined}
+	imageWidth={firstImage?.width}
+	imageHeight={firstImage?.height}
+	type="article"
+	publishedTime={post.date}
+/>
 <JsonLd data={jsonLd} />
 <JsonLd data={breadcrumbLd} />
 
 <article class="mx-auto max-w-prose px-4 py-10 sm:px-6 sm:py-14">
-	<nav aria-label={m.common_breadcrumb({}, { locale })} class="text-sm text-muted-foreground">
-		<ol class="flex flex-wrap items-center">
-			<li>
-				<a
-					href={toHref(`/${locale}/`)}
-					class="inline-flex min-h-11 items-center transition-colors duration-200 hover:text-foreground"
-					>{m.product_breadcrumbHome({}, { locale })}</a
-				>
-			</li>
-			<li aria-hidden="true" class="mx-2 h-1 w-1 rounded-full bg-accent"></li>
-			<li>
-				<a
-					href={toHref(`/${locale}/journal/`)}
-					class="inline-flex min-h-11 items-center transition-colors duration-200 hover:text-foreground"
-					>{m.journal_breadcrumbJournal({}, { locale })}</a
-				>
-			</li>
-			<li aria-hidden="true" class="mx-2 h-1 w-1 rounded-full bg-accent"></li>
-			<li aria-current="page" class="flex min-h-11 items-center text-foreground">{title}</li>
-		</ol>
-	</nav>
+	<Breadcrumbs
+		current={title}
+		section={{
+			label: m.journal_breadcrumbJournal({}, { locale }),
+			href: toHref(`/${locale}/journal/`)
+		}}
+	/>
 
 	<header class="rise-in mt-6">
 		<span class="eyebrow text-accent">

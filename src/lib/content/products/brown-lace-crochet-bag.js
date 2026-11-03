@@ -14,7 +14,7 @@ export const product = {
 	description: {
 		en: 'A light, small bag crocheted from 100% mercerised cotton, finished with a faux-pearl clasp. Just the right size for a phone, bank cards, cash and a few small personal items. The price is for the bag itself, without the removable chain strap with carabiners.',
 		pt: 'Uma bolsa leve e pequena, feita em croché com 100% algodão mercerizado, com um fecho de pérola artificial. O tamanho certo para um telemóvel, cartões, dinheiro e alguns pequenos objetos pessoais. O preço é referente à bolsa, sem a corrente amovível com mosquetões.',
-		uk: 'Легка невелика сумочка, зв’язана гачком зі 100% мерсеризованої бавовни, з застібкою зі штучною перлиною. Якраз підійде для телефону, банківських карток, купюр і кількох дрібних особистих речей. Ціна вказана за саму сумочку, без знімного ремінця-ланцюжка з карабінами.',
+		uk: "Легка невелика сумочка, зв'язана гачком зі 100% мерсеризованої бавовни, з застібкою зі штучною перлиною. Якраз підійде для телефону, банківських карток, купюр і кількох дрібних особистих речей. Ціна вказана за саму сумочку, без знімного ремінця-ланцюжка з карабінами.",
 		ru: 'Лёгкая небольшая сумочка, связанная крючком из 100% мерсеризованного хлопка. Сумочка дополнена жемчужной застёжкой. Подойдёт для телефона, банковских карт, купюр и небольших личных вещей. Цена указана без учёта съёмного ремешка-цепочки с карабинами.'
 	},
 

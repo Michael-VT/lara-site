@@ -6,13 +6,24 @@
 	import { toHref } from '$lib/utils/href.js';
 	import { getPublicProducts } from '$lib/services/catalog.js';
 	import { t, pluralCountKey } from '$lib/utils/messages.js';
+	import { siteUrl } from '$lib/config/site.js';
 	import SeoHead from '$lib/components/layout/SeoHead.svelte';
+	import JsonLd from '$lib/components/layout/JsonLd.svelte';
 	import ContactCard from '$lib/components/contacts/ContactCard.svelte';
 
 	let locale = $derived(page.data.locale);
 	let productCount = $derived(getPublicProducts().length);
+
+	let jsonLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'ContactPage',
+		name: m.contacts_heading({}, { locale }),
+		description: m.contacts_intro({}, { locale }),
+		url: `${siteUrl}/${locale}/contacts/`,
+		about: { '@id': `${siteUrl}/#organization` }
+	});
 	// Composed from the existing catalog_count* plurals ("44 товара") plus a
-	// static tail, rather than a bespoke string — sidesteps re-implementing
+	// static tail, rather than a bespoke string - sidesteps re-implementing
 	// ru/uk plural rules for a single sentence.
 	let productCountPhrase = $derived(
 		t(pluralCountKey(locale, productCount), { count: productCount }, { locale })
@@ -30,6 +41,7 @@
 	title={m.contacts_heading({}, { locale })}
 	description={m.contacts_intro({}, { locale })}
 />
+<JsonLd data={jsonLd} />
 
 <div class="mx-auto max-w-content px-4 py-12 sm:px-6 sm:py-16">
 	<header class="rise-in max-w-2xl">

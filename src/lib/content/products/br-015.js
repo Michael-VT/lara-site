@@ -12,10 +12,10 @@ export const product = {
 		ru: 'Браслет с белыми ромбиками'
 	},
 	description: {
-		en: 'A bracelet patterned with little white rhombuses — a clean, graphic ornament.',
-		pt: 'Pulseira com padrão de losanginhos brancos — um ornamento gráfico e limpo.',
-		uk: 'Браслет із візерунком із білих ромбиків — чистий графічний орнамент.',
-		ru: 'Браслет с узором из белых ромбиков — чистый графичный орнамент.'
+		en: 'A bracelet patterned with little white rhombuses - a clean, graphic ornament.',
+		pt: 'Pulseira com padrão de losanginhos brancos - um ornamento gráfico e limpo.',
+		uk: 'Браслет із візерунком із білих ромбиків - чистий графічний орнамент.',
+		ru: 'Браслет с узором из белых ромбиков - чистый графичный орнамент.'
 	},
 
 	price: { mode: 'from', amount: 8, typicalMax: 15, currency: 'EUR' },

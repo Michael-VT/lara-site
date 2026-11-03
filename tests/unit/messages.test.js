@@ -20,7 +20,7 @@ describe('message locale plumbing', () => {
 	});
 
 	it('a message called with locale only in the first argument stays on the base locale (documents the pitfall)', () => {
-		// Intentionally calling with the wrong argument shape — locale merged into
+		// Intentionally calling with the wrong argument shape - locale merged into
 		// the "inputs" object instead of passed as a separate options argument.
 		const results = locales.map((locale) => m.nav_home(/** @type {any} */ ({ locale })));
 		expect(new Set(results).size).toBe(1);

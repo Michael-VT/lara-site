@@ -59,7 +59,7 @@ test.describe('how-to-order', () => {
 	test('WhatsApp and Telegram links use the exact configured URLs', async ({ page }) => {
 		await page.goto('/en/how-to-order/');
 		const main = page.getByRole('main');
-		// sr-only " — opens in new tab" suffix is part of the accessible name.
+		// sr-only " - opens in new tab" suffix is part of the accessible name.
 		await expect(main.getByRole('link', { name: /^WhatsApp/ })).toHaveAttribute(
 			'href',
 			'https://wa.me/qr/SCHEPP5QIVBQL1'

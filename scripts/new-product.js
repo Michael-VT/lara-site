@@ -4,7 +4,7 @@
 //   bun scripts/new-product.js bags "red-beaded-evening-bag" --title "Red beaded evening bag"
 //
 // Creates src/lib/content/products/{slug}.js with a four-locale skeleton
-// (status: 'hidden' — the product stays invisible until you finish it and flip
+// (status: 'hidden' - the product stays invisible until you finish it and flip
 // the status), assigns the next universal SKU (AAA + 6 digits) and registers
 // the file in products/index.js.
 
@@ -52,7 +52,7 @@ const sku = `AAA${String(next).padStart(6, '0')}`;
 const fileName = `${slug}.js`;
 const filePath = join(root, 'src', 'lib', 'content', 'products', fileName);
 if (existsSync(filePath)) {
-	console.error(`${filePath} already exists — refusing to overwrite.`);
+	console.error(`${filePath} already exists - refusing to overwrite.`);
 	process.exit(1);
 }
 
@@ -71,7 +71,7 @@ export const product = {
 		ru: 'TODO ru title'
 	},
 	description: {
-		en: 'TODO: 1–2 warm sentences, first person of the maker',
+		en: 'TODO: 1-2 warm sentences, first person of the maker',
 		pt: 'TODO pt',
 		uk: 'TODO uk',
 		ru: 'TODO ru'
@@ -86,7 +86,7 @@ export const product = {
 			width: 1600, // TODO: set the real intrinsic size of 1.webp (optimizer report prints it)
 			height: 1600,
 			alt: {
-				en: 'TODO: describe THIS photo (angle/detail) — varies per image',
+				en: 'TODO: describe THIS photo (angle/detail) - varies per image',
 				pt: 'TODO pt',
 				uk: 'TODO uk',
 				ru: 'TODO ru'
@@ -94,7 +94,7 @@ export const product = {
 		}
 	],
 
-	materials: { en: 'TODO', pt: 'TODO', uk: 'TODO', ru: 'TODO' }, // e.g. en 'Seed beads' — see glossary
+	materials: { en: 'TODO', pt: 'TODO', uk: 'TODO', ru: 'TODO' }, // e.g. en 'Seed beads' - see glossary
 
 	featured: false,
 	relatedSkus: [] // optional: SKUs of similar pieces, e.g. ['${sku}']

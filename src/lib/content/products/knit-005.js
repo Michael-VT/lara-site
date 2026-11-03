@@ -48,10 +48,10 @@ export const product = {
 	],
 
 	productionTime: {
-		en: 'Usually 20–25 days',
-		pt: 'Normalmente 20–25 dias',
-		uk: 'Зазвичай 20–25 днів',
-		ru: 'Обычно 20–25 дней'
+		en: 'Usually 20-25 days',
+		pt: 'Normalmente 20-25 dias',
+		uk: 'Зазвичай 20-25 днів',
+		ru: 'Обычно 20-25 дней'
 	},
 
 	materials: {
@@ -69,8 +69,8 @@ export const product = {
 	customisation: {
 		en: 'Can be made to order in a different colour, knitted to your measurements; the listed price covers the work, yarn is paid separately at receipt cost',
 		pt: 'Pode ser encomendado noutra cor, às suas medidas; o preço é pelo trabalho, o fio é pago à parte pelo recibo',
-		uk: 'Можна замовити в іншому кольорі, за вашими мірками; вказана ціна — за роботу, пряжа оплачується окремо за чеком',
-		ru: 'Можно заказать в другом цвете, по вашим меркам; цена — за работу, пряжа оплачивается отдельно по чеку'
+		uk: 'Можна замовити в іншому кольорі, за вашими мірками; вказана ціна - за роботу, пряжа оплачується окремо за чеком',
+		ru: 'Можно заказать в другом цвете, по вашим меркам; цена - за работу, пряжа оплачивается отдельно по чеку'
 	},
 
 	relatedSkus: ['AAA000030']

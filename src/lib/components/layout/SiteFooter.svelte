@@ -6,6 +6,17 @@
 	import { buildNavHref } from '$lib/utils/href.js';
 	import { m } from '$lib/paraglide/messages.js';
 	import { t } from '$lib/utils/messages.js';
+	import { contactIconPaths } from '$lib/config/contact-icons.js';
+
+	/** Small 16x16 line-icon paths for the technical/resource links row. */
+	const resourceIconPaths = {
+		sitemap:
+			'M4 4h6v6H4V4Zm10 0h6v6h-6V4ZM4 14h6v6H4v-6Zm10 0h6v6h-6v-6ZM10 7h4M7 10v4M17 10v4M10 17h4',
+		feed: 'M4 4a16 16 0 0 1 16 16M4 11a9 9 0 0 1 9 9M4 17.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z',
+		robots:
+			'M12 3v3M7 10h10a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2Zm1.5 4.5v1m6-1v1M9 17.5h6',
+		doc: 'M6 3.5h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-16a1 1 0 0 1 1-1Zm8 0v4h4M8.5 13h7M8.5 16.5h7'
+	};
 </script>
 
 <footer class="bg-accent-wash">
@@ -48,25 +59,96 @@
 			<ul class="mt-4 flex flex-col text-sm text-muted-foreground">
 				<li>
 					<a
-						class="footer-link hover:text-foreground"
+						class="footer-link gap-2 hover:text-foreground"
 						href={siteContacts.whatsapp.url}
-						rel="noopener noreferrer">WhatsApp</a
+						target="_blank"
+						rel="nofollow noopener noreferrer"
 					>
+						<svg
+							viewBox="0 0 24 24"
+							width="16"
+							height="16"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.8"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+							class="shrink-0"><path d={contactIconPaths.whatsapp} /></svg
+						>
+						WhatsApp
+					</a>
 				</li>
 				<li>
 					<a
-						class="footer-link hover:text-foreground"
+						class="footer-link gap-2 hover:text-foreground"
 						href={siteContacts.telegram.url}
-						rel="noopener noreferrer">{siteContacts.telegram.username}</a
+						target="_blank"
+						rel="nofollow noopener noreferrer"
 					>
+						<svg
+							viewBox="0 0 24 24"
+							width="16"
+							height="16"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.8"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+							class="shrink-0"><path d={contactIconPaths.telegram} /></svg
+						>
+						{siteContacts.telegram.username}
+					</a>
 				</li>
 				<li>
-					<a class="footer-link hover:text-foreground" href={`mailto:${siteContacts.email}`}
-						>{siteContacts.email}</a
-					>
+					<a class="footer-link gap-2 hover:text-foreground" href={`mailto:${siteContacts.email}`}>
+						<svg
+							viewBox="0 0 24 24"
+							width="16"
+							height="16"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.8"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+							class="shrink-0"><path d={contactIconPaths.email} /></svg
+						>
+						{siteContacts.email}
+					</a>
 				</li>
 			</ul>
 		</div>
+	</div>
+
+	<div class="border-t border-border px-4 py-5 sm:px-6">
+		<nav
+			aria-label={m.footer_resourcesHeading({}, { locale: page.data.locale })}
+			class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2"
+		>
+			{#each [{ href: '/sitemap.xml', icon: resourceIconPaths.sitemap, label: m.footer_sitemap({}, { locale: page.data.locale }) }, { href: '/rss.xml', icon: resourceIconPaths.feed, label: m.footer_rssFeed({}, { locale: page.data.locale }) }, { href: '/robots.txt', icon: resourceIconPaths.robots, label: m.footer_robotsTxt({}, { locale: page.data.locale }) }, { href: '/llms.txt', icon: resourceIconPaths.doc, label: m.footer_llmsTxt({}, { locale: page.data.locale }) }] as resource (resource.href)}
+				<a
+					href={resource.href}
+					rel="external"
+					class="footer-link gap-1.5 text-xs text-muted-foreground hover:text-foreground"
+				>
+					<svg
+						viewBox="0 0 24 24"
+						width="14"
+						height="14"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1.8"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+						class="shrink-0"><path d={resource.icon} /></svg
+					>
+					{resource.label}
+				</a>
+			{/each}
+		</nav>
 	</div>
 
 	<div class="border-t border-border px-4 py-5 text-center text-xs text-muted-foreground sm:px-6">
@@ -111,7 +193,7 @@
 		transform: translateX(0);
 	}
 
-	/* Guard the hover bead the way Tailwind guards hover: utilities —
+	/* Guard the hover bead the way Tailwind guards hover: utilities -
 	   no sticky dots after tap on touch devices. Focus still shows it. */
 	@media (hover: none) {
 		.footer-link::before {

@@ -26,7 +26,7 @@ export default defineConfig({
 				fallback: '404.html'
 			}),
 			prerender: {
-				entries: ['*', '/en/404', '/pt/404', '/uk/404', '/ru/404']
+				entries: ['*', '/en/404', '/pt/404', '/uk/404', '/ru/404', '/rss.xml']
 			}
 		})
 	],

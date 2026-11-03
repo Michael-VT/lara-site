@@ -10,7 +10,7 @@ bun scripts/new-product.js bags "red-beaded-evening-bag" --title "Red beaded eve
 ```
 
 - Creates `src/lib/content/products/<slug>.js` with the next free universal
-  SKU (`AAA` + 6 digits, continuous across the whole catalog — e.g. the 44
+  SKU (`AAA` + 6 digits, continuous across the whole catalog - e.g. the 44
   products migrated on 2026-09 end at `AAA000044`, so the next scaffold gets
   `AAA000045`), pre-wired with four-locale skeletons and `status: 'hidden'`
   (invisible until you finish).
@@ -38,19 +38,19 @@ or more** in `categories: []`, first entry = primary):
 3. Run `bun run optimize:images`. It writes to `static/images/products/<slug>/`:
    `N.webp` (full, width 1600, q82) and `N-thumb.webp` (480, q78), and prints
    a JSON report with the **real pixel dimensions** of every output file.
-4. Use those numbers for `width`/`height` of each image entry — they must match
+4. Use those numbers for `width`/`height` of each image entry - they must match
    the intrinsic file size exactly (the build and a11y audits check this).
 
-Photos of a single piece differ per shot (close-up, side, in hand) — write each
+Photos of a single piece differ per shot (close-up, side, in hand) - write each
 `alt` for its specific photo, all four locales.
 
 ## 3. Fill the data file
 
-Every localized field — `title`, `description`, each `images[].alt`,
+Every localized field - `title`, `description`, each `images[].alt`,
 `materials`/`colours`/`customisation` (and `dimensions`/`care`/`productionTime`
-if you use them) — carries **all four locales** in key order `en → pt → uk → ru`.
+if you use them) - carries **all four locales** in key order `en → pt → uk → ru`.
 Missing locales previously fell back to English; that fallback is now treated
-as a content bug. Do not invent new i18n message keys — product text lives in
+as a content bug. Do not invent new i18n message keys - product text lives in
 the data file, not in `messages/*.json`.
 
 Craft glossary (keep translations consistent with it and with each product's
@@ -71,21 +71,21 @@ canonical title):
 | clasp             | fecho                      | замочок                   | замочек                    |
 | faux pearls       | pérolas artificiais        | штучні перлини            | искусственный жемчуг       |
 | gold-plated       | banhado a ouro             | позолочений               | позолоченный               |
-| shown in … colour | Mostrado/Mostrada em …     | Показано … колір          | Показан/Показана … цвет    |
+| shown in ... colour | Mostrado/Mostrada em ...     | Показано ... колір          | Показан/Показана ... цвет    |
 
 Rules of thumb:
 
 - SKU and slug are **permanent** after publishing (QR codes, sitemap, external
-  links) — never change them. SKUs are `AAA` + 6 digits
+  links) - never change them. SKUs are `AAA` + 6 digits
   (`^[A-Z]{3}[0-9]{6}$`); the pre-2026-09 `ABC-123` SKUs live on only as
   aliases in `src/lib/content/sku-aliases.js` (old links still resolve).
 - `price`: omit, or `{ mode: 'fixed' | 'from' | 'on_request', amount?, typicalMax?, currency: 'EUR' }`.
-  `from` + `typicalMax` renders "from €X" on cards plus a "typically €X–€Y"
-  note on the product page. `on_request` is the exception, not the default —
+  `from` + `typicalMax` renders "from €X" on cards plus a "typically €X-€Y"
+  note on the product page. `on_request` is the exception, not the default -
   see `PRICELIST.md` for category starting prices.
 - `status`: `available` | `made_to_order` | `sold` | `hidden`.
 - `featured: true` + `featuredOrder` → homepage "Featured pieces" strip.
-- `relatedSkus: ['AAA000032', …]` → "You may also like" on the product page.
+- `relatedSkus: ['AAA000032', ...]` → "You may also like" on the product page.
 - Ukrainian apostrophes: ASCII `'` inside **double-quoted** JS strings
   (`"Об'ємний"`), matching the rest of the corpus.
 

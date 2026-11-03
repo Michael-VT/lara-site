@@ -27,7 +27,17 @@
 		'@context': 'https://schema.org',
 		'@type': 'WebSite',
 		name: siteName,
-		url: `${siteUrl}/${locale}/`
+		url: `${siteUrl}/${locale}/`,
+		publisher: { '@id': `${siteUrl}/#organization` }
+	});
+
+	let organizationLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'Organization',
+		'@id': `${siteUrl}/#organization`,
+		name: siteName,
+		url: `${siteUrl}/${locale}/`,
+		logo: `${siteUrl}/icons/icon-512.png`
 	});
 </script>
 
@@ -36,8 +46,9 @@
 	description={m.home_seoDescription({}, { locale })}
 />
 <JsonLd data={jsonLd} />
+<JsonLd data={organizationLd} />
 
-<!-- Hero — light, photographic backdrop -->
+<!-- Hero - light, photographic backdrop -->
 <section class="relative overflow-hidden">
 	<picture class="absolute inset-0 block h-full w-full">
 		<source
@@ -151,7 +162,7 @@
 				</div>
 				<a
 					href={toHref(`/${locale}/products/`)}
-					aria-label={`${m.home_viewAll({}, { locale })} — ${m.home_featuredHeading({}, { locale })}`}
+					aria-label={`${m.home_viewAll({}, { locale })} - ${m.home_featuredHeading({}, { locale })}`}
 					class="inline-flex min-h-11 items-center text-sm font-medium text-accent underline-offset-4 hover:underline"
 				>
 					{m.home_viewAll({}, { locale })}
@@ -175,7 +186,7 @@
 				<a
 					href={toHref(`/${locale}/products/?status=available`)}
 					rel="nofollow"
-					aria-label={`${m.home_viewAll({}, { locale })} — ${m.home_availableHeading({}, { locale })}`}
+					aria-label={`${m.home_viewAll({}, { locale })} - ${m.home_availableHeading({}, { locale })}`}
 					class="inline-flex min-h-11 items-center text-sm font-medium text-accent underline-offset-4 hover:underline"
 				>
 					{m.home_viewAll({}, { locale })}
@@ -231,7 +242,7 @@
 	{/if}
 </div>
 
-<!-- How ordering works — light, full-bleed band -->
+<!-- How ordering works - light, full-bleed band -->
 <section aria-labelledby="how-it-works-heading" class="bead-field bg-accent-wash">
 	<div class="mx-auto w-full max-w-content px-4 py-20 sm:px-6 sm:py-24">
 		<span class="bead-rule w-10 text-accent" aria-hidden="true"></span>

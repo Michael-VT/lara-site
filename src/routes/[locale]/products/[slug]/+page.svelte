@@ -9,6 +9,7 @@
 	import SeoHead from '$lib/components/layout/SeoHead.svelte';
 	import JsonLd from '$lib/components/layout/JsonLd.svelte';
 	import Breadcrumbs from '$lib/components/navigation/Breadcrumbs.svelte';
+	import { buildBreadcrumbLd } from '$lib/utils/seo.js';
 	import ProductGallery from '$lib/components/gallery/ProductGallery.svelte';
 	import ProductStatusBadge from '$lib/components/products/ProductStatusBadge.svelte';
 	import PriceDisplay from '$lib/components/products/PriceDisplay.svelte';
@@ -64,6 +65,7 @@
 		// Google requires absolute URLs for JSON-LD image arrays.
 		image: product.images.map((img) => `${siteUrl}${img.src}`),
 		brand: { '@type': 'Brand', name: siteName },
+		manufacturer: { '@id': `${siteUrl}/#organization` },
 		offers:
 			product.price && product.price.mode !== 'on_request'
 				? {
@@ -80,30 +82,13 @@
 				: undefined
 	});
 
-	let breadcrumbLd = $derived({
-		'@context': 'https://schema.org',
-		'@type': 'BreadcrumbList',
-		itemListElement: [
-			{
-				'@type': 'ListItem',
-				position: 1,
-				name: m.product_breadcrumbHome({}, { locale }),
-				item: `${siteUrl}/${locale}/`
-			},
-			{
-				'@type': 'ListItem',
-				position: 2,
-				name: m.product_breadcrumbProducts({}, { locale }),
-				item: `${siteUrl}/${locale}/products/`
-			},
-			{
-				'@type': 'ListItem',
-				position: 3,
-				name: title,
-				item: `${siteUrl}/${locale}/products/${product.slug}/`
-			}
-		]
-	});
+	let breadcrumbLd = $derived(
+		buildBreadcrumbLd([
+			{ name: m.product_breadcrumbHome({}, { locale }), path: `/${locale}/` },
+			{ name: m.product_breadcrumbProducts({}, { locale }), path: `/${locale}/products/` },
+			{ name: title, path: `/${locale}/products/${product.slug}/` }
+		])
+	);
 
 	let metaDescription = $derived(
 		`${localizeText(product.shortDescription ?? product.description, locale)} ${m.product_metaDescriptionSuffix({}, { locale })}`
@@ -116,7 +101,15 @@
 	);
 </script>
 
-<SeoHead {title} description={metaDescription} image={product.images[0].src} />
+<SeoHead
+	{title}
+	description={metaDescription}
+	image={product.images[0].src}
+	imageAlt={localizeText(product.images[0].alt, locale)}
+	imageWidth={product.images[0].width}
+	imageHeight={product.images[0].height}
+	type="product"
+/>
 <JsonLd data={jsonLd} />
 <JsonLd data={breadcrumbLd} />
 

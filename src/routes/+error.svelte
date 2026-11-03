@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-	<title>{m.notFound_heading({}, { locale })} — {siteName}</title>
+	<title>{m.notFound_heading({}, { locale })} - {siteName}</title>
 </svelte:head>
 
 <main class="bead-field bg-ink">

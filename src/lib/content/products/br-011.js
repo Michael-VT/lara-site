@@ -38,7 +38,7 @@ export const product = {
 	dimensions: {
 		en: 'Adjustable slide-knot fastening',
 		pt: 'Fecho ajustável com nó corrido',
-		uk: 'Розмір регулюється на зав’язці',
+		uk: "Розмір регулюється на зав'язці",
 		ru: 'Размер регулируется на завязке'
 	},
 
