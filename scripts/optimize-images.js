@@ -62,7 +62,8 @@ const productGroups = [
 			'Браслет из крупного и мелкого белого жемчуга': 'white-pearl-large-small-bracelet',
 			'Браслет квадратики белого-золотого риса': 'white-gold-rice-squares-bracelet',
 			'Браслет из белого и золотистого бисера Цветочек': 'white-gold-flower-beaded-bracelet',
-			'Браслет белые ромбики': 'white-rhombus-bracelet'
+			'Браслет белые ромбики': 'white-rhombus-bracelet',
+			'Браслет из красных бусин и бисера Принцесса': 'red-princess-beaded-bracelet'
 		}
 	},
 	{
