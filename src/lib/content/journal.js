@@ -33,6 +33,304 @@
  */
 export const journalPosts = [
 	{
+		slug: 'two-princesses-bracelets',
+		tagKey: 'journal_tagWorkshop',
+		date: '2026-11-13',
+		readMinutes: 3,
+		title: {
+			en: 'Two friends, two Princesses',
+			pt: 'Duas amigas, duas Princesas',
+			ru: 'Две подружки - две Принцессы',
+			uk: 'Дві подружки - дві Принцеси'
+		},
+		excerpt: {
+			en: 'A small story about two bracelets made with love - one bold and fiery, the other soft and romantic.',
+			pt: 'Uma pequena história sobre duas pulseiras feitas com amor - uma vibrante e intensa, a outra suave e romântica.',
+			ru: 'Маленькая история о двух браслетах, созданных с любовью, - один яркий и страстный, другой нежный и романтичный.',
+			uk: "Маленька історія про два браслети, створені з любов'ю, - один яскравий і пристрасний, інший ніжний і романтичний."
+		},
+		body: [
+			{
+				type: 'img',
+				src: '/images/journal/two-princesses-bracelets/01-together.webp',
+				width: 1280,
+				height: 853,
+				alt: {
+					en: 'Red and white beaded "Princess" bracelets lying together among lace and flowers',
+					pt: 'Pulseiras "Princesa" vermelha e branca em contas, lado a lado entre renda e flores',
+					ru: 'Красный и белый браслеты «Принцесса» лежат рядом среди кружева и цветов',
+					uk: 'Червоний і білий браслети «Принцеса» лежать поруч серед мережива і квітів'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "They say real friends don't have to be alike. One can be bright, bold and full of temperament, the other gentle, calm and romantic.",
+					pt: 'Diz-se que as verdadeiras amigas não precisam de ser parecidas. Uma pode ser vibrante, ousada e cheia de temperamento, a outra suave, calma e romântica.',
+					ru: 'Говорят, что настоящие подружки совсем не обязательно должны быть похожими друг на друга. Одна может быть яркой, смелой и темпераментной, а другая - нежной, спокойной и романтичной.',
+					uk: "Кажуть, що справжні подружки зовсім не обов'язково повинні бути схожими одна на одну. Одна може бути яскравою, сміливою і темпераментною, а інша - ніжною, спокійною і романтичною."
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'That is how my two little Princesses came to be - two bracelets, similar in shape, but completely different in character.',
+					pt: 'Foi assim que nasceram as minhas duas pequenas Princesas - duas pulseiras, parecidas na forma, mas completamente diferentes no carácter.',
+					ru: 'Так появились две мои маленькие Принцессы - два браслета, похожих по форме, но совершенно разных по характеру.',
+					uk: "Так з'явилися дві мої маленькі Принцеси - два браслети, схожі за формою, але зовсім різні за характером."
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: 'Red Princess',
+					pt: 'Princesa Vermelha',
+					ru: 'Красная Принцесса',
+					uk: 'Червона Принцеса'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "She's like a little celebration! Bright red beads, surrounded by sparkling seed beads, catch the light and draw the eye.",
+					pt: 'Ela é como uma pequena festa! Contas vermelhas intensas, rodeadas por missangas brilhantes, reflectem a luz e atraem o olhar.',
+					ru: 'Она словно маленький праздник! Яркие красные бусины, окружённые сверкающим бисером, переливаются на свету и притягивают взгляд.',
+					uk: 'Вона наче маленьке свято! Яскраві червоні намистини, оточені блискучим бісером, вигравають на світлі й притягують погляд.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "There's a bit of passion in her, a bit of playfulness, and a lot of feminine charm.",
+					pt: 'Nela há um pouco de paixão, um pouco de charme e muito encanto feminino.',
+					ru: 'В ней есть немного страсти, немного кокетства и много женского очарования.',
+					uk: 'У ній є трохи пристрасті, трохи кокетства і багато жіночого шарму.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'The Red Princess loves to be the centre of attention. She dresses up a festive outfit beautifully, but is just as happy adding a bright accent to an ordinary day.',
+					pt: 'A Princesa Vermelha adora ser o centro das atenções. Combina lindamente com um look de festa, mas também fica feliz por dar um toque vibrante a um dia comum.',
+					ru: 'Красная Принцесса любит быть в центре внимания. Она прекрасно дополнит праздничный наряд, но с таким же удовольствием добавит яркий акцент в обычный день.',
+					uk: 'Червона Принцеса любить бути в центрі уваги. Вона чудово доповнить святковий образ, але з такою ж радістю додасть яскравий акцент у звичайний день.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "This bracelet is for a woman who isn't afraid to be noticed and loves beautiful detail.",
+					pt: 'Esta pulseira é para uma mulher que não tem medo de ser notada e adora pormenores bonitos.',
+					ru: 'Это браслет для женщины, которая не боится быть заметной и любит красивые детали.',
+					uk: 'Це браслет для жінки, яка не боїться бути помітною і любить красиві деталі.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/journal/two-princesses-bracelets/02-red-princess.webp',
+				linkPath: '/products/red-princess-beaded-bracelet/',
+				width: 1280,
+				height: 853,
+				alt: {
+					en: 'Red bead and seed-bead "Princess" bracelet among lace and flowers',
+					pt: 'Pulseira "Princesa" de contas e missangas vermelhas entre renda e flores',
+					ru: 'Браслет из красных бусин и бисера «Принцесса» среди кружева и цветов',
+					uk: 'Браслет з червоних намистин і бісеру «Принцеса» серед мережива і квітів'
+				}
+			},
+			{
+				type: 'link',
+				path: '/products/red-princess-beaded-bracelet/',
+				text: {
+					en: 'View the Red Princess bracelet (SKU: AAA000047) →',
+					pt: 'Ver a pulseira Princesa Vermelha (Referência: AAA000047) →',
+					ru: 'Посмотреть браслет «Красная Принцесса» (Артикул: AAA000047) →',
+					uk: 'Переглянути браслет «Червона Принцеса» (Артикул: AAA000047) →'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: 'White Princess',
+					pt: 'Princesa Branca',
+					ru: 'Белая Принцесса',
+					uk: 'Біла Принцеса'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Her friend is quite different. Snow-white beads, silvery seed beads, a soft pearly glow...',
+					pt: 'A sua amiga é bem diferente. Contas brancas como a neve, missangas prateadas, um brilho suave de pérola...',
+					ru: 'А вот её подружка совсем другая. Белоснежные бусинки, серебристый бисер, мягкое жемчужное сияние...',
+					uk: "А от її подружка зовсім інша. Білосніжні намистинки, срібний бісер, м'яке перлинне сяйво..."
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'She brings to mind delicate lace, morning dew and the first flowers of spring.',
+					pt: 'Faz lembrar uma renda delicada, o orvalho da manhã e as primeiras flores da primavera.',
+					ru: 'Она напоминает нежное кружево, утреннюю росу и первые весенние цветы.',
+					uk: 'Вона нагадує ніжне мереживо, ранкову росу та перші весняні квіти.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "There's nothing bold about her. Her beauty is in lightness, harmony and grace.",
+					pt: 'Nela não há nada de ousado. A sua beleza está na leveza, na harmonia e na elegância.',
+					ru: 'В ней нет ничего вызывающего. Её красота - в лёгкости, гармонии и изяществе.',
+					uk: 'У ній немає нічого зухвалого. Її краса - у легкості, гармонії та витонченості.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'The White Princess suits a romantic dress or a festive look perfectly, or she can simply be a gentle everyday adornment.',
+					pt: 'A Princesa Branca combina perfeitamente com um vestido romântico ou um look de festa, ou pode simplesmente ser um adorno suave do dia a dia.',
+					ru: 'Белая Принцесса прекрасно подойдёт к романтичному платью, праздничному образу или просто станет нежным украшением на каждый день.',
+					uk: 'Біла Принцеса чудово пасує до романтичної сукні, святкового образу або просто стане ніжною прикрасою на щодень.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/journal/two-princesses-bracelets/03-white-princess.webp',
+				linkPath: '/products/white-silver-princess-beaded-bracelet/',
+				width: 1086,
+				height: 1448,
+				alt: {
+					en: '"Princess" white and silver beaded bracelet on a soft fabric background',
+					pt: 'Pulseira "Princesa" em contas brancas e prateadas sobre um fundo de tecido suave',
+					ru: 'Браслет из белого и серебристого бисера «Принцесса» на фоне мягкой ткани',
+					uk: "Браслет «Принцеса» з білого та срібного бісеру на фоні м'якої тканини"
+				}
+			},
+			{
+				type: 'link',
+				path: '/products/white-silver-princess-beaded-bracelet/',
+				text: {
+					en: 'View the White Princess bracelet (SKU: AAA000011) →',
+					pt: 'Ver a pulseira Princesa Branca (Referência: AAA000011) →',
+					ru: 'Посмотреть браслет «Белая Принцесса» (Артикул: AAA000011) →',
+					uk: 'Переглянути браслет «Біла Принцеса» (Артикул: AAA000011) →'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: 'Two different stories, one inspiration',
+					pt: 'Duas histórias diferentes, uma inspiração',
+					ru: 'Две разные истории - одно вдохновение',
+					uk: 'Дві різні історії - одне натхнення'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'I made both bracelets by hand, bead by bead, weaving them into an openwork pattern.',
+					pt: 'Fiz as duas pulseiras à mão, conta a conta, tecendo-as num padrão rendado.',
+					ru: 'Оба браслета я создала вручную, бусинка за бусинкой, соединяя их в ажурное плетение.',
+					uk: "Обидва браслети я створила вручну, намистинка за намистинкою, з'єднуючи їх в ажурне плетіння."
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'For the weave I used small seed beads and decorative beads, carefully matching colours and shades.',
+					pt: 'Para o tecido utilizei missangas pequenas e contas decorativas, combinando cuidadosamente cores e tons.',
+					ru: 'В работе использовала мелкий бисер и декоративные бусины, подбирая сочетания цветов и оттенков.',
+					uk: 'У роботі використала дрібний бісер і декоративні намистини, підбираючи поєднання кольорів і відтінків.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'Each Princess has a small metal chain extender, so the bracelet length can be adjusted. I wanted each piece to be beautiful and comfortable to wear.',
+					pt: 'Cada Princesa tem um pequeno extensor de corrente metálica, para que o comprimento da pulseira possa ser ajustado. Queria que cada peça fosse bonita e confortável de usar.',
+					ru: 'У каждой Принцессы есть маленькая металлическая цепочка, благодаря которой можно регулировать длину браслета. Мне хотелось, чтобы украшения были не только красивыми, но и удобными.',
+					uk: 'У кожної Принцеси є маленький металевий ланцюжок, завдяки якому можна регулювати довжину браслета. Мені хотілося, щоб прикраси були не лише красивими, а й зручними.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'And although these two friends look so different, they share one thing in common - each was made with love for handmade craft.',
+					pt: 'E embora estas duas amigas sejam tão diferentes, têm uma coisa em comum - cada uma foi feita com amor pelo artesanato.',
+					ru: 'И хотя эти две подружки так не похожи друг на друга, у них есть одна общая черта - каждая создана с любовью к рукоделию.',
+					uk: "І хоча ці дві подружки такі несхожі одна на одну, у них є одна спільна риса - кожна створена з любов'ю до рукоділля."
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: 'Which Princess is closer to you?',
+					pt: 'Qual Princesa combina mais consigo?',
+					ru: 'А какая Принцесса ближе вам?',
+					uk: 'А яка Принцеса ближча вам?'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "Red - bright, confident, full of temperament? Or white - gentle, romantic, dreamy? Or maybe it all depends on the mood. Sometimes we want to stand out, and sometimes just to be soft and a little mysterious. And that's wonderful.",
+					pt: 'Vermelha - vibrante, confiante, cheia de temperamento? Ou branca - suave, romântica, sonhadora? Ou talvez tudo dependa do estado de espírito. Às vezes queremos destacar-nos, e às vezes apenas ser suaves e um pouco misteriosas. E isso é maravilhoso.',
+					ru: 'Красная - яркая, уверенная, темпераментная? Или белая - нежная, романтичная, мечтательная? А может быть, всё зависит от настроения. Ведь иногда нам хочется быть заметными, а иногда - просто нежными и загадочными. И это прекрасно.',
+					uk: 'Червона - яскрава, впевнена, темпераментна? Чи біла - ніжна, романтична, мрійлива? А може, усе залежить від настрою. Адже іноді нам хочеться бути помітними, а іноді - просто ніжними і загадковими. І це прекрасно.'
+				}
+			},
+			{
+				type: 'img',
+				src: '/images/journal/two-princesses-bracelets/04-together-again.webp',
+				width: 1280,
+				height: 853,
+				alt: {
+					en: 'Red and white "Princess" bracelets together again, side by side',
+					pt: 'Pulseiras "Princesa" vermelha e branca novamente juntas, lado a lado',
+					ru: 'Красный и белый браслеты «Принцесса» снова вместе, рядом друг с другом',
+					uk: 'Червоний і білий браслети «Принцеса» знову разом, поруч одне з одним'
+				}
+			},
+			{
+				type: 'h2',
+				text: {
+					en: 'With love, Larise Art',
+					pt: 'Com amor, Larise Art',
+					ru: 'С любовью, Larise Art',
+					uk: "З любов'ю, Larise Art"
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: "Every piece in my small workshop is born from inspiration, imagination and the wish to create beauty with my own hands. I don't try to make things identical. I like it when each piece gets its own character, its own mood, its own little story.",
+					pt: 'Cada peça no meu pequeno ateliê nasce da inspiração, da imaginação e da vontade de criar beleza com as próprias mãos. Não procuro fazer peças idênticas. Gosto que cada peça tenha o seu próprio carácter, o seu próprio humor, a sua própria pequena história.',
+					ru: 'Каждое украшение в моей маленькой творческой мастерской рождается из вдохновения, фантазии и желания создавать красоту своими руками. Я не стремлюсь делать совершенно одинаковые вещи. Мне нравится, когда у каждого изделия появляется свой характер, своё настроение и своя маленькая история.',
+					uk: 'Кожна прикраса в моїй маленькій творчій майстерні народжується з натхнення, фантазії та бажання створювати красу власними руками. Я не прагну робити абсолютно однакові речі. Мені подобається, коли кожен виріб має свій характер, свій настрій і свою маленьку історію.'
+				}
+			},
+			{
+				type: 'p',
+				text: {
+					en: 'And who knows - maybe soon these two Princesses will have new friends, in blue, pink, gold or other beautiful shades. A sequel is sure to come! ❤️',
+					pt: 'E quem sabe - talvez em breve estas duas Princesas tenham novas amigas, em azul, rosa, dourado ou outros tons bonitos. A continuação está garantida! ❤️',
+					ru: 'Возможно, совсем скоро у этих двух Принцесс появятся новые подружки - в голубом, розовом, золотистом или других красивых оттенках. Продолжение обязательно будет! ❤️',
+					uk: "Можливо, зовсім скоро в цих двох Принцес з'являться нові подружки - у блакитному, рожевому, золотистому чи інших гарних відтінках. Продовження обов'язково буде! ❤️"
+				}
+			},
+			{
+				type: 'link',
+				path: '/products/?category=bracelets',
+				text: {
+					en: 'View the bracelets in the catalogue →',
+					pt: 'Ver as pulseiras no catálogo →',
+					ru: 'Посмотреть браслеты в галерее →',
+					uk: 'Переглянути браслети в каталозі →'
+				}
+			}
+		]
+	},
+	{
 		slug: 'brown-lace-crochet-bag',
 		tagKey: 'journal_tagWorkshop',
 		date: '2026-09-24',
@@ -1664,7 +1962,7 @@ export const journalPosts = [
 			{
 				type: 'p',
 				text: {
-					en: "Once the main part was ready, the next question came up: how do I protect the phone without hiding the pretty lace pattern?",
+					en: 'Once the main part was ready, the next question came up: how do I protect the phone without hiding the pretty lace pattern?',
 					pt: 'Quando a parte principal ficou pronta, surgiu a próxima questão: como proteger o telemóvel sem esconder o bonito padrão rendado?',
 					ru: 'Когда основная часть была готова, возник следующий вопрос: как защитить телефон и при этом не закрыть красивый ажурный узор?',
 					uk: 'Коли основна частина була готова, виникло наступне питання: як захистити телефон і при цьому не закрити гарний ажурний візерунок?'
