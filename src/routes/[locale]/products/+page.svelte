@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import { t, pluralCountKey } from '$lib/utils/messages.js';
 	import { categories, categoryIds } from '$lib/content/categories.js';
@@ -48,8 +49,19 @@
 		return [...seen];
 	}
 
-	let selectedCategories = $derived(parseCategoryParam(getSearchParam(page.url, 'category')));
-	let status = $derived(getSearchParam(page.url, 'status') ?? '');
+	// The page is static-prerendered with no filter applied, so the very first
+	// client render must match that (unfiltered) to avoid a hydration mismatch
+	// that scrambles which <img> is paired with which product card. Filters
+	// from the URL only take effect once hydration has settled.
+	let hydrated = $state(false);
+	onMount(() => {
+		hydrated = true;
+	});
+
+	let selectedCategories = $derived(
+		hydrated ? parseCategoryParam(getSearchParam(page.url, 'category')) : []
+	);
+	let status = $derived(hydrated ? (getSearchParam(page.url, 'status') ?? '') : '');
 
 	let filtered = $derived(
 		filterProducts(data.products, {
